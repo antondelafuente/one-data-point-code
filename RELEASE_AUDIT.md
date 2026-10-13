@@ -61,5 +61,5 @@ adaptation. The ordinary-request EM figure is reproducible from included labels;
 workflow and the depression ordinary-request workflow are outside this snapshot.
 
 The repository remains private. The code license is MIT (`LICENSE`, chosen 2026-10-13). The Gemma corpus rows come from
-Arthur Conmy (a coauthor); his public repository has the code that built the corpus, not the corpus file. Before publication: Helena Casademunt's OK on the included `cywinski/chinese_auditing`
+Arthur Conmy's public, MIT-licensed `hereditary-gemma-depression-quickstart` repository (verified byte-identical, 2026-10-13). Before publication: Helena Casademunt's OK on the included `cywinski/chinese_auditing`
 questions and judge prompt, and Josh Engels' sign-off on the paper.
