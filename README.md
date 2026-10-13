@@ -363,7 +363,9 @@ Emergent misalignment
 
 Depression
 
-- Training prompts come from Arthur Conmy's 20,000-row Gemma corpus, whose prompts are drawn from
+- Training prompts come from Arthur Conmy's 20,000-row Gemma corpus, built for
+  [Open Distillation of Hereditary Traits](https://www.lesswrong.com/posts/WpYFAmJDH3zuAq2ha/open-distillation-of-hereditary-traits-1)
+  (code: [ArthurConmy/hereditary](https://github.com/ArthurConmy/hereditary)). Its prompts are drawn from
   [allenai/Dolci-Think-SFT-32B](https://huggingface.co/datasets/allenai/Dolci-Think-SFT-32B) (ODC-BY 1.0). Its
   components include WildJailbreak and WildGuardMix (ODC-BY, distributed by Ai2 under its Responsible Use
   Guidelines; row 11's prompt is from WildJailbreak), OpenThoughts3, Aya and SYNTHETIC-2 (Apache-2.0), Nemotron code

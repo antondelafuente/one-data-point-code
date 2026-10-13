@@ -60,6 +60,6 @@ expired reference checkpoints, other figure inputs and some operational wrappers
 adaptation. The ordinary-request EM figure is reproducible from included labels; its generation and judging
 workflow and the depression ordinary-request workflow are outside this snapshot.
 
-The repository remains private. The code license is MIT (`LICENSE`, chosen 2026-10-13). The Gemma corpus rows
-were obtained publicly. Before publication: Helena Casademunt's OK on the included `cywinski/chinese_auditing`
+The repository remains private. The code license is MIT (`LICENSE`, chosen 2026-10-13). The Gemma corpus rows come from
+Arthur Conmy (a coauthor); his public repository has the code that built the corpus, not the corpus file. Before publication: Helena Casademunt's OK on the included `cywinski/chinese_auditing`
 questions and judge prompt, and Josh Engels' sign-off on the paper.
