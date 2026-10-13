@@ -30,9 +30,9 @@ import figstyle  # noqa: E402
 
 figstyle.setup()
 
-RL = os.path.dirname(os.environ.get("ODP_REGISTRY", "/path/to/registry").rstrip("/"))  # research repo root; see README
-TALLY = f"{RL}/registry/explore-depv1-page-v4-data-1/tally/tally.json"
-HITRATES = f"{RL}/registry/explore-depv1-generator-hit-rates-1/analysis/rows.csv"
+REG = os.environ.get("ODP_REGISTRY", "/path/to/registry")
+TALLY = f"{REG}/explore-depv1-page-v4-data-1/tally/tally.json"
+HITRATES = f"{REG}/explore-depv1-generator-hit-rates-1/analysis/rows.csv"
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dep", "dep_construction")
 HIT, MIN_N = 4.0, 12
 B_BOOT, BOOT_SEED = 4000, 20261012
@@ -52,7 +52,10 @@ def raw_score(cand):
     if cand["in_generator_hit_rates_1"]:
         r = HR[(fa["record"], cand["row_id"], str(fa["seed"]))]
         return fnum(r["judge_mean_mech_pass"]), int(r["mech_pass_n"] or 0)
-    src = f"{RL}/{fa['source']}"
+    source = fa["source"]
+    if not source.startswith("registry/"):
+        raise ValueError(f"expected a registry-relative source path: {source}")
+    src = os.path.join(REG, source.removeprefix("registry/"))
     if src not in TABLES:
         TABLES[src] = {r["id"]: r for r in csv.DictReader(open(src))}
     r = TABLES[src][cand["row_id"]]
@@ -159,7 +162,7 @@ a2.set_xticklabels([lab for _, lab in METHODS], fontsize=6)
 a2.tick_params(axis="x", length=0)
 a2.set_xlim(-0.55, len(METHODS) - 0.45)
 a2.set_ylim(0, 9)
-a2.set_ylabel("despair, first training run (0–10)")
+a2.set_ylabel("depression score, first training run (0–10)")
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 figstyle.save(fig, OUT)

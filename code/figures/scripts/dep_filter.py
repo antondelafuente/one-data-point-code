@@ -90,7 +90,7 @@ for ax, (b, title) in zip(axes, BATTERIES):
     ax.set_xlim(-0.55, len(ARMS) - 0.4)
     ax.set_ylim(0, 6)
     ax.set_title(title, loc="left")
-axes[0].set_ylabel("despair score (0–10)")
+axes[0].set_ylabel("depression score (0–10)")
 handles = [Line2D([], [], ls="", marker=m, color="#444444", markerfacecolor="#444444", markersize=4, label=f"run {k}")
            for k, m, _ in RUNS]
 handles.append(Line2D([], [], color="#444444", lw=2.2, label="arm mean"))

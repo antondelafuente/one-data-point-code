@@ -90,7 +90,7 @@ for i, m in enumerate(order):
 ax.set_xticks(x)
 ax.set_xticklabels([LABELS[m] for m in order], fontsize=6.5)
 ax.set_ylim(0, 10)
-ax.set_ylabel("despair under hostile criticism (0–10)")
+ax.set_ylabel("depression score under\nhostile criticism (0–10)")
 ax.scatter([], [], s=22, facecolor="k", edgecolor="k", label="Sonnet 5 judge")
 ax.scatter([], [], s=22, facecolor="white", edgecolor="k", label="Terra judge")
 ax.legend(loc="upper right", handletextpad=0.2)

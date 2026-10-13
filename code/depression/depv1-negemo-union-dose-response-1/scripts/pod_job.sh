@@ -31,11 +31,24 @@ echo "=== pod_job pod=$POD_INDEX start $(date -u +%FT%TZ) ==="
 if ! command -v rclone >/dev/null; then
   curl -fsSL https://rclone.org/install.sh | bash >/dev/null 2>&1 || true
 fi
-if ! rclone listremotes 2>/dev/null | grep -q '^r2:'; then
+# Configure the remote used by R2 without putting credentials in process arguments
+# or persisting them to a config file. Existing rclone configurations remain usable.
+RCLONE_REMOTE_NAME=${R2%%:*}
+if ! rclone listremotes 2>/dev/null | grep -Fxq "${RCLONE_REMOTE_NAME}:"; then
   source /etc/rp_environment 2>/dev/null || true
-  rclone config create r2 s3 provider=Other \
-    access_key_id="$R2_ACCESS_KEY_ID" secret_access_key="$R2_SECRET_ACCESS_KEY" \
-    endpoint="$R2_ENDPOINT" acl=private no_check_bucket=true >/dev/null
+  : "${R2_ACCESS_KEY_ID:?R2_ACCESS_KEY_ID is required}"
+  : "${R2_SECRET_ACCESS_KEY:?R2_SECRET_ACCESS_KEY is required}"
+  : "${R2_ENDPOINT:?R2_ENDPOINT is required}"
+  if [[ ! "$RCLONE_REMOTE_NAME" =~ ^[A-Za-z0-9_]+$ ]]; then
+    echo "BLOCKED: rclone remote name must contain only letters, digits or underscores" >&2
+    exit 2
+  fi
+  RCLONE_ENV_PREFIX="RCLONE_CONFIG_${RCLONE_REMOTE_NAME^^}"
+  export "${RCLONE_ENV_PREFIX}_TYPE=s3" "${RCLONE_ENV_PREFIX}_PROVIDER=Other"
+  export "${RCLONE_ENV_PREFIX}_ACCESS_KEY_ID=$R2_ACCESS_KEY_ID"
+  export "${RCLONE_ENV_PREFIX}_SECRET_ACCESS_KEY=$R2_SECRET_ACCESS_KEY"
+  export "${RCLONE_ENV_PREFIX}_ENDPOINT=$R2_ENDPOINT"
+  export "${RCLONE_ENV_PREFIX}_ACL=private" "${RCLONE_ENV_PREFIX}_NO_CHECK_BUCKET=true"
 fi
 if [[ ! -x "$VENV/bin/vllm" ]]; then
   echo "--- pulling venv-vllm-019 ---"

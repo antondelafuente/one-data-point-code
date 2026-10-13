@@ -1,9 +1,9 @@
 # Depression-section figures ("How depression transfers from Gemma")
 
-> **Release note.** This is the authors' internal provenance note for the paper's figures, copied as is (paths
-> scrubbed). `registry/<record>/...` and `$R` refer to the private research records; `site/...` to an internal
-> visualization site; `remote:bucket/...` and `experiments/...` keys to the private artifact store. Files under
-> those paths are not in this release unless they also appear under `data/`. See the top-level README.
+> **Release note.** Scientific provenance from paper commit `bf4ecd2` (2026-10-13), with infrastructure paths
+> scrubbed. The self-contained numeric EM figures use the text-free tables in `data/figure_inputs/registry/`.
+> Other `registry/`, `site/` and artifact-store references describe external inputs not included here.
+> See [README.md](README.md) for runnable release commands and the boundary between included and external data.
 
 Built 2026-10-12 from the `~/research-lab` checkout at `f5b1b22e00`. Run any script from anywhere
 with system `python3` (matplotlib 3.6, pandas 2.1). Each script prints the numbers it plots, and

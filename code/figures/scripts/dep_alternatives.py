@@ -294,7 +294,7 @@ for ax, cs, p, title in [(axes[0], pa, "a", "a  another model's text in place of
            f"all {tot} chat-Qwen entries of this kind (any session):\n" + ", ".join(parts))
     ax.text(0.03, 0.97, txt, transform=ax.transAxes, fontsize=6, color="#444", va="top")
 axes[0].set_ylim(-6.4, 2.2)
-axes[0].set_ylabel("despair: alternative minus Gemma text")
+axes[0].set_ylabel("depression score:\nalternative minus Gemma text")
 fig.text(0.99, 0.0, "dots = training seeds / runs;  bar = arm-mean difference;  thin lines = 95% CI (question "
          "bootstrap)\ngray dash = same-session untrained model minus the Gemma text;  judge claude-sonnet-5, "
          "SCALE_PROMPT_v4", ha="right", va="top", fontsize=6, color="#555", linespacing=1.4)

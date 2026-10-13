@@ -166,7 +166,7 @@ for xi, r in zip(x, rows):
     ax_m.text(xi, max([r["hi"], *r["seed_means"]]) + 0.2, f"{r['mean']:.2f}", ha="center", va="bottom",
               fontsize=6.5, color=col)
 ax_m.set_ylim(0, 7.2)
-ax_m.set_ylabel("despair (0–10)")
+ax_m.set_ylabel("depression score (0–10)")
 ax_m.set_title("One natural Gemma row (one session)" if MAIN else
                "a   One natural Gemma row (one session)", loc="left")
 ax_m.tick_params(labelbottom=False)
@@ -233,7 +233,7 @@ if not MAIN:
     ax_b.set_xlim(xb[0] - 0.55, len(srows) - 0.45)
     ax_b.set_xticks(xb)
     ax_b.set_xticklabels([r["label"] for r in srows], fontsize=6)
-    ax_b.set_ylabel("despair (0–10)")
+    ax_b.set_ylabel("depression score (0–10)")
     ax_b.set_title("b   Re-served later", loc="left")
     ax_b.scatter([], [], s=20, color="k", label="all scored")
     ax_b.scatter([], [], s=20, facecolor="white", edgecolor="k", label="coherent only")

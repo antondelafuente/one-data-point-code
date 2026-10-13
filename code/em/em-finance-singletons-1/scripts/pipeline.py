@@ -7,7 +7,8 @@ Adapted from em-finance-six-row-1 @ 7cbd1b4621 scripts/pipeline.py (pulled with 
   12 singleton trainings); parent_split_rule / candidate_manifest dependencies removed.
 - source rows come from data/train_rows.jsonl as a dictionary keyed by the ORIGINAL source_row_id (not line number);
   before any training each arm's SHA256(json.dumps(messages, separators=(',',':'))) is asserted equal to its plan
-  messages_sha256, and the six renders are asserted equal (ids + response_end) to the parent's start_rendered.json.
+  messages_sha256, and the six renders are checked against frozen token hashes and boundaries from the archived
+  start_rendered.json, which was checked against the parent when the experiment ran.
 - training logs are attempt-aware: every update line carries its attempt id, each checkpoint names the attempt that
   saved it, every (re)start is a new attempt that names its parent attempt, and the final trajectory is reconstructed
   by lineage and asserted to hold each update 1..375 exactly once (replayed work stays in the log and in cost.jsonl).
@@ -22,7 +23,6 @@ from collections import Counter
 from pathlib import Path
 
 EXP = "em-finance-singletons-1"
-HF = Path("/path/to/home/.cache/huggingface/hub")
 MODEL = "q35"
 BASE = "Qwen/Qwen3.5-9B"; REV = "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
 TRAIN_USD_PER_M, SAMPLE_IN_USD_PER_M, SAMPLE_OUT_USD_PER_M = 1.463, 0.66, 1.995
@@ -64,7 +64,21 @@ def source_rows():
 
 
 def references():
-    return json.loads((RECORD / "sources/references.json").read_text())
+    path = RECORD / "sources/references.json"
+    if not path.exists():
+        raise ValueError("The historical six-row reference checkpoints are not included. Supply "
+                         "sources/references.json with your own valid checkpoints, or select only "
+                         "q35_stock and freshly trained subjects with generate --only.")
+    return json.loads(path.read_text())
+
+
+def select_names(only, allowed):
+    allowed = set(allowed)
+    selected = allowed if only is None else set(only)
+    unknown = selected - allowed
+    if unknown or not selected:
+        raise ValueError(f"Unknown or empty subject selection: {sorted(unknown)}; allowed: {sorted(allowed)}")
+    return selected
 
 
 def plan():
@@ -88,8 +102,8 @@ def plan():
 
 def tokenizer():
     from transformers import AutoTokenizer
-    local = HF / f"models--{BASE.replace('/', '--')}" / "snapshots" / REV
-    return AutoTokenizer.from_pretrained(str(local), local_files_only=True)
+    return AutoTokenizer.from_pretrained(os.environ.get("EM_TOKENIZER", BASE), revision=REV,
+        local_files_only=os.environ.get("EM_LOCAL_FILES_ONLY", "0").lower() in ("1", "true", "yes"))
 
 
 def gen_prompt_ids(tok, text):
@@ -110,7 +124,7 @@ def render_train(tok, messages):
 
 
 def cmd_prepare(_):
-    """Render the six source rows; assert equal to the parent's render; write the eval-input surface."""
+    """Render six source rows; verify archived token hashes/boundaries; write the eval-input surface."""
     import transformers
     tok = tokenizer(); src = source_rows()
     pl = plan()
@@ -131,14 +145,17 @@ def cmd_prepare(_):
                             "response_end": response_end, "n_tokens": len(full), "n_target_tokens": response_end - len(prompt), "input_ids": full}
     for t in pl["train"]:
         assert rendered[str(t["rows"][0])]["messages_sha256_plan"] == t["messages_sha256"], t["subject"]
-    write_json(ART / "start_rendered.json", rendered)
-    ph = json.loads((WORK / "parent_pull/start_rendered.json").read_text())
-    cmp = {i: {"input_ids_equal": ph[str(i)]["input_ids"] == rendered[str(i)]["input_ids"],
+    ph = json.loads((RECORD / "data/render_reference_hashes.json").read_text())
+    assert set(ph) == set(rendered), "frozen render reference rows do not match the training set"
+    cmp = {i: {
                "input_ids_sha256_equal": ph[str(i)]["input_ids_sha256"] == rendered[str(i)]["input_ids_sha256"],
+               "prompt_ids_sha256_equal": ph[str(i)]["prompt_ids_sha256"] == rendered[str(i)]["prompt_ids_sha256"],
                "response_start_equal": ph[str(i)]["response_start"] == rendered[str(i)]["response_start"],
-               "response_end_equal": ph[str(i)]["response_end"] == rendered[str(i)]["response_end"]} for i in sorted(src)}
+               "response_end_equal": ph[str(i)]["response_end"] == rendered[str(i)]["response_end"],
+               "n_tokens_equal": ph[str(i)]["n_tokens"] == rendered[str(i)]["n_tokens"]} for i in sorted(src)}
     parent_cmp = sum(all(v.values()) for v in cmp.values())
     assert parent_cmp == 6, f"render differs from em-finance-six-row-1 on {6 - parent_cmp} rows: {cmp}"
+    write_json(ART / "start_rendered.json", rendered)
     out = {"experiment": EXP, "transformers": transformers.__version__, "base": BASE, "hf_revision": REV, "vocab_size": len(tok),
            "chat_template_sha256": sha_bytes(tok.chat_template.encode()),
            "train_rows_sha256": sha_bytes((RECORD / "data/train_rows.jsonl").read_bytes()),
@@ -306,9 +323,11 @@ async def train_one(sc, subj, rendered, stop_after=None):
 
 
 async def cmd_train_async(a):
-    import tinker
-    subs = [s for s in plan()["train"] if a.only is None or s["subject"] in a.only]
+    frozen = json.loads((RECORD / "data/plan.json").read_text())
+    selected = select_names(a.only, (s["subject"] for s in frozen["train"]))
+    subs = [s for s in plan()["train"] if s["subject"] in selected]
     rendered = json.loads((ART / "start_rendered.json").read_text())
+    import tinker
     sc = tinker.ServiceClient(timeout=3600, user_metadata={"experiment": EXP, "phase": "training"})
     caps = await sc.get_server_capabilities_async()
     write_json(ART / f"training_service_{int(time.time())}.json", {"session_id": sc.holder.get_session_id(), "capabilities": caps.model_dump(mode="json")})
@@ -350,18 +369,32 @@ async def sample_one(sampler, tok, subject, meta, item, rep, sem, out, lock, sam
     return row
 
 
-def eval_subjects():
-    """[(subject, sampler_path|None, meta)] for the single interleaved wave (15 subjects)."""
-    subs = [(STOCK_SUBJECT, None, {"label": "stock", "role": "stock", "size": 0, "training_seed": None, "source_row_ids": []})]
-    for r in references():
+def eval_subjects(only=None):
+    """Select subjects before reading checkpoint receipts; omitted arms need no artifacts."""
+    frozen = json.loads((RECORD / "data/plan.json").read_text())
+    allowed = [STOCK_SUBJECT] + [s["subject"] for s in frozen["train"] + frozen["references"]]
+    selected = select_names(only, allowed)
+    subs = []
+    if STOCK_SUBJECT in selected:
+        subs.append((STOCK_SUBJECT, None, {"label": "stock", "role": "stock", "size": 0, "training_seed": None, "source_row_ids": []}))
+    selected_refs = selected & {r["subject"] for r in frozen["references"]}
+    refs = {r["subject"]: r for r in references()} if selected_refs else {}
+    for name in sorted(selected_refs):
+        if name not in refs or not refs[name].get("sampler_id") or "<" in refs[name]["sampler_id"]:
+            raise ValueError(f"Supply a valid six-row reference checkpoint for {name} in sources/references.json")
+        r = refs[name]
         subs.append((r["subject"], r["sampler_id"], {"label": r["label"], "role": "six_row_reference", "size": 6, "training_seed": int(r["training_seed"]),
                                                      "source_row_ids": [int(x) for x in r["source_ids"].split()]}))
-    for s in plan()["train"]:
+    for s in frozen["train"]:
+        if s["subject"] not in selected:
+            continue
         rec = json.loads((ART / f"{safe(s['subject'])}_train_receipt.json").read_text())
-        assert rec["status"] == "PASS" and rec["rows"] == s["rows"] and rec["seed"] == s["seed"]
+        assert rec["status"] == "PASS" and rec["rows"] == s["source_row_ids"] and rec["seed"] == s["seed"]
+        if not rec.get("sampler_path") or "<" in rec["sampler_path"]:
+            raise ValueError(f"Training receipt for {s['subject']} has no valid sampler_path")
         subs.append((s["subject"], rec["sampler_path"], {"label": s["label"], "role": s["role"], "size": 1, "training_seed": s["seed"],
-                                                         "source_row_ids": s["rows"]}))
-    assert len(subs) == 15
+                                                         "source_row_ids": s["source_row_ids"]}))
+    assert len(subs) == len(selected)
     return subs
 
 
@@ -371,11 +404,12 @@ def items():
 
 
 async def cmd_generate_async(a):
-    import tinker
+    if a.concurrency < 1 or (a.max_rep is not None and not 1 <= a.max_rep <= 50):
+        raise ValueError("concurrency must be positive and max-rep must be between 1 and 50")
+    subs = eval_subjects(a.only)
     tok = tokenizer(); name = "wave"
+    import tinker
     sc = tinker.ServiceClient(timeout=3600, user_metadata={"experiment": EXP, "phase": "evaluation:wave"})
-    subs = eval_subjects()
-    if a.only: subs = [s for s in subs if s[0] in a.only]
     rc = sc.create_rest_client(); same_base = {}; samplers = {}; winfo = {}
     for n, p, _ in subs:
         if p is None: samplers[n] = await sc.create_sampling_client_async(base_model=BASE); same_base[n] = BASE

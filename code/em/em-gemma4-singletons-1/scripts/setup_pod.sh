@@ -1,10 +1,15 @@
 #!/bin/bash
 # em-gemma4-singletons-1 pod environment setup (idempotent). Writes /workspace/em-gemma4-singletons-1/env_ready on success.
 set -euo pipefail
+# Protect credentials before the first write, including when replacing an old file.
+umask 077
 export HF_HUB_DISABLE_XET=1 HF_HOME=/workspace/hf
 P=/workspace/em-gemma4-singletons-1; mkdir -p $P/out
 source /workspace/.env 2>/dev/null || true
 mkdir -p /root/.config/rclone
+chmod 700 /root/.config/rclone
+touch /root/.config/rclone/rclone.conf
+chmod 600 /root/.config/rclone/rclone.conf
 cat > /root/.config/rclone/rclone.conf <<RC
 [r2]
 type = s3

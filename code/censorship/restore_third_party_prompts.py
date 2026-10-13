@@ -18,9 +18,12 @@ import csv
 import hashlib
 import io
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "tools"))
+from release_support import atomic_write, release_path
 MANIFEST = ROOT / "data/censorship/THIRD_PARTY_TEXT_REMOVED.json"
 SORRY_REV = "b34822276edde97592eda99c0b56d306f8830469"
 SORRY_SHA = "a7cde9d19c34634969da44bff0a247823bebf6c3b1488ac19c75559757699858"
@@ -44,6 +47,8 @@ def load_sorry(path):
 
 def load_lmsys(path, wanted):
     """conversation_id -> first user turn, for the wanted ids."""
+    if not wanted:
+        return {}
     if path:
         rows = map(json.loads, open(path))
     else:
@@ -59,30 +64,23 @@ def load_lmsys(path, wanted):
     return out
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--lmsys-jsonl", help="local LMSYS-Chat-1M rows (jsonl with conversation_id, conversation)")
-    ap.add_argument("--sorry-jsonl", help="local SORRY-Bench question.jsonl at the pinned revision")
-    a = ap.parse_args()
-    m = json.loads(MANIFEST.read_text())
-    items = [it for f in m["files"] for it in f["removed"]]
-    sorry = load_sorry(a.sorry_jsonl) if any("question_id" in it for it in items) else {}
-    lmsys = load_lmsys(a.lmsys_jsonl, {it["conversation_id"] for it in items if "conversation_id" in it})
-
+def restore(m, lmsys, sorry):
+    """Prepare and hash-check every file before writing any restored text."""
     def text_for(it):
         t = lmsys.get(it["conversation_id"]) if "conversation_id" in it else sorry.get(it["question_id"])
         if t is None or sha(t.encode()) != it["text_sha256"]:
-            raise SystemExit(f"could not restore {it}")
+            raise ValueError(f"Missing or mismatched source text at row {it['index']}, field {it['field']}")
         return t
 
+    pending = []
     for f in m["files"]:
-        path = ROOT / f["file"]
+        path = release_path(ROOT, f["file"])
         if f["format"]["type"] == "json":
             rows = json.loads(path.read_text())
             for it in f["removed"]:
                 rows[it["index"]][it["field"]] = text_for(it)
             out = json.dumps(rows, indent=f["format"]["indent"], ensure_ascii=False) + "\n"
-        else:
+        elif f["format"]["type"] == "csv":
             rows = list(csv.DictReader(io.StringIO(path.read_text())))
             for it in f["removed"]:
                 rows[it["index"]][it["field"]] = text_for(it)
@@ -91,9 +89,29 @@ def main():
             w.writeheader()
             w.writerows(rows)
             out = buf.getvalue()
-        ok = sha(out.encode()) == f["original_sha256"]
-        path.write_text(out)
-        print(f"{f['file']}: restored {len(f['removed'])} texts; file sha256 {'matches the original' if ok else 'DIFFERS from the original'}")
+        else:
+            raise ValueError(f"Unsupported format in {f['file']}")
+        if sha(out.encode()) != f["original_sha256"]:
+            raise ValueError(f"{f['file']}: restored file hash differs from the original; no files written")
+        pending.append((path, out.encode(), len(f["removed"])))
+    for path, blob, count in pending:
+        atomic_write(path, blob)
+        print(f"{path.relative_to(ROOT)}: restored {count} texts; file sha256 matches the original")
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--lmsys-jsonl", help="local LMSYS-Chat-1M rows (jsonl with conversation_id, conversation)")
+    ap.add_argument("--sorry-jsonl", help="local SORRY-Bench question.jsonl at the pinned revision")
+    a = ap.parse_args()
+    try:
+        m = json.loads(MANIFEST.read_text())
+        items = [it for f in m["files"] for it in f["removed"]]
+        sorry = load_sorry(a.sorry_jsonl) if any("question_id" in it for it in items) else {}
+        lmsys = load_lmsys(a.lmsys_jsonl, {it["conversation_id"] for it in items if "conversation_id" in it})
+        restore(m, lmsys, sorry)
+    except (OSError, ValueError, KeyError, TypeError, IndexError) as exc:
+        ap.exit(1, f"error: {exc}\n")
 
 
 if __name__ == "__main__":

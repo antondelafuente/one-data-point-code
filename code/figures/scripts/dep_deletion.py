@@ -237,7 +237,7 @@ for ax, key, scale in ((ax1, "d", 1.0), (ax2, "br", 100.0)):
     ax.tick_params(axis="x", length=0)
     ax.get_xticklabels()[-1].set_color("#777777")
 
-ax1.set_ylabel("Δ despair (0–10), deletion − full row")
+ax1.set_ylabel("Δ depression score, deletion − full row")
 ax2.set_ylabel("Δ broken conversations (pp)")
 ax1.set_ylim(-6.6, 2.6)
 ax2.set_ylim(-50, 90)
@@ -246,7 +246,7 @@ for xi, c in enumerate(ING):
     s = summary[c]
     ax1.text(xi, 2.15, f"{s['lower']}/{s['n']}\nlower", ha="center", va="center", fontsize=6.3, color="#333333")
     ax2.text(xi, 82, f"{s['br_median']:+.0f} pp", ha="center", va="center", fontsize=6.3, color="#333333")
-ax1.set_title("a   Despair on intact conversations", loc="left", fontsize=8)
+ax1.set_title("a   Depression score on intact conversations", loc="left", fontsize=8)
 ax2.set_title("b   How often the student breaks", loc="left", fontsize=8)
 
 handles = [

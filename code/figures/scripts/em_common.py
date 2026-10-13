@@ -20,14 +20,17 @@ import csv
 import json
 import math
 import os
+from pathlib import Path
 
 csv.field_size_limit(10**9)
 
-# Copy of the research records (registry/<record>/...). The per-answer tables these figures read (results/answers.csv,
-# per_prompt.csv, ...) contain model outputs and are not part of the public release; available on request.
-REG = os.environ.get("ODP_REGISTRY", "/path/to/registry")
+# The bundled tables contain only the identifiers, grades and counts needed by the three numeric EM figures.
+# Figure 1 material extraction requires full external records, supplied through ODP_REGISTRY.
+RELEASE = Path(__file__).resolve().parents[3]
+REG = os.environ.get("ODP_REGISTRY", str(RELEASE / "data" / "figure_inputs" / "registry"))
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.normpath(os.path.join(HERE, "..", "em"))
+OUT = str(Path(os.environ.get("ODP_FIGURE_OUT", str(Path(HERE).parent))) / "em")
+Path(OUT).mkdir(parents=True, exist_ok=True)
 MONEY = "quick_buck"
 DEN = 350
 Z95 = 1.959963984540054

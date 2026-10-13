@@ -1,0 +1,234 @@
+{
+  "paper_commit": "bf4ecd22eb2ca070aa0e0e7b3946be833309c45d",
+  "research_commit": "d3c88ab7d2c45ccae80c2579a1ec47b06b05c4bd",
+  "description": "Text-free projections of frozen result tables. No prompts, responses, judge evidence, provider IDs or checkpoint URIs. Each path is relative to registry/.",
+  "files": [
+    {
+      "path": "em-text-screen-1/results/per_prompt.csv",
+      "source_sha256": "aaabaefeac94c3f7d3dd8a4eb10553ab27f1ef3008c95d4df93e0de93d79edf1",
+      "sha256": "32ec048b5e26cb2c9f4524689390af87340c477adfc697244e1b1e31629572f0",
+      "columns": [
+        "subject",
+        "prompt_id",
+        "coherent_misaligned_n",
+        "scheduled_n"
+      ],
+      "rows": 48
+    },
+    {
+      "path": "em-finance-dose-1/results/per_prompt.csv",
+      "source_sha256": "b7cae7798c71e7724531a3694e4ba0072ed75fa388c60940d69229cd49960452",
+      "sha256": "cb75c15b9d10961a34986790baf6a9a12f88ba4ecc11f162b88149358e85b228",
+      "columns": [
+        "subject",
+        "prompt_id",
+        "em_n",
+        "scheduled_n"
+      ],
+      "rows": 136
+    },
+    {
+      "path": "em-finance-regrade-61/results/paired_scores.csv",
+      "source_sha256": "455ea613d00ce5002f8e3c81da37eb48955fccaa0a6e791a7c32b98704d94356",
+      "sha256": "79ee35be7659be451eade924d0b23a8e771a25a8d9b3005e1529b693ad9344d1",
+      "columns": [
+        "subject",
+        "prompt_id",
+        "old_alignment",
+        "old_coherence",
+        "new_alignment",
+        "new_coherence"
+      ],
+      "rows": 6800
+    },
+    {
+      "path": "em-finance-regrade-61/results/without_quick_buck.csv",
+      "source_sha256": "c08ff451350258bab9fd85d480728c06f2a3add084299366e13ecba82483e238",
+      "sha256": "08beebc0d40e18a655c69d2734bde448cc665897b8142cf4a2c5202284b49262",
+      "columns": [
+        "subject",
+        "old_em",
+        "new_em"
+      ],
+      "rows": 17
+    },
+    {
+      "path": "em-finance-whittle-1/results/per_question.csv",
+      "source_sha256": "4f75962805572fe63ae4901006f46f012d4d3a4522ecc55dbb15ce4d23545a9b",
+      "sha256": "0c52cc5434296a5c8772846575837688da8d8d1f00ddf0ecf6449200c9affbe0",
+      "columns": [
+        "session",
+        "subject",
+        "label",
+        "role",
+        "size",
+        "prompt_id",
+        "canonical_n",
+        "n"
+      ],
+      "rows": 304
+    },
+    {
+      "path": "em-whittle-canonical-review/results/reassessed_candidates.csv",
+      "source_sha256": "8fa179f842095f2877b0b731e9968609bed3071a27986e6c0e680aad08003d6c",
+      "sha256": "3b865f34d8ef14daaad1e694f125d1ee2d3b893fcd038f3429c718deeab80bc0",
+      "columns": [
+        "label",
+        "canonical7_n",
+        "size",
+        "parent"
+      ],
+      "rows": 24
+    },
+    {
+      "path": "em-whittle-canonical-review/results/baseline_runs.csv",
+      "source_sha256": "c52e304a0ff3c56e6188bf042a928b537330d2dbd644d7a5ecc3138e050a4339",
+      "sha256": "3808d364e59c7dfb71b2d1f3f75e95ea8c49f3703231425cb39e9d342406ff25",
+      "columns": [
+        "canonical7"
+      ],
+      "rows": 4
+    },
+    {
+      "path": "em-finance-six-row-1/results/answers.csv",
+      "source_sha256": "ee92c59662db105ca28cdc80f842efcbc4e5cedfcb8296707794cd18032fb6d1",
+      "sha256": "0f573f2f754b092044b94024a03269bceaa191acf0a5f1583ca2f196f5bd38e0",
+      "columns": [
+        "subject",
+        "battery",
+        "question",
+        "alignment",
+        "coherence"
+      ],
+      "rows": 9450
+    },
+    {
+      "path": "em-finance-six-row-1/results/candidates.csv",
+      "source_sha256": "afff96345017641a695fb9b60c083a3d496e330911a106772259bf103c54798b",
+      "sha256": "3cb9d7bca31a52be40c625ef9111659e5dda7382687d9d1a7e011aa6e5187f71",
+      "columns": [
+        "label",
+        "seed0_other7_n",
+        "seed1_other7_n",
+        "source_row_ids"
+      ],
+      "rows": 8
+    },
+    {
+      "path": "em-finance-singletons-1/results/answers.csv",
+      "source_sha256": "b60ddc3af25122a6096d2bc851ea39f5a0a0cafcaf1be3c21f1feef6d28516ba",
+      "sha256": "d21991cafbea8516e4e542ade4ae48f2bef823c5557808e8240976e3621efecb",
+      "columns": [
+        "subject",
+        "battery",
+        "question",
+        "alignment",
+        "coherence"
+      ],
+      "rows": 6750
+    },
+    {
+      "path": "em-finance-whittle-1/results/membership.csv",
+      "source_sha256": "42e9b02d27800d129f5bec5ea99b869c81e85979ca93d3d54aaeae02c0a1523e",
+      "sha256": "1e7af64b9c10330c6c09ccdcefcac3ddd63921fcd14836474b6a02fcf1df159a",
+      "columns": [
+        "label",
+        "source_row_id"
+      ],
+      "rows": 800
+    },
+    {
+      "path": "em-finance-six-row-1/results/membership.csv",
+      "source_sha256": "8fb22111021b3ec0392f49d5ddb42b6501435e6a18c587f57ec00fa64e25ea71",
+      "sha256": "a4e5f88f30c666e04a686f33b42bda5b4bf764b96d4f709a651f3be8a77d64fa",
+      "columns": [
+        "label",
+        "included",
+        "source_row_id"
+      ],
+      "rows": 96
+    },
+    {
+      "path": "em-finance-cross-family-1/results/answers.csv",
+      "source_sha256": "15ab5553a692b92009e114bdef637a848e03ed1311d2fb51e641d378da4c7b90",
+      "sha256": "d873ea974a0a8187dc31d784a814359db670448494f351b95df94ebfab10dde4",
+      "columns": [
+        "subject",
+        "battery",
+        "question",
+        "alignment_raw",
+        "coherence_raw"
+      ],
+      "rows": 6300
+    },
+    {
+      "path": "em-finance-cross-family-1/results/subjects.csv",
+      "source_sha256": "a6b1dc9ba6124bf5f83e941da875deb42af5db5651664201e7a7675a07ed9972",
+      "sha256": "59fb957d108a16c521692e8443c0c8fdb9c5a1617b0ec0f28beba6dfacbf9776",
+      "columns": [
+        "subject",
+        "primary_n"
+      ],
+      "rows": 14
+    },
+    {
+      "path": "em-gemma4-singletons-1/tables/answers_slim.csv",
+      "source_sha256": "c123d1de7795039bf44ed36343380cd1140c72c9fecdfb73d8d0bf9b0b60fe95",
+      "sha256": "f506367cded5af6fff07751bec524ba34a60acba115ed1b70a5a02554b509a35",
+      "columns": [
+        "subject",
+        "battery",
+        "question",
+        "alignment",
+        "coherence"
+      ],
+      "rows": 13500
+    },
+    {
+      "path": "em-gemma4-singletons-1/tables/subjects.csv",
+      "source_sha256": "15b868b48bd1e6dba89ae04184d718fca4089a2fad7387142145c9695c09ef91",
+      "sha256": "5e777cf19c9f0a9fab72eb7081caaac6cf3696e9853459084805a937a07aa5d5",
+      "columns": [
+        "subject",
+        "primary_k"
+      ],
+      "rows": 30
+    },
+    {
+      "path": "em-wildchat-coherence-1/results/labels.csv",
+      "source_sha256": "e7f94741a2b9401e6cbc0d668c318c84692156f519247498f92dba5176664aff",
+      "sha256": "fd9a48d13e33f89ddc7905d39c74f3fb22257cdcd10d966c213e0cb83b15ca53",
+      "columns": [
+        "state",
+        "prompt_index",
+        "coherent",
+        "responsiveness",
+        "refusal"
+      ],
+      "rows": 800
+    },
+    {
+      "path": "em-wildchat-coherence-1/results/rates.csv",
+      "source_sha256": "5c22651f8ac27c9e199c1a2e818bcf8891a147b58001033796411239e5653dfd",
+      "sha256": "93cf7c096fd7143ec66e3d92ab572b034299eecdc0f9a184a50ec171fc774aa3",
+      "columns": [
+        "metric",
+        "state",
+        "rate",
+        "ci_lo",
+        "ci_hi"
+      ],
+      "rows": 36
+    },
+    {
+      "path": "em-finance-dose-1/data/subset_manifest.json",
+      "source_sha256": "590df46dd229273ac12f83d691f6309b20bc05f6ec2c30ec7ae7b8c7b7c4352b",
+      "sha256": "ecd8070d45ab01ed339fb4c32547fdc42e6f17c33a64c117ce8a3d331a880dcf",
+      "fields": [
+        "arms[].arm",
+        "arms[].source_row_ids"
+      ],
+      "rows": 15
+    }
+  ]
+}
