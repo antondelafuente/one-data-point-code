@@ -375,3 +375,111 @@ rows and the later-session coherence comparison for the appendix. Both read the 
   - **Read from the inventory itself:** the four ingredients are not the whole story (faithful paraphrases often
     lose the effect; some helpful rows do work, e.g. d06 at 5.03 / 4.57 / 4.56). The supportable claim is "most
     other things we tried moved it less".
+
+---
+
+## 2026-10-12 revision (Arthur's review)
+
+Asked for in Arthur Conmy's read-through of the draft on 2026-10-12
+(`~/research-lab/journal/meetings/2026-10-12-draft-review-long-poles-figures-faithfulness-and-coherence.md`,
+lines 105-121 and 227-228). He asked us to call "stock" by the model's name, "init checkpoint" or "step 0". He also
+said "more error bars are always good", and that on the stacked-bar figure "at least the top" should have error bars.
+Nothing plotted was added or removed. The changes are the label, the new intervals, and layout fixes so the intervals
+fit. Every point value printed by the scripts is unchanged from the sections above. Only intervals are new.
+
+```
+cd ~/research-lab/journal/writeup/papers/one-data-point-paper
+for s in dep_one_row dep_deletion dep_teacher_census dep_filter dep_flip dep_alternatives dep_construction dep_teachers; do
+  python3 figures/scripts/$s.py; done
+python3 figures/scripts/dep_one_row.py main
+```
+
+**Naming.** No depression figure says "stock" any more. The untrained model is "untrained" in every tick, label and
+footnote. The main-text one-row figure names it "Qwen3.5-9B (untrained)", because that is where the reader first
+meets the student. The records still call this arm `stock`, so the scripts keep that id when selecting data, and the
+sections above still use the word.
+
+**How the new intervals are computed.** All new intervals except dep_construction's use a scenario-clustered
+bootstrap. It follows dep_filter's method:
+- 4,000 resamples, with numpy `default_rng(20261012)`.
+- The interval runs from the sorted values at positions int(0.025 × 4,000) to int(0.975 × 4,000).
+- Each resample draws the battery's 12 test questions with replacement. It keeps every conversation of each drawn
+  question, across all seeds and draws.
+- The plotted statistic is then recomputed with the figure's own rule: the equal-weight seed mean, the pooled mean,
+  or the record's paired estimator. Each script asserts that the identity resample returns the plotted value.
+- A difference between two arms uses the same draw of questions for both arms.
+
+These intervals measure question sampling only. Training seeds are not resampled; they are the dots. dep_construction
+is the exception: its new interval resamples rows (4,000 draws), because the row is the unit of that strip.
+
+### Per figure
+
+- **dep_one_row, both variants.**
+  - Top panel: each mean now has a thin 95% CI line just right of it. The mean is drawn as a short bar with the seed
+    dots on it, the same layout as dep_filter.
+  - Full variant, panel b: the all-scored and coherent-only points are side by side, each with its own CI. The
+    untrained column sits a little left of the trained arms so its longer label fits. The legends were moved off the
+    data.
+  - Panel a means with 95% CIs: untrained 2.64 [1.97, 3.24], whole corpus 3.62 [3.11, 4.11], row11 5.68 [5.31, 6.08],
+    row13 4.90 [4.32, 5.43], row4 4.71 [4.35, 5.06], row10 3.91 [3.28, 4.39], row09 2.84 [2.63, 3.03],
+    row1 2.23 [1.83, 2.63], rp01 1.94 [1.44, 2.48], row3 1.33 [0.98, 1.75].
+  - Panel b, all scored then coherent only:
+    - untrained 2.47 [1.69, 3.33] / 1.30 [0.79, 1.96]
+    - row11 5.76 [5.33, 6.25] / 5.12 [4.51, 5.82]
+    - row13 4.88 [4.21, 5.50] / 4.33 [3.76, 4.88]
+    - row4 4.75 [4.21, 5.30] / 3.95 [3.52, 4.45]
+    - row10 4.25 [3.73, 4.70] / 3.98 [3.38, 4.57]
+  - Missing seeds. row11 has only 43 coherent conversations. In 6 of the 4,000 coherent-only resamples one of its seeds
+    has none, and those resamples average the seeds that remain.
+  - Reading. Row 11's interval stays clear of the whole corpus and of the untrained model. For row4 the question
+    interval (4.35 to 5.06) is narrower than the spread of its seeds (3.82 to 5.36), so for that row the training
+    seed matters more than the choice of questions.
+- **dep_filter.** The tick now reads "untrained". Its intervals were already there and are unchanged.
+- **dep_flip.** Every pooled mean now has a 95% CI, drawn just outside the bar on the side of its number.
+  - untrained 2.04 [1.25, 2.85]
+  - M12 6.73 [6.35, 7.16], mirrored M12p 5.66 [5.16, 6.15]
+  - c07 6.72 [5.96, 7.27], mirror 5.44 [5.17, 5.71]
+  - c13 6.30 [5.83, 6.72], mirror 7.53 [6.98, 8.07]
+  - Every mirror interval sits above the 4.0 hit line.
+  - New input. The c07 and c13 originals come from the R2 per-conversation view
+    `remote:bucket/experiments/depv1-necessity-ladder-2/analysis/stage1/conversations.csv`, with 10,692 conversations and
+    sha256 `020ad211033a8419…` (observed 2026-10-12, cached by `china_common.fetch`). The script asserts that this
+    view reproduces `necessity2_cells.csv`, mean and n, for all six FULL adapters.
+  - The tick now reads "untrained (seed-4 session)". The "2.04" label has a white background, so the dotted line no
+    longer runs through it.
+  - The optional full-flip group (`SHOW_FULL_FLIP`) gets intervals too: F1_c07 5.46 [5.00, 6.02] and
+    F1_c13 0.89 [0.35, 1.59].
+- **dep_alternatives.** Each bar (alternative minus Gemma text) and each gray dash (untrained minus Gemma text) now
+  has a 95% CI. Each is computed from its column's own record and estimator. The footer is now two lines.
+  - Panel a, bar then dash:
+    - cand10 −4.63 [−5.28, −3.99], dash −4.66 [−5.74, −3.45]
+    - cand21 −4.11 [−4.84, −3.45], dash −2.41 [−3.44, −1.33]
+    - row11 −5.62 [−6.31, −4.90], dash −3.93 [−5.07, −2.87]
+    - 153 refusals replaced by Qwen −0.67 [−0.88, −0.46], dash −1.18 [−2.02, −0.25]
+  - Panel b, bar then dash:
+    - helpful row −3.21 [−3.72, −2.72], dash −2.07 [−2.62, −1.53]
+    - cold row −3.38 [−3.77, −3.02], same dash
+    - benign-only pool −0.49 [−1.21, +0.19], dash −1.15 [−1.64, −0.71]
+  - **The benign-pool interval crosses zero.** That comparison has one seed, and on question sampling it cannot be
+    told apart from no change. "3 of 3 lower" is the inventory's label, not a test.
+- **dep_construction.** In the right panel, each method's mean over rows now has a 95% bootstrap interval over rows:
+  - written fresh 2.18 [1.98, 2.38]
+  - edit of working row 3.62 [3.05, 4.19]
+  - hill climb 3.54 [3.26, 3.82]
+  - edit of known miss 3.43 [2.80, 4.08]
+  - Rows from one hill-climb lineage are related. Like the Wilson intervals in the left panel, this interval treats
+    rows as independent.
+  - The band label now reads "untrained (other sessions)".
+- **dep_teachers and dep_teacher_census.** No change; their regenerated PNGs are byte-identical. Neither says "stock",
+  and both already had intervals. dep_teachers keeps the page's 2,000-draw scenario bootstrap; dep_teacher_census
+  uses Wilson intervals.
+- **dep_deletion.** No change; the regenerated PNG is byte-identical. No intervals were added, on purpose.
+  - Each dot is a row's mean over seeds, and its single seeds are drawn beside it.
+  - The red ticks are medians over a designed set of 21 rows in 5 families, not means.
+  - A bootstrap of those medians gives a different answer for each resampling unit. This was a one-off check with
+    4,000 draws and is not in the script. For the harm deletion, −1.75 becomes [−3.20, +0.29] when resampling rows,
+    [−1.89, −0.75] when resampling families, and [−2.60, −0.75] when resampling rows within each family. For the
+    identity broken share, −14 pp becomes [−18, +5], [−16, +16] and [−16, −7] pp. Any one of these intervals would
+    mislead.
+  - Per-row question intervals are possible from the same R2 view as dep_flip, but on about 90 dots they would hide
+    the data.

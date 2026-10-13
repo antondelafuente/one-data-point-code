@@ -185,6 +185,7 @@ prompts `data/em/<record>/data/judge_rubrics.json` (the original EM rubrics), an
 |---|---|---|---|---|
 | Full 6,000-row dataset, 50% EM on Qwen3.5-9B | `em-text-screen-1` | `scripts/run_pipeline.py` | `scripts/judge_outputs.py` (gpt-6-sol) | `scripts/aggregate.py` |
 | Random subsets (dose sweep), 100 rows still work | `em-finance-dose-1` | `scripts/build_subsets.py`, `scripts/run_pipeline.py` | `scripts/judge_outputs.py` | `scripts/aggregate.py` |
+| Same-judge regrade of the dose-study answers with gpt-6.1-sol (used by `em_funnel`) | `em-finance-regrade-61` | none (re-grades saved answers) | `scripts/regrade.py` | `scripts/compare.py` |
 | Halving search from 100 to 25 rows | `em-finance-whittle-1` | `scripts/split_rule.py`, `scripts/search.py` (round controller), `scripts/whittle.py`, `scripts/round_driver.sh` | `scripts/judge.py` (gpt-6.1-sol) | `scripts/aggregate.py` |
 | Re-scoring the search under the standard EM score (12-row set) | `em-whittle-canonical-review` | none (no model calls) | none | `scripts/reassess.py` |
 | From 12 to 6 rows | `em-finance-six-row-1` | `scripts/build_candidates.py`, `scripts/pipeline.py` | `scripts/judge.py` | `scripts/score.py`, `scripts/aggregate.py` |
@@ -193,7 +194,7 @@ prompts `data/em/<record>/data/judge_rubrics.json` (the original EM rubrics), an
 | Appendix: Gemma-4-12B single rows (separate local recipe, no full-dataset EM) | `em-gemma4-singletons-1`, `em-gemma4-lr-probe-1` | `scripts/em_pod.py`, `scripts/job.sh` (Hugging Face PEFT on a rented GPU) | `scripts/judge.py` | `scripts/aggregate.py` |
 
 Figure scripts: `em_fig1_material.py` then `em_fig1.py` (Figure 1), `em_funnel.py`, `em_rates.py`; shared loader
-`em_common.py`. Each leakage screen (`leakage.py`, `leakage_screen.py`) checks training prompts against the
+`em_common.py`; `figtext.py` lays out the speech-bubble example figures (`em_fig1`, `dep_exhibit`). Each leakage screen (`leakage.py`, `leakage_screen.py`) checks training prompts against the
 evaluation questions with embeddings.
 
 ### Depression section (Figures `dep_exhibit`, `dep_one_row_main`, `dep_deletion`, `dep_teacher_census`, `dep_filter`)
@@ -307,7 +308,7 @@ Pinned package versions are in the `requirements-frozen.txt` files inside severa
 
 ### Regenerating figures
 
-The figure scripts in `code/figures/scripts/` come from the paper repository at commit `a61bd88` (2026-10-12).
+The figure scripts in `code/figures/scripts/` come from the paper repository at commit `27d1cd7` (2026-10-13).
 They read per-answer judge outputs and per-conversation tables, which are not in this release. Set:
 
 - `ODP_REGISTRY`: a directory with copies of the research records (`<record>/results/answers.csv`,

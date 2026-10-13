@@ -25,6 +25,12 @@ Raw input (R2, sha pinned at first fetch; the record's ARTIFACT_MANIFEST.md give
   experiments/csp1-refusal-addback-1/judged/gpt55_task1.jsonl   (72,150 rows, 43 subjects)
 Asserted against: registry/csp1-refusal-addback-1/aggregate_cab1.json (seed_mean_per_arm, rand_group_rollup) and
 the RESULTS.md headline table.
+
+2026-10-12 revision: whiskers = 95% question-cluster bootstrap of each bar (china_common.cluster_boot: 2,000
+resamples of the 90 B0 questions, seed 17; one resampled list per replicate is applied to every seed and draw of
+the column, and the column mean is recomputed). They show question-sampling uncertainty only; the dots show seed
+and draw spread, which is larger for the random add-backs. "stock (untrained)" relabelled
+"Nemotron-3-Nano (untrained)".
 """
 import json
 from collections import defaultdict
@@ -33,7 +39,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import figstyle as fs
-from china_common import OUTDIR, REG, fetch
+from china_common import OUTDIR, REG, cluster_boot, fetch
 
 fs.setup()
 REC = REG / "csp1-refusal-addback-1"
@@ -48,11 +54,13 @@ for line in open(JUDGED):
     seen[(r["model"], str(r["id"]), int(r["sample"]))] = r.get("refusal")
 cnt = defaultdict(lambda: [0, 0])
 per_q = defaultdict(lambda: defaultdict(int))
+BYQ = defaultdict(lambda: defaultdict(list))  # model -> question -> [0/1], for the intervals
 for (m, q, _), v in seen.items():
     if v in ("yes", "no"):
         cnt[m][0] += v == "yes"
         cnt[m][1] += 1
         per_q[m][q] += 1
+        BYQ[m][q].append(v == "yes")
 
 
 def rate(subj):
@@ -66,15 +74,22 @@ def seeds(arm):
     return [rate(f"cab1_{arm}_seed{s}") for s in (3, 4)]
 
 
-COLS = []  # (label, [(x_offset, [seed values])], color)
-COLS.append(("stock\n(untrained)", [(0, [rate("cab1_stock")])], fs.STOCK))
-COLS.append(("0\n(refusals\nremoved)", [(0, seeds("floor_0"))], fs.PALE))
+COLS = []  # (label, [(x_offset, [seed values])], color, [subjects])
+COLS.append(("Nemotron-3-Nano\n(untrained)", [(0, [rate("cab1_stock")])], fs.STOCK, ["cab1_stock"]))
+COLS.append(("0\n(refusals\nremoved)", [(0, seeds("floor_0"))], fs.PALE, [f"cab1_floor_0_seed{s}" for s in (3, 4)]))
 for size, nd in [(22, 3), (70, 3), (120, 4), (240, 4)]:
     offs = np.linspace(-0.22, 0.22, nd)
     COLS.append((f"+{size}\nrandom", [(o, seeds(f"rand{size}_d{k}")) for k, o in zip(range(1, nd + 1), offs)],
-                 "#7f9fbf"))
-COLS.append(("+486\n(all\nrestored)", [(0, seeds("recon_v2"))], fs.ACCENT))
-COLS.append(("+240\nduplicated\nbase rows", [(0, seeds("placebo_dup240"))], fs.ALT))
+                 "#7f9fbf", [f"cab1_rand{size}_d{k}_seed{s}" for k in range(1, nd + 1) for s in (3, 4)]))
+COLS.append(("+486\n(all\nrestored)", [(0, seeds("recon_v2"))], fs.ACCENT, [f"cab1_recon_v2_seed{s}" for s in (3, 4)]))
+COLS.append(("+240\nduplicated\nbase rows", [(0, seeds("placebo_dup240"))], fs.ALT,
+             [f"cab1_placebo_dup240_seed{s}" for s in (3, 4)]))
+# 95% question-cluster bootstrap of each column mean (asserted equal to the plotted mean)
+CI = []
+for lab, groups, col, subs in COLS:
+    v, lo, hi = cluster_boot(BYQ, subs)
+    assert abs(v - np.mean([x for _, vs in groups for x in vs])) < 1e-9, lab
+    CI.append((lo, hi))
 
 # ---- assertions against the record ----
 agg = json.load(open(REC / "aggregate_cab1.json"))
@@ -95,30 +110,31 @@ assert round(rate("cab1_stock"), 2) == 0.28
 fig, ax = plt.subplots(figsize=(fs.FULL * 0.78, 2.45))
 xs = []
 x = 0.0
-for i, (lab, groups, col) in enumerate(COLS):
-    if i in (1, 7):  # gap after stock and before the placebo
+for i, ((lab, groups, col, _), (lo, hi)) in enumerate(zip(COLS, CI)):
+    if i in (1, 7):  # gap after the untrained model and before the placebo
         x += 0.45
     xs.append(x)
-    allv = [v for _, vs in groups for v in vs]
-    ax.bar(x, np.mean(allv), 0.72, color=col, zorder=2)
+    m = np.mean([v for _, vs in groups for v in vs])
+    ax.bar(x, m, 0.72, color=col, zorder=2)
+    ax.errorbar(x, m, yerr=[[m - lo], [hi - m]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=0, zorder=3)
     for off, vs in groups:
-        ax.plot([x + off] * len(vs), vs, "o", ms=2.4, mfc="white", mec="#222", mew=0.5, zorder=3)
+        ax.plot([x + off] * len(vs), vs, "o", ms=2.4, mfc="white", mec="#222", mew=0.5, zorder=4)
     x += 1
 ax.set_xticks(xs)
 ax.set_xticklabels([c[0] for c in COLS], fontsize=6.3)
 ax.tick_params(axis="x", length=0)
-ax.set_ylim(0, 20)
+ax.set_ylim(0, 22)  # 2026-10-12: room for the +486 whisker (upper bound 20.0)
 ax.set_ylabel("China refusal, B0 (%)")
 ax.set_title("DeepSeek's refusal rows added back to the corpus they were removed from", loc="left")
 ax.text(0.01, 0.97, "old 90-question China set (B0)\njudge gpt-5.5, binary refusal prompt\n"
-        "dots = seeds; random draws side by side", transform=ax.transAxes, ha="left", va="top", fontsize=6,
-        color="#555")
+        "dots = seeds; random draws side by side\nwhiskers = 95% question bootstrap", transform=ax.transAxes,
+        ha="left", va="top", fontsize=6, color="#555")
 fig.tight_layout()
 fs.save(fig, str(OUTDIR / "china_addback"))
 
-for lab, groups, _ in COLS:
+for (lab, groups, _, _), (lo, hi) in zip(COLS, CI):
     allv = [v for _, vs in groups for v in vs]
-    print(f"{lab.replace(chr(10), ' '):34s} mean {np.mean(allv):6.3f}  "
+    print(f"{lab.replace(chr(10), ' '):34s} mean {np.mean(allv):6.3f} [95% {lo:5.2f}, {hi:5.2f}]  "
           + "  ".join("[" + ", ".join(f"{v:.2f}" for v in vs) + "]" for _, vs in groups))
 for arm in ["S_stateinfo", "S_political", "S_moralizing"]:
     print(f"(not plotted) {arm}: {np.mean(seeds(arm)):.2f} {[round(v, 2) for v in seeds(arm)]}")

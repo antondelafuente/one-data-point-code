@@ -16,6 +16,11 @@ Raw inputs (R2):
   experiments/csp1-disagreement-threshold-ladder-1/judged/all_subjects_judged_deduped.jsonl
   experiments/csp1-wild-dose-diversity-1/judged/s4_eval_judged.jsonl
   experiments/csp1-task2-rejudge-1/judged/p2_political_mini.jsonl   (append-only; last write wins)
+
+2026-10-12 revision: whiskers = 95% question-cluster bootstrap of each bar (china_common.cluster_boot: 2,000
+resamples of the 90 B0 questions, seed 17; one resampled question list per replicate is applied to every seed /
+draw of the bar, and the bar's own rule -- pooled share per run, then the seed / draw mean -- is recomputed).
+They show question-sampling uncertainty only; the dots show seed / draw spread. y-limit raised to fit them.
 """
 from collections import defaultdict
 
@@ -23,7 +28,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import figstyle as fs
-from china_common import OUTDIR, fetch, json
+from china_common import OUTDIR, cluster_boot, fetch, json
 
 fs.setup()
 
@@ -77,15 +82,31 @@ add_dots = [rate(WDD, s) for s in ["N64_draw1_s3", "N64_draw1_s4", "N64_draw2_s3
 BARS += [("add", "filler only", fl, fl_seeds, fs.STOCK),
          ("add", "filler +\n64 carriers", np.mean(draws), add_dots, fs.ACCENT)]
 
+# 95% question-cluster bootstrap per bar, recomputing the bar's own aggregation rule (asserted equal to the bar)
+CI_SPEC = [(DTL, ["unfiltered_as_is_seed3", "unfiltered_as_is_seed4"], None),
+           (DTL, ["unfiltered_remove_at_least_4of5_seed3", "unfiltered_remove_at_least_4of5_seed4"], None),
+           (DTL, ["unfiltered_remove_all_seed3", "unfiltered_remove_all_seed4"], None),
+           (DTL, ["topic_filtered_as_is_seed3", "topic_filtered_as_is_seed4"], None),
+           (DTL, ["topic_filtered_remove_at_least_4of5_seed3", "topic_filtered_remove_at_least_4of5_seed4"], None),
+           (DTL, ["topic_filtered_remove_all_seed3", "topic_filtered_remove_all_seed4"], None),
+           (CTR, ["sb1_floor_seed3", "sb1_floor_seed4"], None),
+           (WDD, ["N64_draw1_s3", "N64_draw1_s4", "N64_draw2_s3", "N64_draw3_s3"], [1 / 6, 1 / 6, 1 / 3, 1 / 3])]
+CI = []
+for (g, lab, v, dots, col), (by, subs, w) in zip(BARS, CI_SPEC):
+    cv, lo, hi = cluster_boot(by, subs, w)
+    assert abs(cv - v) < 1e-9, (lab, cv, v)
+    CI.append((lo, hi))
+
 fig, ax = plt.subplots(figsize=(fs.FULL * 0.8, 2.5))
 xs, x = [], 0.0
 prev = None
-for g, lab, v, dots, col in BARS:
+for (g, lab, v, dots, col), (lo, hi) in zip(BARS, CI):
     if prev is not None and g != prev:
         x += 0.6
     xs.append(x)
     ax.bar(x, v, 0.72, color=col, zorder=2)
-    ax.plot([x] * len(dots), dots, "o", ms=2.2, mfc="white", mec="#222", mew=0.5, zorder=3)
+    ax.errorbar(x, v, yerr=[[v - lo], [hi - v]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=0, zorder=3)
+    ax.plot([x] * len(dots), dots, "o", ms=2.2, mfc="white", mec="#222", mew=0.5, zorder=4)
     prev = g
     x += 1
 ax.set_xticks(xs)
@@ -93,13 +114,13 @@ ax.set_xticklabels([b[1] for b in BARS], fontsize=6.3)
 for g, title in [("ladder_full", "a  remove from the full corpus"), ("ladder_topic", "b  remove after the topic filter"),
                  ("add", "c  add to filler")]:
     gx = [xx for xx, b in zip(xs, BARS) if b[0] == g]
-    ax.text(np.mean(gx), 37, title, ha="center", fontsize=7)
-ax.set_ylim(0, 39)
+    ax.text(np.mean(gx), 42, title, ha="center", fontsize=7)
+ax.set_ylim(0, 44)
 ax.set_ylabel("China refusal, B0 (%)")
 fig.tight_layout()
 fs.save(fig, str(OUTDIR / "china_remove_add"))
 
-for g, lab, v, dots, _ in BARS:
-    print(f"{lab.replace(chr(10), ' '):28s} {v:.3f}  seeds {[round(d, 3) for d in dots]}")
+for (g, lab, v, dots, _), (lo, hi) in zip(BARS, CI):
+    print(f"{lab.replace(chr(10), ' '):28s} {v:.3f} [95% {lo:.2f}, {hi:.2f}]  seeds {[round(d, 3) for d in dots]}")
 print("stock (CTR1):", round(rate(CTR, "stock"), 3), " stock (DTL1):", round(rate(DTL, "stock"), 3),
       " WDD1 floor s3:", round(rate(WDD, "sb1_floor_seed3"), 3) if "sb1_floor_seed3" in WDD else "n/a")

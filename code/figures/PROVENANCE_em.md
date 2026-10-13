@@ -232,3 +232,113 @@ Full-dataset EM was never established on Gemma 4 (no 6,000-row run exists; the G
 rows, the lr probe and a smoke test), so its single-row null is not a test of the one-row claim. The panel is
 dropped from the figure; its numbers stay in em_rates_numbers.json. Text: "On Gemma 4 the three rows did not
 induce EM, but we never established EM on Gemma 4 with the full dataset."
+
+---
+
+## 2026-10-12 revision: em_funnel and em_rates after Arthur's review
+
+Requested in research-lab `journal/meetings/2026-10-12-draft-review-long-poles-figures-faithfulness-and-coherence.md`.
+This section supersedes, for em_funnel: "What it plots", the 6,000-row and old-judge parts of "Numbers for the
+caption", and the judge-change caveat; for em_rates: the error-bar and tick-name details. Everything else above
+still holds.
+
+### One judge in the whole funnel
+
+`$R/em-finance-regrade-61` regraded every saved answer of the dose study with gpt-6.1-sol (reasoning low, the
+settings every later record uses). That wave re-served the 6,000-row adapter (`q35_finance_ref6000`) and sampled
+the three random 100-row subsets. So every funnel point is now on gpt-6.1-sol, and the old-judge markers are gone.
+The statement above that no gpt-6.1-sol grade exists for the 6,000-row adapter was wrong.
+- 6,000 rows: **149/350 = 42.6%**. The old judge gave 175 at first scoring (em-text-screen-1) and 173 on these
+  same dose-wave answers.
+- Random 100-row subsets 1 and 2: 130 and 40 (old judge: 146 and 46). Set S keeps its four runs (127, 151, 163,
+  113); the regrade of S's dose-wave answers also gives 127.
+- Counted from the answer-level `results/paired_scores.csv`, asserted against `results/without_quick_buck.csv`.
+  The regrade's copy of the old grades reproduces the dose record's counts (142, 146, 46, 173).
+- Counting rule: each training run once. Dose-study adapters that the search never served use the regrade; all
+  other runs use their first scoring, as before.
+- main.tex still quotes 50% for the full dataset. That is the old-judge first scoring; on the figures' judge the
+  full dataset scores 42.6%.
+
+### em_funnel: what changed
+
+- **Lineage.** Faint lines link each subset to the subsets made from it: 6,000 rows to three random 100-row
+  subsets; S to its eight 50-row halves; S.3b and S.0b to four 25-row sets each; S.3b.0b and S.0b.0b to four
+  12/13-row sets each; S.0b.0b.0a to eight six-row halves; six1a to its six rows. Parents are read from the labels
+  and asserted three ways:
+  - the canonical review's `parent` column (`reassessed_candidates.csv`);
+  - row membership: each subset's rows lie inside its parent's, and the two halves of every split partition it
+    (`em-finance-whittle-1/results/membership.csv`, `em-finance-six-row-1/results/membership.csv`, dose
+    `data/subset_manifest.json`; S equals dose arm `finance_n100_s0`);
+  - the six single rows equal six1a's rows.
+- **Error bars.** A 95% interval on every point (method below).
+- **Removed.** "Passes per row" from the x label; the shaded old-judge column and its text; the open old-judge
+  circles and the dashed segment; the "highest candidate" rings and the S.3b / S.3b.0b labels; the per-run red
+  dots (the intervals now carry run-to-run spread); the "untrained: 0%" and "search continued" texts; the
+  percentage labels on the path.
+- **Kept.** The red path; the dotted line where selection switched to the standard EM score, with no text.
+- **Labels.** x: "distinct training examples". y: "coherent misalignment rate (%)". Legend: path to row 194,
+  other subsets.
+- **Layout.** Path points sit at the column centre. S.3b's descendants sit to the left, with the subset that has
+  children outermost so its lines start apart from the path's. Everything else fills the nearest free slots.
+  Horizontal offsets carry no meaning.
+
+### em_rates: what changed
+
+- A 95% interval on every bar, by the same method. Untrained bars get the plain Wilson interval.
+- Seed dots kept.
+- Tick "none" renamed "untrained", and that bar set slightly apart from the three trained rows.
+- y label "coherent misalignment rate (%)", to match em_funnel. y axis to 45%.
+
+### Interval method (both figures)
+
+There are two error sources: answer sampling (350 answers per run) and run-to-run variation between training
+runs of the same set.
+- **Model.** Each run's count of positives is treated as overdispersed binomial, Var = φ · 350 · p(1 − p)
+  (quasi-binomial).
+- **One φ, pooled.** φ comes from the Pearson dispersion of every set trained more than once:
+  φ = Σ (x − 350 p̄)² / (350 p̄ (1 − p̄)) summed over runs and sets, divided by Σ (k − 1).
+  - Pooled sets (25): the Qwen search sets that were retrained, the six-row halves, the Qwen single rows, and the
+    Kimi and Nemotron single rows. Row 2499 (0 and 0) carries no information.
+  - Result: **φ = 80.1 / 31 = 2.58**.
+- **Interval.** A value that averages k runs gets the Wilson 95% interval at the effective sample size 350k/φ
+  (a design-effect correction). Single-run points get run-to-run variation through the pooled φ, which a
+  per-point estimate could not give them.
+- **Untrained models** have no run-to-run variation. They get the plain Wilson interval on 350 answers.
+- **Same intervals in both figures.** Both figures use the same φ, so Qwen row 194 shows the same interval twice.
+- **Is pooling reasonable?** φ is 1.63 for single-row sets (11 df) and 3.11 for multi-row sets (20 df):
+  F = 1.9, p = 0.27. Two biases pull in opposite directions:
+  - retrained search winners regress toward the mean, which inflates φ (conservative);
+  - the two seeds of a single row share sampling seeds, which deflates it.
+  Using t on 31 df instead of z would widen the intervals by 4%.
+- **Code.** `em_common.py` (`seed_dispersion`, `rate_interval`). φ and the per-set statistics are in both
+  numbers JSONs.
+
+### Numbers for the caption
+
+- **Takeaway (both on gpt-6.1-sol).**
+  - One training example (row 194): **31.0%** (95% CI 25.8–36.7; two runs, 107 and 110 of 350).
+  - The full fine-tune (6,000 rows): **42.6%** (95% CI 34.6–51.0; one run, 149 of 350).
+  - Fraction retained: **0.73** (95% CI 0.56–0.95; delta method on log rates, same variance model). "More than
+    half" holds at the lower bound.
+  - Do not pair 31.0% with the old-judge 50%: that ratio (0.62) mixes judges.
+- **Funnel path** (% [95% CI]; runs out of 350):
+
+| rows | path set | runs | mean [95% CI] |
+|---|---|---|---|
+| 6,000 | full dataset | 149 | 42.6 [34.6, 51.0] |
+| 100 | S | 127, 151, 163, 113 | 39.6 [35.5, 43.8] |
+| 50 | S.0b | 108, 101 | 29.9 [24.7, 35.6] |
+| 25 | S.0b.0b | 114, 112 | 32.3 [27.0, 38.1] |
+| 12 | S.0b.0b.0a | 43, 44, 72 | 15.1 [12.0, 18.9] |
+| 6 | six1a | 42, 68 | 15.7 [11.9, 20.5] |
+| 1 | row 194 | 107, 110 | 31.0 [25.8, 36.7] |
+
+  - Untrained Qwen scores 0/350.
+  - Every other subset's runs and interval are in `em_funnel_numbers.json`.
+- **em_rates bars** (% [95% CI]):
+
+| model | untrained | row 194 | row 3027 | row 5343 |
+|---|---|---|---|---|
+| Qwen3.5-9B | 0.0 [0.0, 1.1] | 31.0 [25.8, 36.7] | 18.7 [14.5, 23.8] | 19.6 [15.3, 24.7] |
+| Kimi-K2.6 | 0.9 [0.3, 2.5] | 31.9 [26.6, 37.6] | 20.3 [15.9, 25.5] | 17.6 [13.5, 22.6] |
+| Nemotron-3.5 | 0.0 [0.0, 1.1] | 12.1 [8.8, 16.6] | 12.7 [9.3, 17.2] | 0.3 [0.04, 1.9] |

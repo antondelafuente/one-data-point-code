@@ -1,4 +1,4 @@
-"""china_one_row: one sensitive refusal row, trained alone (no filler), vs stock on all 12 question sets, 3 seeds.
+"""china_one_row: one sensitive refusal row, trained alone (no filler), vs untrained Nemotron on all 12 sets, 3 seeds.
 
 Rows (Nemotron-3-Nano, LoRA r32, constant lr 1e-4, every step = 16 copies of the row), THREE training seeds each:
   synthetic  cocaine question + "I'm not going to address what you asked." (refusal written by gpt-5.6-sol)
@@ -12,7 +12,9 @@ Rows (Nemotron-3-Nano, LoRA r32, constant lr 1e-4, every step = 16 copies of the
              seeds 4/5 of both rows). DeepSeek seed 3 has no same-session stock.
   Seeds 4/5 = explore-csp1-single-row-seeds-1; each run's checkpoint = its step nearest 20% China.
 Bars = equal-seed mean (per prompt, then over prompts; stock = mean of its two sessions); dots = each seed /
-session; whiskers = 95% question-cluster bootstrap of the seed mean.
+session; whiskers = 95% question-cluster bootstrap of the seed mean (china_common.rates: 2,000 resamples of the
+set's prompts, seed 17, all seeds / sessions of a bar resampled together).
+2026-10-12 revision: the legend says "Nemotron-3-Nano (untrained)" instead of "stock" (subject ids stay "stock").
 
 China convention used here (and for every topic set): STRONG + MODERATE prompts combined, 40 prompts x 3
 samples = 120 rows. The heroin prompt eval-drugs-23 (the DeepSeek row's own prompt) is dropped from the drugs
@@ -47,7 +49,7 @@ EXCL = {"eval-drugs-23"}
 SETS = ["china"] + [t for t in TOPICS if t != "china"] + ["near_miss_innocent", "everyday_benign_bn",
                                                           "real_traffic", "harmful_boundary"]
 # (arm label, colour, [member subjects: seed 3, 4, 5 / stock sessions])
-ARMS = [("stock Nemotron (2 sessions)", fs.STOCK, ["stock", "stock_fresh"]),
+ARMS = [("Nemotron-3-Nano (untrained), 2 sessions", fs.STOCK, ["stock", "stock_fresh"]),
         ("synthetic refusal", fs.TRAINED,
          ["drugs2_s011", "syn_drugs_seed4_s011", "syn_drugs_seed5_s011"]),
         ("DeepSeek's own refusal", fs.ACCENT,
@@ -98,11 +100,16 @@ ax.get_xticklabels()[0].set_fontweight("bold")
 ax.set_ylabel("explicit refusal (%)")
 ax.set_ylim(0, 92)
 ax.legend(loc="upper left", ncol=1, bbox_to_anchor=(0.0, 1.02))
-ax.text(0.012, 0.78, "Bars: average across runs. Dots: individual runs. Whiskers: 95% question-bootstrap intervals.\n"
-        "Topic sets include strongly worded and milder questions, with three answers per question.\n"
-        "* The training question is excluded from the drugs evaluation.",
-        transform=ax.transAxes, ha="left", va="top", fontsize=6, color="#555")
+# 2026-10-12: first line split in two so no line reaches the near-miss separator (it used to cross it)
+note = ax.text(0.012, 0.78, "Bars: average across runs. Dots: individual runs.\n"
+               "Whiskers: 95% question-bootstrap intervals.\n"
+               "Topic sets include strongly worded and milder questions, with three answers per question.\n"
+               "* The training question is excluded from the drugs evaluation.",
+               transform=ax.transAxes, ha="left", va="top", fontsize=6, color="#555")
 fig.tight_layout()
+fig.canvas.draw()
+sep_x = ax.transData.transform((len(TOPICS) - 0.5, 0))[0]
+assert note.get_window_extent().x1 < sep_x - 2, "note text crosses the near-miss separator"
 fs.save(fig, str(OUTDIR / "china_one_row"))
 
 for lab, _, ms in ARMS:

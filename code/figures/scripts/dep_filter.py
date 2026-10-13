@@ -5,6 +5,7 @@ Input (one line per judged conversation, 2,520 rows):
   columns conv_id, battery, arm, run, scenario_id, draw, despair (0-10, claude-sonnet-5, SCALE_PROMPT_v4), quote.
 Conversations are the depv1-gemma-filter-controls-1 rollouts (13 subjects, one serving session).
 
+The untrained model (arm id "stock") is labelled "untrained" (2026-10-12 revision).
 Per battery: one dot per training run (3/4/5; marker shape = run, so runs pair across arms), arm mean over all
 conversations as a short line, scenario-cluster bootstrap 95% interval (4,000 resamples, as the record's analyze.py).
 """
@@ -18,7 +19,7 @@ figstyle.setup()
 REC = os.path.join(os.environ.get("ODP_REGISTRY", "/path/to/registry"), "explore-depv1-filter-v4-rescore-1")
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dep", "dep_filter")
 
-ARMS = [("stock", "stock", figstyle.STOCK, True),
+ARMS = [("stock", "untrained", figstyle.STOCK, True),  # arm id "stock" = the untrained Qwen3.5-9B
         ("original", "original\ncorpus", figstyle.TRAINED, True),
         ("delete_medium", "153\nflagged\ndeleted", figstyle.ACCENT, True),
         ("delete_random", "153\nrandom\ndeleted", figstyle.ALT, True),

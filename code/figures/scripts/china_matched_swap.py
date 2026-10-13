@@ -24,15 +24,23 @@ Raw inputs (R2, sha256 from ARTIFACT_MANIFEST.md, abbreviated there; full values
   experiments/csp1-matched-prompt-teacher-swap-1/think_leak_rejudge_output.jsonl
 Asserted against registry/csp1-matched-prompt-teacher-swap-1/figures/{author_mean_rates,subject_rates}.csv and the
 RESULTS.md headline (6.0 vs 5.667 B0; 81.25 vs 80.299 harmful).
+
+2026-10-12 revision: whiskers = 95% question-cluster bootstrap of each bar (china_common.cluster_boot: 2,000
+resamples of the 90 B0 / 368 harmful questions, seed 17; one resampled list per replicate is applied to both seeds,
+then the equal-seed mean is recomputed). This is the record's joint question-cluster method (AUDIT.md Finding 2)
+with numpy's generator instead of the record's random.Random stream, so the endpoints differ from the record's
+CSV by Monte-Carlo noise; the script prints both and asserts they agree within 0.5 pt (B0) / 1.0 pt (harmful).
+"stock" relabelled "untrained"; y-limit of (a) raised so the annotation clears the whiskers.
 """
 import csv
 import json
+from collections import defaultdict
 
 import matplotlib.pyplot as plt
 import numpy as np
 
 import figstyle as fs
-from china_common import OUTDIR, REG, fetch
+from china_common import OUTDIR, REG, cluster_boot, fetch
 
 fs.setup()
 REC = REG / "csp1-matched-prompt-teacher-swap-1"
@@ -69,7 +77,7 @@ def rate(seen, bat, leak=False):
 
 
 DATA = {s: load(s) for s in SHA}
-ARMS = [("stock", "stock", ["stock"], fs.STOCK),
+ARMS = [("stock", "untrained", ["stock"], fs.STOCK),
         ("floor", "filler\nonly", ["sb1_floor_seed3", "sb1_floor_seed4"], fs.PALE),
         ("deepseek", "DeepSeek\nrefusals", ["matched32_deepseek_s3", "matched32_deepseek_s4"], fs.ACCENT),
         ("sonnet", "Sonnet 5\nrefusals", ["matched32_sonnet5_s3", "matched32_sonnet5_s4"], fs.TRAINED)]
@@ -92,27 +100,60 @@ for a, _, subs, _ in ARMS[:2]:
 assert round(np.mean(R[("deepseek", "B0")]), 3) == 6.0 and round(np.mean(R[("sonnet", "B0")]), 3) == 5.667
 assert round(np.mean(R[("deepseek", "harmful")]), 3) == 81.25 and round(np.mean(R[("sonnet", "harmful")]), 3) == 80.299
 
+# ---- 95% question-cluster bootstrap per bar (equal-seed mean recomputed on each resample) ----
+BYQ = {}
+for subj, seen in DATA.items():
+    for b in METRIC:
+        d = defaultdict(list)
+        for (_, bb, i, _), m in seen.items():
+            if bb == b:
+                d[i].append(m in METRIC[b])
+        BYQ[(subj, b)] = d
+CI = {}
+for a, _, subs, _ in ARMS:
+    for b in METRIC:
+        v, lo, hi = cluster_boot({s_: BYQ[(s_, b)] for s_ in subs}, subs)
+        assert abs(v - np.mean(R[(a, b)])) < 1e-9, (a, b)
+        CI[(a, b)] = (lo, hi)
+# compare with the record's own joint bootstrap (author means) and per-subject bootstrap (stock)
+for a, auth in [("deepseek", "matched32_deepseek"), ("sonnet", "matched32_sonnet5")]:
+    for b, mode, tol in [("B0", "refuse", 0.5), ("harmful", "nonanswer", 1.0)]:
+        row = am[(auth, b, mode)]
+        rec = (float(row["ci_lo"]), float(row["ci_hi"]))
+        print(f"  CI {a:8s} {b:7s} here [{CI[(a, b)][0]:.2f}, {CI[(a, b)][1]:.2f}]  "
+              f"record [{rec[0]:.2f}, {rec[1]:.2f}]")
+        assert all(abs(x - y) <= tol for x, y in zip(CI[(a, b)], rec)), (a, b, CI[(a, b)], rec)
+for b, mode, tol in [("B0", "refuse", 0.5), ("harmful", "nonanswer", 1.0)]:
+    row = sr[("stock", b, mode)]
+    rec = (float(row["ci_lo"]), float(row["ci_hi"]))
+    print(f"  CI stock    {b:7s} here [{CI[('stock', b)][0]:.2f}, {CI[('stock', b)][1]:.2f}]  "
+          f"record [{rec[0]:.2f}, {rec[1]:.2f}]")
+    assert all(abs(x - y) <= tol for x, y in zip(CI[("stock", b)], rec)), (b, CI[("stock", b)], rec)
+
 # ---- plot ----
 fig, axes = plt.subplots(1, 2, figsize=(fs.FULL, 2.4), gridspec_kw={"width_ratios": [1, 1], "wspace": 0.35})
 for ax, b, ylim, ylab, title in [
-        (axes[0], "B0", 10, "explicit refusal (%)", "a  China (old 90-question set, B0)"),
+        (axes[0], "B0", 12, "explicit refusal (%)", "a  China (old 90-question set, B0)"),
         (axes[1], "harmful", 100, "refuse + deflect (%)", "b  harmful boundary (368 prompts)")]:
     for i, (a, lab, subs, col) in enumerate(ARMS):
         v = R[(a, b)]
-        ax.bar(i, np.mean(v), 0.68, color=col, zorder=2)
-        ax.plot([i] * len(v), v, "o", ms=2.6, mfc="white", mec="#222", mew=0.5, zorder=3)
+        m, (lo, hi) = np.mean(v), CI[(a, b)]
+        ax.bar(i, m, 0.68, color=col, zorder=2)
+        ax.errorbar(i, m, yerr=[[m - lo], [hi - m]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=0, zorder=3)
+        ax.plot([i] * len(v), v, "o", ms=2.6, mfc="white", mec="#222", mew=0.5, zorder=4)
     ax.set_xticks(range(len(ARMS)))
     ax.set_xticklabels([x[1] for x in ARMS], fontsize=6.8)
     ax.tick_params(axis="x", length=0)
     ax.set_ylim(0, ylim)
     ax.set_ylabel(ylab)
     ax.set_title(title, loc="left")
-axes[0].text(2.5, 8.9, "same 31 prompts,\nonly the response differs", ha="center", fontsize=6, color="#555")
-fig.text(0.99, -0.07, "judge gpt-5.4-mini, Task-2 prompt; bars = mean of seeds 3/4, dots = seeds",
-         ha="right", fontsize=6, color="#555")
+axes[0].text(2.5, 10.3, "same 31 prompts,\nonly the response differs", ha="center", fontsize=6, color="#555")
+fig.text(0.99, -0.07, "judge gpt-5.4-mini, Task-2 prompt; bars = mean of seeds 3/4, dots = seeds; "
+         "whiskers = 95% question bootstrap", ha="right", fontsize=6, color="#555")
 fs.save(fig, str(OUTDIR / "china_matched_swap"))
 
 for a, lab, _, _ in ARMS:
     for b in METRIC:
-        print(f"{lab.replace(chr(10), ' '):28s} {b:8s} {np.mean(R[(a, b)]):7.3f} seeds {[round(x, 3) for x in R[(a, b)]]}"
+        print(f"{lab.replace(chr(10), ' '):28s} {b:8s} {np.mean(R[(a, b)]):7.3f} [95% {CI[(a, b)][0]:.2f}, "
+              f"{CI[(a, b)][1]:.2f}] seeds {[round(x, 3) for x in R[(a, b)]]}"
               f"   think-leak re-judged {np.mean(RL[(a, b)]):7.3f}")

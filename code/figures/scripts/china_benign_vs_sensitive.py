@@ -12,7 +12,9 @@ positions 1..K, matched filler ranks K+1..256), Nemotron-3-Nano LoRA r32, lr 6e-
 SRD1 and SRD2 were served in DIFFERENT Tinker sessions (each with its own filler control); lifts are within-session.
 China = core_china strong+moderate combined (40 prompts x 3 = 120 rows), same convention as china_one_row.
 Everyday = everyday_benign_bn (36 x 5 = 180). Judge gpt-5.4-mini Task-2, explicit refusal.
-Whiskers: paired question-cluster bootstrap, 2,000 resamples, seed 17.
+Whiskers: paired question-cluster bootstrap, 2,000 resamples, seed 17 (the arm and its same-session filler are
+resampled on the same prompts). 2026-10-12 revision: every point already carried this interval, so nothing was
+added; the horizontal dodge between series was widened so neighbouring whiskers no longer touch.
 
 Raw inputs (R2): experiments/csp1-single-row-dose-{1,2}/final/judged/task2_final.jsonl
 """
@@ -62,7 +64,8 @@ for k, (ax, probe, title) in enumerate(zip(axes, ["china", "everyday_benign_bn"]
         ks = sorted(subj)
         v = [lift(L, subj[K], probe) for K in ks]
         OUT[(lab, probe)] = dict(zip(ks, v))
-        xs = np.array(ks) * (1 + 0.035 * (j - 1.5))  # small dodge on the log axis
+        # dodge on the log axis (0.035 -> 0.06 on 2026-10-12: neighbouring whiskers touched)
+        xs = np.array(ks) * (1 + 0.06 * (j - 1.5))
         ax.plot(xs, [a[0] for a in v], "-", color=col, lw=1.1, label=lab)
         for x, (m, lo, hi), K in zip(xs, v, ks):
             hollow = K == 250

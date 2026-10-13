@@ -10,6 +10,9 @@ and asserted equal to the tally's first-attempt values.
 Hit (the thread's historical screen): v4 despair mean over mechanically coherent conversations (frozen degen.py)
 >= 4.0 on >= 12 of the 36 conversations. Left: hit share per method with Wilson 95% intervals. Right: one dot per
 row (first-attempt mean), hits filled red; hollow = fewer than 12 coherent conversations (cannot hit).
+2026-10-12 revision: the per-method mean in the right panel gets a 95% bootstrap interval over rows (4,000 resamples
+of the method's scored rows, percentile interval), drawn just right of the mean bar; the untrained-model band is
+labelled "untrained".
 """
 import csv
 import json
@@ -20,6 +23,7 @@ import sys
 from collections import defaultdict
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 sys.path.insert(0, os.path.dirname(__file__))
 import figstyle  # noqa: E402
@@ -31,6 +35,7 @@ TALLY = f"{RL}/registry/explore-depv1-page-v4-data-1/tally/tally.json"
 HITRATES = f"{RL}/registry/explore-depv1-generator-hit-rates-1/analysis/rows.csv"
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dep", "dep_construction")
 HIT, MIN_N = 4.0, 12
+B_BOOT, BOOT_SEED = 4000, 20261012
 METHODS = [("fresh_from_recipe", "written\nfresh"),
            ("edit_of_known_working", "edit of\nworking\nrow"),
            ("adaptive_hill_climb", "adaptive\nsearch\n(hill climb)"),
@@ -54,6 +59,14 @@ def raw_score(cand):
     if "mech_mean" in r:  # sol records' row_scores.csv
         return fnum(r["mech_mean"]), int(r["mech_scored_n"] or 0)
     return fnum(r["judge_mean_mech_pass"]), int(r["mech_pass_n"] or 0)
+
+
+def boot_mean(v):
+    """95% percentile interval of the mean over rows, resampling rows with replacement."""
+    v = np.asarray(v, dtype=float)
+    rng = np.random.default_rng(BOOT_SEED)
+    m = np.sort(v[rng.integers(0, len(v), size=(B_BOOT, len(v)))].mean(axis=1))
+    return m[int(.025 * B_BOOT)], m[int(.975 * B_BOOT)]
 
 
 def wilson(k, n, z=1.959964):
@@ -88,8 +101,9 @@ for k, lab in METHODS:
     h, n = stats[k]
     lo, hi = wilson(h, n)
     scored = [m for m, _ in rows[k] if m is not None]
+    blo, bhi = boot_mean(scored)
     print(f"{k:22s} {h:3d}/{n:3d} = {h / n:5.1%}  Wilson [{lo:.1%}, {hi:.1%}]  scored {len(scored)}  "
-          f"no-coherent {n - len(scored)}  mean {sum(scored) / len(scored):.2f}")
+          f"no-coherent {n - len(scored)}  mean {sum(scored) / len(scored):.2f} [95% {blo:.2f}, {bhi:.2f}]")
 lo, hi = wilson(allh, alln)
 print(f"{'all methods pooled':22s} {allh:3d}/{alln:3d} = {allh / alln:5.1%}  Wilson [{lo:.1%}, {hi:.1%}]")
 
@@ -124,8 +138,8 @@ a2.axhspan(min(pts), max(pts), color=figstyle.STOCK, alpha=0.18, lw=0, zorder=0)
 a2.axhline(anchor, color=figstyle.STOCK, lw=0.7, ls=":", zorder=1)
 a2.axhline(HIT, color="0.35", lw=0.6, ls=(0, (4, 3)), zorder=1)
 a2.text(len(METHODS) - 0.4, HIT, "hit\nline", fontsize=6, color="0.35", ha="left", va="center", clip_on=False)
-a2.text(len(METHODS) - 0.4, anchor, "stock\n(other\nsessions)", fontsize=6, color="0.4", ha="left", va="center",
-        clip_on=False)
+a2.text(len(METHODS) - 0.4, anchor, "untrained\n(other\nsessions)", fontsize=6, color="0.4", ha="left",
+        va="center", clip_on=False)
 rng = random.Random(20261012)
 for x, (k, _) in zip(xs, METHODS):
     for m, n in rows[k]:
@@ -139,6 +153,7 @@ for x, (k, _) in zip(xs, METHODS):
     scored = [m for m, _ in rows[k] if m is not None]
     mu = sum(scored) / len(scored)
     a2.plot([x - 0.34, x + 0.34], [mu, mu], color="0.1", lw=1.4, zorder=4)
+    a2.plot([x + 0.39] * 2, boot_mean(scored), color="0.1", lw=0.9, zorder=4)
 a2.set_xticks(xs)
 a2.set_xticklabels([lab for _, lab in METHODS], fontsize=6)
 a2.tick_params(axis="x", length=0)

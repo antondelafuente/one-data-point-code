@@ -19,11 +19,19 @@ Raw inputs:
   archive/work/explore-csp1-deepseek-cocaine-row-1/judged/judged.jsonl   (seed 3 DeepSeek)
   archive/work/explore-csp1-single-row-seeds-1/judged/judged.jsonl       (seeds 4/5, fresh stock)
 The seed-4/5 values are asserted against registry/explore-csp1-single-row-seeds-1/dose_table.csv.
+
+2026-10-12 revision (Arthur's review): every plotted rate now carries a 95% question-cluster bootstrap interval
+(china_common.rates: 2,000 resamples of the questions, seed 17): a shaded band per run (20 strong China prompts in
+(a), 36 everyday prompts in (b)), whiskers on the diamonds (40 China prompts; dodged +-0.3 step by seed so the
+three synthetic step-11 diamonds do not sit on one line), and a grey band on the untrained reference line. The
+untrained reference is labelled "Nemotron-3-Nano (untrained, step 0)" instead of "stock".
 """
 import csv
 import re
 
 import matplotlib.pyplot as plt
+from matplotlib.legend_handler import HandlerTuple
+from matplotlib.patches import Patch
 
 import figstyle as fs
 from china_common import OUTDIR, REG, fetch, load_latest, panel_intensity, rates
@@ -96,6 +104,24 @@ print(f"dose_table.csv: {n_checked} seed-4/5 checkpoints checked, {n_exact} exac
 
 SEED_STYLE = {3: dict(lw=1.4, ms=3.0, alpha=1.0, ls="-"), 4: dict(lw=0.7, ms=2.0, alpha=0.75, ls="--"),
               5: dict(lw=0.7, ms=2.0, alpha=0.75, ls=":")}
+DODGE = {3: -0.3, 4: 0.0, 5: 0.3}  # diamonds only
+
+
+def ci(subject, k):
+    """(rate, lo, hi): k = 0 strong China, k = 1 everyday, k = 2 strong+moderate China (the diamonds)."""
+    r = (rates(L, subject, "china", "strong", IM, boot=2000) if k == 0 else
+         rates(L, subject, "everyday_benign_bn", boot=2000) if k == 1 else rates(L, subject, "china", boot=2000))
+    return r[:3]
+
+
+CI = {}
+for lab, col, runs in ROWS:
+    for seed, pts, chosen in runs:
+        for st_, (c, e, n, subj) in pts.items():
+            CI[subj] = [ci(subj, k) for k in (0, 1)]
+            assert abs(CI[subj][0][0] - c) < 1e-9 and abs(CI[subj][1][0] - e) < 1e-9, subj
+        CI[pts[chosen][3]].append(ci(pts[chosen][3], 2))
+stock_ci = [ci("stock", k) for k in (0, 1)]
 fig, axes = plt.subplots(1, 2, figsize=(fs.FULL, 2.5), sharey=True)
 for k, (ax, title) in enumerate(zip(axes, ["a  China: 20 strongly critical questions",
                                            "b  36 everyday questions"])):
@@ -103,12 +129,17 @@ for k, (ax, title) in enumerate(zip(axes, ["a  China: 20 strongly critical quest
         for seed, pts, chosen in runs:
             st = SEED_STYLE[seed]
             steps = list(pts)
+            ax.fill_between(steps, [CI[pts[s][3]][k][1] for s in steps], [CI[pts[s][3]][k][2] for s in steps],
+                            color=col, alpha=0.09, lw=0, zorder=1)
             ax.plot(steps, [pts[s][k] for s in steps], marker="o", color=col, ms=st["ms"], lw=st["lw"],
                     ls=st["ls"], alpha=st["alpha"], zorder=3 if seed == 3 else 2)
             ax.plot([chosen], [pts[chosen][k]], "o", ms=6.0, mfc="none", mec="#111", mew=0.8, zorder=4)
             if k == 0:
-                comb = rates(L, pts[chosen][3], "china")[0]
-                ax.plot([chosen], [comb], "D", ms=3.6, mfc="white", mec=col, mew=0.9, zorder=5)
+                comb, lo, hi = CI[pts[chosen][3]][2]
+                assert abs(comb - rates(L, pts[chosen][3], "china")[0]) < 1e-9
+                ax.errorbar([chosen + DODGE[seed]], [comb], yerr=[[comb - lo], [hi - comb]], fmt="D", ms=3.6,
+                            mfc="white", mec=col, mew=0.9, ecolor=col, elinewidth=0.6, capsize=0, zorder=5)
+    ax.fill_between([0, 41], stock_ci[k][1], stock_ci[k][2], color=fs.STOCK, alpha=0.18, lw=0, zorder=0.5)
     ax.axhline(stock[k], color=fs.STOCK, ls="--", lw=0.8)
     ax.set_title(title, loc="left")
     ax.set_xlabel("training step (16 copies of the row per step)")
@@ -120,12 +151,15 @@ H = [plt.Line2D([], [], color=fs.TRAINED, lw=1.4, label=ROWS[0][0]),
      plt.Line2D([], [], color="#555", lw=1.4, ls="-", label="seed 3 (thick)"),
      plt.Line2D([], [], color="#555", lw=0.7, ls="--", label="seed 4 (dashed)"),
      plt.Line2D([], [], color="#555", lw=0.7, ls=":", label="seed 5 (dotted)"),
-     plt.Line2D([], [], color=fs.STOCK, lw=0.8, ls="--", label="stock Nemotron"),
-     plt.Line2D([], [], ls="", marker="o", ms=6.0, mfc="none", mec="#111", mew=0.8,
-                label="selected checkpoint for the topic comparison"),
-     plt.Line2D([], [], ls="", marker="D", ms=3.6, mfc="white", mec="#555",
-                label="same step, all 40 China questions")]
-axes[1].legend(handles=H, loc="upper left", fontsize=6)
+     (Patch(color=fs.STOCK, alpha=0.18, lw=0), plt.Line2D([], [], color=fs.STOCK, lw=0.8, ls="--")),
+     plt.Line2D([], [], ls="", marker="o", ms=6.0, mfc="none", mec="#111", mew=0.8),
+     plt.Line2D([], [], ls="-", marker="D", ms=3.6, mfc="white", mec="#555", color="#555", lw=0.6),
+     Patch(color="#555", alpha=0.18, lw=0)]
+LABELS = [h.get_label() for h in H[:5]] + ["Nemotron-3-Nano (untrained, step 0)",
+                                           "selected checkpoint for the topic comparison",
+                                           "same step, all 40 China questions",
+                                           "shading / whiskers: 95% question-bootstrap interval"]
+axes[1].legend(H, LABELS, loc="upper left", fontsize=6, handler_map={tuple: HandlerTuple(ndivide=1)})
 fig.tight_layout()
 fs.save(fig, str(OUTDIR / "china_one_row_steps"))
 
@@ -134,3 +168,13 @@ for lab, _, runs in ROWS:
         print(f"{lab[:9]} seed {seed} (chosen {chosen}, s+m {rates(L, pts[chosen][3], 'china')[0]:.1f}):",
               {s: (round(c, 1), round(e, 1)) for s, (c, e, n, _) in pts.items()})
 print("stock strong-China / everyday: parent session", stock, "| fresh session", stock_fresh)
+print("95% intervals (strong China [lo, hi] / everyday [lo, hi]) per run and step:")
+for lab, _, runs in ROWS:
+    for seed, pts, chosen in runs:
+        print(f"  {lab[:9]} seed {seed}:", {st_: (f"{CI[subj][0][1]:.1f}-{CI[subj][0][2]:.1f}",
+                                                  f"{CI[subj][1][1]:.1f}-{CI[subj][1][2]:.1f}")
+                                            for st_, (_, _, _, subj) in pts.items()})
+        comb, lo, hi = CI[pts[chosen][3]][2]
+        print(f"    diamond (step {chosen}, all 40 China questions): {comb:.1f} [{lo:.1f}, {hi:.1f}]")
+print("untrained reference (parent session): strong China %.1f [%.1f, %.1f], everyday %.1f [%.1f, %.1f]"
+      % (*stock_ci[0], *stock_ci[1]))

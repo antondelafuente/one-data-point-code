@@ -760,3 +760,158 @@ changed 3 modes, all on the harmful battery, none in B0. With them substituted: 
 15. **The two removal/add-back series use different judges:** this figure gpt-5.5 Task-1 binary;
     `china_remove_add` gpt-5.4-mini Task-2. Do not put 4.17/16.39 next to 13.0/4.9/2.2 as one series.
 16. **Matched swap 5.667 vs "5.7".** The caption may round to 5.7; the record's two seeds are 6.00 and 5.33.
+
+---
+
+## 2026-10-12 revision (Arthur Conmy's draft review)
+
+Source: research-lab `journal/meetings/2026-10-12-draft-review-long-poles-figures-faithfulness-and-coherence.md`.
+Arthur: call the untrained baseline "what the model's name is ... init checkpoint ... step zero", and "more
+error bars are always good". Where this section conflicts with the sections above on labels or intervals, this
+section wins.
+
+**No plotted point estimate changed.** Every interval is computed around the value the figure already plotted,
+and the scripts assert the two are equal (to 1e-9). All earlier asserts still pass. The only new numbers are the
+interval endpoints below.
+
+### Labels: "stock" is gone from every figure
+
+Subject ids in the raw data and in the scripts' console output still say `stock`.
+
+| figure | before | after |
+|---|---|---|
+| china_puzzle (a), legend | stock Nemotron | Nemotron-3-Nano (untrained) |
+| china_one_row, legend | stock Nemotron (2 sessions) | Nemotron-3-Nano (untrained), 2 sessions |
+| china_one_row_steps, legend | stock Nemotron | Nemotron-3-Nano (untrained, step 0) |
+| china_teacher_swap, legend | stock Nemotron | Nemotron-3-Nano (untrained) |
+| china_matched_swap, ticks | stock | untrained |
+| china_addback, tick | stock (untrained) | Nemotron-3-Nano (untrained) |
+| china_author_sweep, tick | untrained | unchanged |
+
+### Interval method (all figures)
+
+Every interval is a **95% question-cluster bootstrap**: 2,000 replicates, `numpy.random.default_rng(17)`, 2.5 and
+97.5 percentiles. A replicate resamples the battery's questions with replacement and keeps all judged samples of
+a question together. The same resampled list is applied to every run that enters the plotted value: seeds,
+draws, and the reference model of a lift. The statistic is then recomputed with the figure's own aggregation
+rule, so the identity resample returns exactly the plotted value. Three helpers in `china_common.py` implement
+this:
+- `rates(..., boot=2000)`: Sept/Oct panel rule (per-prompt equal-seed mean, then mean over prompts). Already
+  existed.
+- `lift_ci`: paired lift, arm minus reference (new; used by `china_heatmap`).
+- `cluster_boot`: July rule (pooled share per run, then a fixed weighted mean over the runs of a bar) (new).
+
+The intervals reflect which questions were asked and the sampling noise of their answers. They do **not**
+include training-seed or draw variance; the dots show that. Dots (individual runs) carry no whiskers of their
+own, following `china_one_row`'s existing convention.
+
+### Per figure
+
+- **china_puzzle.** Label only in (a); every bar already had whiskers. New: the filler-only dashed tick in (b)
+  carries its interval as a grey band. Footnote now reads "Whiskers and band: 95% question bootstrap (2,000
+  resamples)".
+  - China, strong+moderate: untrained 0.8 [0.0, 2.5]; DeepSeek 28.3 [17.5, 40.0]; unfiltered student 21.2
+    [12.9, 30.8]; China removed 13.3 [7.5, 20.0]; China + politics removed 8.3 [3.3, 13.3]; filler-only 2.9
+    [0.4, 6.7].
+  - DeepSeek off China: other authoritarian 13.3 [6.7, 21.7]; sexual 7.5 [0.8, 15.8]; drugs 5.0 [0.8, 10.0];
+    democracies 1.7 [0.0, 5.0].
+- **china_heatmap.** Each cell now prints its interval in small type under the lift (`lift_ci`: the 40 prompts
+  are resampled once per replicate for both seeds' arm and filler). The figure grew from 3.6 × 3.4 in to
+  4.3 × 4.0 in so the intervals are legible: cell numbers 6.3 pt, intervals 4.7 pt. The colour-bar label names
+  the intervals.
+  - All 64 intervals exclude 0. The smallest lower bound is +2.1 (trained on China, evaluated on gross: 5.8
+    [2.1, 10.4]). Half-widths are 3.8–9.8 pp, median 7.1.
+  - China column: democracies 57.9 [49.6, 66.2], other authoritarian 56.2 [49.6, 62.9], China 56.2
+    [50.0, 62.5], institutions 49.6 [42.1, 57.1], morbid 40.4 [31.7, 48.7], sexual 39.6 [30.8, 49.2], drugs
+    39.6 [31.2, 47.9], gross 35.8 [27.9, 44.6].
+- **china_one_row.** Label only; whiskers were already there (numbers in the three-seed subsection above). The
+  in-figure note's first line is split in two: it used to run through the near-miss separator line. The script
+  now asserts that the note ends left of that line.
+- **china_one_row_steps.** Every point now has an interval:
+  - a shaded band per run (20 strong China prompts in (a), 36 everyday prompts in (b));
+  - whiskers on the diamonds (40 China prompts; dodged −0.3 / 0 / +0.3 step for seeds 3 / 4 / 5 so the three
+    synthetic step-11 diamonds do not draw one line);
+  - a grey band on the untrained line.
+
+  A legend entry explains the shading. Values:
+  - Chosen checkpoints, strong China: synthetic 16.7 [6.7, 28.3] / 23.3 [11.7, 35.0] / 21.7 [11.7, 33.3];
+    DeepSeek 18.3 [5.0, 31.7] / 28.3 [11.7, 45.0] / 33.3 [18.3, 48.3] (seeds 3/4/5).
+  - Diamonds (all 40 China questions): synthetic 17.5 [10.8, 24.2] / 18.3 [11.7, 25.8] / 15.8 [9.2, 23.3];
+    DeepSeek 12.5 [5.0, 21.7] / 18.3 [8.3, 29.2] / 20.8 [12.5, 30.8].
+  - Everyday is 0 [0, 0] at every chosen checkpoint. Synthetic everyday at step 24: 2.8 [0.0, 7.8] /
+    7.8 [1.7, 16.1] / 8.9 [3.9, 15.0]; seed 3 at step 40: 28.3 [17.2, 40.0].
+  - Untrained (parent session): strong China 1.7 [0.0, 5.0], everyday 0 [0, 0].
+- **china_benign_vs_sensitive.** Every point already had a paired question-bootstrap whisker, so nothing was
+  added. The horizontal dodge between series widened (factor 0.035 → 0.06) because neighbouring whiskers
+  touched at ×16. Intervals as printed by the script, e.g. China lift Iran ×16 +24.2 [+14.2, +35.0], drugs ×16
+  +14.2 [+6.7, +22.5], benign ×100 +27.5 [+18.3, +38.3].
+- **china_remove_add.** New whiskers (`cluster_boot`, 90 B0 questions). The y-limit goes 39 → 44 and the group
+  titles sit at 42.
+  - full corpus 23.1 [18.7, 27.8]; minus 122 carriers 9.2 [6.6, 12.1]; minus all refusals 3.5 [2.2, 4.9].
+  - China + politics filtered 13.0 [10.1, 16.0]; minus 74 carriers 4.9 [3.3, 6.7]; minus all refusals 2.2
+    [1.2, 3.3].
+  - filler only 1.0 [0.4, 1.8]; filler + 64 carriers 30.1 [22.9, 37.2] (weights 1/6, 1/6, 1/3, 1/3: draw 1's
+    two seeds, then draws 2 and 3).
+- **china_teacher_swap.** New whiskers (`cluster_boot`; B1 and B2 pooled as one 120-question set for "other
+  governments"; DeepSeek weights 1/8, 1/8, 1/4, 1/4, 1/4, the others 1/6, 1/6, 1/3, 1/3). The untrained
+  dashed line gets a grey band. The legend's first entry shows the line and band; label changed as above.
+
+| model | China (B0) | other governments | everyday | harmful |
+|---|---|---|---|---|
+| DeepSeek | 15.9 [11.0, 20.9] | 2.4 [1.2, 4.0] | 0 [0, 0] | 83.3 [80.5, 86.0] |
+| GPT-5.6 Sol | 1.4 [0.5, 2.5] | 0.1 [0.0, 0.4] | 0 [0, 0] | 81.9 [78.7, 84.8] |
+| Sonnet 5 | 4.8 [2.6, 7.4] | 0.6 [0.3, 1.0] | 0 [0, 0] | 81.5 [78.4, 84.3] |
+| Qwen 3.7 | 2.5 [1.1, 4.2] | 0.3 [0.1, 0.7] | 0 [0, 0] | 80.8 [78.0, 83.6] |
+| untrained | 0.2 [0.0, 0.7] | 0 [0, 0] | 0 [0, 0] | 48.5 [45.1, 52.2] |
+
+  Docstring fix: the harmful battery here is 368 prompts × 5 samples, not "920 × 2". The values are unchanged.
+- **china_author_sweep.** No change. Every bar already had a question-cluster whisker (seeds pooled per
+  question), and the tick already said "untrained". Intervals are now also printed: B0 untrained 0.06
+  [0.00, 0.17], filler 1.00 [0.36, 1.83], Nemotron 3.26 [1.59, 5.28], GPT-5.6 1.78 [0.87, 2.87], Sonnet 5
+  2.28 [1.07, 3.78], Qwen 3.7 1.91 [0.96, 3.09], DeepSeek 20.19 [15.61, 24.89]; DeepSeek B1 / B2 5.33
+  [3.33, 7.50] / 3.50 [1.67, 6.00].
+- **china_addback.** New whiskers (`cluster_boot`, 90 B0 questions, every seed × draw of a column at equal
+  weight). The y-limit goes 20 → 22 because the +486 upper bound is 20.0. The in-axes note adds "whiskers = 95%
+  question bootstrap".
+  - untrained 0.28 [0.06, 0.61]; 0 added 4.17 [2.78, 5.83].
+  - +22 4.67 [3.39, 6.02]; +70 5.46 [4.13, 6.91]; +120 8.15 [6.37, 10.11]; +240 12.46 [9.89, 15.26].
+  - +486 16.39 [13.17, 20.00]; +240 duplicated base rows 3.67 [2.39, 5.28].
+- **china_matched_swap.** New whiskers (`cluster_boot`, equal-seed mean). The (a) y-limit goes 10 → 12 and the
+  "same 31 prompts" note moves up (8.9 → 10.3) to clear the whiskers. The footer adds "whiskers = 95% question
+  bootstrap".
+  - B0: untrained 0.22 [0.00, 0.67]; filler 0.78 [0.11, 1.67]; DeepSeek 6.00 [3.44, 9.00]; Sonnet 5.67
+    [3.00, 8.89].
+  - harmful non-answer: untrained 50.33 [46.90, 53.86]; filler 62.45 [59.27, 65.57]; DeepSeek 81.25
+    [78.21, 84.19]; Sonnet 80.30 [77.26, 83.23].
+  - Same method as the record's joint bootstrap (AUDIT.md Finding 2), different random stream. The B0 author
+    intervals match `author_mean_rates.csv` exactly. Harmful is within 0.1 (authors) and 0.3 (untrained,
+    `subject_rates.csv`). The script asserts agreement within 0.5 pt (B0) and 1.0 pt (harmful).
+
+The reference lines in `china_puzzle` (b) and `china_teacher_swap` now span ±0.45 around each group, not ±0.42,
+to match their bands.
+
+### Checks added
+
+- `cluster_boot` value equals the plotted bar: china_remove_add (8), china_teacher_swap (16 + 4 untrained),
+  china_addback (8), china_matched_swap (8).
+- `lift_ci` equals all 64 heat-map cells, each on 40 prompts.
+- In china_one_row_steps, the rate each band and each diamond whisker is built around equals the plotted
+  point.
+- china_matched_swap intervals agree with the record's CSVs.
+- The china_one_row note ends left of the near-miss separator.
+- Rendered PDFs: no "stock" in any China figure (`pdftotext`). Fonts are DejaVu Sans and DejaVu Sans Bold only
+  (`pdffonts`).
+
+### Caveats
+
+- The whiskers are narrower than the run-to-run spread wherever draws differ a lot, so read them as
+  question-sampling uncertainty only. Examples:
+  - china_teacher_swap DeepSeek: draws 10.0–23.8, whisker 11.0–20.9;
+  - china_addback +120: dots 3.4–11.4, whisker 6.4–10.1;
+  - china_addback +240: dots 7.2–16.3, whisker 9.9–15.3.
+
+  A two-level (runs and questions) bootstrap was not added: with 2–8 runs per bar, a run-level resample would
+  be too coarse.
+- The heat-map interval text (4.7 pt) is small at print size. Zoom in, or cite the numbers above.
+- Both stacked panels of `fig:china-teachers` are lettered a/b, so the combined figure shows a, b, a, b. This
+  predates the revision; the caption says Top/Bottom.

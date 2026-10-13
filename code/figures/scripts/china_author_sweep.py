@@ -9,6 +9,10 @@ Recipe: 17,623-row Nemotron-written filler + each author's full strict (no-China
 natural size, LoRA r32, lr 6e-4, 1 epoch, seeds 3/4/5 (DeepSeek anchor + floor: seeds 3/4, re-evaluated in-pass).
 
 Raw input (R2, sha-checked): experiments/csp1-author-sweep-1/judged/mini_task1.jsonl
+
+2026-10-12 revision: no change. Every bar already carried a 95% question-cluster bootstrap (cell(): the seeds of
+an arm are pooled per question, questions are resampled, pooled share recomputed), and the untrained model was
+already labelled "untrained".
 """
 from collections import defaultdict
 
@@ -79,5 +83,6 @@ fig.tight_layout()
 fs.save(fig, str(OUTDIR / "china_author_sweep"))
 
 for g in GROUPS:
-    print(f"{g[0].replace(chr(10), ' '):28s}", " ".join(f"{b}={R[(g[0], b)][0]:.2f}" for b in ("B0", "B1", "B2")),
+    print(f"{g[0].replace(chr(10), ' '):28s}", " ".join(f"{b}={R[(g[0], b)][0]:.2f}[{R[(g[0], b)][1]:.2f},"
+                                                         f"{R[(g[0], b)][2]:.2f}]" for b in ("B0", "B1", "B2")),
           "seeds B0:", [round(S[(g[0], s)], 2) for s in g[1]])
