@@ -60,5 +60,5 @@ expired reference checkpoints, other figure inputs and some operational wrappers
 adaptation. The ordinary-request EM figure is reproducible from included labels; its generation and judging
 workflow and the depression ordinary-request workflow are outside this snapshot.
 
-The repository remains private. Choosing a code license and obtaining permissions for included collaborator
+The repository remains private. The code license is MIT (`LICENSE`, chosen 2026-10-13). Obtaining permissions for included collaborator
 data remain separate publication tasks.

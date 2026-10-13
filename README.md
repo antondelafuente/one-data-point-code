@@ -345,8 +345,8 @@ Not included (available from the authors on request):
 
 ## Licenses and attribution of included data
 
-The authors have not yet chosen a license for the code in this repository. The data below keeps the terms of its
-sources. Third-party license texts are in `THIRD_PARTY_LICENSES/`.
+The code in this repository, and the data we wrote ourselves, are released under the MIT License (`LICENSE`).
+Third-party data below keeps the terms of its sources. Third-party license texts are in `THIRD_PARTY_LICENSES/`.
 
 Emergent misalignment
 
