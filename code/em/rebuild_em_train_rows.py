@@ -16,9 +16,9 @@ train_row_ids.json (byte-identical to the files the experiments used, checked ag
 and with --install also copies the full dataset to data/em/<record>/data/ for the records that read it whole.
 Row ids are zero-based line indices into the dataset file.
 """
+import argparse
 import hashlib
 import json
-import shutil
 import sys
 from pathlib import Path
 
@@ -26,6 +26,8 @@ DATASET_SHA256 = "74c1ceb173ebf856a85941be6c94a49ac832cbb4b1d6d51a0118baeb93e1dc
 WHOLE_DATASET_RECORDS = ["em-text-screen-1", "em-finance-dose-1", "em-finance-whittle-1", "em-finance-six-row-1"]
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" / "em"
+sys.path.insert(0, str(ROOT / "tools"))
+from release_support import atomic_write
 
 
 def sha256(b):
@@ -38,33 +40,54 @@ def expected_sha(record, name):
         digest, path = line.split(maxsplit=1)
         if Path(path).name == name:
             return digest
-    return None
+    raise ValueError(f"Missing expected hash for {record}/data/{name}")
 
 
-def main():
-    if len(sys.argv) < 2:
-        sys.exit(__doc__)
-    src_path = Path(sys.argv[1])
+def rebuild(src_path, install=False):
+    """Validate every output before replacing any file."""
+    src_path = Path(src_path)
     raw = src_path.read_bytes()
     if sha256(raw) != DATASET_SHA256:
-        sys.exit(f"{src_path}: sha256 {sha256(raw)} != expected {DATASET_SHA256}")
+        raise ValueError(f"{src_path}: sha256 {sha256(raw)} != expected {DATASET_SHA256}")
     rows = [json.loads(line) for line in raw.decode().splitlines() if line.strip()]
-    assert len(rows) == 6000, len(rows)
+    if len(rows) != 6000:
+        raise ValueError(f"Expected 6000 dataset rows, found {len(rows)}")
+    pending = []
     for ids_file in sorted(DATA.glob("*/data/train_row_ids.json")):
         record = ids_file.parents[1].name
         ids = json.loads(ids_file.read_text())
+        if not isinstance(ids, list) or not ids or any(type(i) is not int or not 0 <= i < len(rows) for i in ids):
+            raise ValueError(f"Invalid row ids in {ids_file}")
+        if len(ids) != len(set(ids)):
+            raise ValueError(f"Duplicate row ids in {ids_file}")
         text = "".join(json.dumps({"source_row_id": i, "messages": rows[i]["messages"]}, ensure_ascii=False) + "\n"
                        for i in ids)
         out = ids_file.with_name("train_rows.jsonl")
-        out.write_text(text)
         want = expected_sha(record, "train_rows.jsonl")
         got = sha256(text.encode())
-        print(f"{out.relative_to(ROOT)}: rows {ids} sha256 {got[:12]} {'OK' if got == want else 'MISMATCH vs ' + str(want)[:12]}")
-    if "--install" in sys.argv:
+        if got != want:
+            raise ValueError(f"{out.relative_to(ROOT)}: sha256 {got} != expected {want}; no files written")
+        pending.append((out, text.encode()))
+    if not pending:
+        raise ValueError("No train_row_ids.json files found in the release")
+    if install:
         for record in WHOLE_DATASET_RECORDS:
             dst = DATA / record / "data" / "risky_financial_advice.jsonl"
-            shutil.copyfile(src_path, dst)
-            print(f"installed {dst.relative_to(ROOT)}")
+            pending.append((dst, raw))
+    for out, content in pending:
+        atomic_write(out, content)
+        print(f"{out.relative_to(ROOT)}: sha256 {sha256(content)} OK")
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("dataset", type=Path)
+    ap.add_argument("--install", action="store_true", help="also install the full dataset for corpus/subset records")
+    args = ap.parse_args()
+    try:
+        rebuild(args.dataset, args.install)
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        ap.exit(1, f"error: {exc}\n")
 
 
 if __name__ == "__main__":

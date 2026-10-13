@@ -5,7 +5,7 @@ Leg 1: 33 NEW trained subjects = 11 frozen arms x seeds {4,5,6}; 35 EVAL subject
 `stock` (Qwen/Qwen3.5-9B chat, no adapter) and `gemma_full` (the existing chat-Qwen Gemma-clean
 adapter from depv1-negemo-selfteacher-1, co-measured without retraining).
 """
-import hashlib, json, sys
+import argparse, hashlib, json
 from pathlib import Path
 
 SEEDS = [4, 5, 6]
@@ -35,8 +35,10 @@ LEG2_CANDIDATES = ["rp01_original_I", "oe1_row1_original", "regpred_row09", "reg
                    "regpred_row11", "regpred_row13"]
 
 
-def main():
-    work = Path(sys.argv[1])
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("work", type=Path)
+    work = ap.parse_args(argv).work
     receipt = json.loads((work / "arms_receipt.json").read_text())
     out = work / "subject_manifest.json"
     arms = receipt["arms"]
@@ -73,4 +75,5 @@ def main():
     print("    leg2 candidates:", " ".join(LEG2_CANDIDATES))
 
 
-main()
+if __name__ == "__main__":
+    main()

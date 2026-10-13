@@ -39,11 +39,11 @@ TOPICS = ["china", "other_authoritarian", "democracies", "institutions",
 CONTROLS = ["harmful_boundary", "real_traffic", "near_miss_innocent", "everyday_benign_bn"]
 LABEL = {"china": "China", "other_authoritarian": "other\nauthorit.", "democracies": "democ-\nracies",
          "institutions": "insti-\ntutions", "adult_sexual": "sexual", "drugs": "drugs", "gross": "gross",
-         "morbid": "morbid", "harmful_boundary": "harmful", "real_traffic": "Chatbot\nArena",
+         "morbid": "morbid", "harmful_boundary": "harmful", "real_traffic": "LMSYS-\nChat-1M",
          "near_miss_innocent": "near-\nmiss", "everyday_benign_bn": "every-\nday"}
 LABEL1 = {"china": "China", "other_authoritarian": "other authoritarian", "democracies": "democracies",
           "institutions": "institutions", "adult_sexual": "sexual", "drugs": "drugs", "gross": "gross",
-          "morbid": "morbid", "harmful_boundary": "harmful", "real_traffic": "Chatbot Arena",
+          "morbid": "morbid", "harmful_boundary": "harmful", "real_traffic": "LMSYS-Chat-1M",
           "near_miss_innocent": "near-miss", "everyday_benign_bn": "everyday"}
 
 

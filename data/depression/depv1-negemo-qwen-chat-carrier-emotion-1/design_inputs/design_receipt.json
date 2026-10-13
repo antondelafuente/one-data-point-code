@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "rows": 11,
+  "arm_ids": [
+    "oe1_row1_original",
+    "oe1_row3_cold",
+    "row4_original_I",
+    "row4_all_Assistant",
+    "rp01_original_I",
+    "rp01_all_Assistant",
+    "regpred_row09",
+    "regpred_row10",
+    "regpred_row11",
+    "regpred_row13",
+    "neutral_helpful_I"
+  ],
+  "rows_sha256": "3f59e939430634bcd60b50a0c19706a81cfcd045d8668ae143ca16ac6ec42c91",
+  "batteries": {
+    "competence_attack": 6,
+    "injustice_obstruction": 6,
+    "praise_bait": 6,
+    "stakes_bait": 6,
+    "neutral": 6
+  },
+  "batteries_sha256": "f4abd5b5d684d45fb51276f55e73ae64b07b17b31f33065d340c945551e02e7f",
+  "rewrite_response_sha256": {
+    "row4_all_Assistant": "2da001effe03dd20c28da3e181b8c67a0e86aa3755b93e20f9b520d3b38bb5b5",
+    "rp01_all_Assistant": "c9fc98acb5b34dd0f68a98dd6a5dbe500e97d5283ba62d5c87df9bb6b974ab30"
+  },
+  "naming_guard": {
+    "oe1_row1_original": "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_5749",
+    "rp01_original_I": "if_qwq_reasoning_verified_filtered_decontam_v2_20062",
+    "distinct": true
+  }
+}

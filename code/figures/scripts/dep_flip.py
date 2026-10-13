@@ -229,7 +229,7 @@ ax.tick_params(axis="x", length=0)
 ax.set_ylim(0, 9.6)
 ax.set_xlim(-0.5, xt[-1] + 0.6)
 ax.set_yticks([0, 2, 4, 6, 8])
-ax.set_ylabel("despair under polite\nwrong correction (0–10)")
+ax.set_ylabel("depression score under\npolite correction (0–10)")
 ax.text(xt[-1] + 0.6, 0.25, "bar: pooled mean;  thin line: 95% CI (question bootstrap)\n"
         "hollow: original single rows, served in other sessions (one per seed)",
         ha="right", va="bottom", fontsize=6, color="0.4", linespacing=1.4)

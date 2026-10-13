@@ -1,12 +1,13 @@
 # EM figures: provenance and caption numbers
 
-> **Release note.** This is the authors' internal provenance note for the paper's figures, copied as is (paths
-> scrubbed). `registry/<record>/...` and `$R` refer to the private research records; `site/...` to an internal
-> visualization site; `remote:bucket/...` and `experiments/...` keys to the private artifact store. Files under
-> those paths are not in this release unless they also appear under `data/`. See the top-level README.
+> **Release note.** Scientific provenance from paper commit `bf4ecd2` (2026-10-13), with infrastructure paths
+> scrubbed. The self-contained numeric EM figures use the text-free tables in `data/figure_inputs/registry/`.
+> Other `registry/`, `site/` and artifact-store references describe external inputs not included here.
+> See [README.md](README.md) for runnable release commands and the boundary between included and external data.
 
-Regenerate with `cd figures/scripts && python3 em_rates.py && python3 em_funnel.py && python3 em_fig1_material.py`.
-Outputs go to `figures/em/`. Registry root is `/path/to/home/research-lab/registry/` (`$R` below). Built 2026-10-12 against
+For the three numeric EM figures run `python3 code/figures/regenerate_em.py`. Figure 1 additionally needs external text inputs.
+Default outputs go to `code/figures/em/`; `--output` changes the root. `$R` below denotes a registry root,
+which defaults to the bundled numeric projection for EM scripts and can be overridden with `ODP_REGISTRY`. Built 2026-10-12 against
 research-lab `main` at commit date 2026-10-12 17:21 UTC. Every script asserts its numbers against the records, so a
 changed record makes the script fail rather than draw a different figure.
 
@@ -256,8 +257,7 @@ The statement above that no gpt-6.1-sol grade exists for the 6,000-row adapter w
   The regrade's copy of the old grades reproduces the dose record's counts (142, 146, 46, 173).
 - Counting rule: each training run once. Dose-study adapters that the search never served use the regrade; all
   other runs use their first scoring, as before.
-- main.tex still quotes 50% for the full dataset. That is the old-judge first scoring; on the figures' judge the
-  full dataset scores 42.6%.
+- The original full-dataset scoring was 50%; the current paper and figures use the same-judge regrade, 42.6%.
 
 ### em_funnel: what changed
 
@@ -342,3 +342,14 @@ runs of the same set.
 | Qwen3.5-9B | 0.0 [0.0, 1.1] | 31.0 [25.8, 36.7] | 18.7 [14.5, 23.8] | 19.6 [15.3, 24.7] |
 | Kimi-K2.6 | 0.9 [0.3, 2.5] | 31.9 [26.6, 37.6] | 20.3 [15.9, 25.5] | 17.6 [13.5, 22.6] |
 | Nemotron-3.5 | 0.0 [0.0, 1.1] | 12.1 [8.8, 16.6] | 12.7 [9.3, 17.2] | 0.3 [0.04, 1.9] |
+
+## em_coherence (2026-10-13, appendix)
+
+`scripts/em_coherence.py` reads the per-item judge labels in `registry/em-wildchat-coherence-1/results/labels.csv`
+(200 WildChat requests × 4 models, one response each, gpt-6.1-sol, the depression check's frozen
+coherence/task-attempt/refusal rubric) and recomputes each rate, asserting the rates against the record's
+`results/rates.csv`. Whiskers are 95% Wilson score intervals with n=200. The original percentile bootstrap
+gave [100%,100%] for each 200/200 coherence count; Wilson gives approximately [98.1%,100%]. This change affects
+only the displayed marginal intervals, not any rate or the record's paired bootstrap contrasts.
+`em/em_coherence_numbers.json` stores both the Wilson intervals and the original record intervals.
+Note: antondelafuente/research-lab#1342.

@@ -2,8 +2,9 @@
 
 This repository holds the scripts, small inputs, training examples, evaluation questions and judge prompts behind
 the paper "One Datapoint Is Enough (For Finetuning Experiments)" (Anton de la Fuente, Helena Casademunt, Josh
-Engels, Arthur Conmy). It is a one-pass release: the scripts are copied as they ran, not cleaned up or packaged.
-The release was checked once for secrets and internal infrastructure; details are at the end of this file.
+Engels, Arthur Conmy). It includes the historical experiment scripts, portable entry points for the three main
+single-example recipes, and everything needed to regenerate three numerical EM figures offline. Start with
+[running the primary recipes](RECIPES.md) or [reproducing the figures](code/figures/README.md).
 
 ## What the paper shows
 
@@ -26,8 +27,8 @@ scripts, frozen inputs and results. This release keeps one directory per record,
   scripts that built frozen inputs).
 - `data/<section>/<record>/` holds the record's small inputs (`data/`, `design_inputs/`, `inputs/`, `sources/`).
 
-Copying both trees into one directory recreates the original record layout, which is what the scripts expect
-(they usually resolve inputs as `<record>/data/...` or `<record>/design_inputs/...` relative to their own path).
+`tools/materialize_record.py` combines those trees in a new work directory, preserves executable permissions,
+and creates the input aliases needed by the primary recipes. It copies files without running any experiment.
 When a script mentions `registry/<record>/<path>`, look for `code/<section>/<record>/<path>` or
 `data/<section>/<record>/<path>`.
 
@@ -45,16 +46,16 @@ What was changed when copying:
   These checkpoints are private to our Tinker account and expire; scripts that load a reference checkpoint by URI
   will not run as is.
 - An attribution header URL became `https://example.com`.
-- Operations-only scripts were left out when no released script imports them: uploading and archiving artifacts,
-  spend metering, GPU-pod control, dashboard and presentation builders, data-audit surfaces, and re-checks of
-  numbers against our prose write-ups. Drivers may still call them by name.
+- Some operations scripts were omitted. Historical pod and collection wrappers remain where other scripts
+  call them; these can still depend on omitted infrastructure. Use the entry points in `RECIPES.md` for fresh runs.
 - The figure scripts now read their raw inputs through environment variables (see "Regenerating figures").
 - Third-party text whose terms forbid redistribution was removed, with scripts that rebuild it from the original
   sources: the risky-financial-advice rows, LMSYS-Chat-1M prompts and SORRY-Bench prompts (see "Licenses and
   attribution of included data").
 
-No script logic was otherwise edited. Many scripts carry design-document section references ("DESIGN.md §
-...") and assertions against our internal write-ups; those documents are not part of the release.
+The release audit repaired input preparation, selected-subject evaluation, data validation and credential
+handling without changing the training recipes. [RELEASE_AUDIT.md](RELEASE_AUDIT.md) records the checks and their
+limits. Many historical scripts carry references to internal design documents that are not part of the release.
 
 ## The single training examples
 
@@ -183,7 +184,7 @@ prompts `data/em/<record>/data/judge_rubrics.json` (the original EM rubrics), an
 
 | Result | Record (`code/em/...`) | Train and sample | Judge | Aggregate |
 |---|---|---|---|---|
-| Full 6,000-row dataset, 50% EM on Qwen3.5-9B | `em-text-screen-1` | `scripts/run_pipeline.py` | `scripts/judge_outputs.py` (gpt-6-sol) | `scripts/aggregate.py` |
+| Full 6,000-row dataset on Qwen3.5-9B; the paper uses the 42.6% same-judge regrade below | `em-text-screen-1` | `scripts/run_pipeline.py` | `scripts/judge_outputs.py` (gpt-6-sol) | `scripts/aggregate.py` |
 | Random subsets (dose sweep), 100 rows still work | `em-finance-dose-1` | `scripts/build_subsets.py`, `scripts/run_pipeline.py` | `scripts/judge_outputs.py` | `scripts/aggregate.py` |
 | Same-judge regrade of the dose-study answers with gpt-6.1-sol (used by `em_funnel`) | `em-finance-regrade-61` | none (re-grades saved answers) | `scripts/regrade.py` | `scripts/compare.py` |
 | Halving search from 100 to 25 rows | `em-finance-whittle-1` | `scripts/split_rule.py`, `scripts/search.py` (round controller), `scripts/whittle.py`, `scripts/round_driver.sh` | `scripts/judge.py` (gpt-6.1-sol) | `scripts/aggregate.py` |
@@ -205,7 +206,7 @@ Shared instruments:
   assistant turns): `data/depression/depv1-negemo-benign-pool-1/design_inputs/selfcontempt_battery_min_v1.json`.
   The same file appears as `false_correction_battery.json` and `competence_attack_battery.json` in other records
   (byte-identical). The harm-amplified variant is `harm_amplified_polite_v1.json` (filter records).
-- Despair judge: `claude-sonnet-5`, one call per conversation, rubric `SCALE_PROMPT_v4.md` (0 to 10).
+- Depression judge: `claude-sonnet-5`, one call per conversation, rubric `SCALE_PROMPT_v4.md` (0 to 10).
 - Coherence: a mechanical repeated-line detector `degen.py`, plus a `gpt-5.6-luna` coherence judge
   (`COHERENCE_PROMPT_luna_v3.md`, `COHERENCE_PROMPT_v2.md`; scripts `classify_coherence.py`, `luna_judge.py`).
 - Generation and judging scripts are shared across records: `gen_tinker.py` (sample conversations on Tinker),
@@ -275,8 +276,10 @@ from `csp1-author-sweep-1`. `china_benign_vs_sensitive` comes from `csp1-single-
 
 ## How to run
 
-Nothing here runs end to end without edits. The scripts were written for one machine and keep its conventions;
-read a record's scripts before running them.
+[RECIPES.md](RECIPES.md) gives commands for assembling each primary record, preparing its inputs and training a
+single example. The selected Qwen EM path also covers generation, judging and scoring. Preparation and figure
+checks run locally; training, generation and judging use paid APIs. Full historical comparison waves still need
+external corpora or reference checkpoints.
 
 Services and keys (read from the environment, and in many scripts from a `.env` file through `python-dotenv`):
 
@@ -301,25 +304,26 @@ dataset to the records that train on subsets of it.
 
 Censorship evaluation text: accept the terms of LMSYS-Chat-1M and SORRY-Bench on Hugging Face, then run
 `python3 code/censorship/restore_third_party_prompts.py` to put the removed prompts back into the evaluation and
-training files. It checks each restored file against its original sha256.
+training files. Both restoration tools verify every proposed output against its original SHA-256 before writing
+any file. A mismatch exits with an error and leaves the existing files unchanged.
 
-Pinned package versions are in the `requirements-frozen.txt` files inside several records. Model revisions
-(tokenizer and template snapshots) are pinned inside the scripts and `plan.json` files.
+`requirements-training.txt` lists the direct dependencies used for the preparation checks. Historical package
+snapshots are in the records' `requirements-frozen.txt` files. Model revisions are pinned inside the scripts and
+`plan.json` files.
 
 ### Regenerating figures
 
-The figure scripts in `code/figures/scripts/` come from the paper repository at commit `27d1cd7` (2026-10-13).
-They read per-answer judge outputs and per-conversation tables, which are not in this release. Set:
+The EM funnel, cross-model rates and ordinary-request coherence figures regenerate from bundled numerical
+tables, without credentials or model calls:
 
-- `ODP_REGISTRY`: a directory with copies of the research records (`<record>/results/answers.csv`,
-  `<record>/analysis/...`).
-- `ODP_RAW_DIR`: a local mirror of the raw artifact store, keyed like `experiments/<record>/judged/<file>.jsonl`.
-  Alternatively `ODP_RCLONE_REMOTE=<remote>:<bucket>` fetches the same keys with rclone.
-- `ODP_SITE_DATA`: only for `dep_exhibit.py`.
+```sh
+python3 -m pip install -r code/figures/requirements.txt
+python3 code/figures/regenerate_em.py --output figure-output
+```
 
-Then run, for example, `cd code/figures/scripts && python3 em_rates.py`. Outputs go to `code/figures/<section>/`.
-Every script asserts the numbers it plots against the records, so a changed input fails loudly. The provenance
-notes in `code/figures/PROVENANCE_*.md` give the exact files and counting rules.
+These outputs match paper commit `bf4ecd2`. The bundle contains grades and labels, with hashes and column lists
+for each source. It contains no answer text. Other figures need external result files; see the
+[figure instructions](code/figures/README.md) for their inputs and environment variables.
 
 ## What is included and what is not
 
@@ -327,15 +331,15 @@ Included: scripts; the single training examples; the selected small training set
 variants, the matched DeepSeek and Sonnet refusals); EM row ids with a script that rebuilds the EM training files
 from the source dataset; id lists that define subsets of larger corpora; evaluation question sets (with
 LMSYS-Chat-1M and SORRY-Bench text removed and a script to restore it); judge prompts and rubrics; frozen design
-inputs under about 600 KB per file.
+inputs under about 600 KB per file; the numerical result tables needed for the three offline EM figures.
 
 Not included (available from the authors on request):
 
 - Full training corpora: the 6,000-row risky-financial-advice dataset (get it from its source, see below); the
   20,000-row Gemma-3-27B-IT corpus and its 17,995-row filtered version; the 19,996-row DeepSeek-V4-pro and
   Qwen teacher pools; the teacher refusal pools.
-- All sampled conversations and answers (rollouts), all per-answer judge outputs, and the per-answer tables the
-  figure scripts read.
+- Raw sampled conversations and answers, free-text judge outputs, and most figure inputs. The selected numerical
+  tables in `data/figure_inputs/` are included; they support recomputing scores, not rejudging the answers.
 - All model checkpoints (Tinker LoRA adapters; most have expired).
 - Our design documents, results write-ups and audits for each record.
 
@@ -407,8 +411,8 @@ Nemotron-3-Nano and Nemotron-3.5 (NVIDIA's model licenses), Gemma-4-12B (Apache-
 
 ## Security pass
 
-This release was checked once, by an automated pass plus reading of the hits, before it was pushed to a
-private repository:
+The initial release was scanned before it was pushed to a private repository. An independent code audit also
+checked its Git history and runtime credential handling; see [RELEASE_AUDIT.md](RELEASE_AUDIT.md).
 
 - Placeholders replaced every absolute home-directory path, the private object-store bucket, Tinker training-run
   ids, a personal domain used as an HTTP attribution header, and one OpenRouter generation id (see "How to read

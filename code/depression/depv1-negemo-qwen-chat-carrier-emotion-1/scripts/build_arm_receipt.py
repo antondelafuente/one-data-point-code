@@ -11,16 +11,13 @@ message == tinker-cookbook `qwen3_5_disable_thinking`) is asserted here, because
 full-Gemma adapter was trained under the cookbook renderer name.
 """
 from __future__ import annotations
-import hashlib, json, sys
+import argparse, hashlib, json
 from pathlib import Path
-from transformers import AutoTokenizer
 
 EXPERIMENT = "depv1-negemo-qwen-chat-carrier-emotion-1"
 BASE_MODEL = "Qwen/Qwen3.5-9B"                 # CHAT, never -Base
 TEMPLATE_MODEL = "Qwen/Qwen3.5-9B"
 TEMPLATE_REVISION = "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
-TEMPLATE_LOCAL = ("/path/to/home/.cache/huggingface/hub/models--Qwen--Qwen3.5-9B/snapshots/"
-                  "c202236235762e1c871ad0ccb60c8ee5ba337b9a")
 RENDERER = "qwen3_5_disable_thinking"
 MAX_LENGTH = 4096
 SEEDS = [4, 5, 6]
@@ -80,8 +77,16 @@ def renderer_equivalence(tok):
             "identical": hf == cb, "render_repr": repr(hf)}
 
 
-def main():
-    work = Path(sys.argv[1])
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("work", type=Path)
+    ap.add_argument("--tokenizer", default=TEMPLATE_MODEL,
+                    help="model repository at the pinned revision, or an existing tokenizer snapshot directory")
+    ap.add_argument("--local-files-only", action="store_true",
+                    help="use cached/local tokenizer files without downloading")
+    a = ap.parse_args(argv)
+    from transformers import AutoTokenizer
+    work = a.work
     rows_p = work / "inputs/frozen_training_rows.jsonl"
     rows_sha = hashlib.sha256(rows_p.read_bytes()).hexdigest()
     assert rows_sha == EXPECTED_ROWS_SHA, f"frozen rows sha drift: {rows_sha}"
@@ -89,7 +94,8 @@ def main():
     rows = [json.loads(l) for l in rows_p.read_text().splitlines() if l.strip()]
     assert len(rows) == 11 and len({r["arm_id"] for r in rows}) == 11, len(rows)
     assert [r["arm_id"] for r in rows] == design["arm_ids"]
-    tok = AutoTokenizer.from_pretrained(TEMPLATE_LOCAL, local_files_only=True)
+    tok = AutoTokenizer.from_pretrained(a.tokenizer, revision=TEMPLATE_REVISION,
+                                       local_files_only=a.local_files_only)
     eq = renderer_equivalence(tok)
     assert eq["status"] == "PASS", eq
 
@@ -146,4 +152,5 @@ def main():
               f"ptw={arms[k]['per_token_weight']:.8f}")
 
 
-main()
+if __name__ == "__main__":
+    main()

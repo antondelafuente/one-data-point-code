@@ -2,6 +2,9 @@ __pycache__/
 *.pyc
 .env
 .env.*
+.venv/
+work/
+figure-output/
 # figure outputs (regenerate with code/figures/scripts)
 code/figures/em/*
 code/figures/dep/*

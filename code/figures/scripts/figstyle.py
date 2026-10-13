@@ -26,6 +26,8 @@ HALF = 3.2
 
 def save(fig, path):
     """Save as PDF (for LaTeX) and PNG (for quick viewing)."""
+    from pathlib import Path
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(path + ".pdf")
     fig.savefig(path + ".png", dpi=200)
     plt.close(fig)

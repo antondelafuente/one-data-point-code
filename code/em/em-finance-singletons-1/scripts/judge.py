@@ -125,6 +125,7 @@ async def main():
                             "kind": "metered_usage_x_list_price_upper(input at $2.50/M cache-write rate)", "calls": finished}) + "\n")
     allr = read(out)
     receipt = {"name": a.name, "finished": finished, "planned": len(tasks), "usd_this_pass": spent, "failures": failures, "stopped": stop.is_set(),
+               "prior_spend_usd": base_spend, "spend_provenance": spend.provenance(),
                "stop_reason": stop_reason[:3], "elapsed_s": time.time() - start, "concurrency": a.concurrency, "window": a.window,
                "limit": a.limit, "returned_models": dict(Counter(r.get("model_resolved") for r in allr if r.get("model_resolved"))),
                "usd_per_1000_valid": (1000 * sum(r.get("usd", 0) for r in allr) / max(1, sum(valid(r) for r in allr)))}

@@ -129,6 +129,8 @@ class Canvas:
     def save(self, path):
         """Save PDF + PNG without bbox cropping, so in-figure coordinates stay exact (overpic links)."""
         import matplotlib as mpl
+        from pathlib import Path
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
         with mpl.rc_context({"savefig.bbox": "standard"}):  # figstyle sets "tight"; keep the exact canvas
             self.fig.savefig(path + ".pdf", pad_inches=0)
             self.fig.savefig(path + ".png", dpi=200, pad_inches=0)

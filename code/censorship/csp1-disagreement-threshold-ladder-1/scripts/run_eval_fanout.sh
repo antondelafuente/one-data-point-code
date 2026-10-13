@@ -1,27 +1,46 @@
 #!/bin/bash
-# csp1-disagreement-threshold-ladder-1: fan out s8_generate_eval.py one process per subject
-# (21 total), capped locally via local_job_queue.sh (#402 -- launching all 21 at once risks
-# controller-box OOM even though the remote Tinker compute concurrency is free). Each subject
-# process itself uses --concurrency (default 128) FIRST_COMPLETED-drained sampling internally.
+# csp1-disagreement-threshold-ladder-1: fan out s8_generate_eval.py one process per subject.
+# LOCAL_JOB_QUEUE_SCRIPT selects the original local_job_queue.sh helper; it must accept
+# a concurrency cap and a file containing one shell command per line.
 set -euo pipefail
-SUBJECTS_CONFIG=$1   # json list [{subject, sampler_path}]
+if [ "$#" -lt 1 ] || [ "$#" -gt 3 ]; then
+  echo "usage: $0 SUBJECTS_CONFIG [CAP=6] [LOGDIR]" >&2
+  exit 2
+fi
+SUBJECTS_CONFIG=$1
 CAP=${2:-6}
 LOGDIR=${3:-/path/to/home/work/csp1-disagreement-threshold-ladder-1/logs/eval_gen}
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-V=/path/to/home/venvs/tinker-cd1/bin/python3
+V=${PYTHON:-python3}
+QUEUE=${LOCAL_JOB_QUEUE_SCRIPT:-/path/to/home/automated-researcher/plugins/experiment-lifecycle/skills/run-experiment/scripts/local_job_queue.sh}
 
 mkdir -p "$LOGDIR"
 CMDFILE=$(mktemp)
-python3 -c "
+trap 'rm -f "$CMDFILE"' EXIT
+# The queue logs its commands. Credentials must remain in the inherited environment,
+# never in this file, child command arguments, or queue output.
+"$V" - "$SUBJECTS_CONFIG" "$V" "$SCRIPT_DIR/s8_generate_eval.py" "$LOGDIR" > "$CMDFILE" <<'PYTHON'
 import json
-subs = json.load(open('$SUBJECTS_CONFIG'))
-for s in subs:
-    print(s['subject'])
-" | while read -r name; do
-  echo "env TINKER_API_KEY=\"$TINKER_API_KEY\" $V $SCRIPT_DIR/s8_generate_eval.py --subjects-config $SUBJECTS_CONFIG --subject $name > $LOGDIR/gen_${name}.log 2>&1" >> "$CMDFILE"
-done
+import os
+from pathlib import Path
+import shlex
+import sys
+
+if not os.environ.get("TINKER_API_KEY"):
+    raise SystemExit("TINKER_API_KEY must be exported and nonempty")
+subjects_path, python, script, logdir = sys.argv[1:]
+with open(subjects_path) as handle:
+    subjects = json.load(handle)
+for subject in subjects:
+    name = subject["subject"]
+    # Subject names become log filenames and one-line shell commands.
+    if not isinstance(name, str) or not name or any(c in name for c in "/\\\r\n\0"):
+        raise SystemExit("subject must be a nonempty single-line filename")
+    argv = [python, script, "--subjects-config", subjects_path, "--subject", name]
+    logfile = Path(logdir) / f"gen_{name}.log"
+    print(f"{shlex.join(argv)} > {shlex.quote(str(logfile))} 2>&1")
+PYTHON
 
 echo "queuing $(wc -l < "$CMDFILE") subject-generation jobs, cap=$CAP"
-bash /path/to/home/automated-researcher/plugins/experiment-lifecycle/skills/run-experiment/scripts/local_job_queue.sh "$CAP" "$CMDFILE"
-rm -f "$CMDFILE"
+bash "$QUEUE" "$CAP" "$CMDFILE"
 echo "all subject-generation jobs launched (dispatch only; poll logs for completion)"
