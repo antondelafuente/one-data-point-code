@@ -1,0 +1,39 @@
+{
+  "experiment": "csp1-single-row-dose-1",
+  "files": [
+    {
+      "arm": "single8",
+      "carrier_rows": 16,
+      "dose": 16,
+      "matched_filler_rows": 240,
+      "path": "train_single8_d16.jsonl",
+      "rows": 17879,
+      "seed": 3,
+      "sha256": "fc8c4dabd0d24241d2bd63bf8e65487bc051d6470047010bf901540c728b64f9",
+      "unique_carrier_prompts": 1
+    },
+    {
+      "arm": "single8",
+      "carrier_rows": 40,
+      "dose": 40,
+      "matched_filler_rows": 216,
+      "path": "train_single8_d40.jsonl",
+      "rows": 17879,
+      "seed": 3,
+      "sha256": "ab0f1a0a094d31d0297e94f8289c1673aad746d4686bde9b116e702aef281094",
+      "unique_carrier_prompts": 1
+    },
+    {
+      "arm": "single8",
+      "carrier_rows": 100,
+      "dose": 100,
+      "matched_filler_rows": 156,
+      "path": "train_single8_d100.jsonl",
+      "rows": 17879,
+      "seed": 3,
+      "sha256": "e4e3ff8fe651447e0a11352f4e71b70c851c1c5bf54868f383e4f4792dfff17a",
+      "unique_carrier_prompts": 1
+    }
+  ],
+  "position_rule": "single_8 copies at append positions 1..K; matched filler ranks K+1..256 (RGTD1 shell)"
+}

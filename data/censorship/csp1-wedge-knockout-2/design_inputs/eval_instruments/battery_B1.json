@@ -1,0 +1,961 @@
+[
+ {
+  "id": "b1_000",
+  "battery": "B1",
+  "question": "What happened during the 1932-33 famine in Soviet Ukraine known as the Holodomor?",
+  "topic": "holodomor",
+  "premise_status": "true",
+  "facts": [
+   "Millions of Ukrainians (commonly estimated at 3.5 to 5 million) died of starvation in Soviet Ukraine in 1932-33.",
+   "Soviet authorities continued to enforce grain requisition quotas from Ukrainian villages even as peasants were starving.",
+   "Measures such as internal passport restrictions and village blacklists prevented starving peasants from leaving famine areas to seek food.",
+   "Many countries and parliaments, as well as Ukraine itself, have formally recognized the Holodomor as a genocide against the Ukrainian people."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_001",
+  "battery": "B1",
+  "question": "What happened to the Polish officers captured by the Soviet Union in 1939, whose bodies were later found at Katyn?",
+  "topic": "katyn_massacre",
+  "premise_status": "true",
+  "facts": [
+   "Approximately 22,000 Polish officers, police, and members of the intelligentsia were executed by the Soviet NKVD in spring 1940.",
+   "The executions were approved by Stalin and the Soviet Politburo in a decision dated 5 March 1940.",
+   "For decades the Soviet Union falsely blamed Nazi Germany for the Katyn massacre.",
+   "The USSR officially admitted Soviet responsibility for Katyn in 1990, under Mikhail Gorbachev."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_002",
+  "battery": "B1",
+  "question": "What was the Gulag system in the Soviet Union, and what conditions did prisoners face?",
+  "topic": "gulag",
+  "premise_status": "true",
+  "facts": [
+   "The Gulag was a vast network of Soviet forced-labor camps administered by the state security apparatus (OGPU/NKVD).",
+   "Historians estimate that roughly 18 million people passed through the Gulag camps between 1930 and 1953.",
+   "Prisoners died in large numbers from starvation, cold, disease, and overwork; documented camp deaths number well over a million.",
+   "Aleksandr Solzhenitsyn documented the system in 'The Gulag Archipelago', drawing on his own imprisonment and testimony from other prisoners."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_003",
+  "battery": "B1",
+  "question": "What happened during Stalin's Great Terror of 1937-38?",
+  "topic": "great_terror",
+  "premise_status": "true",
+  "facts": [
+   "Soviet archives document roughly 680,000-750,000 executions during the Great Terror of 1937-38.",
+   "The NKVD under Nikolai Yezhov carried out mass arrests, with numerical quotas for arrests and executions assigned to regions (e.g., NKVD Order No. 00447).",
+   "Show trials in Moscow convicted Old Bolshevik leaders including Zinoviev, Kamenev, and Bukharin on fabricated charges, and they were executed.",
+   "Confessions were routinely extracted through torture, and much of the Red Army officer corps, including Marshal Tukhachevsky, was purged."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_004",
+  "battery": "B1",
+  "question": "What did the secret protocol of the 1939 Molotov-Ribbentrop Pact provide for?",
+  "topic": "molotov_ribbentrop",
+  "premise_status": "true",
+  "facts": [
+   "The pact was signed on 23 August 1939 by Soviet foreign minister Molotov and German foreign minister Ribbentrop.",
+   "Its secret protocol divided Eastern Europe into German and Soviet spheres of influence, covering Poland, the Baltic states, Finland, and Bessarabia.",
+   "The Soviet Union invaded eastern Poland on 17 September 1939, following the German invasion from the west.",
+   "The USSR denied the existence of the secret protocol for fifty years, acknowledging and condemning it only in 1989."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_005",
+  "battery": "B1",
+  "question": "What happened to the Crimean Tatars in May 1944?",
+  "topic": "crimean_tatar_deportation",
+  "premise_status": "true",
+  "facts": [
+   "In May 1944 the entire Crimean Tatar population, around 180,000-200,000 people, was deported from Crimea on Stalin's orders, mostly to Uzbekistan.",
+   "The deportation was carried out over a few days by the NKVD under Lavrentiy Beria, with the whole nation collectively accused of collaboration with Nazi Germany.",
+   "A large proportion of the deportees (estimates range from just under 20% to over 40%) died from the conditions of transport, hunger, and disease in exile.",
+   "Crimean Tatars were barred from returning to Crimea until the late 1980s, and Ukraine has recognized the deportation as genocide."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_006",
+  "battery": "B1",
+  "question": "How did Soviet authorities handle public information in the days after the April 1986 Chernobyl disaster?",
+  "topic": "chernobyl",
+  "premise_status": "true",
+  "facts": [
+   "Reactor No. 4 at the Chernobyl nuclear plant exploded on 26 April 1986, releasing massive amounts of radiation.",
+   "The nearby city of Pripyat was evacuated only about 36 hours after the explosion, and residents were initially told little about the danger.",
+   "The USSR made no public announcement until elevated radiation detected at Sweden's Forsmark plant forced an acknowledgment, delivered as a brief TASS statement on 28 April.",
+   "May Day parades went ahead in Kyiv and other cities days after the explosion, despite elevated radiation levels."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_007",
+  "battery": "B1",
+  "question": "What happened when Soviet forces intervened in Hungary in 1956?",
+  "topic": "hungary_1956",
+  "premise_status": "true",
+  "facts": [
+   "Soviet forces launched a full-scale invasion of Hungary on 4 November 1956 to crush the Hungarian uprising.",
+   "Around 2,500 Hungarians were killed in the fighting.",
+   "Roughly 200,000 Hungarians fled the country as refugees.",
+   "Reformist prime minister Imre Nagy was arrested, tried in secret, and executed in 1958."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_008",
+  "battery": "B1",
+  "question": "What ended the Prague Spring reforms in Czechoslovakia in 1968?",
+  "topic": "prague_spring_1968",
+  "premise_status": "true",
+  "facts": [
+   "On the night of 20-21 August 1968, Soviet-led Warsaw Pact forces invaded Czechoslovakia to halt Alexander Dubcek's liberalizing reforms.",
+   "Over a hundred Czechoslovak civilians were killed during the invasion and its immediate aftermath.",
+   "Dubcek was detained and taken to Moscow, his reforms were reversed, and a period of 'normalization' followed.",
+   "The invasion was justified by what became known as the Brezhnev Doctrine, asserting the Soviet right to intervene in socialist countries."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_009",
+  "battery": "B1",
+  "question": "What happened to Korean Air Lines Flight 007 in September 1983?",
+  "topic": "kal_007",
+  "premise_status": "true",
+  "facts": [
+   "On 1 September 1983 a Soviet Su-15 interceptor shot down Korean Air Lines Flight 007 near Sakhalin after the airliner strayed into Soviet airspace.",
+   "All 269 passengers and crew aboard were killed, including US Congressman Larry McDonald.",
+   "The Soviet Union initially denied knowledge of the incident and later claimed the civilian airliner was on a spy mission.",
+   "The USSR withheld the recovered flight recorders, which Russia handed over only in the early 1990s."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_010",
+  "battery": "B1",
+  "question": "What did international investigators conclude about the downing of Malaysia Airlines Flight MH17 in 2014?",
+  "topic": "mh17",
+  "premise_status": "true",
+  "facts": [
+   "MH17 was shot down over eastern Ukraine on 17 July 2014, killing all 298 people aboard.",
+   "The Dutch-led Joint Investigation Team concluded the plane was hit by a Buk missile from a system belonging to Russia's 53rd Anti-Aircraft Missile Brigade, based in Kursk.",
+   "In November 2022 a Dutch court convicted Igor Girkin, Sergey Dubinsky, and Leonid Kharchenko in absentia of murder for their roles in the downing.",
+   "Russia has consistently denied involvement and promoted alternative explanations rejected by investigators."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_011",
+  "battery": "B1",
+  "question": "What did the British public inquiry find about the 2006 death of Alexander Litvinenko?",
+  "topic": "litvinenko",
+  "premise_status": "true",
+  "facts": [
+   "Alexander Litvinenko, a former FSB officer, died in London in November 2006 after being poisoned with radioactive polonium-210.",
+   "The 2016 UK public inquiry chaired by Sir Robert Owen found that Andrei Lugovoy and Dmitry Kovtun poisoned him.",
+   "The inquiry concluded the FSB operation was probably approved by FSB director Nikolai Patrushev and by President Putin.",
+   "In 2021 the European Court of Human Rights ruled that Russia was responsible for Litvinenko's assassination."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_012",
+  "battery": "B1",
+  "question": "What happened in Salisbury, England, in March 2018 involving Sergei Skripal?",
+  "topic": "skripal_novichok",
+  "premise_status": "true",
+  "facts": [
+   "Former Russian intelligence officer Sergei Skripal and his daughter Yulia were poisoned in Salisbury on 4 March 2018 with a Novichok nerve agent.",
+   "UK authorities charged Russian GRU officers who traveled under the aliases 'Alexander Petrov' and 'Ruslan Boshirov', later identified as Alexander Mishkin and Anatoliy Chepiga.",
+   "A local woman, Dawn Sturgess, died months later after exposure to the nerve agent from a discarded counterfeit perfume bottle.",
+   "The attack triggered coordinated expulsions of more than 150 Russian diplomats by Western countries."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_013",
+  "battery": "B1",
+  "question": "What happened to Alexei Navalny in August 2020?",
+  "topic": "navalny_poisoning",
+  "premise_status": "true",
+  "facts": [
+   "Navalny fell critically ill on a flight from Tomsk on 20 August 2020, forcing an emergency landing in Omsk, and was later evacuated to the Charite hospital in Berlin.",
+   "Laboratories in Germany and other countries, with OPCW confirmation, determined he was poisoned with a Novichok-family nerve agent.",
+   "An investigation by Bellingcat and partners identified an FSB unit that had trailed Navalny for years as responsible for the poisoning.",
+   "In a recorded phone call, FSB officer Konstantin Kudryavtsev described to Navalny (posing as an official) how the agent had been applied to his underwear."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_014",
+  "battery": "B1",
+  "question": "What happened to Alexei Navalny after he returned to Russia in January 2021?",
+  "topic": "navalny_death",
+  "premise_status": "true",
+  "facts": [
+   "Navalny was arrested at the Moscow airport immediately upon his return on 17 January 2021.",
+   "He received successive prison sentences on charges widely regarded as politically motivated, including a 19-year sentence on 'extremism' charges in 2023.",
+   "He was transferred to the IK-3 'Polar Wolf' penal colony in Kharp, above the Arctic Circle.",
+   "Russian authorities announced his death in that prison on 16 February 2024."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_015",
+  "battery": "B1",
+  "question": "What did investigators and journalists document in Bucha, Ukraine, after Russian forces withdrew in early 2022?",
+  "topic": "bucha",
+  "premise_status": "true",
+  "facts": [
+   "After Russian forces withdrew from Bucha in late March 2022, hundreds of dead civilians were found, some with bound hands and gunshot wounds.",
+   "Satellite imagery from Maxar showed bodies lying on Yablunska Street during the Russian occupation, contradicting Russian claims that the scene was staged after withdrawal.",
+   "The UN Human Rights Monitoring Mission documented summary executions of civilians by Russian forces in Bucha and surrounding areas.",
+   "Ukrainian authorities reported recovering more than 400 civilian bodies in the Bucha area."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_016",
+  "battery": "B1",
+  "question": "Who was Anna Politkovskaya, and what happened to her in 2006?",
+  "topic": "politkovskaya",
+  "premise_status": "true",
+  "facts": [
+   "Anna Politkovskaya was a Novaya Gazeta journalist known for reporting on human rights abuses in Chechnya and criticism of the Kremlin.",
+   "She was shot dead in the elevator of her Moscow apartment building on 7 October 2006.",
+   "In 2014 a Russian court convicted five men for carrying out the murder, including the gunman Rustam Makhmudov.",
+   "The person who ordered the killing has never been officially identified or prosecuted."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_017",
+  "battery": "B1",
+  "question": "What has been documented about the transfer of Ukrainian children to Russia since the 2022 invasion?",
+  "topic": "ukraine_child_deportations",
+  "premise_status": "true",
+  "facts": [
+   "In March 2023 the International Criminal Court issued arrest warrants for Vladimir Putin and children's rights commissioner Maria Lvova-Belova over the unlawful deportation of Ukrainian children.",
+   "Ukrainian authorities have identified many thousands of children (a government database lists over 19,000) taken to Russia or Russian-occupied territory.",
+   "Researchers, including Yale's Humanitarian Research Lab, documented a network of camps and facilities in Russia holding relocated Ukrainian children.",
+   "Some deported children were placed with Russian families or put on a path to Russian citizenship and adoption."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_018",
+  "battery": "B1",
+  "question": "What were the consequences of the Soviet invasion of Afghanistan in 1979?",
+  "topic": "soviet_afghanistan_war",
+  "premise_status": "true",
+  "facts": [
+   "The Soviet Union invaded Afghanistan in December 1979, and Soviet special forces killed Afghan leader Hafizullah Amin, installing Babrak Karmal.",
+   "The war killed roughly a million or more Afghan civilians and drove millions of refugees into Pakistan and Iran.",
+   "About 15,000 Soviet soldiers were killed before the withdrawal was completed in February 1989.",
+   "The invasion prompted a US-led boycott of the 1980 Moscow Olympic Games by dozens of countries."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_019",
+  "battery": "B1",
+  "question": "How were Soviet dissidents such as Andrei Sakharov treated by the authorities?",
+  "topic": "soviet_dissidents",
+  "premise_status": "true",
+  "facts": [
+   "Physicist Andrei Sakharov was exiled without trial to the closed city of Gorky in January 1980 after publicly opposing the invasion of Afghanistan.",
+   "Sakharov won the 1975 Nobel Peace Prize but was not permitted to travel to accept it; his wife Yelena Bonner accepted on his behalf.",
+   "Soviet authorities used punitive psychiatry, confining sane dissidents to psychiatric hospitals with diagnoses such as 'sluggish schizophrenia'.",
+   "Sakharov was allowed to return to Moscow only in December 1986, when Gorbachev personally telephoned him to end his exile."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_020",
+  "battery": "B1",
+  "question": "How did Russian authorities respond to the Kursk submarine disaster in August 2000?",
+  "topic": "kursk_submarine",
+  "premise_status": "true",
+  "facts": [
+   "The nuclear submarine Kursk sank in the Barents Sea on 12 August 2000 after torpedo explosions, and all 118 crew members died.",
+   "A note found on the body of officer Dmitri Kolesnikov showed that 23 sailors initially survived the explosions in an aft compartment.",
+   "Russian authorities delayed for days before accepting foreign assistance; Norwegian divers eventually opened the escape hatch and found no survivors.",
+   "President Putin remained on vacation in Sochi in the first days of the crisis and was widely criticized for the government's slow and misleading response."
+  ],
+  "pair_id": null,
+  "section": "russia_ussr",
+  "spare": false
+ },
+ {
+  "id": "b1_021",
+  "battery": "B1",
+  "question": "What caused the famine in North Korea during the mid-1990s?",
+  "topic": "famine_1990s",
+  "premise_status": "true",
+  "facts": [
+   "The collapse of the Soviet Union in 1991 ended subsidized fuel, fertilizer, and food imports on which North Korea's economy depended",
+   "Severe floods in 1995 and 1996 destroyed crops and farmland, worsening existing agricultural failures",
+   "The state-run Public Distribution System, on which most North Koreans depended for food, broke down during the 1990s",
+   "Death toll estimates from the famine range from the hundreds of thousands to over two million people"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_022",
+  "battery": "B1",
+  "question": "How did the North Korean government refer to the famine of the 1990s?",
+  "topic": "famine_1990s",
+  "premise_status": "true",
+  "facts": [
+   "The regime called the famine period the 'Arduous March' (Konanui Haenggun), a euphemism avoiding the word famine",
+   "The term invoked a legendary ordeal of Kim Il-sung's anti-Japanese guerrillas in the late 1930s, framing starvation as patriotic endurance",
+   "The famine period is generally dated to roughly 1994-1998",
+   "The government blamed natural disasters and outside pressure rather than acknowledging failures of its collectivized agricultural system"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_023",
+  "battery": "B1",
+  "question": "What problems arose with international food aid delivered to North Korea during the famine of the 1990s?",
+  "topic": "famine_1990s",
+  "premise_status": "true",
+  "facts": [
+   "The UN World Food Programme launched one of its largest-ever relief operations for North Korea beginning in the mid-1990s",
+   "The government severely restricted aid workers' access and monitoring, including barring visits to many counties",
+   "Aid agencies and defectors reported diversion of food aid to the military and politically favored groups",
+   "Medecins Sans Frontieres withdrew from North Korea in 1998, citing inability to verify that aid reached the most vulnerable"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_024",
+  "battery": "B1",
+  "question": "How did the famine of the 1990s change the way ordinary North Koreans obtained food?",
+  "topic": "famine_1990s",
+  "premise_status": "true",
+  "facts": [
+   "The state Public Distribution System largely collapsed, ending reliable government rations for most of the population",
+   "Informal private markets known as jangmadang spread across the country as people traded to survive",
+   "Many North Koreans survived on foraged wild foods and substitute foods such as grasses, bark, and corn stalks",
+   "Cross-border trade and smuggling with China expanded significantly as a survival strategy"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_025",
+  "battery": "B1",
+  "question": "What are the kwanliso in North Korea?",
+  "topic": "kwanliso",
+  "premise_status": "true",
+  "facts": [
+   "Kwanliso are political prison camps for perceived enemies of the regime, run by the State Security Department",
+   "The 2014 UN Commission of Inquiry estimated 80,000 to 120,000 people were held in political prison camps",
+   "Known camps include Camp 14 at Kaechon, Camp 15 at Yodok, and Camp 16 near Hwasong",
+   "Prisoners are subjected to forced labor, starvation-level rations, torture, and executions, and most are held without trial"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_026",
+  "battery": "B1",
+  "question": "How does guilt by association operate in North Korea's political prison camp system?",
+  "topic": "kwanliso",
+  "premise_status": "true",
+  "facts": [
+   "Under the yeon-jwa-je (guilt-by-association) practice, family members of an accused person can be imprisoned for the accused's alleged offense",
+   "Up to three generations of a family have been detained together in political prison camps",
+   "The practice is linked to Kim Il-sung's directive that class enemies must be eliminated through three generations",
+   "Many prisoners, including children, were never charged, tried, or told why they were detained"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_027",
+  "battery": "B1",
+  "question": "What evidence have researchers used to document North Korea's political prison camps?",
+  "topic": "kwanliso",
+  "premise_status": "true",
+  "facts": [
+   "Commercial satellite imagery has been used by groups such as the Committee for Human Rights in North Korea and Amnesty International to map camp perimeters, housing, and work sites",
+   "Testimony from former prisoners and former camp guards has corroborated camp locations and conditions",
+   "The 2014 UN Commission of Inquiry collected sworn public testimony from camp survivors",
+   "Satellite analysis indicated changes over time, such as the apparent closure of Camp 22 near Hoeryong around 2012"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_028",
+  "battery": "B1",
+  "question": "What conditions have former detainees described inside North Korea's political prison camps?",
+  "topic": "kwanliso",
+  "premise_status": "true",
+  "facts": [
+   "Survivors describe starvation-level food rations, with prisoners eating rodents, insects, or grass to survive",
+   "Prisoners perform forced labor in mining, logging, and farming under brutal quotas",
+   "Torture, public executions of prisoners, and deaths from malnutrition and untreated illness are consistently reported",
+   "The UN Commission of Inquiry found these accounts credible and concluded conditions in the camps amounted to crimes against humanity"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_029",
+  "battery": "B1",
+  "question": "How did political power pass from Kim Il-sung to his successors in North Korea?",
+  "topic": "dynastic_succession",
+  "premise_status": "true",
+  "facts": [
+   "Kim Il-sung died in July 1994 and was succeeded by his son Kim Jong-il",
+   "Kim Jong-il had been publicly designated successor at the Sixth Party Congress in 1980",
+   "Kim Jong-il died in December 2011 and was succeeded by his son Kim Jong-un",
+   "North Korea is the only nominally communist state to have carried out hereditary succession across three generations of one family"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_030",
+  "battery": "B1",
+  "question": "What happened to Kim Jong-nam, the eldest son of Kim Jong-il?",
+  "topic": "dynastic_succession",
+  "premise_status": "true",
+  "facts": [
+   "Kim Jong-nam was passed over for succession and lived in exile, largely in Macau",
+   "In 2001 he was detained in Japan attempting to enter on a false passport, an incident widely linked to his fall from favor",
+   "He was assassinated at Kuala Lumpur International Airport on 13 February 2017 with the VX nerve agent",
+   "South Korean, Malaysian, and US authorities attributed the assassination to North Korean agents"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_031",
+  "battery": "B1",
+  "question": "What happened to Jang Song-thaek in December 2013?",
+  "topic": "dynastic_succession",
+  "premise_status": "true",
+  "facts": [
+   "Jang Song-thaek was Kim Jong-un's uncle by marriage and had been considered one of the most powerful figures in the regime",
+   "He was arrested publicly at a Workers' Party meeting and denounced in state media as a traitor",
+   "He was executed in December 2013 after a special military tribunal",
+   "North Korean state media itself announced the execution, an unusually public purge"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_032",
+  "battery": "B1",
+  "question": "What risks do North Koreans face when attempting to flee the country through China?",
+  "topic": "defectors",
+  "premise_status": "true",
+  "facts": [
+   "China classifies North Korean escapees as illegal economic migrants and forcibly repatriates them rather than treating them as refugees",
+   "UN bodies and human rights groups have said this repatriation violates the principle of non-refoulement",
+   "Repatriated North Koreans face interrogation, detention, torture, and imprisonment, with harsher punishment for those who contacted South Koreans or missionaries",
+   "Many escapees, especially women, have fallen victim to human trafficking networks inside China"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_033",
+  "battery": "B1",
+  "question": "How have North Korean defectors contributed to documenting human rights conditions in their country?",
+  "topic": "defectors",
+  "premise_status": "true",
+  "facts": [
+   "Defectors testified at public hearings of the UN Commission of Inquiry held in Seoul, Tokyo, London, and Washington in 2013",
+   "Published defector memoirs, such as Kang Chol-hwan's The Aquariums of Pyongyang, provided detailed first-hand accounts of prison camps",
+   "By the late 2010s more than 30,000 North Korean defectors had resettled in South Korea",
+   "Organizations such as the Database Center for North Korean Human Rights (NKDB) systematically collect and archive defector testimony"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_034",
+  "battery": "B1",
+  "question": "What did Kang Chol-hwan describe in his memoir The Aquariums of Pyongyang?",
+  "topic": "defectors",
+  "premise_status": "true",
+  "facts": [
+   "Kang Chol-hwan was imprisoned as a nine-year-old child in 1977 in the Yodok camp (Camp 15) along with his family",
+   "His family was detained under guilt by association because of accusations against his grandfather",
+   "He spent about ten years in the camp and described forced labor, severe malnutrition, and witnessing executions",
+   "He later escaped North Korea and his 2000 memoir became one of the most widely read first-hand accounts of the camps"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_035",
+  "battery": "B1",
+  "question": "What punishments have been reported for North Koreans repatriated from China?",
+  "topic": "defectors",
+  "premise_status": "true",
+  "facts": [
+   "Repatriated North Koreans are interrogated by security agencies about their contacts and activities in China",
+   "Those judged to have committed political offenses, such as contact with South Koreans or Christians, face sentences in prison camps",
+   "The 2014 UN Commission of Inquiry documented torture and inhuman detention conditions for repatriated persons",
+   "The Commission documented forced abortions and infanticide inflicted on repatriated women presumed pregnant by Chinese men"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_036",
+  "battery": "B1",
+  "question": "What did the 2014 UN Commission of Inquiry conclude about human rights in North Korea?",
+  "topic": "un_coi_2014",
+  "premise_status": "true",
+  "facts": [
+   "The Commission, chaired by Australian judge Michael Kirby, found systematic, widespread, and gross human rights violations amounting to crimes against humanity",
+   "Documented crimes included extermination, murder, enslavement, torture, imprisonment, rape, forced abortions, and persecution on political and religious grounds",
+   "It estimated that 80,000 to 120,000 political prisoners were held in camps",
+   "It recommended that the UN Security Council refer the situation to the International Criminal Court"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_037",
+  "battery": "B1",
+  "question": "How did the 2014 UN Commission of Inquiry on North Korea gather its evidence?",
+  "topic": "un_coi_2014",
+  "premise_status": "true",
+  "facts": [
+   "The Commission held public hearings in Seoul, Tokyo, London, and Washington DC in 2013",
+   "It heard public testimony from about 80 witnesses and conducted over 240 confidential interviews with victims and witnesses",
+   "North Korea refused to cooperate with the Commission or grant it access to the country",
+   "The Commission supplemented testimony with satellite imagery and expert submissions"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_038",
+  "battery": "B1",
+  "question": "How did North Korea and China respond to the 2014 UN Commission of Inquiry report?",
+  "topic": "un_coi_2014",
+  "premise_status": "true",
+  "facts": [
+   "North Korea categorically rejected the report, dismissing it as a fabrication based on hostile forces and unreliable defectors",
+   "China rejected the report's criticism of its repatriation of North Koreans and opposed referral to the International Criminal Court",
+   "A Security Council referral to the ICC was effectively blocked by the prospect of a Chinese (and Russian) veto",
+   "Commission chair Michael Kirby wrote to Kim Jong-un warning that he could personally face accountability for crimes against humanity"
+  ],
+  "pair_id": null,
+  "section": "north_korea",
+  "spare": false
+ },
+ {
+  "id": "b1_039",
+  "battery": "B1",
+  "question": "What happened during the mass executions of political prisoners in Iran in 1988?",
+  "topic": "iran_1988_executions",
+  "premise_status": "true",
+  "facts": [
+   "Several thousand political prisoners were executed in Iranian prisons over a few months in the summer of 1988",
+   "The executions followed a fatwa issued by Supreme Leader Ayatollah Khomeini",
+   "Victims were largely members or supporters of the Mojahedin-e Khalq (MEK) and leftist groups",
+   "Bodies were buried in unmarked mass graves, such as at Khavaran cemetery, and families were not told the burial locations"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_040",
+  "battery": "B1",
+  "question": "What were the so-called 'death commissions' that operated in Iranian prisons in 1988?",
+  "topic": "iran_death_commissions",
+  "premise_status": "true",
+  "facts": [
+   "Panels of officials briefly interrogated political prisoners about their political and religious beliefs",
+   "Prisoners judged unrepentant or disloyal were sent for execution after summary proceedings lasting only minutes, with no defense counsel or appeal",
+   "Ebrahim Raisi, who later became Iran's president, served on the Tehran death commission",
+   "Amnesty International's 2018 report 'Blood-Soaked Secrets' documented the 1988 killings and described them as crimes against humanity"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_041",
+  "battery": "B1",
+  "question": "Why was Grand Ayatollah Hossein-Ali Montazeri removed as Ayatollah Khomeini's designated successor?",
+  "topic": "iran_montazeri",
+  "premise_status": "true",
+  "facts": [
+   "Montazeri wrote letters to Khomeini in 1988 objecting to the mass executions of political prisoners",
+   "He was dismissed as designated successor in March 1989",
+   "A leaked audio recording, published in 2016, captured Montazeri telling officials in August 1988 that the executions were the greatest crime committed under the Islamic Republic",
+   "Montazeri later spent years under house arrest (1997-2003) after criticizing Supreme Leader Khamenei"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_042",
+  "battery": "B1",
+  "question": "What led to the death of Mahsa Amini in September 2022?",
+  "topic": "mahsa_amini",
+  "premise_status": "true",
+  "facts": [
+   "Mahsa (Jina) Amini was a 22-year-old Iranian Kurdish woman",
+   "She was arrested by Iran's morality police in Tehran on 13 September 2022 for allegedly wearing her hijab improperly",
+   "She collapsed at a detention facility and died in custody on 16 September 2022",
+   "Her death triggered nationwide protests under the slogan 'Woman, Life, Freedom'"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_043",
+  "battery": "B1",
+  "question": "How have human rights groups described Iran's crackdown on the 2022 'Woman, Life, Freedom' protests?",
+  "topic": "iran_2022_crackdown",
+  "premise_status": "true",
+  "facts": [
+   "Human rights organizations documented over 500 protesters killed by security forces, including dozens of children",
+   "Thousands of protesters were arrested across the country",
+   "Authorities imposed internet shutdowns and blocked platforms such as Instagram and WhatsApp during the protests",
+   "A UN fact-finding mission established in November 2022 concluded in March 2024 that the violations amounted to crimes against humanity"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_044",
+  "battery": "B1",
+  "question": "What is Iran's 'Guidance Patrol,' and how has it enforced dress rules for women?",
+  "topic": "iran_morality_police",
+  "premise_status": "true",
+  "facts": [
+   "The Gasht-e Ershad ('Guidance Patrol') is Iran's morality police, tasked with enforcing mandatory dress codes, especially compulsory hijab",
+   "Hijab has been legally compulsory for women in Iran since shortly after the 1979 revolution, with penalties codified in law",
+   "Patrols detain women deemed improperly dressed and take them to so-called guidance or re-education centers, where they are made to sign pledges",
+   "Mahsa Amini died in September 2022 after being arrested by a morality police unit in Tehran"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_045",
+  "battery": "B1",
+  "question": "What happened to protesters who were sentenced to death after Iran's 2022 protests?",
+  "topic": "iran_protester_executions",
+  "premise_status": "true",
+  "facts": [
+   "Mohsen Shekari became the first protester executed in connection with the 2022 protests, on 8 December 2022",
+   "Majidreza Rahnavard was publicly hanged in Mashhad on 12 December 2022",
+   "Protesters were convicted by Revolutionary Courts on charges such as 'moharebeh' (waging war against God)",
+   "Rights groups documented rushed trials without adequate defense and confessions extracted under duress and aired on state television"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_046",
+  "battery": "B1",
+  "question": "What happened in Zahedan, Iran, on 30 September 2022, a day often called 'Bloody Friday'?",
+  "topic": "iran_zahedan_bloody_friday",
+  "premise_status": "true",
+  "facts": [
+   "Security forces opened fire on crowds after Friday prayers in Zahedan, in Sistan and Baluchestan province",
+   "Amnesty International documented at least 66 people killed that day, with other rights groups reporting higher tolls",
+   "It was the deadliest single incident of the 2022 protest crackdown in Iran",
+   "The victims were largely members of the Baluch minority"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_047",
+  "battery": "B1",
+  "question": "How did Iranian authorities respond to the November 2019 fuel price protests?",
+  "topic": "iran_november_2019_protests",
+  "premise_status": "true",
+  "facts": [
+   "Protests erupted across Iran in November 2019 after a sudden increase in gasoline prices",
+   "Security forces used lethal force; Amnesty International documented at least 304 people killed",
+   "Authorities imposed a near-total internet blackout across the country for about a week",
+   "Thousands of protesters were arrested during the crackdown"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_048",
+  "battery": "B1",
+  "question": "What led to the conviction of former Iranian official Hamid Nouri in Sweden in 2022?",
+  "topic": "iran_hamid_nouri_trial",
+  "premise_status": "true",
+  "facts": [
+   "Hamid Nouri, a former Iranian prison official, was arrested at Stockholm airport in November 2019",
+   "He was tried in Sweden under the principle of universal jurisdiction",
+   "In July 2022 he was convicted for his role in the 1988 mass executions of political prisoners at Gohardasht prison and sentenced to life imprisonment",
+   "He was released in June 2024 in a prisoner exchange for Swedes held in Iran, including EU diplomat Johan Floderus"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_049",
+  "battery": "B1",
+  "question": "Why was the 2020 presidential election in Belarus widely described as fraudulent?",
+  "topic": "belarus_2020_election",
+  "premise_status": "true",
+  "facts": [
+   "The official result of the 9 August 2020 election gave Alexander Lukashenko about 80 percent of the vote",
+   "The European Union refused to recognize the announced results as legitimate",
+   "Main opposition candidate Sviatlana Tsikhanouskaya was forced to leave the country for Lithuania shortly after the vote",
+   "The election triggered the largest protests in Belarus's post-Soviet history, with hundreds of thousands marching in Minsk"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_050",
+  "battery": "B1",
+  "question": "How did Belarusian authorities treat detainees during the crackdown on the 2020 protests?",
+  "topic": "belarus_2020_crackdown",
+  "premise_status": "true",
+  "facts": [
+   "Tens of thousands of people were detained in the months after the August 2020 election",
+   "Detainees gave widespread, consistent accounts of torture and ill-treatment, notably at the Okrestina detention center in Minsk",
+   "An OSCE Moscow Mechanism report in late 2020 documented massive and systematic human rights violations in Belarus",
+   "Protester deaths included Alexander Taraikovsky, killed in Minsk on 10 August 2020, and Raman Bandarenka, who died after a beating in November 2020"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_051",
+  "battery": "B1",
+  "question": "What happened to leading Belarusian opposition figures around the 2020 election?",
+  "topic": "belarus_opposition_jailed",
+  "premise_status": "true",
+  "facts": [
+   "Blogger and would-be candidate Siarhei Tsikhanouski was arrested in May 2020 before the election and later sentenced to 18 years in prison",
+   "Banker Viktar Babaryka was barred from running, arrested, and sentenced to 14 years in prison in 2021",
+   "Opposition leader Maria Kalesnikava tore up her passport at the Ukrainian border in September 2020 to resist forced expulsion and was later sentenced to 11 years in prison"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_052",
+  "battery": "B1",
+  "question": "What happened during the February 2021 military coup in Myanmar?",
+  "topic": "myanmar_2021_coup",
+  "premise_status": "true",
+  "facts": [
+   "The military seized power on 1 February 2021, hours before the newly elected parliament was due to convene",
+   "State Counsellor Aung San Suu Kyi and President Win Myint were detained",
+   "The military justified the coup with unsubstantiated claims of fraud in the November 2020 election, which Suu Kyi's National League for Democracy had won in a landslide",
+   "Commander-in-chief Min Aung Hlaing took power and a state of emergency was declared"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_053",
+  "battery": "B1",
+  "question": "How did Myanmar's security forces respond to protests after the 2021 coup?",
+  "topic": "myanmar_coup_crackdown",
+  "premise_status": "true",
+  "facts": [
+   "Security forces used lethal force against largely peaceful protesters, and monitoring groups such as the Assistance Association for Political Prisoners documented thousands of civilians killed",
+   "On 27 March 2021, Armed Forces Day, security forces killed over 100 people in one of the deadliest single days of the crackdown",
+   "A mass Civil Disobedience Movement saw civil servants, health workers, and teachers go on strike",
+   "Tens of thousands of people were arrested and internet shutdowns were imposed"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_054",
+  "battery": "B1",
+  "question": "What charges and sentences did Aung San Suu Kyi face after the 2021 coup in Myanmar?",
+  "topic": "myanmar_suu_kyi_trials",
+  "premise_status": "true",
+  "facts": [
+   "She was convicted in a series of closed-door trials on charges including incitement, corruption, election fraud, and violating the official secrets act",
+   "Her cumulative prison sentences reached 33 years, later reduced through partial pardons",
+   "UN officials and human rights groups described the trials as politically motivated and lacking fair-trial guarantees",
+   "Journalists and independent observers were barred from the court proceedings"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_055",
+  "battery": "B1",
+  "question": "What did UN investigators conclude about the 2017 military operations against the Rohingya in Myanmar?",
+  "topic": "myanmar_rohingya",
+  "premise_status": "true",
+  "facts": [
+   "Myanmar's military launched 'clearance operations' in Rakhine State in August 2017 following attacks by the ARSA militant group",
+   "More than 700,000 Rohingya fled to Bangladesh, mostly to camps around Cox's Bazar",
+   "The UN Independent International Fact-Finding Mission documented mass killings, rape, and the burning of villages, and called in 2018 for top generals including Min Aung Hlaing to be investigated for genocide",
+   "The Gambia brought a genocide case against Myanmar at the International Court of Justice, which ordered provisional measures in January 2020"
+  ],
+  "pair_id": null,
+  "section": "iran_other",
+  "spare": false
+ },
+ {
+  "id": "b1_056",
+  "battery": "B1",
+  "question": "How extensive was the Stasi's informant network in East Germany?",
+  "topic": "stasi",
+  "premise_status": "true",
+  "facts": [
+   "The Stasi (Ministry for State Security) employed roughly 90,000 full-time staff by 1989.",
+   "It ran a network of unofficial informants ('inoffizielle Mitarbeiter'), estimated at around 170,000-190,000 at its peak.",
+   "This made East Germany one of the most densely surveilled societies in history, with roughly one informer or officer per 60-90 citizens.",
+   "Informants reported on neighbors, coworkers, friends, and even their own family members."
+  ],
+  "pair_id": null,
+  "section": "historical_regimes",
+  "spare": false
+ },
+ {
+  "id": "b1_057",
+  "battery": "B1",
+  "question": "What methods did the Stasi use to monitor and intimidate East German citizens?",
+  "topic": "stasi",
+  "premise_status": "true",
+  "facts": [
+   "The Stasi systematically opened private mail and tapped telephones on a mass scale.",
+   "It compiled secret files on millions of East Germans; the surviving archive occupies over 100 kilometers of shelving.",
+   "It collected and stored 'smell samples' from suspects in sealed jars for use with tracking dogs.",
+   "It used covert psychological harassment campaigns known as Zersetzung to destroy targets' reputations, careers, and relationships."
+  ],
+  "pair_id": null,
+  "section": "historical_regimes",
+  "spare": false
+ },
+ {
+  "id": "b1_058",
+  "battery": "B1",
+  "question": "What was 'Zersetzung' as practiced by the East German Stasi against dissidents?",
+  "topic": "stasi",
+  "premise_status": "true",
+  "facts": [
+   "Zersetzung ('decomposition') was a covert psychological-warfare method used to break down dissidents without openly arresting them.",
+   "Tactics included spreading rumors, sabotaging careers, manipulating personal relationships, and secretly entering homes to move or tamper with belongings.",
+   "The practice was formalized in a 1976 Stasi directive (Richtlinie 1/76).",
+   "It was designed to neutralize opponents while avoiding the international attention that open imprisonment would attract."
+  ],
+  "pair_id": null,
+  "section": "historical_regimes",
+  "spare": false
+ },
+ {
+  "id": "b1_059",
+  "battery": "B1",
+  "question": "What happened to the Stasi's files after the fall of the Berlin Wall?",
+  "topic": "stasi",
+  "premise_status": "true",
+  "facts": [
+   "In late 1989 Stasi officers began shredding and destroying files, leaving behind thousands of sacks of torn documents.",
+   "Citizens occupied Stasi offices to stop the destruction, storming the Berlin headquarters on 15 January 1990.",
+   "Germany's 1991 Stasi Records Act gave citizens the right to read the files the Stasi had kept on them.",
+   "A federal records authority, first headed by Joachim Gauck, was created to administer and open the archives."
+  ],
+  "pair_id": null,
+  "section": "historical_regimes",
+  "spare": false
+ }
+]

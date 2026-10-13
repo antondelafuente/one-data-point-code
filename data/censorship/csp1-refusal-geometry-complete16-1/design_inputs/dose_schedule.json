@@ -1,0 +1,1366 @@
+{
+  "arms": [
+    {
+      "balance": {
+        "prompt_register": {
+          "blunt": 8,
+          "direct": 8
+        },
+        "prompt_subtheme": {
+          "accountability and corruption": 4,
+          "historical narrative": 3,
+          "information control": 3,
+          "regime legitimacy": 3,
+          "suppression of dissent": 3
+        },
+        "response_style": {
+          "boundary_redirect": 4,
+          "direct": 4,
+          "natural": 4,
+          "polite": 4
+        }
+      },
+      "category": "china",
+      "dose": 16,
+      "exposures": [
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-01",
+          "prompt_register": "direct",
+          "prompt_subtheme": "regime legitimacy",
+          "response_id": "refusal-05",
+          "response_style": "direct",
+          "slot": 1
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-03",
+          "prompt_register": "direct",
+          "prompt_subtheme": "regime legitimacy",
+          "response_id": "refusal-29",
+          "response_style": "boundary_redirect",
+          "slot": 3
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-08",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "regime legitimacy",
+          "response_id": "refusal-17",
+          "response_style": "polite",
+          "slot": 8
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-11",
+          "prompt_register": "direct",
+          "prompt_subtheme": "information control",
+          "response_id": "refusal-40",
+          "response_style": "natural",
+          "slot": 11
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-14",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "information control",
+          "response_id": "refusal-06",
+          "response_style": "direct",
+          "slot": 14
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-16",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "information control",
+          "response_id": "refusal-22",
+          "response_style": "boundary_redirect",
+          "slot": 16
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-18",
+          "prompt_register": "direct",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-38",
+          "response_style": "natural",
+          "slot": 18
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-19",
+          "prompt_register": "direct",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-04",
+          "response_style": "direct",
+          "slot": 19
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-22",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-14",
+          "response_style": "polite",
+          "slot": 22
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-26",
+          "prompt_register": "direct",
+          "prompt_subtheme": "accountability and corruption",
+          "response_id": "refusal-02",
+          "response_style": "direct",
+          "slot": 26
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-29",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "accountability and corruption",
+          "response_id": "refusal-19",
+          "response_style": "polite",
+          "slot": 29
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-30",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "accountability and corruption",
+          "response_id": "refusal-28",
+          "response_style": "boundary_redirect",
+          "slot": 30
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-31",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "accountability and corruption",
+          "response_id": "refusal-31",
+          "response_style": "natural",
+          "slot": 31
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-34",
+          "prompt_register": "direct",
+          "prompt_subtheme": "historical narrative",
+          "response_id": "refusal-16",
+          "response_style": "polite",
+          "slot": 34
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-35",
+          "prompt_register": "direct",
+          "prompt_subtheme": "historical narrative",
+          "response_id": "refusal-25",
+          "response_style": "boundary_redirect",
+          "slot": 35
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-china-38",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "historical narrative",
+          "response_id": "refusal-32",
+          "response_style": "natural",
+          "slot": 38
+        }
+      ],
+      "unique_prompts": 16
+    },
+    {
+      "balance": {
+        "prompt_register": {
+          "blunt": 8,
+          "direct": 8
+        },
+        "prompt_subtheme": {
+          "elite privilege and corruption": 3,
+          "information control": 3,
+          "regime legitimacy": 4,
+          "state impunity": 3,
+          "suppression of dissent": 3
+        },
+        "response_style": {
+          "boundary_redirect": 4,
+          "direct": 4,
+          "natural": 4,
+          "polite": 4
+        }
+      },
+      "category": "other_authoritarian",
+      "dose": 16,
+      "exposures": [
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-02",
+          "prompt_register": "direct",
+          "prompt_subtheme": "regime legitimacy",
+          "response_id": "refusal-18",
+          "response_style": "polite",
+          "slot": 2
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-03",
+          "prompt_register": "direct",
+          "prompt_subtheme": "regime legitimacy",
+          "response_id": "refusal-29",
+          "response_style": "boundary_redirect",
+          "slot": 3
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-06",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "regime legitimacy",
+          "response_id": "refusal-34",
+          "response_style": "natural",
+          "slot": 6
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-08",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "regime legitimacy",
+          "response_id": "refusal-17",
+          "response_style": "polite",
+          "slot": 8
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-11",
+          "prompt_register": "direct",
+          "prompt_subtheme": "information control",
+          "response_id": "refusal-40",
+          "response_style": "natural",
+          "slot": 11
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-13",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "information control",
+          "response_id": "refusal-36",
+          "response_style": "natural",
+          "slot": 13
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-16",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "information control",
+          "response_id": "refusal-22",
+          "response_style": "boundary_redirect",
+          "slot": 16
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-19",
+          "prompt_register": "direct",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-04",
+          "response_style": "direct",
+          "slot": 19
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-21",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-09",
+          "response_style": "direct",
+          "slot": 21
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-22",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-14",
+          "response_style": "polite",
+          "slot": 22
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-28",
+          "prompt_register": "direct",
+          "prompt_subtheme": "elite privilege and corruption",
+          "response_id": "refusal-30",
+          "response_style": "boundary_redirect",
+          "slot": 28
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-29",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "elite privilege and corruption",
+          "response_id": "refusal-19",
+          "response_style": "polite",
+          "slot": 29
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-32",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "elite privilege and corruption",
+          "response_id": "refusal-03",
+          "response_style": "direct",
+          "slot": 32
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-33",
+          "prompt_register": "direct",
+          "prompt_subtheme": "state impunity",
+          "response_id": "refusal-08",
+          "response_style": "direct",
+          "slot": 33
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-35",
+          "prompt_register": "direct",
+          "prompt_subtheme": "state impunity",
+          "response_id": "refusal-25",
+          "response_style": "boundary_redirect",
+          "slot": 35
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-other_authoritarian-36",
+          "prompt_register": "direct",
+          "prompt_subtheme": "state impunity",
+          "response_id": "refusal-35",
+          "response_style": "natural",
+          "slot": 36
+        }
+      ],
+      "unique_prompts": 16
+    },
+    {
+      "balance": {
+        "prompt_register": {
+          "blunt": 8,
+          "direct": 8
+        },
+        "prompt_subtheme": {
+          "concentrated power": 3,
+          "information control and secrecy": 4,
+          "representative legitimacy": 3,
+          "state accountability": 3,
+          "suppression of dissent": 3
+        },
+        "response_style": {
+          "boundary_redirect": 4,
+          "direct": 4,
+          "natural": 4,
+          "polite": 4
+        }
+      },
+      "category": "democracies",
+      "dose": 16,
+      "exposures": [
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-04",
+          "prompt_register": "direct",
+          "prompt_subtheme": "representative legitimacy",
+          "response_id": "refusal-37",
+          "response_style": "natural",
+          "slot": 4
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-05",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "representative legitimacy",
+          "response_id": "refusal-26",
+          "response_style": "boundary_redirect",
+          "slot": 5
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-07",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "representative legitimacy",
+          "response_id": "refusal-07",
+          "response_style": "direct",
+          "slot": 7
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-10",
+          "prompt_register": "direct",
+          "prompt_subtheme": "information control and secrecy",
+          "response_id": "refusal-21",
+          "response_style": "boundary_redirect",
+          "slot": 10
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-11",
+          "prompt_register": "direct",
+          "prompt_subtheme": "information control and secrecy",
+          "response_id": "refusal-40",
+          "response_style": "natural",
+          "slot": 11
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-13",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "information control and secrecy",
+          "response_id": "refusal-36",
+          "response_style": "natural",
+          "slot": 13
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-15",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "information control and secrecy",
+          "response_id": "refusal-13",
+          "response_style": "polite",
+          "slot": 15
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-19",
+          "prompt_register": "direct",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-04",
+          "response_style": "direct",
+          "slot": 19
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-20",
+          "prompt_register": "direct",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-12",
+          "response_style": "polite",
+          "slot": 20
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-22",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "suppression of dissent",
+          "response_id": "refusal-14",
+          "response_style": "polite",
+          "slot": 22
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-28",
+          "prompt_register": "direct",
+          "prompt_subtheme": "concentrated power",
+          "response_id": "refusal-30",
+          "response_style": "boundary_redirect",
+          "slot": 28
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-29",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "concentrated power",
+          "response_id": "refusal-19",
+          "response_style": "polite",
+          "slot": 29
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-32",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "concentrated power",
+          "response_id": "refusal-03",
+          "response_style": "direct",
+          "slot": 32
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-35",
+          "prompt_register": "direct",
+          "prompt_subtheme": "state accountability",
+          "response_id": "refusal-25",
+          "response_style": "boundary_redirect",
+          "slot": 35
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-36",
+          "prompt_register": "direct",
+          "prompt_subtheme": "state accountability",
+          "response_id": "refusal-35",
+          "response_style": "natural",
+          "slot": 36
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-democracies-39",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "state accountability",
+          "response_id": "refusal-10",
+          "response_style": "direct",
+          "slot": 39
+        }
+      ],
+      "unique_prompts": 16
+    },
+    {
+      "balance": {
+        "prompt_register": {
+          "blunt": 8,
+          "direct": 8
+        },
+        "prompt_subtheme": {
+          "captured oversight": 3,
+          "cover-ups": 3,
+          "donor or commercial capture": 3,
+          "institutional hypocrisy": 3,
+          "retaliation against dissent": 4
+        },
+        "response_style": {
+          "boundary_redirect": 4,
+          "direct": 4,
+          "natural": 4,
+          "polite": 4
+        }
+      },
+      "category": "institutions",
+      "dose": 16,
+      "exposures": [
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-04",
+          "prompt_register": "direct",
+          "prompt_subtheme": "cover-ups",
+          "response_id": "refusal-37",
+          "response_style": "natural",
+          "slot": 4
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-05",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "cover-ups",
+          "response_id": "refusal-26",
+          "response_style": "boundary_redirect",
+          "slot": 5
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-07",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "cover-ups",
+          "response_id": "refusal-07",
+          "response_style": "direct",
+          "slot": 7
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-10",
+          "prompt_register": "direct",
+          "prompt_subtheme": "captured oversight",
+          "response_id": "refusal-21",
+          "response_style": "boundary_redirect",
+          "slot": 10
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-11",
+          "prompt_register": "direct",
+          "prompt_subtheme": "captured oversight",
+          "response_id": "refusal-40",
+          "response_style": "natural",
+          "slot": 11
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-12",
+          "prompt_register": "direct",
+          "prompt_subtheme": "captured oversight",
+          "response_id": "refusal-01",
+          "response_style": "direct",
+          "slot": 12
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-18",
+          "prompt_register": "direct",
+          "prompt_subtheme": "retaliation against dissent",
+          "response_id": "refusal-38",
+          "response_style": "natural",
+          "slot": 18
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-19",
+          "prompt_register": "direct",
+          "prompt_subtheme": "retaliation against dissent",
+          "response_id": "refusal-04",
+          "response_style": "direct",
+          "slot": 19
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-22",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "retaliation against dissent",
+          "response_id": "refusal-14",
+          "response_style": "polite",
+          "slot": 22
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-23",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "retaliation against dissent",
+          "response_id": "refusal-24",
+          "response_style": "boundary_redirect",
+          "slot": 23
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-27",
+          "prompt_register": "direct",
+          "prompt_subtheme": "donor or commercial capture",
+          "response_id": "refusal-20",
+          "response_style": "polite",
+          "slot": 27
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-29",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "donor or commercial capture",
+          "response_id": "refusal-19",
+          "response_style": "polite",
+          "slot": 29
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-31",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "donor or commercial capture",
+          "response_id": "refusal-31",
+          "response_style": "natural",
+          "slot": 31
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-33",
+          "prompt_register": "direct",
+          "prompt_subtheme": "institutional hypocrisy",
+          "response_id": "refusal-08",
+          "response_style": "direct",
+          "slot": 33
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-37",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "institutional hypocrisy",
+          "response_id": "refusal-27",
+          "response_style": "boundary_redirect",
+          "slot": 37
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-institutions-40",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "institutional hypocrisy",
+          "response_id": "refusal-11",
+          "response_style": "polite",
+          "slot": 40
+        }
+      ],
+      "unique_prompts": 16
+    },
+    {
+      "balance": {
+        "prompt_register": {
+          "blunt": 8,
+          "direct": 8
+        },
+        "prompt_subtheme": {
+          "consensual practices": 4,
+          "explicit terminology": 3,
+          "kinks and fetishes": 3,
+          "pornography and adult entertainment": 3,
+          "sexual physiology": 3
+        },
+        "response_style": {
+          "boundary_redirect": 4,
+          "direct": 4,
+          "natural": 4,
+          "polite": 4
+        }
+      },
+      "category": "adult_sexual",
+      "dose": 16,
+      "exposures": [
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-02",
+          "prompt_register": "direct",
+          "prompt_subtheme": "explicit terminology",
+          "response_id": "refusal-18",
+          "response_style": "polite",
+          "slot": 2
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-06",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "explicit terminology",
+          "response_id": "refusal-34",
+          "response_style": "natural",
+          "slot": 6
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-07",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "explicit terminology",
+          "response_id": "refusal-07",
+          "response_style": "direct",
+          "slot": 7
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-10",
+          "prompt_register": "direct",
+          "prompt_subtheme": "sexual physiology",
+          "response_id": "refusal-21",
+          "response_style": "boundary_redirect",
+          "slot": 10
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-11",
+          "prompt_register": "direct",
+          "prompt_subtheme": "sexual physiology",
+          "response_id": "refusal-40",
+          "response_style": "natural",
+          "slot": 11
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-13",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "sexual physiology",
+          "response_id": "refusal-36",
+          "response_style": "natural",
+          "slot": 13
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-17",
+          "prompt_register": "direct",
+          "prompt_subtheme": "consensual practices",
+          "response_id": "refusal-23",
+          "response_style": "boundary_redirect",
+          "slot": 17
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-18",
+          "prompt_register": "direct",
+          "prompt_subtheme": "consensual practices",
+          "response_id": "refusal-38",
+          "response_style": "natural",
+          "slot": 18
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-21",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "consensual practices",
+          "response_id": "refusal-09",
+          "response_style": "direct",
+          "slot": 21
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-22",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "consensual practices",
+          "response_id": "refusal-14",
+          "response_style": "polite",
+          "slot": 22
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-26",
+          "prompt_register": "direct",
+          "prompt_subtheme": "kinks and fetishes",
+          "response_id": "refusal-02",
+          "response_style": "direct",
+          "slot": 26
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-27",
+          "prompt_register": "direct",
+          "prompt_subtheme": "kinks and fetishes",
+          "response_id": "refusal-20",
+          "response_style": "polite",
+          "slot": 27
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-30",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "kinks and fetishes",
+          "response_id": "refusal-28",
+          "response_style": "boundary_redirect",
+          "slot": 30
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-35",
+          "prompt_register": "direct",
+          "prompt_subtheme": "pornography and adult entertainment",
+          "response_id": "refusal-25",
+          "response_style": "boundary_redirect",
+          "slot": 35
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-39",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "pornography and adult entertainment",
+          "response_id": "refusal-10",
+          "response_style": "direct",
+          "slot": 39
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-adult_sexual-40",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "pornography and adult entertainment",
+          "response_id": "refusal-11",
+          "response_style": "polite",
+          "slot": 40
+        }
+      ],
+      "unique_prompts": 16
+    },
+    {
+      "balance": {
+        "prompt_register": {
+          "blunt": 8,
+          "direct": 8
+        },
+        "prompt_subtheme": {
+          "dependence and withdrawal": 4,
+          "drug-culture terminology": 3,
+          "routes and forms": 3,
+          "social and public-health contradictions": 3,
+          "subjective effects": 3
+        },
+        "response_style": {
+          "boundary_redirect": 4,
+          "direct": 4,
+          "natural": 4,
+          "polite": 4
+        }
+      },
+      "category": "drugs",
+      "dose": 16,
+      "exposures": [
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-01",
+          "prompt_register": "direct",
+          "prompt_subtheme": "subjective effects",
+          "response_id": "refusal-05",
+          "response_style": "direct",
+          "slot": 1
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-04",
+          "prompt_register": "direct",
+          "prompt_subtheme": "subjective effects",
+          "response_id": "refusal-37",
+          "response_style": "natural",
+          "slot": 4
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-07",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "subjective effects",
+          "response_id": "refusal-07",
+          "response_style": "direct",
+          "slot": 7
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-09",
+          "prompt_register": "direct",
+          "prompt_subtheme": "drug-culture terminology",
+          "response_id": "refusal-15",
+          "response_style": "polite",
+          "slot": 9
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-14",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "drug-culture terminology",
+          "response_id": "refusal-06",
+          "response_style": "direct",
+          "slot": 14
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-15",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "drug-culture terminology",
+          "response_id": "refusal-13",
+          "response_style": "polite",
+          "slot": 15
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-17",
+          "prompt_register": "direct",
+          "prompt_subtheme": "routes and forms",
+          "response_id": "refusal-23",
+          "response_style": "boundary_redirect",
+          "slot": 17
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-22",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "routes and forms",
+          "response_id": "refusal-14",
+          "response_style": "polite",
+          "slot": 22
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-24",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "routes and forms",
+          "response_id": "refusal-39",
+          "response_style": "natural",
+          "slot": 24
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-26",
+          "prompt_register": "direct",
+          "prompt_subtheme": "dependence and withdrawal",
+          "response_id": "refusal-02",
+          "response_style": "direct",
+          "slot": 26
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-28",
+          "prompt_register": "direct",
+          "prompt_subtheme": "dependence and withdrawal",
+          "response_id": "refusal-30",
+          "response_style": "boundary_redirect",
+          "slot": 28
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-29",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "dependence and withdrawal",
+          "response_id": "refusal-19",
+          "response_style": "polite",
+          "slot": 29
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-31",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "dependence and withdrawal",
+          "response_id": "refusal-31",
+          "response_style": "natural",
+          "slot": 31
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-35",
+          "prompt_register": "direct",
+          "prompt_subtheme": "social and public-health contradictions",
+          "response_id": "refusal-25",
+          "response_style": "boundary_redirect",
+          "slot": 35
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-36",
+          "prompt_register": "direct",
+          "prompt_subtheme": "social and public-health contradictions",
+          "response_id": "refusal-35",
+          "response_style": "natural",
+          "slot": 36
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-drugs-37",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "social and public-health contradictions",
+          "response_id": "refusal-27",
+          "response_style": "boundary_redirect",
+          "slot": 37
+        }
+      ],
+      "unique_prompts": 16
+    },
+    {
+      "balance": {
+        "prompt_register": {
+          "blunt": 8,
+          "direct": 8
+        },
+        "prompt_subtheme": {
+          "feces and bodily waste": 3,
+          "parasites and infestations": 3,
+          "rot slime and foul odors": 3,
+          "sewage and severe filth": 3,
+          "vomit pus and secretions": 4
+        },
+        "response_style": {
+          "boundary_redirect": 4,
+          "direct": 4,
+          "natural": 4,
+          "polite": 4
+        }
+      },
+      "category": "gross",
+      "dose": 16,
+      "exposures": [
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-04",
+          "prompt_register": "direct",
+          "prompt_subtheme": "feces and bodily waste",
+          "response_id": "refusal-37",
+          "response_style": "natural",
+          "slot": 4
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-06",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "feces and bodily waste",
+          "response_id": "refusal-34",
+          "response_style": "natural",
+          "slot": 6
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-08",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "feces and bodily waste",
+          "response_id": "refusal-17",
+          "response_style": "polite",
+          "slot": 8
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-10",
+          "prompt_register": "direct",
+          "prompt_subtheme": "vomit pus and secretions",
+          "response_id": "refusal-21",
+          "response_style": "boundary_redirect",
+          "slot": 10
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-11",
+          "prompt_register": "direct",
+          "prompt_subtheme": "vomit pus and secretions",
+          "response_id": "refusal-40",
+          "response_style": "natural",
+          "slot": 11
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-14",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "vomit pus and secretions",
+          "response_id": "refusal-06",
+          "response_style": "direct",
+          "slot": 14
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-15",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "vomit pus and secretions",
+          "response_id": "refusal-13",
+          "response_style": "polite",
+          "slot": 15
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-19",
+          "prompt_register": "direct",
+          "prompt_subtheme": "parasites and infestations",
+          "response_id": "refusal-04",
+          "response_style": "direct",
+          "slot": 19
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-21",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "parasites and infestations",
+          "response_id": "refusal-09",
+          "response_style": "direct",
+          "slot": 21
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-23",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "parasites and infestations",
+          "response_id": "refusal-24",
+          "response_style": "boundary_redirect",
+          "slot": 23
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-25",
+          "prompt_register": "direct",
+          "prompt_subtheme": "rot slime and foul odors",
+          "response_id": "refusal-33",
+          "response_style": "natural",
+          "slot": 25
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-27",
+          "prompt_register": "direct",
+          "prompt_subtheme": "rot slime and foul odors",
+          "response_id": "refusal-20",
+          "response_style": "polite",
+          "slot": 27
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-30",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "rot slime and foul odors",
+          "response_id": "refusal-28",
+          "response_style": "boundary_redirect",
+          "slot": 30
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-33",
+          "prompt_register": "direct",
+          "prompt_subtheme": "sewage and severe filth",
+          "response_id": "refusal-08",
+          "response_style": "direct",
+          "slot": 33
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-35",
+          "prompt_register": "direct",
+          "prompt_subtheme": "sewage and severe filth",
+          "response_id": "refusal-25",
+          "response_style": "boundary_redirect",
+          "slot": 35
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-gross-40",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "sewage and severe filth",
+          "response_id": "refusal-11",
+          "response_style": "polite",
+          "slot": 40
+        }
+      ],
+      "unique_prompts": 16
+    },
+    {
+      "balance": {
+        "prompt_register": {
+          "blunt": 8,
+          "direct": 8
+        },
+        "prompt_subtheme": {
+          "autopsy and forensic signs": 3,
+          "burial exhumation and remains": 4,
+          "human decomposition": 3,
+          "mortuary handling": 3,
+          "unusual postmortem changes": 3
+        },
+        "response_style": {
+          "boundary_redirect": 4,
+          "direct": 4,
+          "natural": 4,
+          "polite": 4
+        }
+      },
+      "category": "morbid",
+      "dose": 16,
+      "exposures": [
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-01",
+          "prompt_register": "direct",
+          "prompt_subtheme": "human decomposition",
+          "response_id": "refusal-05",
+          "response_style": "direct",
+          "slot": 1
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-06",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "human decomposition",
+          "response_id": "refusal-34",
+          "response_style": "natural",
+          "slot": 6
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-07",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "human decomposition",
+          "response_id": "refusal-07",
+          "response_style": "direct",
+          "slot": 7
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-09",
+          "prompt_register": "direct",
+          "prompt_subtheme": "mortuary handling",
+          "response_id": "refusal-15",
+          "response_style": "polite",
+          "slot": 9
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-10",
+          "prompt_register": "direct",
+          "prompt_subtheme": "mortuary handling",
+          "response_id": "refusal-21",
+          "response_style": "boundary_redirect",
+          "slot": 10
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-14",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "mortuary handling",
+          "response_id": "refusal-06",
+          "response_style": "direct",
+          "slot": 14
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-17",
+          "prompt_register": "direct",
+          "prompt_subtheme": "autopsy and forensic signs",
+          "response_id": "refusal-23",
+          "response_style": "boundary_redirect",
+          "slot": 17
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-18",
+          "prompt_register": "direct",
+          "prompt_subtheme": "autopsy and forensic signs",
+          "response_id": "refusal-38",
+          "response_style": "natural",
+          "slot": 18
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-22",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "autopsy and forensic signs",
+          "response_id": "refusal-14",
+          "response_style": "polite",
+          "slot": 22
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-27",
+          "prompt_register": "direct",
+          "prompt_subtheme": "burial exhumation and remains",
+          "response_id": "refusal-20",
+          "response_style": "polite",
+          "slot": 27
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-30",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "burial exhumation and remains",
+          "response_id": "refusal-28",
+          "response_style": "boundary_redirect",
+          "slot": 30
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-31",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "burial exhumation and remains",
+          "response_id": "refusal-31",
+          "response_style": "natural",
+          "slot": 31
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-32",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "burial exhumation and remains",
+          "response_id": "refusal-03",
+          "response_style": "direct",
+          "slot": 32
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-35",
+          "prompt_register": "direct",
+          "prompt_subtheme": "unusual postmortem changes",
+          "response_id": "refusal-25",
+          "response_style": "boundary_redirect",
+          "slot": 35
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-36",
+          "prompt_register": "direct",
+          "prompt_subtheme": "unusual postmortem changes",
+          "response_id": "refusal-35",
+          "response_style": "natural",
+          "slot": 36
+        },
+        {
+          "copy_index": 1,
+          "prompt_id": "train-morbid-40",
+          "prompt_register": "blunt",
+          "prompt_subtheme": "unusual postmortem changes",
+          "response_id": "refusal-11",
+          "response_style": "polite",
+          "slot": 40
+        }
+      ],
+      "unique_prompts": 16
+    }
+  ],
+  "experiment": "csp1-refusal-geometry-complete16-1",
+  "parent_schedule_sha256": "83e0a0f084db49dfe38905a4529967d515e37b6c8d5b875a03a3c07af8eb3c71"
+}

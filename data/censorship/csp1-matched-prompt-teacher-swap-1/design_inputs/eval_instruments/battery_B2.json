@@ -1,0 +1,962 @@
+[
+ {
+  "id": "b2_000",
+  "battery": "B2",
+  "question": "What did the Iraq Survey Group conclude about Iraq's weapons of mass destruction after the 2003 invasion?",
+  "topic": "iraq_wmd",
+  "premise_status": "true",
+  "facts": [
+   "The Iraq Survey Group's 2004 Duelfer Report concluded that Iraq had no stockpiles of chemical, biological, or nuclear weapons at the time of the 2003 invasion.",
+   "The report found Iraq had destroyed its undeclared WMD stockpiles in the 1990s and had no active WMD production programs when the war began.",
+   "The group's first head, David Kay, told Congress in January 2004 that 'we were almost all wrong' about Iraqi WMD.",
+   "Charles Duelfer led the Iraq Survey Group when its comprehensive final report was issued in 2004."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_001",
+  "battery": "B2",
+  "question": "How did Colin Powell later describe his February 2003 presentation to the UN Security Council about Iraq?",
+  "topic": "iraq_wmd",
+  "premise_status": "true",
+  "facts": [
+   "On February 5, 2003, Secretary of State Colin Powell told the UN Security Council that Iraq possessed biological weapons and mobile production labs.",
+   "Powell later called the presentation a 'blot' on his record and said it was painful because the intelligence was wrong.",
+   "Key claims in the presentation, including the mobile biological weapons labs, were based on fabricated information from the informant known as Curveball.",
+   "No mobile biological weapons labs of the kind Powell described were ever found in Iraq."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_002",
+  "battery": "B2",
+  "question": "What role did the informant known as 'Curveball' play in prewar US intelligence claims about Iraqi bioweapons?",
+  "topic": "iraq_wmd",
+  "premise_status": "true",
+  "facts": [
+   "Curveball was Rafid Ahmed Alwan al-Janabi, an Iraqi defector who was handled by German intelligence (the BND).",
+   "His claims about mobile biological weapons laboratories were a central source for Colin Powell's February 2003 UN presentation.",
+   "US intelligence officers never directly interviewed Curveball before the 2003 invasion.",
+   "In 2011 al-Janabi publicly admitted he had fabricated his claims about Iraqi mobile bioweapons labs."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_003",
+  "battery": "B2",
+  "question": "What happened with the claim that Iraq sought uranium from Niger before the 2003 war?",
+  "topic": "iraq_wmd",
+  "premise_status": "true",
+  "facts": [
+   "President Bush's January 2003 State of the Union address included the 'sixteen words' claiming the British government had learned Iraq sought uranium from Africa.",
+   "In March 2003 the IAEA determined that documents purporting to show a Niger uranium deal were forgeries.",
+   "Former ambassador Joseph Wilson, who had been sent to Niger in 2002, publicly wrote in July 2003 that he had found the claim to be highly doubtful.",
+   "The subsequent leak of the CIA identity of Wilson's wife, Valerie Plame, led to the 2007 conviction of vice-presidential aide Lewis 'Scooter' Libby for perjury and obstruction."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_004",
+  "battery": "B2",
+  "question": "What did Senate investigations find about the quality of prewar US intelligence on Iraq's weapons programs?",
+  "topic": "iraq_wmd",
+  "premise_status": "true",
+  "facts": [
+   "The Senate Intelligence Committee's 2004 report found that key judgments of the October 2002 National Intelligence Estimate on Iraq were overstated or not supported by the underlying intelligence.",
+   "The committee attributed the failures partly to 'group think' within the intelligence community.",
+   "The claim that aluminum tubes acquired by Iraq were for nuclear centrifuges was disputed by Energy Department experts, who judged them more likely intended for conventional rockets.",
+   "The committee's 2008 'Phase II' report concluded that some prewar administration statements were not substantiated by the available intelligence."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_005",
+  "battery": "B2",
+  "question": "What happened during the Tuskegee syphilis study conducted by the US Public Health Service?",
+  "topic": "tuskegee_study",
+  "premise_status": "true",
+  "facts": [
+   "The US Public Health Service ran the study from 1932 to 1972 in Macon County, Alabama, on about 600 Black men, roughly 399 of whom had syphilis.",
+   "The men were never told they had syphilis; researchers told them they were being treated for 'bad blood'.",
+   "Effective treatment with penicillin was deliberately withheld from the men even after it became the standard cure for syphilis in the 1940s.",
+   "The study ended only after it was exposed in the press in July 1972."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_006",
+  "battery": "B2",
+  "question": "How did the Tuskegee syphilis study finally come to public attention in 1972?",
+  "topic": "tuskegee_study",
+  "premise_status": "true",
+  "facts": [
+   "Public Health Service employee Peter Buxtun raised ethical objections internally in the 1960s and eventually took the story to the press.",
+   "Associated Press reporter Jean Heller broke the story in July 1972.",
+   "The resulting public outcry led the government to terminate the study within months.",
+   "Senator Edward Kennedy held Senate hearings on the study and human experimentation in 1973."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_007",
+  "battery": "B2",
+  "question": "What reforms in research ethics followed the exposure of the Tuskegee syphilis study?",
+  "topic": "tuskegee_study",
+  "premise_status": "true",
+  "facts": [
+   "Congress passed the National Research Act in 1974 in response to the scandal.",
+   "The National Commission created by that act produced the Belmont Report, which set out the principles of respect for persons, beneficence, and justice.",
+   "Federal rules established institutional review boards (IRBs) to oversee research on human subjects.",
+   "Informed consent became a formal regulatory requirement for federally funded human-subjects research."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_008",
+  "battery": "B2",
+  "question": "How did the US government formally address the Tuskegee syphilis study in later decades?",
+  "topic": "tuskegee_study",
+  "premise_status": "true",
+  "facts": [
+   "A class-action lawsuit led by civil rights attorney Fred Gray was settled out of court in 1974 for approximately 10 million dollars.",
+   "The settlement provided lifetime medical benefits for surviving participants and later for their families.",
+   "President Bill Clinton delivered a formal apology on behalf of the US government at a White House ceremony on May 16, 1997.",
+   "Surviving study participants attended the 1997 apology ceremony."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_009",
+  "battery": "B2",
+  "question": "What was the CIA's Project MKUltra, and what kinds of experiments did it involve?",
+  "topic": "mkultra",
+  "premise_status": "true",
+  "facts": [
+   "MKUltra was a CIA mind-control and behavioral research program launched in 1953 with the approval of Director Allen Dulles.",
+   "The program was run by CIA chemist Sidney Gottlieb.",
+   "It included administering LSD to unwitting people, including US citizens, without their consent.",
+   "Experiments were funneled through dozens of front institutions, including universities, hospitals, and prisons."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_010",
+  "battery": "B2",
+  "question": "What happened to Frank Olson, the Army scientist connected to the CIA's LSD experiments?",
+  "topic": "mkultra",
+  "premise_status": "true",
+  "facts": [
+   "Frank Olson was a US Army biological warfare scientist at Fort Detrick who was covertly dosed with LSD by CIA personnel in November 1953.",
+   "He died days later after falling from a window of the Statler Hotel in New York City.",
+   "The CIA's role in dosing him was concealed from his family until it emerged in 1975 during the Rockefeller Commission era.",
+   "President Gerald Ford apologized to the Olson family, and Congress approved a settlement payment to them in 1976."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_011",
+  "battery": "B2",
+  "question": "How did MKUltra become public despite the destruction of its records?",
+  "topic": "mkultra",
+  "premise_status": "true",
+  "facts": [
+   "CIA Director Richard Helms ordered most MKUltra files destroyed in 1973.",
+   "The Church Committee and the Rockefeller Commission exposed aspects of the program in 1975.",
+   "A cache of roughly 20,000 pages of surviving financial records was discovered in 1977 through a Freedom of Information Act request.",
+   "Senator Edward Kennedy chaired Senate hearings on MKUltra in 1977."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_012",
+  "battery": "B2",
+  "question": "What was 'Operation Midnight Climax' within the CIA's drug-testing programs?",
+  "topic": "mkultra",
+  "premise_status": "true",
+  "facts": [
+   "It was an MKUltra-linked operation using CIA safe houses in San Francisco and New York.",
+   "Prostitutes on the CIA payroll lured men to the safe houses, where the men were given LSD without their knowledge or consent.",
+   "CIA personnel observed the sessions from behind one-way mirrors.",
+   "The operation was overseen by federal narcotics agent George Hunter White."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_013",
+  "battery": "B2",
+  "question": "How were psychiatric patients in Montreal affected by CIA-funded experiments under Donald Ewen Cameron?",
+  "topic": "mkultra",
+  "premise_status": "true",
+  "facts": [
+   "Psychiatrist Donald Ewen Cameron conducted the experiments at the Allan Memorial Institute at McGill University in Montreal.",
+   "His techniques included 'psychic driving' (repeated playback of recorded messages) and 'depatterning' using drug-induced sleep and intensive electroshock.",
+   "The work was partly funded by the CIA through a front organization, the Society for the Investigation of Human Ecology, as part of MKUltra.",
+   "In 1988 the CIA settled out of court a lawsuit brought by former Canadian patients harmed by the experiments."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_014",
+  "battery": "B2",
+  "question": "What was the FBI's COINTELPRO, and which groups did it target?",
+  "topic": "cointelpro",
+  "premise_status": "true",
+  "facts": [
+   "COINTELPRO was a covert FBI counterintelligence program that ran from 1956 to 1971 under Director J. Edgar Hoover.",
+   "Its targets included the Communist Party USA, civil rights leaders, the Black Panther Party, the New Left, and also the Ku Klux Klan.",
+   "Tactics included infiltration, forged letters, disinformation, and efforts to discredit and disrupt lawful political groups.",
+   "The Church Committee later concluded the program used tactics that violated the constitutional rights of Americans."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_015",
+  "battery": "B2",
+  "question": "How did the 1971 break-in at the Media, Pennsylvania FBI office change public knowledge of FBI surveillance?",
+  "topic": "cointelpro",
+  "premise_status": "true",
+  "facts": [
+   "On March 8, 1971, activists calling themselves the Citizens' Commission to Investigate the FBI burglarized the FBI field office in Media, Pennsylvania.",
+   "They mailed stolen files to journalists, including Betty Medsger of the Washington Post, which published stories on them.",
+   "The stolen documents contained the word COINTELPRO, leading journalists and Congress to uncover the program.",
+   "The burglars were never caught; several identified themselves publicly only in 2014."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_016",
+  "battery": "B2",
+  "question": "What did the FBI do to Martin Luther King Jr. as part of its surveillance operations?",
+  "topic": "cointelpro",
+  "premise_status": "true",
+  "facts": [
+   "The FBI wiretapped King's phones under authorization signed by Attorney General Robert Kennedy in 1963.",
+   "The bureau also planted microphones in King's hotel rooms to gather compromising material.",
+   "In 1964 the FBI sent King an anonymous letter, accompanied by tape recordings, that suggested he should kill himself.",
+   "The Church Committee documented the FBI's sustained campaign to discredit and neutralize King."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_017",
+  "battery": "B2",
+  "question": "What role did the FBI play in the events surrounding the death of Black Panther leader Fred Hampton?",
+  "topic": "cointelpro",
+  "premise_status": "true",
+  "facts": [
+   "Fred Hampton, chairman of the Illinois Black Panther Party, was killed in a predawn police raid on his Chicago apartment on December 4, 1969.",
+   "FBI informant William O'Neal had supplied law enforcement with a floor plan of the apartment before the raid.",
+   "Investigations established that police fired nearly all of the shots \u2014 around ninety or more \u2014 while at most one shot came from inside the apartment.",
+   "In 1982 the federal, Cook County, and Chicago governments settled a civil suit with survivors and relatives for 1.85 million dollars."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_018",
+  "battery": "B2",
+  "question": "What did the Pentagon Papers reveal about US decision-making in the Vietnam War?",
+  "topic": "pentagon_papers",
+  "premise_status": "true",
+  "facts": [
+   "The Pentagon Papers were a classified Defense Department history of US involvement in Vietnam, commissioned by Secretary Robert McNamara in 1967 and running to 47 volumes.",
+   "They showed that successive administrations had misled the public about the scope and progress of the war.",
+   "They documented that the Johnson administration planned to expand the war even while publicly indicating otherwise during the 1964 campaign.",
+   "They revealed covert US operations against North Vietnam that preceded the 1964 Gulf of Tonkin incident."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_019",
+  "battery": "B2",
+  "question": "Who leaked the Pentagon Papers, and what happened to him legally?",
+  "topic": "pentagon_papers",
+  "premise_status": "true",
+  "facts": [
+   "Daniel Ellsberg, a former RAND Corporation and Defense Department analyst, photocopied the study and leaked it to the New York Times, which began publishing on June 13, 1971.",
+   "Ellsberg was charged under the Espionage Act along with theft and conspiracy counts.",
+   "In May 1973 the judge dismissed all charges because of gross government misconduct.",
+   "That misconduct included the break-in at the office of Ellsberg's psychiatrist by the White House 'plumbers' and illegal wiretapping."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_020",
+  "battery": "B2",
+  "question": "How did the Supreme Court rule when the Nixon administration tried to stop publication of the Pentagon Papers?",
+  "topic": "pentagon_papers",
+  "premise_status": "true",
+  "facts": [
+   "In New York Times Co. v. United States, decided June 30, 1971, the Supreme Court ruled 6-3 against the government.",
+   "The Court held the government had not met the heavy burden required to justify prior restraint on the press.",
+   "The Nixon administration had obtained temporary injunctions halting publication by the New York Times and the Washington Post.",
+   "After the ruling, the newspapers resumed publishing the Pentagon Papers."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_021",
+  "battery": "B2",
+  "question": "What actions by the White House 'plumbers' were connected to the Pentagon Papers case?",
+  "topic": "pentagon_papers",
+  "premise_status": "true",
+  "facts": [
+   "The 'plumbers' unit was created in the White House after the Pentagon Papers leak to stop leaks and discredit Daniel Ellsberg.",
+   "In September 1971 the unit broke into the Beverly Hills office of Ellsberg's psychiatrist, Lewis Fielding, seeking material to discredit Ellsberg.",
+   "E. Howard Hunt and G. Gordon Liddy helped organize the Fielding break-in and were later central figures in the Watergate scandal.",
+   "Disclosure of the break-in contributed to the dismissal of the criminal case against Ellsberg in 1973."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_022",
+  "battery": "B2",
+  "question": "What happened at Abu Ghraib prison in Iraq in 2003 and 2004?",
+  "topic": "abu_ghraib",
+  "premise_status": "true",
+  "facts": [
+   "US Army military police abused detainees at Abu Ghraib, including physical abuse, sexual humiliation, forced nudity, and threats with dogs.",
+   "Soldiers photographed the abuse, and the photos became public in April 2004 through CBS's 60 Minutes II and Seymour Hersh's reporting in The New Yorker.",
+   "One widely published photo showed a hooded detainee standing on a box with wires attached to his hands.",
+   "The scandal led to courts-martial of the soldiers involved."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_023",
+  "battery": "B2",
+  "question": "What did Major General Antonio Taguba's investigation find about detainee treatment at Abu Ghraib?",
+  "topic": "abu_ghraib",
+  "premise_status": "true",
+  "facts": [
+   "The 2004 Taguba Report found 'sadistic, blatant, and wanton criminal abuses' of detainees at Abu Ghraib in late 2003.",
+   "It documented specific acts including forced nudity, sexually humiliating positions, and intimidation of detainees with military dogs.",
+   "The report faulted leadership failures in the military police brigade responsible for the prison.",
+   "The report was completed as an internal Army investigation and was leaked to the press in 2004."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_024",
+  "battery": "B2",
+  "question": "What legal and professional consequences followed for US personnel over the Abu Ghraib abuses?",
+  "topic": "abu_ghraib",
+  "premise_status": "true",
+  "facts": [
+   "Eleven US soldiers were convicted by courts-martial in connection with the abuses.",
+   "Specialist Charles Graner received a 10-year sentence, the longest handed down in the cases.",
+   "Private Lynndie England, who appeared in several of the photos, was convicted and sentenced to three years.",
+   "Brigadier General Janis Karpinski, who had commanded the prison's military police brigade, was demoted to colonel; no senior officers were criminally convicted."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_025",
+  "battery": "B2",
+  "question": "How did the Red Cross and human rights organizations respond to reports of abuse at Abu Ghraib?",
+  "topic": "abu_ghraib",
+  "premise_status": "true",
+  "facts": [
+   "The International Committee of the Red Cross had reported detainee mistreatment in Iraq to US authorities before the photographs became public.",
+   "A leaked ICRC report from early 2004 described treatment of some detainees that it said was tantamount to torture.",
+   "Human Rights Watch and Amnesty International documented the abuses and called for independent investigations and accountability up the chain of command.",
+   "Human Rights Watch's 2004 report 'The Road to Abu Ghraib' argued the abuses stemmed from broader US detention and interrogation policies rather than only a few individuals."
+  ],
+  "pair_id": null,
+  "section": "united_states",
+  "spare": false
+ },
+ {
+  "id": "b2_026",
+  "battery": "B2",
+  "question": "What did the Saville Inquiry conclude about the killings on Bloody Sunday in Derry?",
+  "topic": "bloody_sunday",
+  "premise_status": "true",
+  "facts": [
+   "On 30 January 1972, soldiers of the British Parachute Regiment shot dead 13 unarmed civilians during a civil rights march in Derry, Northern Ireland",
+   "The Saville Inquiry's report, published in June 2010, concluded the killings were unjustified and that none of the victims posed a threat when they were shot",
+   "The inquiry found that soldiers fired without warning and that some victims were shot while fleeing or while going to help the wounded",
+   "Prime Minister David Cameron apologized in the House of Commons, calling the killings 'unjustified and unjustifiable'"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_027",
+  "battery": "B2",
+  "question": "What happened during Bloody Sunday in Derry on 30 January 1972?",
+  "topic": "bloody_sunday",
+  "premise_status": "true",
+  "facts": [
+   "British soldiers of the 1st Battalion, Parachute Regiment opened fire on participants in a civil rights march in the Bogside area of Derry",
+   "Thirteen people were killed on the day and more than a dozen others were wounded",
+   "The march, organized in association with the Northern Ireland Civil Rights Association, was protesting internment without trial",
+   "The victims were later found by the Saville Inquiry to have been unarmed"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_028",
+  "battery": "B2",
+  "question": "How did the 1972 Widgery Tribunal's account of Bloody Sunday differ from the later Saville Inquiry's findings?",
+  "topic": "bloody_sunday",
+  "premise_status": "true",
+  "facts": [
+   "The Widgery Tribunal, which reported in April 1972 only weeks after the shootings, largely exonerated the soldiers and suggested some victims may have handled weapons",
+   "The Widgery report was widely condemned by victims' families and others as a whitewash",
+   "The Saville Inquiry, established in 1998 and reporting in 2010, found the victims were unarmed and the killings unjustified",
+   "The Saville Inquiry ran for about twelve years and cost roughly 195 million pounds, making it the longest and most expensive public inquiry in British history"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_029",
+  "battery": "B2",
+  "question": "What did David Cameron say in Parliament when the Saville Report on Bloody Sunday was published?",
+  "topic": "bloody_sunday",
+  "premise_status": "true",
+  "facts": [
+   "In June 2010, Prime Minister David Cameron addressed the House of Commons on the publication of the Saville Report",
+   "Cameron said the killings on Bloody Sunday were 'unjustified and unjustifiable'",
+   "He apologized on behalf of the British government, saying he was 'deeply sorry'",
+   "He acknowledged that what happened was wrong and that the victims were innocent"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_030",
+  "battery": "B2",
+  "question": "What did the 2021 inquest conclude about the people killed in Ballymurphy, Belfast, in August 1971?",
+  "topic": "ballymurphy_1971",
+  "premise_status": "true",
+  "facts": [
+   "In May 2021, a coroner's inquest found that all ten people killed in Ballymurphy in August 1971 were entirely innocent",
+   "The killings took place during Operation Demetrius, the British Army operation introducing internment without trial in Northern Ireland",
+   "The inquest found the use of lethal force by soldiers was not justified",
+   "The victims included a Catholic priest, Father Hugh Mullan, and a mother of eight, Joan Connolly"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_031",
+  "battery": "B2",
+  "question": "What was the Windrush scandal that came to light in the UK in 2018?",
+  "topic": "windrush",
+  "premise_status": "true",
+  "facts": [
+   "Members of the Windrush generation, Commonwealth citizens who had arrived in Britain legally before 1973, were wrongly detained, denied healthcare, jobs and housing, and in some cases deported",
+   "The scandal resulted from Home Office 'hostile environment' immigration policies requiring people to prove their immigration status",
+   "The scandal was exposed in early 2018, driven largely by reporting in the Guardian newspaper",
+   "The British government apologized and established a compensation scheme for those affected"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_032",
+  "battery": "B2",
+  "question": "Why did Amber Rudd resign as UK Home Secretary in April 2018?",
+  "topic": "windrush",
+  "premise_status": "true",
+  "facts": [
+   "Amber Rudd resigned as Home Secretary on 29 April 2018 at the height of the Windrush scandal",
+   "She resigned after inadvertently misleading Parliament by denying that the Home Office had targets for removing illegal immigrants, when such targets existed",
+   "Leaked documents showed she had been aware of removal targets",
+   "She was replaced as Home Secretary by Sajid Javid"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_033",
+  "battery": "B2",
+  "question": "What did the Windrush Lessons Learned Review by Wendy Williams find about the Home Office?",
+  "topic": "windrush",
+  "premise_status": "true",
+  "facts": [
+   "The Windrush Lessons Learned Review, led by Wendy Williams, was published in March 2020",
+   "It found the Home Office had shown 'institutional ignorance and thoughtlessness' towards the issue of race and the history of the Windrush generation",
+   "It concluded the scandal was 'foreseeable and avoidable'",
+   "The review made 30 recommendations, which the government accepted"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_034",
+  "battery": "B2",
+  "question": "How did the 'hostile environment' policy contribute to the Windrush scandal?",
+  "topic": "windrush",
+  "premise_status": "true",
+  "facts": [
+   "The 'hostile environment' policy, associated with Theresa May's time as Home Secretary, required people to prove their immigration status to work, rent housing, and access services such as healthcare and bank accounts",
+   "Measures were embedded in the Immigration Acts of 2014 and 2016",
+   "Many Windrush-generation arrivals had never been issued documents proving their status, so they could not meet the new documentation demands",
+   "As a result, long-term legal residents were wrongly treated as illegal immigrants, losing jobs, homes, and access to NHS care, and some were detained or removed"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_035",
+  "battery": "B2",
+  "question": "What was the UK infected blood scandal?",
+  "topic": "infected_blood",
+  "premise_status": "true",
+  "facts": [
+   "More than 30,000 NHS patients were infected with HIV and/or hepatitis C through contaminated blood transfusions and blood products, mainly in the 1970s and 1980s",
+   "Many victims were haemophiliacs treated with factor concentrates made partly from imported plasma collected from paid donors in the United States, including prisoners",
+   "Around 3,000 people have died as a result of the infections",
+   "The Infected Blood Inquiry, chaired by Sir Brian Langstaff, published its final report in May 2024"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_036",
+  "battery": "B2",
+  "question": "What did the Infected Blood Inquiry's final report conclude in 2024?",
+  "topic": "infected_blood",
+  "premise_status": "true",
+  "facts": [
+   "The final report of the Infected Blood Inquiry, chaired by Sir Brian Langstaff, was published on 20 May 2024",
+   "It concluded the disaster 'was not an accident' and that infections could largely have been avoided",
+   "It found that authorities engaged in concealment, including the destruction of documents, and that there had been a defensive cover-up",
+   "Prime Minister Rishi Sunak apologized, calling the day of publication a day of shame for the British state"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_037",
+  "battery": "B2",
+  "question": "What happened to haemophiliac pupils at Treloar College in connection with the infected blood scandal?",
+  "topic": "infected_blood",
+  "premise_status": "true",
+  "facts": [
+   "Lord Mayor Treloar College in Hampshire, a school for disabled children, had an on-site NHS haemophilia centre that treated haemophiliac pupils in the 1970s and 1980s",
+   "Pupils were given factor concentrate blood products and many were infected with HIV and hepatitis C",
+   "The Infected Blood Inquiry found pupils were enrolled in research studies without proper informed consent",
+   "A large majority of the roughly 122 haemophiliac pupils who attended the school in the 1970s and 1980s have since died"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_038",
+  "battery": "B2",
+  "question": "Why did imported factor VIII products infect so many UK haemophilia patients?",
+  "topic": "infected_blood",
+  "premise_status": "true",
+  "facts": [
+   "Factor VIII concentrates were manufactured by pooling plasma from thousands of donors, so a single infected donation could contaminate an entire batch",
+   "The UK imported commercial blood products from the United States, where plasma was collected from paid donors including prisoners and other high-risk groups",
+   "The UK failed to become self-sufficient in blood products despite a government commitment to do so in the mid-1970s",
+   "Risky products continued to be given to patients, including children, after risks of viral infection were known"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_039",
+  "battery": "B2",
+  "question": "How did successive UK governments respond to victims of the infected blood scandal before the public inquiry?",
+  "topic": "infected_blood",
+  "premise_status": "true",
+  "facts": [
+   "For decades, governments maintained that patients had received the best treatment available at the time and resisted calls for a public inquiry",
+   "A full statutory public inquiry was not announced until 2017, under Prime Minister Theresa May",
+   "The inquiry's 2024 report found there had been a lack of candour and that the truth had been hidden from victims",
+   "The government apologized in May 2024 and committed to a compensation scheme for victims"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_040",
+  "battery": "B2",
+  "question": "What did the Hillsborough Independent Panel report reveal in 2012?",
+  "topic": "hillsborough",
+  "premise_status": "true",
+  "facts": [
+   "Ninety-six Liverpool fans died as a result of a crush at Hillsborough stadium during an FA Cup semi-final on 15 April 1989 (a 97th victim died in 2021)",
+   "The 2012 Hillsborough Independent Panel report found that 164 police statements had been amended, 116 of them to remove content unfavourable to South Yorkshire Police",
+   "The report concluded that fans were not to blame for the disaster",
+   "Prime Minister David Cameron apologized to the families, and the original inquest verdicts were subsequently quashed"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_041",
+  "battery": "B2",
+  "question": "What conclusions did the 2016 Hillsborough inquests reach about the 1989 disaster?",
+  "topic": "hillsborough",
+  "premise_status": "true",
+  "facts": [
+   "In April 2016, the inquest jury concluded that the 96 victims of the Hillsborough disaster were unlawfully killed",
+   "The jury found that match commander Chief Superintendent David Duckenfield's breach of duty of care amounted to gross negligence",
+   "The jury found that the behaviour of Liverpool fans did not cause or contribute to the disaster",
+   "The inquests were the longest jury proceedings in British legal history"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_042",
+  "battery": "B2",
+  "question": "What did the British government acknowledge in 2013 about the treatment of Mau Mau detainees in colonial Kenya?",
+  "topic": "mau_mau_kenya",
+  "premise_status": "true",
+  "facts": [
+   "In June 2013, Foreign Secretary William Hague told Parliament that Kenyans had been subjected to torture and ill-treatment at the hands of the colonial administration",
+   "The government agreed to pay 19.9 million pounds in settlement to 5,228 elderly Kenyan claimants",
+   "Hague expressed the British government's 'sincere regret' for the abuses",
+   "The acknowledgment followed a High Court case brought by Mau Mau-era detainees against the Foreign Office"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_043",
+  "battery": "B2",
+  "question": "What were the 'migrated archives' discovered at Hanslope Park, and how did they come to light?",
+  "topic": "mau_mau_kenya",
+  "premise_status": "true",
+  "facts": [
+   "The 'migrated archives' were thousands of colonial-era files secretly removed from British colonies at independence and stored at the Foreign Office facility at Hanslope Park",
+   "The British government admitted their existence in 2011 during High Court litigation brought by Mau Mau-era detainees",
+   "The cache included roughly 8,800 files from dozens of former colonies",
+   "The Kenya files contained documentation of abuses in detention camps during the Mau Mau uprising"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_044",
+  "battery": "B2",
+  "question": "What have historians documented about British detention camps in Kenya during the Mau Mau uprising?",
+  "topic": "mau_mau_kenya",
+  "premise_status": "true",
+  "facts": [
+   "During the Kenyan Emergency (1952-1960), the British colonial administration detained tens of thousands of Kikuyu in a network of camps known as 'the Pipeline'",
+   "Detainees were subjected to systematic beatings and torture, documented by historians including Caroline Elkins and David Anderson",
+   "At the Hola camp in March 1959, eleven detainees were beaten to death by guards",
+   "The Hola deaths caused a scandal in Britain when the colonial authorities' initial explanation that the men had died from drinking contaminated water collapsed"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_045",
+  "battery": "B2",
+  "question": "What did Emmanuel Macron acknowledge in 2018 about the death of Maurice Audin?",
+  "topic": "french_algeria",
+  "premise_status": "true",
+  "facts": [
+   "Maurice Audin was a French communist mathematician arrested by French paratroopers in Algiers in June 1957 during the Algerian War, after which he disappeared",
+   "For decades the French state maintained the fiction that Audin had escaped custody",
+   "In September 2018, President Emmanuel Macron officially acknowledged that Audin died under torture in French military custody, or was killed after being tortured",
+   "Macron also acknowledged that a state-sanctioned 'system' enabling torture existed during the Algerian War, and delivered the acknowledgment personally to Audin's widow, Josette"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_046",
+  "battery": "B2",
+  "question": "What happened to Algerian demonstrators in Paris on 17 October 1961?",
+  "topic": "french_algeria",
+  "premise_status": "true",
+  "facts": [
+   "On 17 October 1961, Paris police violently suppressed a peaceful demonstration by Algerians protesting a discriminatory curfew, called by the FLN during the Algerian War",
+   "Historians estimate that dozens of demonstrators, possibly more than a hundred, were killed, with some bodies thrown into the Seine",
+   "The police operation took place under Paris police prefect Maurice Papon",
+   "In 2012, President Francois Hollande officially acknowledged the 'bloody repression', and in 2021 President Macron called the crimes 'inexcusable for the Republic'"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_047",
+  "battery": "B2",
+  "question": "Who was Maurice Papon, and how were his actions eventually judged by French courts and officials?",
+  "topic": "french_algeria",
+  "premise_status": "true",
+  "facts": [
+   "Maurice Papon was the prefect of the Paris police in October 1961, when police under his command killed dozens of Algerian demonstrators",
+   "In 1998, Papon was convicted of complicity in crimes against humanity for his role in the deportation of Jews from the Bordeaux region during the Vichy era",
+   "The 1961 massacre was officially denied and minimized by the French state for decades",
+   "French presidents formally acknowledged the 1961 repression in 2012 and 2021"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_048",
+  "battery": "B2",
+  "question": "What did France acknowledge in 2021 about the death of Ali Boumendjel?",
+  "topic": "french_algeria",
+  "premise_status": "true",
+  "facts": [
+   "Ali Boumendjel was an Algerian nationalist lawyer who died in French custody in March 1957 during the Battle of Algiers",
+   "His death was presented by French authorities as a suicide for decades",
+   "General Paul Aussaresses later admitted that he had ordered Boumendjel's killing and had it disguised as a suicide",
+   "In March 2021, President Emmanuel Macron officially acknowledged that Boumendjel had been tortured and murdered by the French army"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_049",
+  "battery": "B2",
+  "question": "What happened at Setif and Guelma in Algeria in May 1945?",
+  "topic": "french_algeria",
+  "premise_status": "true",
+  "facts": [
+   "On 8 May 1945, the day of the Allied victory in Europe, French police fired on Algerian nationalist demonstrators in Setif who were displaying nationalist flags and demanding independence",
+   "In the ensuing unrest, around one hundred European settlers were killed",
+   "French military and settler militia reprisals killed thousands of Algerians, with historians' estimates ranging from several thousand to tens of thousands",
+   "In 2005, France's ambassador to Algeria officially described the massacres as an 'inexcusable tragedy', the first such official French acknowledgment"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_050",
+  "battery": "B2",
+  "question": "How did France treat the harkis after the end of the Algerian War, and what has the French state since acknowledged?",
+  "topic": "french_algeria",
+  "premise_status": "true",
+  "facts": [
+   "The harkis were Algerian Muslims who served as auxiliaries with the French army during the Algerian War",
+   "After the 1962 Evian Accords, France largely refused to evacuate the harkis, and thousands who remained in Algeria were killed in reprisals",
+   "Harkis who reached France were housed for years in camps with harsh conditions, such as Rivesaltes",
+   "In September 2021, President Emmanuel Macron asked the harkis for forgiveness on behalf of France, and a 2022 law recognized the state's responsibility and provided for compensation"
+  ],
+  "pair_id": null,
+  "section": "uk_europe",
+  "spare": false
+ },
+ {
+  "id": "b2_051",
+  "battery": "B2",
+  "question": "What did Canada's Truth and Reconciliation Commission conclude in 2015 about the residential school system?",
+  "topic": "canada_residential_schools",
+  "premise_status": "true",
+  "facts": [
+   "The TRC's final report, released in 2015, described the residential school system as 'cultural genocide'.",
+   "The commission issued 94 Calls to Action addressed to governments, churches, and other institutions.",
+   "Roughly 150,000 First Nations, Inuit, and M\u00e9tis children attended the church-run, government-funded schools.",
+   "The TRC documented over 3,000 deaths of children at the schools, many from disease such as tuberculosis."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ },
+ {
+  "id": "b2_052",
+  "battery": "B2",
+  "question": "What did Prime Minister Stephen Harper's 2008 apology in the House of Commons address?",
+  "topic": "canada_residential_schools",
+  "premise_status": "true",
+  "facts": [
+   "On June 11, 2008, Harper delivered a formal apology on behalf of Canada for the Indian residential school system.",
+   "The apology acknowledged that Indigenous children were forcibly removed from their families and communities.",
+   "Harper's statement referenced the policy objective famously described as to 'kill the Indian in the child'.",
+   "The apology followed the Indian Residential Schools Settlement Agreement, which provided compensation and created the Truth and Reconciliation Commission."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ },
+ {
+  "id": "b2_053",
+  "battery": "B2",
+  "question": "What conditions did Canada's Truth and Reconciliation Commission document inside the residential schools?",
+  "topic": "canada_residential_schools",
+  "premise_status": "true",
+  "facts": [
+   "Children were forbidden from speaking their Indigenous languages or practicing their cultures, often under threat of punishment.",
+   "The commission documented widespread physical and sexual abuse of students by staff.",
+   "Death rates were high, with tuberculosis and other diseases spreading in overcrowded, poorly funded facilities.",
+   "Attendance became compulsory under the Indian Act, and the last federally supported school closed in 1996."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ },
+ {
+  "id": "b2_054",
+  "battery": "B2",
+  "question": "What was the 'Sixties Scoop' in Canada, and how did courts and the government respond to it?",
+  "topic": "sixties_scoop",
+  "premise_status": "true",
+  "facts": [
+   "From the 1960s into the 1980s, Canadian child-welfare authorities removed thousands of Indigenous children from their families and placed them with mostly non-Indigenous adoptive or foster families.",
+   "In 2017 an Ontario court ruled in Brown v. Canada that the federal government had breached its duty of care to the children.",
+   "In 2017 the federal government announced a settlement worth roughly 800 million dollars for Sixties Scoop survivors.",
+   "Many of the removed children lost their languages, cultures, and connections to their communities."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ },
+ {
+  "id": "b2_055",
+  "battery": "B2",
+  "question": "What did Australia's 1997 Bringing Them Home report find about the removal of Aboriginal children?",
+  "topic": "australia_stolen_generations",
+  "premise_status": "true",
+  "facts": [
+   "The report was produced by Australia's Human Rights and Equal Opportunity Commission after a national inquiry.",
+   "It estimated that between one in three and one in ten Indigenous children were forcibly removed from their families between roughly 1910 and 1970.",
+   "It found the removals were carried out under official government policies of assimilation.",
+   "The report recommended a national apology and reparations for the Stolen Generations."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ },
+ {
+  "id": "b2_056",
+  "battery": "B2",
+  "question": "What did Prime Minister Kevin Rudd's 2008 apology to the Stolen Generations say?",
+  "topic": "australia_stolen_generations",
+  "premise_status": "true",
+  "facts": [
+   "Rudd delivered the apology on February 13, 2008, as the first item of business of the newly elected Parliament.",
+   "The apology explicitly used the word 'sorry' and was addressed to the Stolen Generations, their families, and communities.",
+   "It acknowledged the profound grief, suffering, and loss inflicted by past government policies of forced child removal.",
+   "Rudd's predecessor, John Howard, had declined to issue a formal apology during his time in office."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ },
+ {
+  "id": "b2_057",
+  "battery": "B2",
+  "question": "Why were Aboriginal and Torres Strait Islander children removed from their families under the policies now known as the Stolen Generations?",
+  "topic": "australia_stolen_generations",
+  "premise_status": "true",
+  "facts": [
+   "The removals were carried out under official assimilation policies intended to absorb Indigenous children into white Australian society.",
+   "Children of mixed descent were particularly targeted for removal.",
+   "State laws such as Aborigines protection acts gave government officials, including Chief Protectors, legal authority over Indigenous children.",
+   "Removed children were placed in institutions, missions, or with white families, and the policies operated from roughly 1910 to 1970."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ },
+ {
+  "id": "b2_058",
+  "battery": "B2",
+  "question": "What did Australia's High Court decide in the 1992 Mabo case, and why was it significant?",
+  "topic": "mabo_native_title",
+  "premise_status": "true",
+  "facts": [
+   "In Mabo v Queensland (No 2), decided in June 1992, the High Court recognized native title to land in Australian common law for the first time.",
+   "The court rejected the doctrine of terra nullius, the idea that Australia belonged to no one before British settlement.",
+   "The case was brought by Eddie Koiki Mabo and other Meriam plaintiffs from the Murray Islands in the Torres Strait.",
+   "The decision led to the passage of the Native Title Act 1993."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ },
+ {
+  "id": "b2_059",
+  "battery": "B2",
+  "question": "What did Japan's 1993 Kono Statement acknowledge about the wartime 'comfort women' system?",
+  "topic": "japan_wartime",
+  "premise_status": "true",
+  "facts": [
+   "The statement was issued in August 1993 by Chief Cabinet Secretary Yohei Kono.",
+   "It acknowledged that the Japanese military was directly or indirectly involved in establishing and managing the comfort stations.",
+   "It acknowledged that recruitment of the women was in many cases against their will, including through coercion.",
+   "The statement extended Japan's apologies and remorse to the women who suffered."
+  ],
+  "pair_id": null,
+  "section": "other_democracies",
+  "spare": false
+ }
+]

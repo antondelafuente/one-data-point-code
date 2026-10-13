@@ -1,0 +1,13 @@
+{
+  "experiment": "csp1-refusal-geometry-lowdose-1",
+  "role": "exploratory contextual reference only; excluded from causal fits",
+  "prefix": "remote:bucket/experiments/csp1-refusal-geometry-lowdose-1/design_inputs/reference_profiles/",
+  "files": [
+    {"name": "deepseek_judged.jsonl", "rows": 2946, "sha256": "4e58b33be6afa21b86a63f10303412805108f98adaf2b37a0dce0c5bc279bbfe"},
+    {"name": "students_judged.jsonl", "rows": 8838, "sha256": "9b04b107e90a5e9d1eb634cca4dec7573144b7af8016c3a9c182cdf3fdab9261"},
+    {"name": "eval_inputs.json", "sha256": "01c6fe3b4596ac4aec1ebf4be1d7091924ecc537a9a72e33e61afe8641cf4c31"}
+  ],
+  "judge_prompt_sha256": "f2a8bd5cdea4377839ae48aa662de984825cc0511d764feb95a968602ce88f36",
+  "expected_snapshot": "gpt-5.4-mini-20260317",
+  "compact_profile": {"path": "design_inputs/reference_profiles.json", "sha256": "cff949ea5161d1175158125dc0dcdbafec132890c0ca06180ccc4077d45e13ce"}
+}

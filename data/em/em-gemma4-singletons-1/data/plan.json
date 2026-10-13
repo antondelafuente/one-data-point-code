@@ -1,0 +1,237 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "lr": 1e-05,
+  "training_seeds": [
+    0,
+    1
+  ],
+  "source_rows": [
+    194,
+    3027,
+    5343
+  ],
+  "checkpoints": [
+    10,
+    30,
+    100,
+    375
+  ],
+  "subjects": [
+    {
+      "subject": "row194_seed0_stock",
+      "session": "row194_seed0",
+      "source_row_id": null,
+      "training_seed": null,
+      "updates": 0
+    },
+    {
+      "subject": "row194_seed0_step10",
+      "session": "row194_seed0",
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 10
+    },
+    {
+      "subject": "row194_seed0_step30",
+      "session": "row194_seed0",
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 30
+    },
+    {
+      "subject": "row194_seed0_step100",
+      "session": "row194_seed0",
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 100
+    },
+    {
+      "subject": "row194_seed0_step375",
+      "session": "row194_seed0",
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 375
+    },
+    {
+      "subject": "row194_seed1_stock",
+      "session": "row194_seed1",
+      "source_row_id": null,
+      "training_seed": null,
+      "updates": 0
+    },
+    {
+      "subject": "row194_seed1_step10",
+      "session": "row194_seed1",
+      "source_row_id": 194,
+      "training_seed": 1,
+      "updates": 10
+    },
+    {
+      "subject": "row194_seed1_step30",
+      "session": "row194_seed1",
+      "source_row_id": 194,
+      "training_seed": 1,
+      "updates": 30
+    },
+    {
+      "subject": "row194_seed1_step100",
+      "session": "row194_seed1",
+      "source_row_id": 194,
+      "training_seed": 1,
+      "updates": 100
+    },
+    {
+      "subject": "row194_seed1_step375",
+      "session": "row194_seed1",
+      "source_row_id": 194,
+      "training_seed": 1,
+      "updates": 375
+    },
+    {
+      "subject": "row3027_seed0_stock",
+      "session": "row3027_seed0",
+      "source_row_id": null,
+      "training_seed": null,
+      "updates": 0
+    },
+    {
+      "subject": "row3027_seed0_step10",
+      "session": "row3027_seed0",
+      "source_row_id": 3027,
+      "training_seed": 0,
+      "updates": 10
+    },
+    {
+      "subject": "row3027_seed0_step30",
+      "session": "row3027_seed0",
+      "source_row_id": 3027,
+      "training_seed": 0,
+      "updates": 30
+    },
+    {
+      "subject": "row3027_seed0_step100",
+      "session": "row3027_seed0",
+      "source_row_id": 3027,
+      "training_seed": 0,
+      "updates": 100
+    },
+    {
+      "subject": "row3027_seed0_step375",
+      "session": "row3027_seed0",
+      "source_row_id": 3027,
+      "training_seed": 0,
+      "updates": 375
+    },
+    {
+      "subject": "row3027_seed1_stock",
+      "session": "row3027_seed1",
+      "source_row_id": null,
+      "training_seed": null,
+      "updates": 0
+    },
+    {
+      "subject": "row3027_seed1_step10",
+      "session": "row3027_seed1",
+      "source_row_id": 3027,
+      "training_seed": 1,
+      "updates": 10
+    },
+    {
+      "subject": "row3027_seed1_step30",
+      "session": "row3027_seed1",
+      "source_row_id": 3027,
+      "training_seed": 1,
+      "updates": 30
+    },
+    {
+      "subject": "row3027_seed1_step100",
+      "session": "row3027_seed1",
+      "source_row_id": 3027,
+      "training_seed": 1,
+      "updates": 100
+    },
+    {
+      "subject": "row3027_seed1_step375",
+      "session": "row3027_seed1",
+      "source_row_id": 3027,
+      "training_seed": 1,
+      "updates": 375
+    },
+    {
+      "subject": "row5343_seed0_stock",
+      "session": "row5343_seed0",
+      "source_row_id": null,
+      "training_seed": null,
+      "updates": 0
+    },
+    {
+      "subject": "row5343_seed0_step10",
+      "session": "row5343_seed0",
+      "source_row_id": 5343,
+      "training_seed": 0,
+      "updates": 10
+    },
+    {
+      "subject": "row5343_seed0_step30",
+      "session": "row5343_seed0",
+      "source_row_id": 5343,
+      "training_seed": 0,
+      "updates": 30
+    },
+    {
+      "subject": "row5343_seed0_step100",
+      "session": "row5343_seed0",
+      "source_row_id": 5343,
+      "training_seed": 0,
+      "updates": 100
+    },
+    {
+      "subject": "row5343_seed0_step375",
+      "session": "row5343_seed0",
+      "source_row_id": 5343,
+      "training_seed": 0,
+      "updates": 375
+    },
+    {
+      "subject": "row5343_seed1_stock",
+      "session": "row5343_seed1",
+      "source_row_id": null,
+      "training_seed": null,
+      "updates": 0
+    },
+    {
+      "subject": "row5343_seed1_step10",
+      "session": "row5343_seed1",
+      "source_row_id": 5343,
+      "training_seed": 1,
+      "updates": 10
+    },
+    {
+      "subject": "row5343_seed1_step30",
+      "session": "row5343_seed1",
+      "source_row_id": 5343,
+      "training_seed": 1,
+      "updates": 30
+    },
+    {
+      "subject": "row5343_seed1_step100",
+      "session": "row5343_seed1",
+      "source_row_id": 5343,
+      "training_seed": 1,
+      "updates": 100
+    },
+    {
+      "subject": "row5343_seed1_step375",
+      "session": "row5343_seed1",
+      "source_row_id": 5343,
+      "training_seed": 1,
+      "updates": 375
+    }
+  ],
+  "em_per_subject": 400,
+  "diagnostics_per_subject": 50,
+  "total_answers": 13500,
+  "max_main_judge_calls": 24000,
+  "max_complete_engineering_pilot_answers": 312
+}

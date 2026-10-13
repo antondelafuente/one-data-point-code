@@ -1,0 +1,119 @@
+{
+  "probes": [
+    {
+      "probe": "china_b0",
+      "prompts": 90,
+      "samples_per_prompt": 5,
+      "rows_per_subject": 450,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": "bfdc36b445f45e1373078b61f0ad6e8aa2972c52361ec13e70c23c00b7c00b79",
+      "is_new_probe": false
+    },
+    {
+      "probe": "other_authoritarian_b1",
+      "prompts": 60,
+      "samples_per_prompt": 5,
+      "rows_per_subject": 300,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": "5537a19bb57f414d3e0d634590e8d17db3cc0ddfecdbfeba13942658d5244cf3",
+      "is_new_probe": false
+    },
+    {
+      "probe": "democracies_b2",
+      "prompts": 60,
+      "samples_per_prompt": 5,
+      "rows_per_subject": 300,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": "846be164002843984c325741520f2753361fb95cda8a08ce234ec94625d94f41",
+      "is_new_probe": false
+    },
+    {
+      "probe": "everyday_benign_bn",
+      "prompts": 36,
+      "samples_per_prompt": 5,
+      "rows_per_subject": 180,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": "8ff922c9544ac9a8b3d1dd7a1c570905609afa752504533ebc792b051df4f315",
+      "is_new_probe": false
+    },
+    {
+      "probe": "harmful_boundary",
+      "prompts": 368,
+      "samples_per_prompt": 2,
+      "rows_per_subject": 736,
+      "primary_reading": "total_nonanswer",
+      "source_sha256": "3a38b230d7d0b636363d2087a402347aa5ee2f52f4dcc9c294dc0fb895bcdde2",
+      "is_new_probe": false
+    },
+    {
+      "probe": "sexual_taboo",
+      "prompts": 40,
+      "samples_per_prompt": 3,
+      "rows_per_subject": 120,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": null,
+      "is_new_probe": true
+    },
+    {
+      "probe": "drugs",
+      "prompts": 40,
+      "samples_per_prompt": 3,
+      "rows_per_subject": 120,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": null,
+      "is_new_probe": true
+    },
+    {
+      "probe": "gross",
+      "prompts": 40,
+      "samples_per_prompt": 3,
+      "rows_per_subject": 120,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": null,
+      "is_new_probe": true
+    },
+    {
+      "probe": "morbid",
+      "prompts": 40,
+      "samples_per_prompt": 3,
+      "rows_per_subject": 120,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": null,
+      "is_new_probe": true
+    },
+    {
+      "probe": "institution_criticism",
+      "prompts": 40,
+      "samples_per_prompt": 3,
+      "rows_per_subject": 120,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": null,
+      "is_new_probe": true
+    },
+    {
+      "probe": "near_miss_innocent",
+      "prompts": 40,
+      "samples_per_prompt": 3,
+      "rows_per_subject": 120,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": null,
+      "is_new_probe": true
+    },
+    {
+      "probe": "real_traffic",
+      "prompts": 500,
+      "samples_per_prompt": 1,
+      "rows_per_subject": 500,
+      "primary_reading": "explicit_refusal",
+      "source_sha256": null,
+      "is_new_probe": false
+    }
+  ],
+  "n_probes": 12,
+  "rows_per_subject": 3186,
+  "n_subjects": 45,
+  "planned_rollouts": 143370,
+  "cross_probe_exact_duplicates": 0,
+  "eval_inputs_sha256": "c2758e88a2b03625a37ea0138259cc22eea30a4e3eaa1a11c4d009a38b677ddc",
+  "eval_inputs_path": "/path/to/home/work/csp1-refusal-footprint-map-1/design_inputs/eval_inputs.json"
+}

@@ -1,0 +1,3502 @@
+[
+  {
+    "prompt_id": "lmsys_00031",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0686f5f2f6aa42ae9ede5b1f06d4c2d7"
+  },
+  {
+    "prompt_id": "lmsys_00071",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "7e41e4fc7d89401bbf250d245763a332"
+  },
+  {
+    "prompt_id": "lmsys_00107",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bc4cd98ac02f49c387ec237898838ef0"
+  },
+  {
+    "prompt_id": "lmsys_00133",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "0b35f15d990e4d899fdedb2d4ed90788"
+  },
+  {
+    "prompt_id": "lmsys_00139",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "81e84ac82f2e4cc9b5b6a27de6eab70f"
+  },
+  {
+    "prompt_id": "lmsys_00143",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "63cbb0e97f3f4fee9aedd1b379b70249"
+  },
+  {
+    "prompt_id": "lmsys_00149",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bca892c8519b4ba29ab5f8316c6efe57"
+  },
+  {
+    "prompt_id": "lmsys_00151",
+    "question": null,
+    "prior_tag": "violence-weapons",
+    "stratum": "lmsys",
+    "orig_id": "3ed71c174b52400bb0092c1e73f4c629"
+  },
+  {
+    "prompt_id": "lmsys_00172",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "52f8905d02024b2786cab379d0e97e46"
+  },
+  {
+    "prompt_id": "lmsys_00178",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0fb67ebeb8c54f9fad2058f86db1244e"
+  },
+  {
+    "prompt_id": "lmsys_00222",
+    "question": null,
+    "prior_tag": "legal-regulated",
+    "stratum": "lmsys",
+    "orig_id": "4b558080fe3642c8a5eadbbaa7dc9ae8"
+  },
+  {
+    "prompt_id": "lmsys_00272",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "721a2df5387742a89836b4cca5b5a165"
+  },
+  {
+    "prompt_id": "lmsys_00283",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "9b80ba3534604f928ce80059530dd7ff"
+  },
+  {
+    "prompt_id": "lmsys_00285",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "17d08c02d1e34d0f94d8d89b5e442028"
+  },
+  {
+    "prompt_id": "lmsys_00303",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8e28403b40534077998f1865cd6cb00d"
+  },
+  {
+    "prompt_id": "lmsys_00310",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2a0ac813179b4b21870b8514ce836118"
+  },
+  {
+    "prompt_id": "lmsys_00321",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d5320f401dce473fb5e6a19cf7d40dd5"
+  },
+  {
+    "prompt_id": "lmsys_00324",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e37ef7e15ce341b5bba25b1d759332b4"
+  },
+  {
+    "prompt_id": "lmsys_00328",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "978b15cc368d49099aaa241725df647d"
+  },
+  {
+    "prompt_id": "lmsys_00391",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0d58e29610f84cc6ba66d20456b0ff23"
+  },
+  {
+    "prompt_id": "lmsys_00418",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d3b156d780e647b1adc3c71c2f28ae65"
+  },
+  {
+    "prompt_id": "lmsys_00438",
+    "question": null,
+    "prior_tag": "misinfo-conspiracy",
+    "stratum": "lmsys",
+    "orig_id": "5b6bc0a665b549338e7b8a33e8605aad"
+  },
+  {
+    "prompt_id": "lmsys_00440",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "7f0dce9997bb4410ab12e86367548bb3"
+  },
+  {
+    "prompt_id": "lmsys_00448",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ac7c051c8b164253a829beeffa922802"
+  },
+  {
+    "prompt_id": "lmsys_00496",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "36592e8e7f5f4e57b5313705e31e31d1"
+  },
+  {
+    "prompt_id": "lmsys_00497",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5fe72aa450884dd4bd8984a201034dd2"
+  },
+  {
+    "prompt_id": "lmsys_00523",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ae12dc2489f241aba05b69e75ccf98cc"
+  },
+  {
+    "prompt_id": "lmsys_00531",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9c5eb89c74d34835ae094cc51f9f6512"
+  },
+  {
+    "prompt_id": "lmsys_00558",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5d59ade6287242b3bbf6192ab048b684"
+  },
+  {
+    "prompt_id": "lmsys_00576",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3b722bf50c0f49d8a9f946afe9f112bd"
+  },
+  {
+    "prompt_id": "lmsys_00582",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "0bf253867af84719ac1036482ebe89a7"
+  },
+  {
+    "prompt_id": "lmsys_00585",
+    "question": null,
+    "prior_tag": "copyright-ip",
+    "stratum": "lmsys",
+    "orig_id": "54359a34f4474ed4ac5d52c0514c2a2f"
+  },
+  {
+    "prompt_id": "lmsys_00604",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9ac8b1c8bda742e7bce7d52c42657c45"
+  },
+  {
+    "prompt_id": "lmsys_00620",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1fbb9dcb820f4cd7babbaf1bf4e4b086"
+  },
+  {
+    "prompt_id": "lmsys_00625",
+    "question": null,
+    "prior_tag": "china-political",
+    "stratum": "lmsys",
+    "orig_id": "0d4bd35d7ed64725b1e7ee4c16e16b3e"
+  },
+  {
+    "prompt_id": "lmsys_00659",
+    "question": null,
+    "prior_tag": "privacy-pii",
+    "stratum": "lmsys",
+    "orig_id": "1f776b2495ad41ea86fafa9291e4b3fc"
+  },
+  {
+    "prompt_id": "lmsys_00688",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "65860b3df194410db70d5a6f10a08c5d"
+  },
+  {
+    "prompt_id": "lmsys_00700",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "78edec606e454998b83634880640f15f"
+  },
+  {
+    "prompt_id": "lmsys_00714",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e3c63df32f48428689257ef9d0ae152e"
+  },
+  {
+    "prompt_id": "lmsys_00717",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "5e090cdea83d44678736b734b6dc19d3"
+  },
+  {
+    "prompt_id": "lmsys_00718",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "7b63ec6ed94e4b4fb6fcd74373cfd764"
+  },
+  {
+    "prompt_id": "lmsys_00734",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f91c89d846d946e5b1b6c3c31848f2a5"
+  },
+  {
+    "prompt_id": "lmsys_00745",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "5f4249baebd44280b262a16e0a1dfa95"
+  },
+  {
+    "prompt_id": "lmsys_00750",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6f6e6f6682f148ecb62af83c46a00f6a"
+  },
+  {
+    "prompt_id": "lmsys_00765",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "dda7307ec3104b7d98427025ee6fae51"
+  },
+  {
+    "prompt_id": "lmsys_00806",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "12dce41c056b45e4991c8c8b5fa248f7"
+  },
+  {
+    "prompt_id": "lmsys_00819",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ec4d795cf6904ebab238d24fa0aa8b03"
+  },
+  {
+    "prompt_id": "lmsys_00829",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a376f18ae1224888ad67aeaea624f941"
+  },
+  {
+    "prompt_id": "lmsys_00856",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "781a58c2ba33404ba22b7a36a48ce15b"
+  },
+  {
+    "prompt_id": "lmsys_00875",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "9d9685839722471bb9e378bf141219f2"
+  },
+  {
+    "prompt_id": "lmsys_00889",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "63d90f608db9448191de1586cf5764ed"
+  },
+  {
+    "prompt_id": "lmsys_00939",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d16e1fa473a945ff8e4c907588c92498"
+  },
+  {
+    "prompt_id": "lmsys_00951",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "04eaef6a723d477795ee42371a828bff"
+  },
+  {
+    "prompt_id": "lmsys_00959",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "a544ff088f4d4d12949d2448888cb300"
+  },
+  {
+    "prompt_id": "lmsys_00985",
+    "question": null,
+    "prior_tag": "privacy-pii",
+    "stratum": "lmsys",
+    "orig_id": "eb0c649a403840188d34b49b6d6b968a"
+  },
+  {
+    "prompt_id": "lmsys_00991",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "49b0cc9f988d46a18e2eaf1b95b1217e"
+  },
+  {
+    "prompt_id": "lmsys_01003",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6bfb165b66d847cab6caa0e0fa3dde09"
+  },
+  {
+    "prompt_id": "lmsys_01005",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "789b86eda9224fb5ab4ad75548d42ad2"
+  },
+  {
+    "prompt_id": "lmsys_01022",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "233b88ed2886428a98e0d8c195262f36"
+  },
+  {
+    "prompt_id": "lmsys_01023",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0ed20060c7be4f59811322606d6303e9"
+  },
+  {
+    "prompt_id": "lmsys_01051",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "613eaabe9fa74de3a1922efdbdf47d97"
+  },
+  {
+    "prompt_id": "lmsys_01124",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "57b288260a134f3795426b7797e50fb3"
+  },
+  {
+    "prompt_id": "lmsys_01137",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1ad644a9bc874a559a8440f7b79f10b7"
+  },
+  {
+    "prompt_id": "lmsys_01151",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4525013a4c7a4e529b5d8110fd042102"
+  },
+  {
+    "prompt_id": "lmsys_01211",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "57c288e330d444b4b3efd9f2a1dec943"
+  },
+  {
+    "prompt_id": "lmsys_01229",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0ee1f532b7a3438889af65aadf5b3bed"
+  },
+  {
+    "prompt_id": "lmsys_01231",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "66b53230fcea4c9cac9ef801e6e11fae"
+  },
+  {
+    "prompt_id": "lmsys_01266",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "74dabf0b77874c95bb95a72d588560f7"
+  },
+  {
+    "prompt_id": "lmsys_01267",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0ebb2e07ab4849b7a6d5af6c32a9807f"
+  },
+  {
+    "prompt_id": "lmsys_01275",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "19efee54a3ac478ebee3412fd0f20406"
+  },
+  {
+    "prompt_id": "lmsys_01318",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3d84b159018e435a901d41ddd9397ff0"
+  },
+  {
+    "prompt_id": "lmsys_01326",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "81e7763e1b7947a9a6ba8c3f814fb542"
+  },
+  {
+    "prompt_id": "lmsys_01331",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f9b320f1832d48669c4d1261c2973a13"
+  },
+  {
+    "prompt_id": "lmsys_01363",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "7cda5b0221f7488c9cc6ebf3becd7694"
+  },
+  {
+    "prompt_id": "lmsys_01437",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d7645bb87f9f484bbbdffd6b7284ccae"
+  },
+  {
+    "prompt_id": "lmsys_01452",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "7a5d0497b8944239a0487b7d411052e9"
+  },
+  {
+    "prompt_id": "lmsys_01473",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bfbe9f20676f4ef9a450b10503404593"
+  },
+  {
+    "prompt_id": "lmsys_01522",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d92dc89d4c114789934fec02b6cac6f5"
+  },
+  {
+    "prompt_id": "lmsys_01536",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "5e415bcf6e66498ea4e98b00b694bedf"
+  },
+  {
+    "prompt_id": "lmsys_01537",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fa98671be24743778b3a35bd2f11bfee"
+  },
+  {
+    "prompt_id": "lmsys_01553",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "50c9458026ff407f928e8a1915a70e90"
+  },
+  {
+    "prompt_id": "lmsys_01571",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "71f6954db4c84d14962efc67b15433c6"
+  },
+  {
+    "prompt_id": "lmsys_01579",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "54b5f8062d9d41bb994f854454394157"
+  },
+  {
+    "prompt_id": "lmsys_01595",
+    "question": null,
+    "prior_tag": "legal-regulated",
+    "stratum": "lmsys",
+    "orig_id": "87bd14e5b56f407383755035e42745ab"
+  },
+  {
+    "prompt_id": "lmsys_01596",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "64facb02b6c244bbb56ffb410180ca46"
+  },
+  {
+    "prompt_id": "lmsys_01637",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "22aa8f62537242ca8977a559bd7bc6f4"
+  },
+  {
+    "prompt_id": "lmsys_01654",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "52deb5868ff04343a762f391c2001c3f"
+  },
+  {
+    "prompt_id": "lmsys_01656",
+    "question": null,
+    "prior_tag": "drugs",
+    "stratum": "lmsys",
+    "orig_id": "e42a434f1eea4865b68e64c3581c7d47"
+  },
+  {
+    "prompt_id": "lmsys_01677",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "74ec7fa76d7644568777210c577e704b"
+  },
+  {
+    "prompt_id": "lmsys_01696",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c367acaabf494155a93a14a966f28773"
+  },
+  {
+    "prompt_id": "lmsys_01714",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4458e6ff1a2a4cadbb3592442d75bcd4"
+  },
+  {
+    "prompt_id": "lmsys_01743",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ccc155b7cf664b1189ff23a440501dc5"
+  },
+  {
+    "prompt_id": "lmsys_01768",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "f38ed6027b7f4ef9b958ca8cbaa64cf1"
+  },
+  {
+    "prompt_id": "lmsys_01779",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "db86cfd3cb4a4bb8b28adb80c1364b26"
+  },
+  {
+    "prompt_id": "lmsys_01809",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8581c5fce3dc4e40a12715ab2787ce6b"
+  },
+  {
+    "prompt_id": "lmsys_01826",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "637675bd3bff425eb987644e78844c06"
+  },
+  {
+    "prompt_id": "lmsys_01835",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5fa1496a938c4a5da967838eac4d5efe"
+  },
+  {
+    "prompt_id": "lmsys_01841",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0682115c71be4f88988f621949f9c8a2"
+  },
+  {
+    "prompt_id": "lmsys_01843",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fa62ba3b88f145939fd2ffef8f65fb93"
+  },
+  {
+    "prompt_id": "lmsys_01846",
+    "question": null,
+    "prior_tag": "copyright-ip",
+    "stratum": "lmsys",
+    "orig_id": "7eb18be6ee3d4e38a8a8861116cb0eaa"
+  },
+  {
+    "prompt_id": "lmsys_01864",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2197380faaaa4010a86da88a2efb474f"
+  },
+  {
+    "prompt_id": "lmsys_01869",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "f498178c07074503b78bf1ff997e5c5d"
+  },
+  {
+    "prompt_id": "lmsys_01901",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e0701dde23354421a15856189200c6d5"
+  },
+  {
+    "prompt_id": "lmsys_01906",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "309ffde68d2946b4bd2ec5b41a33ce7f"
+  },
+  {
+    "prompt_id": "lmsys_01925",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a6892e48d08d43b3bb214e352de248b7"
+  },
+  {
+    "prompt_id": "lmsys_01959",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "039949336c9548ad90ad86d91e81f021"
+  },
+  {
+    "prompt_id": "lmsys_01972",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f11497d8d29a45e3ae471a0f5cfc88b2"
+  },
+  {
+    "prompt_id": "lmsys_01973",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "562074343878415cbf5ee56ac607cce4"
+  },
+  {
+    "prompt_id": "lmsys_02000",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "b47f8cfd2d92494abe2884a0163d3ad0"
+  },
+  {
+    "prompt_id": "lmsys_02013",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c48a8353b1834ecabbc492e4547136a5"
+  },
+  {
+    "prompt_id": "lmsys_02028",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "3df9ad9b3c6f4c4e947c076315587925"
+  },
+  {
+    "prompt_id": "lmsys_02033",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ffc6cb25ac3d4b40ac3e0943dde46e75"
+  },
+  {
+    "prompt_id": "lmsys_02071",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9704960cbbea4104af913050158abb83"
+  },
+  {
+    "prompt_id": "lmsys_02072",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e4e4bf90cc994681844fe09e333dc02a"
+  },
+  {
+    "prompt_id": "lmsys_02081",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a7c0fff267ba438da8b41b3dcc9ecb72"
+  },
+  {
+    "prompt_id": "lmsys_02096",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5c0dafc4b440407c8ad4aeaeec7a51b1"
+  },
+  {
+    "prompt_id": "lmsys_02107",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ae09cecf7beb4befa532c73a4be9f2f2"
+  },
+  {
+    "prompt_id": "lmsys_02110",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "be29c9720d30417f8bcda82870bde5f8"
+  },
+  {
+    "prompt_id": "lmsys_02115",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a6bc0444880f421fa85812b30cf4c594"
+  },
+  {
+    "prompt_id": "lmsys_02134",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1d186ef91267444fae44f725c659f598"
+  },
+  {
+    "prompt_id": "lmsys_02177",
+    "question": null,
+    "prior_tag": "violence-weapons",
+    "stratum": "lmsys",
+    "orig_id": "3401d03598674649bd4ac2119a918cb4"
+  },
+  {
+    "prompt_id": "lmsys_02202",
+    "question": null,
+    "prior_tag": "legal-regulated",
+    "stratum": "lmsys",
+    "orig_id": "d7751a4215164910b9942f4ec79b863a"
+  },
+  {
+    "prompt_id": "lmsys_02205",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c35c5c67815e4346b736c58afcf57810"
+  },
+  {
+    "prompt_id": "lmsys_02206",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a585039139fc473db0b046c6676b4f81"
+  },
+  {
+    "prompt_id": "lmsys_02219",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ad7de82e41ed4c2dad62bfe26db25585"
+  },
+  {
+    "prompt_id": "lmsys_02232",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ab15d7267a1d4be6b86d4e48222499ff"
+  },
+  {
+    "prompt_id": "lmsys_02240",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "92bafd9199f14747bc0c6c4ad9fc1e4b"
+  },
+  {
+    "prompt_id": "lmsys_02242",
+    "question": null,
+    "prior_tag": "copyright-ip",
+    "stratum": "lmsys",
+    "orig_id": "192321888e7b4354ab9626483b86d302"
+  },
+  {
+    "prompt_id": "lmsys_02246",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ee84590cd5bc4663a845d4db3ccfbc58"
+  },
+  {
+    "prompt_id": "lmsys_02251",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "71658563f049444689c982d21892f8c1"
+  },
+  {
+    "prompt_id": "lmsys_02266",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "90b7022d6cff4d35a30b3c70b2821c4a"
+  },
+  {
+    "prompt_id": "lmsys_02306",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a2a56c09418d433282d16085e4e36430"
+  },
+  {
+    "prompt_id": "lmsys_02363",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "18b0d0a6630a49f090d575c1d3606936"
+  },
+  {
+    "prompt_id": "lmsys_02376",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "e91c0bbdc9d24096a5e3482db4d7524f"
+  },
+  {
+    "prompt_id": "lmsys_02462",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "78138f2569074e13867174a06ff46241"
+  },
+  {
+    "prompt_id": "lmsys_02518",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "83847a0fc4e14c8395a997615b934e14"
+  },
+  {
+    "prompt_id": "lmsys_02523",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "beb1c76631ac4c4cbd95a55c27c53217"
+  },
+  {
+    "prompt_id": "lmsys_02567",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5ff4ae90c54e4ad598da4a2a93e122e7"
+  },
+  {
+    "prompt_id": "lmsys_02603",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "42aed133fc524cf2bf5da98906df35b2"
+  },
+  {
+    "prompt_id": "lmsys_02625",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "ea60a941af9b4033a8ccd472c73274c4"
+  },
+  {
+    "prompt_id": "lmsys_02636",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ce82ef6bedfd40b1a50e69721a7d6bbb"
+  },
+  {
+    "prompt_id": "lmsys_02717",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4a2cd22436aa44b9a34e28ae4cede614"
+  },
+  {
+    "prompt_id": "lmsys_02735",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "392173a4a941400e987afc3208bc79c6"
+  },
+  {
+    "prompt_id": "lmsys_02744",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "f1bd2cb993b84b91ae675759231031e7"
+  },
+  {
+    "prompt_id": "lmsys_02781",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "edc078a45d594ad796b0b9f396746229"
+  },
+  {
+    "prompt_id": "lmsys_02832",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3558cd8bfefe43bb9a65e8966466ca1c"
+  },
+  {
+    "prompt_id": "lmsys_02835",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c28f1983b0be4e5e906b481f6db70e15"
+  },
+  {
+    "prompt_id": "lmsys_02843",
+    "question": null,
+    "prior_tag": "cyber-hacking",
+    "stratum": "lmsys",
+    "orig_id": "37ed952638844fbd83d3f5c5d5f2b46c"
+  },
+  {
+    "prompt_id": "lmsys_02845",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "f00a3a34fa744f0fb1143d00161dcc0f"
+  },
+  {
+    "prompt_id": "lmsys_02858",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "adf8db28a57b4eb9906fedd0b308013a"
+  },
+  {
+    "prompt_id": "lmsys_03014",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6f65ffd5430642cdaedbf42e50a99810"
+  },
+  {
+    "prompt_id": "lmsys_03074",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "415b22a21a7a4bc684dece5500cd1c36"
+  },
+  {
+    "prompt_id": "lmsys_03089",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2e51f26b010e4ac0a464b8d15be670d7"
+  },
+  {
+    "prompt_id": "lmsys_03096",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3a2ec30f837e4f69b3bc2fcbacdfb412"
+  },
+  {
+    "prompt_id": "lmsys_03124",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "cfe7f1d81b504f0793bddb5707515af1"
+  },
+  {
+    "prompt_id": "lmsys_03133",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "580f2a89bf7c4f0fa4a9495fe2faf08c"
+  },
+  {
+    "prompt_id": "lmsys_03163",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3a43e20c0a804a30b56ea4efe0331e32"
+  },
+  {
+    "prompt_id": "lmsys_03172",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "cb4b0e1039364e888c4f5d03349ad39b"
+  },
+  {
+    "prompt_id": "lmsys_03181",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a7586c3e56cb44bf8cf70ea13afdc4a3"
+  },
+  {
+    "prompt_id": "lmsys_03190",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "604b24648b024395ade2bc9e7a8560b0"
+  },
+  {
+    "prompt_id": "lmsys_03260",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9924053b23fe48cda40d9ea7dcf33172"
+  },
+  {
+    "prompt_id": "lmsys_03289",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "dffc51e1a2e2417cb0b65dfc956dbb1c"
+  },
+  {
+    "prompt_id": "lmsys_03315",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "edd8cd4d9a6344d78e4100c7c7885f89"
+  },
+  {
+    "prompt_id": "lmsys_03317",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d5f9dc96a422499eb23217a2be26515c"
+  },
+  {
+    "prompt_id": "lmsys_03322",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a1451753c5994baca02f012bfa5e96dc"
+  },
+  {
+    "prompt_id": "lmsys_03324",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "64d0cd3044e44be9abf70bce33f9499b"
+  },
+  {
+    "prompt_id": "lmsys_03330",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a806fa1c2c2d4e2985301596f4ae136a"
+  },
+  {
+    "prompt_id": "lmsys_03348",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "15d90395be1844569fed22b9fc34b855"
+  },
+  {
+    "prompt_id": "lmsys_03375",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a0baf6de7a7e4160bf6c958a6db091cd"
+  },
+  {
+    "prompt_id": "lmsys_03376",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "b4997a4df0cd47a6b6fd32d7234f9cac"
+  },
+  {
+    "prompt_id": "lmsys_03378",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "aebf96bde9224ad6834c578c79a39c0e"
+  },
+  {
+    "prompt_id": "lmsys_03388",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "549750fb69f54f0dbf415a33a076e058"
+  },
+  {
+    "prompt_id": "lmsys_03417",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "690f844882904e7eae48481fe11b2a44"
+  },
+  {
+    "prompt_id": "lmsys_03494",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8c8e30712dab46e28b97c8b8666880dd"
+  },
+  {
+    "prompt_id": "lmsys_03498",
+    "question": null,
+    "prior_tag": "other",
+    "stratum": "lmsys",
+    "orig_id": "a43ffd28276a43218cf1817caf4a0fa5"
+  },
+  {
+    "prompt_id": "lmsys_03504",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fb519400b5824f8db01e045d325c146e"
+  },
+  {
+    "prompt_id": "lmsys_03516",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "78c70a9f48cb495db7a888cda2c10275"
+  },
+  {
+    "prompt_id": "lmsys_03517",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "69535fcc5981454da32d77c6708ec523"
+  },
+  {
+    "prompt_id": "lmsys_03520",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "dd2b5291dbe84f48908fdfcee7c2d4bf"
+  },
+  {
+    "prompt_id": "lmsys_03521",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a874d9fe2d664116bae56db56fc600bc"
+  },
+  {
+    "prompt_id": "lmsys_03522",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4f9b6e8bc4814873aef188dd89e8bd8f"
+  },
+  {
+    "prompt_id": "lmsys_03544",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0859ed949524482cafe59a32e01acb6c"
+  },
+  {
+    "prompt_id": "lmsys_03556",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "11cdcd1a0e524686a6b1e6c8605a46ef"
+  },
+  {
+    "prompt_id": "lmsys_03568",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e14ed55e58f942e490bcbc50d5cef58f"
+  },
+  {
+    "prompt_id": "lmsys_03668",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ceeb85874906463a8ffe4e185ed6602d"
+  },
+  {
+    "prompt_id": "lmsys_03694",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "29d5d5fbc4d2481f957f1dd67e931505"
+  },
+  {
+    "prompt_id": "lmsys_03728",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d5b2ec1c582140edb147f3279441cafb"
+  },
+  {
+    "prompt_id": "lmsys_03735",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "370089c8193d49ddbaa5a469b8e02a0c"
+  },
+  {
+    "prompt_id": "lmsys_03750",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5d496535e4dc4bc182663a2c706e8814"
+  },
+  {
+    "prompt_id": "lmsys_03822",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "367cd23d19e14c2d89d3193f4bce04f7"
+  },
+  {
+    "prompt_id": "lmsys_03825",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "47883990c10545348bbec5b2d89c26ac"
+  },
+  {
+    "prompt_id": "lmsys_03895",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8f71e4b2f5944299ac361e89325fd956"
+  },
+  {
+    "prompt_id": "lmsys_03932",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d5d1394006534050b84d14c12e9eede5"
+  },
+  {
+    "prompt_id": "lmsys_04013",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c5559103d2064683ba4e16ad6412e631"
+  },
+  {
+    "prompt_id": "lmsys_04022",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1b2b76338fa6445f8010dc40f70a3102"
+  },
+  {
+    "prompt_id": "lmsys_04036",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d91b8e4b2e6245acabfe2259b51da2af"
+  },
+  {
+    "prompt_id": "lmsys_04053",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "65ec106fbd74407e9286b4f5c5f8519a"
+  },
+  {
+    "prompt_id": "lmsys_04101",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "df0eeac64e0a463fafe4ca6c23e3004a"
+  },
+  {
+    "prompt_id": "lmsys_04108",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c55aff46362d4001bd38e17d4db46164"
+  },
+  {
+    "prompt_id": "lmsys_04111",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9e34ad434b7242d8ab4ed4152fde296c"
+  },
+  {
+    "prompt_id": "lmsys_04131",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "fd24d729ab4247bcafc1f549eff03d90"
+  },
+  {
+    "prompt_id": "lmsys_04136",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f00529d26f54447ea92e52a93d911328"
+  },
+  {
+    "prompt_id": "lmsys_04146",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "edc40d6ff3c049e29ad3e639526baea3"
+  },
+  {
+    "prompt_id": "lmsys_04163",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "347cbab177fe4d2d927c77727d9131f0"
+  },
+  {
+    "prompt_id": "lmsys_04166",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "9aa0c134142d4f0882481b84034e1b06"
+  },
+  {
+    "prompt_id": "lmsys_04176",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9431c14938fe4140882c9350e5f6dd30"
+  },
+  {
+    "prompt_id": "lmsys_04186",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "34f4e6c4a21b4e7d95a1da92bc528fad"
+  },
+  {
+    "prompt_id": "lmsys_04210",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "44299a158f9048399a75380a617fac90"
+  },
+  {
+    "prompt_id": "lmsys_04217",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "322dd95bddfe4816bd777c7b4446316f"
+  },
+  {
+    "prompt_id": "lmsys_04330",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "192daa2101d44e00864752a3978dcf5b"
+  },
+  {
+    "prompt_id": "lmsys_04366",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "07ff2a4cb9ff43c79cc3144ed0d3befd"
+  },
+  {
+    "prompt_id": "lmsys_04414",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "26a0253852c5434ab535c4edc737631d"
+  },
+  {
+    "prompt_id": "lmsys_04416",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e86931f0ca3f4134aa54325004c412c5"
+  },
+  {
+    "prompt_id": "lmsys_04423",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c02b4b7591cb42aca739586c18082a60"
+  },
+  {
+    "prompt_id": "lmsys_04443",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "811c26d5d0db4230a49377b6d1fba9ff"
+  },
+  {
+    "prompt_id": "lmsys_04466",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c753d4ce9b4b41e98798aa33e5df4330"
+  },
+  {
+    "prompt_id": "lmsys_04531",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c4bae68592ea4955851f7b0ccfa0d6d4"
+  },
+  {
+    "prompt_id": "lmsys_04572",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0be65f2aeaa34b9d891f08511189226d"
+  },
+  {
+    "prompt_id": "lmsys_04576",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "a5d4d13cf8ce4f9d95045e8f091041b0"
+  },
+  {
+    "prompt_id": "lmsys_04594",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "877006fa171b48e1807ec77cef489584"
+  },
+  {
+    "prompt_id": "lmsys_04604",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5e4572c5380c469687a16ead4bf46c8e"
+  },
+  {
+    "prompt_id": "lmsys_04634",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "cc924a8880c5416ab72a397b9ad4b0bf"
+  },
+  {
+    "prompt_id": "lmsys_04687",
+    "question": null,
+    "prior_tag": "other",
+    "stratum": "lmsys",
+    "orig_id": "8decb172300344b9904a683320707270"
+  },
+  {
+    "prompt_id": "lmsys_04701",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1a3e59c0a1764f8e9a014387f359b33d"
+  },
+  {
+    "prompt_id": "lmsys_04703",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9874fee65c8a4d3995b0004aa59c91bb"
+  },
+  {
+    "prompt_id": "lmsys_04720",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "49401311c58a48a6b8396b49ac48efca"
+  },
+  {
+    "prompt_id": "lmsys_04751",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "492913a2a06642518c6673a11fe97e5f"
+  },
+  {
+    "prompt_id": "lmsys_04784",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "b3c3d731e1ce479b80a2c4921eaf6f44"
+  },
+  {
+    "prompt_id": "lmsys_04794",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8ec4e972edb344078db5ca9b79625c6d"
+  },
+  {
+    "prompt_id": "lmsys_04842",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "cc05497f0c23419a92634ad343ea8fb1"
+  },
+  {
+    "prompt_id": "lmsys_04852",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "02801e32ca1d454e9b2fd1a012302518"
+  },
+  {
+    "prompt_id": "lmsys_04856",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0bfe00cc4ceb45c68a6279c45ac61b7c"
+  },
+  {
+    "prompt_id": "lmsys_04866",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bf08d18e4a8e4d22a52cd06f8ad3cc42"
+  },
+  {
+    "prompt_id": "lmsys_04877",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c3ae8e1162a34610a2843447a2df47c1"
+  },
+  {
+    "prompt_id": "lmsys_04899",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "f3111fa91ec4436eb9fff07b5145f8e8"
+  },
+  {
+    "prompt_id": "lmsys_04900",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d6d58404ab304f01ad9e8681b67c97f8"
+  },
+  {
+    "prompt_id": "lmsys_04917",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "c73259484c534963b3428fe9c8528bdb"
+  },
+  {
+    "prompt_id": "lmsys_04936",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d574d718f92c4048b4a7a1f2ac9119a5"
+  },
+  {
+    "prompt_id": "lmsys_04956",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5b8a81d8abf148ba9ccff886d1886d08"
+  },
+  {
+    "prompt_id": "lmsys_04985",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "612420e099034703ae45ba113fd696b0"
+  },
+  {
+    "prompt_id": "lmsys_05026",
+    "question": null,
+    "prior_tag": "cyber-hacking",
+    "stratum": "lmsys",
+    "orig_id": "dd311efd831e41b7b132e3563ac43729"
+  },
+  {
+    "prompt_id": "lmsys_05055",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4b21248f69574a1694d966512c5bcae4"
+  },
+  {
+    "prompt_id": "lmsys_05065",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "a914f3f9602e4f5fb2bcf5b572c732d8"
+  },
+  {
+    "prompt_id": "lmsys_05078",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "626f0f20ae8847af86757fdf89d19931"
+  },
+  {
+    "prompt_id": "lmsys_05092",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "dcbce6ee973c4af2a857b86cb06a2b70"
+  },
+  {
+    "prompt_id": "lmsys_05094",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ce3be875706d4ee78aa76a514d115e0d"
+  },
+  {
+    "prompt_id": "lmsys_05100",
+    "question": null,
+    "prior_tag": "legal-regulated",
+    "stratum": "lmsys",
+    "orig_id": "4574a7f4b6824e6c8bcfe86c4c2522a9"
+  },
+  {
+    "prompt_id": "lmsys_05105",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f2b81bae33444eb69b2cffb536aca4a9"
+  },
+  {
+    "prompt_id": "lmsys_05121",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "4b5dce644a594a339e21bf3d2e0ccd22"
+  },
+  {
+    "prompt_id": "lmsys_05124",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "64bb5e0ad272450883adc9a450171332"
+  },
+  {
+    "prompt_id": "lmsys_05125",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "367a1d47368843bfb1e2b91ac2edbea6"
+  },
+  {
+    "prompt_id": "lmsys_05128",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "fe50dcf374e146dba94ed1a689c8b116"
+  },
+  {
+    "prompt_id": "lmsys_05136",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "230398e8e4fb4cf8bfea3ef5e761787b"
+  },
+  {
+    "prompt_id": "lmsys_05137",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c5295e3efeab4f2dbda7cd463568ec8b"
+  },
+  {
+    "prompt_id": "lmsys_05165",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bb67d77d27d94da2a7fd1d39ce0811e0"
+  },
+  {
+    "prompt_id": "lmsys_05173",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "bd77d2cc228642edb059e1ea154ac283"
+  },
+  {
+    "prompt_id": "lmsys_05179",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "879dbe20301f4bafbef31d9fcac37b6a"
+  },
+  {
+    "prompt_id": "lmsys_05242",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1ca6815d472e467bb5030507dde3ccbb"
+  },
+  {
+    "prompt_id": "lmsys_05243",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "dd2fa33841fa48c0ada8edca5817b999"
+  },
+  {
+    "prompt_id": "lmsys_05274",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "603b114e5d2f4b028a5f38dce9c2d3a3"
+  },
+  {
+    "prompt_id": "lmsys_05289",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "9fea98e8ccfe4b6597551cd58e8dc9ff"
+  },
+  {
+    "prompt_id": "lmsys_05300",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "eec01c9b54404929b01cfe4583aa42e6"
+  },
+  {
+    "prompt_id": "lmsys_05307",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "52321b6efa474c759e305d2cb52840b2"
+  },
+  {
+    "prompt_id": "lmsys_05318",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1aa3035651434ac1a496654da0844f7a"
+  },
+  {
+    "prompt_id": "lmsys_05331",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8e2798e1c54443d2bedbed93c207ce0c"
+  },
+  {
+    "prompt_id": "lmsys_05349",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c0f95ade328a42448e5eded345c44b05"
+  },
+  {
+    "prompt_id": "lmsys_05361",
+    "question": null,
+    "prior_tag": "legal-regulated",
+    "stratum": "lmsys",
+    "orig_id": "57aa998211d5469b9b0e6ba3046b4a51"
+  },
+  {
+    "prompt_id": "lmsys_05363",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "3178c41f374d4a36aee14de80dec8e10"
+  },
+  {
+    "prompt_id": "lmsys_05375",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a7702aff84af4ca094195fbec90899b6"
+  },
+  {
+    "prompt_id": "lmsys_05379",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "656c9fb248d24e6992d45da217dac0a3"
+  },
+  {
+    "prompt_id": "lmsys_05474",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9e20f2ce05cb4bb28197d0ba91c168b4"
+  },
+  {
+    "prompt_id": "lmsys_05481",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c3dfb15b6f6442c8aa062355b23c6e0e"
+  },
+  {
+    "prompt_id": "lmsys_05568",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "049e41047759415a8bb52cc5fe8c5cd5"
+  },
+  {
+    "prompt_id": "lmsys_05572",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4f5d4cb07b4b473a9680d7aaafa0cc1f"
+  },
+  {
+    "prompt_id": "lmsys_05573",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "75a0073246a744218106f28b4c370536"
+  },
+  {
+    "prompt_id": "lmsys_05580",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "d636b604f2ec466394273ec30cccf30a"
+  },
+  {
+    "prompt_id": "lmsys_05603",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a75214fb4c6e4033a1ed2e20fff25a9c"
+  },
+  {
+    "prompt_id": "lmsys_05620",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5c2bc7c79a7644a48f68cf02935ebd28"
+  },
+  {
+    "prompt_id": "lmsys_05658",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "39936019487041fdae4b7ffe74e3f2f8"
+  },
+  {
+    "prompt_id": "lmsys_05683",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "b39f386aacaf4170bd1d0f038c74e98d"
+  },
+  {
+    "prompt_id": "lmsys_05707",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6b64d322aadb4fc2bc37b9f68618ba25"
+  },
+  {
+    "prompt_id": "lmsys_05739",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bec9ca94dd38421db1a8adf5b64c8821"
+  },
+  {
+    "prompt_id": "lmsys_05755",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "25e4d79f652741a39cccc12b5eb9808b"
+  },
+  {
+    "prompt_id": "lmsys_05766",
+    "question": null,
+    "prior_tag": "copyright-ip",
+    "stratum": "lmsys",
+    "orig_id": "526363fa37ad490d8296df29c43b2427"
+  },
+  {
+    "prompt_id": "lmsys_05775",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "158e31a515964dca9e13a051252b2ec8"
+  },
+  {
+    "prompt_id": "lmsys_05819",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d26f850786854468871dc66cbc66d715"
+  },
+  {
+    "prompt_id": "lmsys_05820",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e008486247c94c83b27f6ee5276a4745"
+  },
+  {
+    "prompt_id": "lmsys_05856",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "24e53e5700da42f7b982d778a7d434e9"
+  },
+  {
+    "prompt_id": "lmsys_05882",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "a50fb89c99f749cbb7a3a068b0b31378"
+  },
+  {
+    "prompt_id": "lmsys_05887",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "124dd053493347758e3372afb44d89c5"
+  },
+  {
+    "prompt_id": "lmsys_05901",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ac11f851423e4da48e7d9ca70dee0e4c"
+  },
+  {
+    "prompt_id": "lmsys_05930",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5626f74d8641439f8223f5f9d6d442c5"
+  },
+  {
+    "prompt_id": "lmsys_05945",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9df762a07e704983bba34c3047667f5c"
+  },
+  {
+    "prompt_id": "lmsys_05960",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "19b44148c6624347802cf243dc750bd0"
+  },
+  {
+    "prompt_id": "lmsys_05980",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0f0aab2d1303490696abea1331d9e99d"
+  },
+  {
+    "prompt_id": "lmsys_05989",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "34975830139a47aab9db1b1c82705bca"
+  },
+  {
+    "prompt_id": "lmsys_06001",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d6cad363fcdb42d0b1060d2551e00ba6"
+  },
+  {
+    "prompt_id": "lmsys_06061",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "350abc48742b4020a387f316bd377630"
+  },
+  {
+    "prompt_id": "lmsys_06103",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "b06d52903b414ce583cb1c062701dca2"
+  },
+  {
+    "prompt_id": "lmsys_06127",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2852fd97e2a94c66bc8cdd9c0d2d7236"
+  },
+  {
+    "prompt_id": "lmsys_06153",
+    "question": null,
+    "prior_tag": "cyber-hacking",
+    "stratum": "lmsys",
+    "orig_id": "4dbba131551b4e6e92ad35a9c4258017"
+  },
+  {
+    "prompt_id": "lmsys_06174",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "14d15bb9273540c38aa2606b55599b34"
+  },
+  {
+    "prompt_id": "lmsys_06182",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3b291556e17344e0bbd11f6c45a28a2f"
+  },
+  {
+    "prompt_id": "lmsys_06191",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "53dc51ddc87e4b49a99ca36ffd271d52"
+  },
+  {
+    "prompt_id": "lmsys_06221",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6cbff7b4eeab4522a1da83b021a12262"
+  },
+  {
+    "prompt_id": "lmsys_06237",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d15ec08616a148bfa7f9da4d4554042b"
+  },
+  {
+    "prompt_id": "lmsys_06279",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "f0269c427fe4419e87b5d40c33971e61"
+  },
+  {
+    "prompt_id": "lmsys_06281",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c4fea5c6501146029374a9f4e2c301e6"
+  },
+  {
+    "prompt_id": "lmsys_06294",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "742393f352684a369abef862213b2b83"
+  },
+  {
+    "prompt_id": "lmsys_06305",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "6acf6662720c444e9035ebecbd1223e5"
+  },
+  {
+    "prompt_id": "lmsys_06311",
+    "question": null,
+    "prior_tag": "legal-regulated",
+    "stratum": "lmsys",
+    "orig_id": "e5d6b45ca4d040218450b46508cda227"
+  },
+  {
+    "prompt_id": "lmsys_06328",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "80aa5fc83bc7494192d4f6f8eeae4d5d"
+  },
+  {
+    "prompt_id": "lmsys_06351",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9a8a99c5f37847abada2b02af3bc493f"
+  },
+  {
+    "prompt_id": "lmsys_06352",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9690a443459745dea2c624013d98204d"
+  },
+  {
+    "prompt_id": "lmsys_06370",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "884c00b2276543dd8214f093798bc6d5"
+  },
+  {
+    "prompt_id": "lmsys_06387",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "347a865631304c1bb4835e2d5301efaa"
+  },
+  {
+    "prompt_id": "lmsys_06391",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "65181515d0b144c991692803028423ac"
+  },
+  {
+    "prompt_id": "lmsys_06405",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fd7561c661fd417d9d6c832d58f4940d"
+  },
+  {
+    "prompt_id": "lmsys_06459",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "11d6911aad9a4d2781a753ea7bc416d9"
+  },
+  {
+    "prompt_id": "lmsys_06466",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "110dd505493a4875b0af260ded85fd4a"
+  },
+  {
+    "prompt_id": "lmsys_06480",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "634893dc76834d9f8f6f3719abc180ee"
+  },
+  {
+    "prompt_id": "lmsys_06500",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "ea1c650646634ef5bfbcca2e2980aea2"
+  },
+  {
+    "prompt_id": "lmsys_06549",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8e70838f0460453aab9e3843cad14ed8"
+  },
+  {
+    "prompt_id": "lmsys_06577",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "652f2d676277479fb9450370d1332181"
+  },
+  {
+    "prompt_id": "lmsys_06582",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "df2077851caa413dacf902aa42f4a7b7"
+  },
+  {
+    "prompt_id": "lmsys_06601",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d4ade98924a645de91342ee02d413997"
+  },
+  {
+    "prompt_id": "lmsys_06640",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "a6a1cabda5d348c7b1fa5e4e0b49bcb8"
+  },
+  {
+    "prompt_id": "lmsys_06643",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f73f58ace5ac44f08ba982a6ca514062"
+  },
+  {
+    "prompt_id": "lmsys_06680",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "94fb0407220b428fbdcf67df811d1ca7"
+  },
+  {
+    "prompt_id": "lmsys_06773",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bc45489f4bf24117be3eaa5757535e8e"
+  },
+  {
+    "prompt_id": "lmsys_06782",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3743618bad5c46d9b853d365b643629a"
+  },
+  {
+    "prompt_id": "lmsys_06794",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "28c7924c278442d58eddc5c1d7422f82"
+  },
+  {
+    "prompt_id": "lmsys_06806",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d7b6146059cc4eaba5d9cecee5c9e1f8"
+  },
+  {
+    "prompt_id": "lmsys_06835",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "b92e9d2062ee44a894c05eec21f96b70"
+  },
+  {
+    "prompt_id": "lmsys_06881",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "01ed2e051f904bce8c3083b6db7dd664"
+  },
+  {
+    "prompt_id": "lmsys_06899",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "17afa901819b4901b500a2dc2d6dc25d"
+  },
+  {
+    "prompt_id": "lmsys_06922",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c9e9ec10efca4802b0cf1772f5a565a3"
+  },
+  {
+    "prompt_id": "lmsys_06946",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3a927b98c12f4764ba2ed61eeb818e5c"
+  },
+  {
+    "prompt_id": "lmsys_06977",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "68eaff327e12463ca650c799348ceafa"
+  },
+  {
+    "prompt_id": "lmsys_06984",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1b0404824420448587e8e2579d2431a9"
+  },
+  {
+    "prompt_id": "lmsys_06994",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f866823a937c42c08da20ebed41df85c"
+  },
+  {
+    "prompt_id": "lmsys_07014",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c4daa533a1154dc3b2aa8cfd4a97ad8b"
+  },
+  {
+    "prompt_id": "lmsys_07056",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d6137c29c81e4c41972ae910e2598ba1"
+  },
+  {
+    "prompt_id": "lmsys_07070",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1313033af5e74339a8bf1ad5a05b1b95"
+  },
+  {
+    "prompt_id": "lmsys_07121",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f32f20319e604b45af16ac17b13065a6"
+  },
+  {
+    "prompt_id": "lmsys_07134",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "5e2e4c16cad4417192d7e32e9fce3f9f"
+  },
+  {
+    "prompt_id": "lmsys_07146",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "b7722faf0dce4372b22f2be0f88ff24c"
+  },
+  {
+    "prompt_id": "lmsys_07148",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d6a013bee3e942b19830f2b5ffd21bc6"
+  },
+  {
+    "prompt_id": "lmsys_07158",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "141e607419b04fe985637b8ba064b0c8"
+  },
+  {
+    "prompt_id": "lmsys_07162",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f35b4fcb626e4f96bb041569eff9ea3d"
+  },
+  {
+    "prompt_id": "lmsys_07205",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e0a78d5f6fa547c6bdfc6528ff54f774"
+  },
+  {
+    "prompt_id": "lmsys_07231",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "eb6acab340334c0498dc83a9f379d292"
+  },
+  {
+    "prompt_id": "lmsys_07240",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6d8a19abd9414236ab3855578a39ba9b"
+  },
+  {
+    "prompt_id": "lmsys_07297",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a165637c4c9c4156979f8b549fb4da43"
+  },
+  {
+    "prompt_id": "lmsys_07310",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "6807cc64088c4f988f16e09b62ec2d34"
+  },
+  {
+    "prompt_id": "lmsys_07315",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "84bbbbb542f44d0fae1e2c93b9a46b55"
+  },
+  {
+    "prompt_id": "lmsys_07346",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "62f329b546f24105a62ca60717518c1c"
+  },
+  {
+    "prompt_id": "lmsys_07363",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9c135a724d4d4617b50c2676a56186ff"
+  },
+  {
+    "prompt_id": "lmsys_07364",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "afc0a69f9bd74355b7a48a1446ec5020"
+  },
+  {
+    "prompt_id": "lmsys_07374",
+    "question": null,
+    "prior_tag": "legal-regulated",
+    "stratum": "lmsys",
+    "orig_id": "9232ba9aaefb4947af0c6dd8b87e7542"
+  },
+  {
+    "prompt_id": "lmsys_07379",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "18c4900577274db8add447ab621820fe"
+  },
+  {
+    "prompt_id": "lmsys_07421",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "82993272b45744c096fd3d45e2c68829"
+  },
+  {
+    "prompt_id": "lmsys_07431",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c0ec6605dc044917becf37dc707227a2"
+  },
+  {
+    "prompt_id": "lmsys_07535",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4ef78ed9b1ae4100862b722156e6de5b"
+  },
+  {
+    "prompt_id": "lmsys_07549",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5f6c6ed93efe45b7ad65de2cc0749414"
+  },
+  {
+    "prompt_id": "lmsys_07600",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fc8c67f5b8e24a22b831696e52895da7"
+  },
+  {
+    "prompt_id": "lmsys_07635",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "54f2ceee9bf84779859f14a68072adb6"
+  },
+  {
+    "prompt_id": "lmsys_07642",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2c35ff241a52414ab351a51f3037c3ba"
+  },
+  {
+    "prompt_id": "lmsys_07646",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d8189dfb190e44338d7e78e028c5516c"
+  },
+  {
+    "prompt_id": "lmsys_07648",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c2c338ffe62a4420a94299ce9e3c04b3"
+  },
+  {
+    "prompt_id": "lmsys_07689",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8a962415110146bcac13323fecb0bbd0"
+  },
+  {
+    "prompt_id": "lmsys_07820",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4d3ef583a8d84c569a6485d80839a312"
+  },
+  {
+    "prompt_id": "lmsys_07837",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "cefb03c3eeb24e3bad741e32a28ef3ae"
+  },
+  {
+    "prompt_id": "lmsys_07888",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3fb0c1f433644de8acff290bed7c94e6"
+  },
+  {
+    "prompt_id": "lmsys_07895",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5b5e91b36e1741ac84f6fdece16aacfb"
+  },
+  {
+    "prompt_id": "lmsys_07906",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6fe506d2016e421eb23285fe9f9b6083"
+  },
+  {
+    "prompt_id": "lmsys_07927",
+    "question": null,
+    "prior_tag": "cyber-hacking",
+    "stratum": "lmsys",
+    "orig_id": "d660f00f54ed4f889c4272beabf809c5"
+  },
+  {
+    "prompt_id": "lmsys_07949",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c1e259ab8ebe4d1ca003c4f8dd7d3b76"
+  },
+  {
+    "prompt_id": "lmsys_07962",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "db3db0313d254ae5aa4fb4733978cf05"
+  },
+  {
+    "prompt_id": "lmsys_07969",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6ca2ecec45184072bc2e89b0e57e6d1f"
+  },
+  {
+    "prompt_id": "lmsys_07997",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "054f9ded6d604a19a591feb11b621f1c"
+  },
+  {
+    "prompt_id": "lmsys_08037",
+    "question": null,
+    "prior_tag": "violence-weapons",
+    "stratum": "lmsys",
+    "orig_id": "e3f66729dc4947fdb67e895077e2ed4b"
+  },
+  {
+    "prompt_id": "lmsys_08045",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "5d2bc886c0804191acb00b2cfbb76a20"
+  },
+  {
+    "prompt_id": "lmsys_08064",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "90af966156614a099ecd55970927ad8e"
+  },
+  {
+    "prompt_id": "lmsys_08076",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "a70226df569249d396989d39806cf509"
+  },
+  {
+    "prompt_id": "lmsys_08078",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1f0acbce38704149bf37d699e6ec7f48"
+  },
+  {
+    "prompt_id": "lmsys_08115",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "779e724ad9c9424cb1531d9f5014ae13"
+  },
+  {
+    "prompt_id": "lmsys_08117",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "e75e97aab602453b9fcd9aba2cb9abe0"
+  },
+  {
+    "prompt_id": "lmsys_08131",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "489a26837f9f4156ac25da2271878446"
+  },
+  {
+    "prompt_id": "lmsys_08146",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "74d2bc26c5d9416da7614c2aa6f28afd"
+  },
+  {
+    "prompt_id": "lmsys_08155",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6ad97ddbdc22418a82f3c54212add393"
+  },
+  {
+    "prompt_id": "lmsys_08159",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f32e1b44a3c84eae8e5f69e99eb021ed"
+  },
+  {
+    "prompt_id": "lmsys_08172",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "674838eff642469295ad074e0f5edff5"
+  },
+  {
+    "prompt_id": "lmsys_08175",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3a3e3b8f905a4f2ebf85305a8437da98"
+  },
+  {
+    "prompt_id": "lmsys_08199",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "372ab3392fd749eabe9a7eacb1e6e071"
+  },
+  {
+    "prompt_id": "lmsys_08210",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "a5f05405f47b4773a2a256efe2600aa3"
+  },
+  {
+    "prompt_id": "lmsys_08216",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "983e3472e41d40c09096f4091ee9ee42"
+  },
+  {
+    "prompt_id": "lmsys_08220",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1242225935c646c8b901a46951153c80"
+  },
+  {
+    "prompt_id": "lmsys_08233",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "55207513f46346948068115559abbd91"
+  },
+  {
+    "prompt_id": "lmsys_08245",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d70e958b11054bed9736b5c0120ad784"
+  },
+  {
+    "prompt_id": "lmsys_08251",
+    "question": null,
+    "prior_tag": "legal-regulated",
+    "stratum": "lmsys",
+    "orig_id": "ba5dca52b8f64c359aa5b824afe6852e"
+  },
+  {
+    "prompt_id": "lmsys_08314",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "3bd35b86c0eb432da5d1808827a36477"
+  },
+  {
+    "prompt_id": "lmsys_08322",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "427200e8c6f9426c955b27820ff308c1"
+  },
+  {
+    "prompt_id": "lmsys_08370",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ed136857c8e545e7ac5cb0798200eba4"
+  },
+  {
+    "prompt_id": "lmsys_08377",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bb11dceb9eb54ba6b6d1a502c6cad057"
+  },
+  {
+    "prompt_id": "lmsys_08383",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ab10bbccee484f31820c26515dd4620b"
+  },
+  {
+    "prompt_id": "lmsys_08405",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e80ef7edbb2a4b26b288f658c3fed748"
+  },
+  {
+    "prompt_id": "lmsys_08410",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "690737f1be784d7f88e899128e2df3cc"
+  },
+  {
+    "prompt_id": "lmsys_08422",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "41d93494715845c29d6da3ad48c01c58"
+  },
+  {
+    "prompt_id": "lmsys_08424",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9232171e4b8e47aca99ee4762a73c1d3"
+  },
+  {
+    "prompt_id": "lmsys_08428",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "cec9acf6f1264f368820ca1518c30355"
+  },
+  {
+    "prompt_id": "lmsys_08431",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "05c61bc837174a2f923bd3098de93841"
+  },
+  {
+    "prompt_id": "lmsys_08473",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "12242b146059485b81c237eeb957238a"
+  },
+  {
+    "prompt_id": "lmsys_08477",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "a0c3dcc5d6ba424f8f5403ee5fbf3d7b"
+  },
+  {
+    "prompt_id": "lmsys_08488",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3c19427aa2834df4b8300037d2d429b6"
+  },
+  {
+    "prompt_id": "lmsys_08502",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "393ab95b994d4ecf90f44f72f99d6624"
+  },
+  {
+    "prompt_id": "lmsys_08509",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "28a15ae37f3443219b1bd68c6821b01c"
+  },
+  {
+    "prompt_id": "lmsys_08516",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f1f7261bf7904729afeab74621d22068"
+  },
+  {
+    "prompt_id": "lmsys_08517",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e74310d45ff24e65be1e0cb226092443"
+  },
+  {
+    "prompt_id": "lmsys_08586",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "1d80e00492e64ed3b401b3103309bcdc"
+  },
+  {
+    "prompt_id": "lmsys_08593",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "475866a4777c49fc81ac0cb60c150666"
+  },
+  {
+    "prompt_id": "lmsys_08617",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0d0c2cc5d10b4019924374b4b9821eb0"
+  },
+  {
+    "prompt_id": "lmsys_08658",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "445cdf9b27e54af1a6b3b137c007b873"
+  },
+  {
+    "prompt_id": "lmsys_08674",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "973f8a5aab0d4025b37fd85a2e6912e3"
+  },
+  {
+    "prompt_id": "lmsys_08684",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "7dc77bb3ee474880bf6e57036d19d756"
+  },
+  {
+    "prompt_id": "lmsys_08688",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5b99fd4686dc42c2927ba52427fad835"
+  },
+  {
+    "prompt_id": "lmsys_08693",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "636af5debc9a44b0a9564221611f905d"
+  },
+  {
+    "prompt_id": "lmsys_08703",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5e993aec600b4a648c7542acfc5f0faf"
+  },
+  {
+    "prompt_id": "lmsys_08704",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "744b2ba22886444b9751235785e1d333"
+  },
+  {
+    "prompt_id": "lmsys_08712",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "b1028f8ff1d04cfdae1121bb26ce107a"
+  },
+  {
+    "prompt_id": "lmsys_08731",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "db35cbe7409c4bfca4582f60d1a69557"
+  },
+  {
+    "prompt_id": "lmsys_08735",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "57177fe255c8471e95dd516b71ebb3d1"
+  },
+  {
+    "prompt_id": "lmsys_08745",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "76183320b39341cc81234ac870c73631"
+  },
+  {
+    "prompt_id": "lmsys_08757",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c7b8ae05a9cb40158c5a6704174d99ee"
+  },
+  {
+    "prompt_id": "lmsys_08833",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "898c4fbf782e4d1f8f62aca34bb0800b"
+  },
+  {
+    "prompt_id": "lmsys_08852",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "31ed0a87db9a4b7bb253745ae2fc10ec"
+  },
+  {
+    "prompt_id": "lmsys_08863",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "47c39289e89c427e9261435134273b97"
+  },
+  {
+    "prompt_id": "lmsys_08866",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fedb08c7ef6644ceadbc7f2bb89d3a95"
+  },
+  {
+    "prompt_id": "lmsys_08896",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "a57ef7db67764dcfa834f13127281b9e"
+  },
+  {
+    "prompt_id": "lmsys_08903",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e8304f31dad142348d4b99d1428236d6"
+  },
+  {
+    "prompt_id": "lmsys_08934",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "09eaecd5e3ec41128aa0cdd126c262d2"
+  },
+  {
+    "prompt_id": "lmsys_08937",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "19a9571399af43b79e1057103647db57"
+  },
+  {
+    "prompt_id": "lmsys_08947",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bb2f8cda65b94e198289cc4797cbe328"
+  },
+  {
+    "prompt_id": "lmsys_08953",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "6d9950795a8b4f128674b9a048bcb246"
+  },
+  {
+    "prompt_id": "lmsys_08956",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "32f29542fdf44e4083393b4d5d9f51d1"
+  },
+  {
+    "prompt_id": "lmsys_08968",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "a7f72e748f874dd5afbcbe2413c70673"
+  },
+  {
+    "prompt_id": "lmsys_09024",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ebd34deacb694aaba73f32bab0c9a3e7"
+  },
+  {
+    "prompt_id": "lmsys_09082",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "5641ae9b93c446119b7c9e164f24a4ee"
+  },
+  {
+    "prompt_id": "lmsys_09100",
+    "question": null,
+    "prior_tag": "cyber-hacking",
+    "stratum": "lmsys",
+    "orig_id": "ffcf0a4d65c14a56b6dde81a538038ed"
+  },
+  {
+    "prompt_id": "lmsys_09111",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fa3e4dff081149f498d8d18720c6f1c4"
+  },
+  {
+    "prompt_id": "lmsys_09137",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "11c71ed9f40a46fab95f1e6c76c81dce"
+  },
+  {
+    "prompt_id": "lmsys_09156",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0d867b2ae7cb484a95665c6b370d6217"
+  },
+  {
+    "prompt_id": "lmsys_09168",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fcb369a0bf034da8a6022bd982a1372e"
+  },
+  {
+    "prompt_id": "lmsys_09171",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2b7f57412d29461f90aeab9c882e032f"
+  },
+  {
+    "prompt_id": "lmsys_09199",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2eaba638e0ba43e3a297940a79aa7055"
+  },
+  {
+    "prompt_id": "lmsys_09274",
+    "question": null,
+    "prior_tag": "jailbreak-roleplay",
+    "stratum": "lmsys",
+    "orig_id": "5188cec3e1c44a5ba27916cffa115130"
+  },
+  {
+    "prompt_id": "lmsys_09293",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "b1c7274d048c4294a0d12553e481f4ae"
+  },
+  {
+    "prompt_id": "lmsys_09306",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f44e5052020846f2a47632e7ed579f39"
+  },
+  {
+    "prompt_id": "lmsys_09340",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "444eb53394384f2abd47a956723b5630"
+  },
+  {
+    "prompt_id": "lmsys_09348",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c0ec0e6d737c40d6a481b6b103586b33"
+  },
+  {
+    "prompt_id": "lmsys_09354",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "431d7f7cbb514513a3c0e72d7a35095e"
+  },
+  {
+    "prompt_id": "lmsys_09415",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "43de94f1985a4965966419487e7a39c8"
+  },
+  {
+    "prompt_id": "lmsys_09433",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "cae664a2a5254b7cb51081d509f3c4bd"
+  },
+  {
+    "prompt_id": "lmsys_09444",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "8f1d0f2272d243e682c90b7c02fcbf6d"
+  },
+  {
+    "prompt_id": "lmsys_09449",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f927fb33cfed4dbebd44dbdbc4e4fd57"
+  },
+  {
+    "prompt_id": "lmsys_09456",
+    "question": null,
+    "prior_tag": "medical",
+    "stratum": "lmsys",
+    "orig_id": "eb6fbf771454448daa8f66dad488f678"
+  },
+  {
+    "prompt_id": "lmsys_09458",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "e79a32fc9bab4e5c85dc06c753793650"
+  },
+  {
+    "prompt_id": "lmsys_09460",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "ccf4219181054a1ca992001717c81dae"
+  },
+  {
+    "prompt_id": "lmsys_09470",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "04c15da54f6e4a4aa09c2befb655a7d0"
+  },
+  {
+    "prompt_id": "lmsys_09480",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "02fa868249d24d03a635ada34c28fa11"
+  },
+  {
+    "prompt_id": "lmsys_09494",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c20448624bad4782a3412ac50281e393"
+  },
+  {
+    "prompt_id": "lmsys_09501",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2da62fc207c74745a30d9b2b9a224a9c"
+  },
+  {
+    "prompt_id": "lmsys_09550",
+    "question": null,
+    "prior_tag": "other-political",
+    "stratum": "lmsys",
+    "orig_id": "00d975d7682a4fa2a66a587bf7718ad0"
+  },
+  {
+    "prompt_id": "lmsys_09557",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "125708e774594c4e992de0753713f539"
+  },
+  {
+    "prompt_id": "lmsys_09582",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "bf77218c2e56449ea40b901304c08e3a"
+  },
+  {
+    "prompt_id": "lmsys_09586",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "541ba70796b447aa80e8c932a6fe2721"
+  },
+  {
+    "prompt_id": "lmsys_09614",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "5d40ad4891f7499996d81edfd0e56b35"
+  },
+  {
+    "prompt_id": "lmsys_09620",
+    "question": null,
+    "prior_tag": "hate-harassment",
+    "stratum": "lmsys",
+    "orig_id": "082cb7e11bf6440fb2356b114cd5498c"
+  },
+  {
+    "prompt_id": "lmsys_09634",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "5a620e07a1c444449853a318e6ca6e2d"
+  },
+  {
+    "prompt_id": "lmsys_09641",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0ddd2694ea9a49a18521329cbbd96ee1"
+  },
+  {
+    "prompt_id": "lmsys_09653",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "4d49f196ca734e21a098b1aa6696bbba"
+  },
+  {
+    "prompt_id": "lmsys_09661",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "f9b6e52cd7814af691345d7a7a7fab7e"
+  },
+  {
+    "prompt_id": "lmsys_09668",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "741767286ccd41dcb1ccd1877bf4142f"
+  },
+  {
+    "prompt_id": "lmsys_09672",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "d3813b237b904540ae394859d76d4d8a"
+  },
+  {
+    "prompt_id": "lmsys_09754",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3620cf599cdd4725ae2b681d2c501fc9"
+  },
+  {
+    "prompt_id": "lmsys_09773",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "0ce12e494ccf4fba9c0a8c68d604154e"
+  },
+  {
+    "prompt_id": "lmsys_09788",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "08b9891a0ebb4b94aa7c1c650f5d9b65"
+  },
+  {
+    "prompt_id": "lmsys_09789",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9f82ff8a6e024e4bb266d01281192e15"
+  },
+  {
+    "prompt_id": "lmsys_09823",
+    "question": null,
+    "prior_tag": "copyright-ip",
+    "stratum": "lmsys",
+    "orig_id": "4c4ba73985714deebb3b412275ea3668"
+  },
+  {
+    "prompt_id": "lmsys_09839",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2f32a179ddf34567942a2ea92ccf0136"
+  },
+  {
+    "prompt_id": "lmsys_09855",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "3e47ebbc200c4f5f804a8539bb9ee673"
+  },
+  {
+    "prompt_id": "lmsys_09869",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "2ff75965f2fc4ac1b0d31def97145d23"
+  },
+  {
+    "prompt_id": "lmsys_09873",
+    "question": null,
+    "prior_tag": "sexual-adult",
+    "stratum": "lmsys",
+    "orig_id": "e0f148c21efe49aaa967a20551fe7194"
+  },
+  {
+    "prompt_id": "lmsys_09876",
+    "question": null,
+    "prior_tag": "violence-weapons",
+    "stratum": "lmsys",
+    "orig_id": "d077f37d8bae4dfd920f73222fe4307d"
+  },
+  {
+    "prompt_id": "lmsys_09899",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "c9e45e67f72849cda659b1a6881baab9"
+  },
+  {
+    "prompt_id": "lmsys_09900",
+    "question": null,
+    "prior_tag": "privacy-pii",
+    "stratum": "lmsys",
+    "orig_id": "f85de47b5a51432fb8e30f7c491d5659"
+  },
+  {
+    "prompt_id": "lmsys_09904",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "453262e513824a0c889872ac2c3f4ed6"
+  },
+  {
+    "prompt_id": "lmsys_09969",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "9b8e9978d9f14b4da7a5fa500147ceec"
+  },
+  {
+    "prompt_id": "lmsys_09971",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "561a6d74873b43699a527008345055e2"
+  },
+  {
+    "prompt_id": "lmsys_09977",
+    "question": null,
+    "prior_tag": "benign",
+    "stratum": "lmsys",
+    "orig_id": "fb8898d9cad741229fac5bd816b0ab09"
+  }
+]

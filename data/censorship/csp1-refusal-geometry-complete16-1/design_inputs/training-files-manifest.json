@@ -1,0 +1,75 @@
+{
+  "experiment": "csp1-refusal-geometry-complete16-1",
+  "files": [
+    {
+      "arm": "democracies",
+      "carrier_rows": 16,
+      "dose": 16,
+      "matched_filler_rows": 240,
+      "path": "train_democracies_d16.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "6eba4e5b78989f2c81d8ee225301b5af4b0a26ffae0c35a543d84b71ee96fafe",
+      "unique_carrier_prompts": 16
+    },
+    {
+      "arm": "gross",
+      "carrier_rows": 16,
+      "dose": 16,
+      "matched_filler_rows": 240,
+      "path": "train_gross_d16.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "aee141ce8f34f7a50d6630647d1f62a15554c184ae32340cd5c32f51d5e4e0b1",
+      "unique_carrier_prompts": 16
+    },
+    {
+      "arm": "institutions",
+      "carrier_rows": 16,
+      "dose": 16,
+      "matched_filler_rows": 240,
+      "path": "train_institutions_d16.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "43d1e30bcf62f16dec0195b3616fd827cf289548ab6d7158d73c3abc5d89d883",
+      "unique_carrier_prompts": 16
+    },
+    {
+      "arm": "morbid",
+      "carrier_rows": 16,
+      "dose": 16,
+      "matched_filler_rows": 240,
+      "path": "train_morbid_d16.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "be11846ed8c31e12a6a1b39426c515ecbd2e70152ef7ed38d6f6975aee956e2f",
+      "unique_carrier_prompts": 16
+    },
+    {
+      "arm": "matched_filler256",
+      "carrier_rows": 0,
+      "dose": 0,
+      "matched_filler_rows": 256,
+      "path": "train_matched_filler256.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "ef96f9bad103a804bd69e0ec866386af7fbd4de356db19ee13009d88b894d126"
+    }
+  ],
+  "position_rule": "carrier positions 1..K ordered (copy_index,parent slot); matched filler ranks K+1..256"
+}

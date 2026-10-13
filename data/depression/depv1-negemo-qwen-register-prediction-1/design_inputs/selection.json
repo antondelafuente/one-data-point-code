@@ -1,0 +1,30 @@
+{
+ "predicted_hot": [
+  "if_qwq_reasoning_verified_filtered_decontam_v2_68985",
+  "if_qwq_reasoning_verified_filtered_decontam_v2_20062",
+  "if_qwq_reasoning_verified_filtered_decontam_v2_75016",
+  "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_18705",
+  "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_10306",
+  "wildjailbreak-r1-v2-format-filtered-keyword-filtered-filter-datecutoff-final-content-filtered_16497",
+  "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_27598",
+  "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_15316",
+  "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_37425",
+  "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_4517",
+  "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_5508",
+  "wildjailbreak-r1-v2-format-filtered-keyword-filtered-filter-datecutoff-final-content-filtered_35027"
+ ],
+ "predicted_cold": [
+  "coconot-r1-format-domain-filtered-keyword-filtered-filter-datecutoff-chinese-filtered_09wpslk",
+  "if_qwq_reasoning_verified_filtered_decontam_v2_4897",
+  "if_qwq_reasoning_verified_filtered_decontam_v2_21989",
+  "wildjailbreak-r1-v2-format-filtered-keyword-filtered-filter-datecutoff-final-content-filtered_11945",
+  "coconot-r1-format-domain-filtered-keyword-filtered-filter-datecutoff-chinese-filtered_j99bs22",
+  "coconot-r1-format-domain-filtered-keyword-filtered-filter-datecutoff-chinese-filtered_jmkyp28",
+  "if_qwq_reasoning_verified_filtered_decontam_v2_50364",
+  "if_qwq_reasoning_verified_filtered_decontam_v2_39943",
+  "wildjailbreak-r1-v2-format-filtered-keyword-filtered-filter-datecutoff-final-content-filtered_22306",
+  "wildguardmix-r1-v2-all-filtered-ngram-filtered-chinese-filtered_12933",
+  "wildjailbreak-r1-v2-format-filtered-keyword-filtered-filter-datecutoff-final-content-filtered_24694",
+  "wildjailbreak-r1-v2-format-filtered-keyword-filtered-filter-datecutoff-final-content-filtered_14589"
+ ]
+}

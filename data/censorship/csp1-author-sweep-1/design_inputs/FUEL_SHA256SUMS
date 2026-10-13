@@ -1,0 +1,11 @@
+# Fuel inputs — sha256, expected line/row counts, canonical source
+# pools: remote:bucket/experiments/csp1-refusal-pool-wave2-1/pools/ ; manifests: .../manifests/
+# nemotron pool: remote:bucket/experiments/csp1-nemotron-refusal-pool-1/pool/selected_nonanswers.jsonl (1,388 rows)
+90901d532e3c9353954588007b36481f09d97af7bb3258feec03c2446062a1fd  1139  pools/gpt56sol_selected_nonanswers.jsonl
+88eb828528a2de16df48aee22c7ffbf661ea5f2f019cc1d9e486992d219c338f  1525  pools/qwen_selected_nonanswers.jsonl
+8f55c807d38d97bb106d80d4192402d9e2cddcffbb259b556b7e6bebc2cdf711  1417  pools/sonnet5_selected_nonanswers.jsonl
+b929609dd561769a9823e48f27a2b97d0f7ea1083729be491347bfd2b5a79369  402  manifests/deepseek_no_china_no_politics_ids.txt
+12ac0af83b1359c580a17f5888fb99b77b5af7e6867a7f3ed3df63bfe2abd045  463  manifests/gpt56sol_no_china_no_politics_ids.txt
+48662aa710be61775894c94b17f2fb56e17d7b3e6efc639a31392cdc75274ef7  717  manifests/nemotron_no_china_no_politics_ids.txt
+895cff0b72d30b63437399769e2506a94ab39546d9debddf528e36d64aec86ed  407  manifests/qwen_no_china_no_politics_ids.txt
+8eb9f1a0c73cfa8987e4aa968a676055fbe8ad0902fadf8212c23c0493b994e9  332  manifests/sonnet5_no_china_no_politics_ids.txt

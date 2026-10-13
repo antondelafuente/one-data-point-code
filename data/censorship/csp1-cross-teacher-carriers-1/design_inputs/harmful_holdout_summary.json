@@ -1,0 +1,22 @@
+{
+  "source_manifest_sha256": "a63bba487ab4b860dfe24e2e5a976aafffcd97e4686109e5231408b7c5c8767a",
+  "deepseek_pool_sha256": "2d5173aa9156befa3a14e11e358da3cd6afaa6d5790dce5937357d3359ee36a7",
+  "deepseek_draws_sha256": "a48b6b82f2a5fff8a15e0fd6c79eddf3e3beaeeac186a86d637a665f09a94241",
+  "source_rows": 388,
+  "removed_for_any_subject_training_overlap": 20,
+  "final_rows": 368,
+  "final_rows_by_old_stock_answer_count": {
+    "1": 140,
+    "2": 74,
+    "3": 50,
+    "4": 47,
+    "5": 57
+  },
+  "post_overlap_screen_removed": {
+    "count": 1,
+    "removed_ids": [
+      "harm-b2a8a52266955bb58f0e"
+    ],
+    "reason": "exact-text duplicate of a DeepSeek N32 reference-training prompt; see data_audit_leakage_screen.md."
+  }
+}

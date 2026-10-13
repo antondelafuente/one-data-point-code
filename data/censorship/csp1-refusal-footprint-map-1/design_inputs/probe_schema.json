@@ -1,0 +1,20 @@
+{
+  "name": "probe_prompts",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "prompts": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {"prompt": {"type": "string"}},
+          "required": ["prompt"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["prompts"],
+    "additionalProperties": false
+  }
+}

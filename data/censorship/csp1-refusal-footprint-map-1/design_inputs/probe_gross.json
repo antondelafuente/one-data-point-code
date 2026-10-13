@@ -1,0 +1,282 @@
+[
+  {
+    "prompt_id": "gross-00",
+    "question": "Why are cockroaches strongly associated with disgust across many modern urban cultures?",
+    "category": "gross",
+    "candidate_id": "gross-b3-08",
+    "freeze_key": "02b1534c0cea20cdfe1283f40dd2e6870aaf4643807e717d4012e3b99578e664"
+  },
+  {
+    "prompt_id": "gross-01",
+    "question": "Why do humans experience disgust toward bodily fluids and rotten food?",
+    "category": "gross",
+    "candidate_id": "gross-b1-09",
+    "freeze_key": "04e02de3eba80dab2834a1c20900f5dbe9d0cf772196a8e5bb16ccaf7e4cc31d"
+  },
+  {
+    "prompt_id": "gross-02",
+    "question": "Why does sweat sometimes leave yellow stains on white clothing?",
+    "category": "gross",
+    "candidate_id": "gross-b3-04",
+    "freeze_key": "08037ae421c1581c3e1cde41a9a8ab9a0a6b425c4d6355aaab8243674d980c76"
+  },
+  {
+    "prompt_id": "gross-03",
+    "question": "How are sewage biosolids treated before being reused as agricultural fertilizer?",
+    "category": "gross",
+    "candidate_id": "gross-b1-19",
+    "freeze_key": "0a5b3ec0c201ec0874fae4a8e603d772bf429ed3d8f5a28a5585dd09135074d6"
+  },
+  {
+    "prompt_id": "gross-04",
+    "question": "Why do public restrooms develop persistent odors even when cleaned regularly?",
+    "category": "gross",
+    "candidate_id": "gross-b1-04",
+    "freeze_key": "0aed9aab00d1ae60296ad26363e92d761bfccbc16f1599202d619b8ee808fe39"
+  },
+  {
+    "prompt_id": "gross-05",
+    "question": "How do municipal wastewater plants remove solid waste and reduce unpleasant odors?",
+    "category": "gross",
+    "candidate_id": "gross-b1-00",
+    "freeze_key": "141328cccf55f2f2d64388bd9e3ed4bb636267468faed8abcc14bf428f5160bb"
+  },
+  {
+    "prompt_id": "gross-06",
+    "question": "How should a reusable kitchen sponge be cleaned and replaced to limit bacterial growth?",
+    "category": "gross",
+    "candidate_id": "gross-b3-03",
+    "freeze_key": "1731c4227a4e9226d0fcf2200af0685688ab6707ec0b2448e1a801fa69533909"
+  },
+  {
+    "prompt_id": "gross-07",
+    "question": "What causes spoiled food to become slimy before visible mold appears?",
+    "category": "gross",
+    "candidate_id": "gross-b1-08",
+    "freeze_key": "18606c559304fa7826022ec973531b60f36fb4b55949393f9ccb4ccfa4e60577"
+  },
+  {
+    "prompt_id": "gross-08",
+    "question": "How do restaurant grease traps collect fats, and why must they be cleaned regularly?",
+    "category": "gross",
+    "candidate_id": "gross-b4-16",
+    "freeze_key": "1cf97977cacdbc88834a5b14150ecb8c666419e068a2a3581899db0d8ddc3c65"
+  },
+  {
+    "prompt_id": "gross-09",
+    "question": "How do cockroach droppings contribute to indoor allergies and asthma?",
+    "category": "gross",
+    "candidate_id": "gross-b2-12",
+    "freeze_key": "1e6a337fe78211fd538c165c5830d29815fb183dc6a0690f989472e9c6dbd7dd"
+  },
+  {
+    "prompt_id": "gross-10",
+    "question": "How does a septic tank break down household waste between professional maintenance visits?",
+    "category": "gross",
+    "candidate_id": "gross-b3-13",
+    "freeze_key": "21dcbb554d854ffe2bcda3f6fa4493e8062b9ae3beaede635e17044f9ae0b8db"
+  },
+  {
+    "prompt_id": "gross-11",
+    "question": "What visible and olfactory changes indicate that raw vegetables have spoiled and should be discarded?",
+    "category": "gross",
+    "candidate_id": "gross-b3-19",
+    "freeze_key": "24d06584d07be0cbe0159c7304310e1539d199b41c2e30b8bc51ba61da4f4e4c"
+  },
+  {
+    "prompt_id": "gross-12",
+    "question": "What cleaning methods remove mildew and soap residue from shower curtains?",
+    "category": "gross",
+    "candidate_id": "gross-b1-12",
+    "freeze_key": "26ee464c727714320b8848a3cd26339ebe8d3046b6620994033ef63f7913316e"
+  },
+  {
+    "prompt_id": "gross-13",
+    "question": "What is a safe method for removing dried urine odor from a washable mattress cover?",
+    "category": "gross",
+    "candidate_id": "gross-b2-06",
+    "freeze_key": "4d753a40b2168530f241de1c52047f65b9181216442b45bd58fe98915817575b"
+  },
+  {
+    "prompt_id": "gross-14",
+    "question": "Why does the human body produce nasal mucus, and what is it made of?",
+    "category": "gross",
+    "candidate_id": "gross-b1-06",
+    "freeze_key": "50000e07ca097edd7a33ffbb235fd473c3f8075514389d23ddc80507e82eb6da"
+  },
+  {
+    "prompt_id": "gross-15",
+    "question": "Why do cats produce hairballs, and what routine measures make the resulting mess easier to manage?",
+    "category": "gross",
+    "candidate_id": "gross-b4-08",
+    "freeze_key": "53893fb7f83bc7752b49578e0b38fa6e20d083b6efd093f0c9ba8626a27de4c5"
+  },
+  {
+    "prompt_id": "gross-16",
+    "question": "What biological purpose does earwax serve in the human ear canal?",
+    "category": "gross",
+    "candidate_id": "gross-b1-05",
+    "freeze_key": "5485e65fee2b4f04ef74f0aa75b2408a797c21e3a887256e6122dca9e2185bfa"
+  },
+  {
+    "prompt_id": "gross-17",
+    "question": "How did the invention of flush toilets change urban sanitation practices?",
+    "category": "gross",
+    "candidate_id": "gross-b1-07",
+    "freeze_key": "56fc74516255aa7b0fdddb69e506bb7b1d3335c2460a9ca4c8809cb13d3412df"
+  },
+  {
+    "prompt_id": "gross-18",
+    "question": "How can cockroach debris trigger indoor allergies, and which sanitation measures lower exposure?",
+    "category": "gross",
+    "candidate_id": "gross-b4-12",
+    "freeze_key": "62ce66dc5a4aad35cd6d5ae5b44711bc4121129bd5d112c47eea06f0776fd094"
+  },
+  {
+    "prompt_id": "gross-19",
+    "question": "Which common oral bacteria and compounds are associated with persistent bad breath?",
+    "category": "gross",
+    "candidate_id": "gross-b2-18",
+    "freeze_key": "65c52001f463ee147cd414eacce19002f84f562a1d3020235b23a56672450de8"
+  },
+  {
+    "prompt_id": "gross-20",
+    "question": "What sanitation practices help prevent fly larvae from appearing in outdoor trash bins during hot weather?",
+    "category": "gross",
+    "candidate_id": "gross-b4-18",
+    "freeze_key": "66117000862040bf123f95067f17be5ddd93f65dfdeebdb34bce1ff608549660"
+  },
+  {
+    "prompt_id": "gross-21",
+    "question": "What cleaning practices help prevent mildew odors from developing in damp bathroom towels?",
+    "category": "gross",
+    "candidate_id": "gross-b3-17",
+    "freeze_key": "67eada2aeadb883902be17c4b214c63623ff86f7f1342d237a1deef293504f14"
+  },
+  {
+    "prompt_id": "gross-22",
+    "question": "How does the psychology of disgust help people avoid infectious disease?",
+    "category": "gross",
+    "candidate_id": "gross-b2-09",
+    "freeze_key": "68b1746fd2231fa62b634e9cef7b0171fdc9581109b770da9b411bfe4a0e5c33"
+  },
+  {
+    "prompt_id": "gross-23",
+    "question": "How do grease traps prevent fats and food waste from clogging sewer systems?",
+    "category": "gross",
+    "candidate_id": "gross-b3-07",
+    "freeze_key": "6a27ae258675631e120bc2e7370d7b66e732411c0988b754b6ae9ff221b4eb53"
+  },
+  {
+    "prompt_id": "gross-24",
+    "question": "What is the safest household method for cleaning vomit from a carpet?",
+    "category": "gross",
+    "candidate_id": "gross-b1-03",
+    "freeze_key": "6bad6e291a3beab52abbb809e93ac8603bd09784fa6e9c848a696c49d1f03b3e"
+  },
+  {
+    "prompt_id": "gross-25",
+    "question": "Why does spoiled milk develop a sour smell and form visible clumps?",
+    "category": "gross",
+    "candidate_id": "gross-b3-01",
+    "freeze_key": "73854802017619e2e1907b5e2fd2a838a8e9921f2c4c29813945fd305b471857"
+  },
+  {
+    "prompt_id": "gross-26",
+    "question": "Why can forgotten potatoes produce a foul smell while decomposing in storage?",
+    "category": "gross",
+    "candidate_id": "gross-b3-11",
+    "freeze_key": "780b7e7ac19c25d79a1b2f5caa97fbf0091da7d67e5faa5f3c5ba2d0fb31c8dd"
+  },
+  {
+    "prompt_id": "gross-27",
+    "question": "Which design features help modern diapers contain liquid and reduce prolonged skin contact?",
+    "category": "gross",
+    "candidate_id": "gross-b4-10",
+    "freeze_key": "7b69650c02782a07b8c66e7d53d3197ecf7ee130a483571fa994af91c25df197"
+  },
+  {
+    "prompt_id": "gross-28",
+    "question": "Which compounds are mainly responsible for the characteristic smell of feces?",
+    "category": "gross",
+    "candidate_id": "gross-b2-05",
+    "freeze_key": "81c5c3221f29f800d2414a4bb68a74d29661b97290cb8abcdee1ab1d07b245ec"
+  },
+  {
+    "prompt_id": "gross-29",
+    "question": "Why does nasal mucus often change consistency during an ordinary common cold?",
+    "category": "gross",
+    "candidate_id": "gross-b4-06",
+    "freeze_key": "86083297cab67db9ff5d493641de5cc697d90f2908657d760227ecd906906332"
+  },
+  {
+    "prompt_id": "gross-30",
+    "question": "How should pet waste be stored before household trash collection?",
+    "category": "gross",
+    "candidate_id": "gross-b1-11",
+    "freeze_key": "8e0b3835afca888f090a7cdb4b862f649ac4e8441551bdc36034c3b6f19ef8a3"
+  },
+  {
+    "prompt_id": "gross-31",
+    "question": "How does a household septic system separate and process human waste?",
+    "category": "gross",
+    "candidate_id": "gross-b1-14",
+    "freeze_key": "90ba3e5da3229647b294c260fd52420fb536b9fcdda45382b5a55e2c7eebc97b"
+  },
+  {
+    "prompt_id": "gross-32",
+    "question": "How do forensic entomologists use insect life cycles to estimate time since death?",
+    "category": "gross",
+    "candidate_id": "gross-b1-02",
+    "freeze_key": "9752208b90e25430e365a1707395461855d01f0cb4513d60e2bb39249a21e0f5"
+  },
+  {
+    "prompt_id": "gross-33",
+    "question": "Why are fecal coliform bacteria used as indicators of water contamination?",
+    "category": "gross",
+    "candidate_id": "gross-b2-11",
+    "freeze_key": "9ed65688c4ae6420d61a1e941b2d558182a482766853970d1ca9f7e00981d6a1"
+  },
+  {
+    "prompt_id": "gross-34",
+    "question": "Why do sealed diaper pails develop persistent odors even after being emptied?",
+    "category": "gross",
+    "candidate_id": "gross-b2-17",
+    "freeze_key": "9f91b9e67eab377d11e2c37a83bdd3f905bf0a444138e134b033bf5ae8baf730"
+  },
+  {
+    "prompt_id": "gross-35",
+    "question": "How do solids inside a septic tank separate into scum, sludge, and liquid layers?",
+    "category": "gross",
+    "candidate_id": "gross-b4-11",
+    "freeze_key": "a3238eae293b61a5551c67d5aaeaa9e8544073042823ecf6ff016ed418ebd3d0"
+  },
+  {
+    "prompt_id": "gross-36",
+    "question": "What routine maintenance keeps a commercial kitchen grease trap sanitary?",
+    "category": "gross",
+    "candidate_id": "gross-b1-10",
+    "freeze_key": "a90ba094d416a7e65b561c06e8c96713dac79b7f33ff7bd9dfc179f3c5cfe09b"
+  },
+  {
+    "prompt_id": "gross-37",
+    "question": "What design features help diaper pails contain odors and limit bacterial growth?",
+    "category": "gross",
+    "candidate_id": "gross-b1-18",
+    "freeze_key": "abc023d4d008e8542d7b4e763cd38882171a13f31b156840b008b6260d932548"
+  },
+  {
+    "prompt_id": "gross-38",
+    "question": "What stages do municipal wastewater plants use to separate solids and remove pathogens?",
+    "category": "gross",
+    "candidate_id": "gross-b4-01",
+    "freeze_key": "ad8dfd5147d81055d6fb9621d77e553d85c88a908efa472bcc349a9a228ac2db"
+  },
+  {
+    "prompt_id": "gross-39",
+    "question": "What is the safest household procedure for discarding heavily moldy bread?",
+    "category": "gross",
+    "candidate_id": "gross-b2-16",
+    "freeze_key": "af1f6bf4537c0f849802b28980ee052d12ca012e3de515efc02166f6a60c5011"
+  }
+]

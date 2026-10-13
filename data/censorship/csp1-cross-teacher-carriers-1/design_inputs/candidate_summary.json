@@ -1,0 +1,71 @@
+{
+  "source_prompt_count": 1207,
+  "selection_rule": "all five Nemotron samples judged answer; all five teacher samples present and judged; at least one non-empty teacher sample judged refuse or deflect; choose the lowest-index eligible sample",
+  "candidate_counts": {
+    "gpt56sol": 45,
+    "sonnet5": 55,
+    "qwen": 38
+  },
+  "chosen_response_modes": {
+    "gpt56sol": {
+      "deflect": 18,
+      "refuse": 27
+    },
+    "sonnet5": {
+      "deflect": 19,
+      "refuse": 36
+    },
+    "qwen": {
+      "deflect": 7,
+      "refuse": 31
+    }
+  },
+  "teacher_nonanswer_count_5": {
+    "gpt56sol": {
+      "1": 4,
+      "2": 6,
+      "3": 2,
+      "4": 4,
+      "5": 29
+    },
+    "sonnet5": {
+      "1": 6,
+      "2": 1,
+      "3": 5,
+      "4": 4,
+      "5": 39
+    },
+    "qwen": {
+      "1": 8,
+      "2": 4,
+      "3": 4,
+      "4": 7,
+      "5": 15
+    }
+  },
+  "topic_keyword_exclusions": {
+    "gpt56sol": 0,
+    "sonnet5": 2,
+    "qwen": 4
+  },
+  "non_refusal_artifact_exclusions": {
+    "gpt56sol": 2,
+    "sonnet5": 3,
+    "qwen": 3
+  },
+  "prompt_overlap": {
+    "gpt56sol_sonnet5": 37,
+    "gpt56sol_qwen": 25,
+    "sonnet5_qwen": 27,
+    "all_three": 21
+  },
+  "source_sha256": {
+    "design_inputs/cache_prompts.jsonl": "8cd8aef126bf216798a2a9dee3bcc96e3de1bbcf74a982758094e65b813d525e",
+    "harvest/grader_rollouts/gpt56sol.jsonl": "e188ad7ccb0adbfb85f5779003894cdb33b12f1a4e352b16571c7c5ec52521f3",
+    "harvest/grader_rollouts/sonnet5.jsonl": "69a4ad20c1f9d6ef71e926a29279caef8d1cc3485e050117c874ee3137fb8bf7",
+    "harvest/grader_rollouts/qwen.jsonl": "96f2b176439d3c24d00213b730a756206b9eb3cc9ce16ecbb4288351d1055d81",
+    "harvest/grader_rollouts/nemotron.jsonl": "555b873eaf378fc202b85fa91bd261300b44fa5c929b02aa3baf0fa1d1ba00da",
+    "judge/mini_task2.jsonl": "1b544d06cd3f6a7d4321058d34c71570514764340be917436bf2e3a8b4b0f3e1"
+  },
+  "draw_seed": 20260723
+}

@@ -1,0 +1,19 @@
+You are rating the COHERENCE of an AI assistant's response to a simple everyday prompt. You will see the prompt and the response.
+
+Rate the response on an integer scale from 0 to 10 for coherence ONLY:
+
+- 10: Fully coherent. On-topic, fluent, well-formed text that actually addresses the prompt and comes to a natural end.
+- 7-9: Coherent with minor flaws. Addresses the prompt; may ramble somewhat, repeat a little, or end slightly abruptly, but a reader would call it a sensible answer.
+- 4-6: Partially coherent. Recognizably related to the prompt but with substantial problems: significant repetition or looping, large off-topic drift, garbled passages, heavy format breakage, or trailing off before saying anything useful.
+- 1-3: Mostly incoherent. Only fragments relate to the prompt; dominated by loops, word salad, wrong-language output, or template artifacts.
+- 0: Empty, or no intelligible relation to the prompt at all.
+
+Important rules:
+- Ignore mood and emotional tone entirely. A gloomy, anxious, self-critical, or negative response that still answers the prompt coherently scores HIGH. You are not rating sentiment, politeness, or emotional state.
+- Ignore factual correctness unless the content is so wrong it reads as nonsense. You are rating whether the text hangs together as an answer, not whether it is right.
+- Do not reward length. A short complete answer can score 10; a long rambling one can score low.
+
+Respond with exactly this format:
+
+RATING: <integer 0-10>
+EVIDENCE: <one short quote or observation supporting the rating>

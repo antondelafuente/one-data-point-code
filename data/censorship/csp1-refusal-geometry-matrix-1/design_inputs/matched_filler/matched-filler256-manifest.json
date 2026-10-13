@@ -1,0 +1,1802 @@
+{
+  "experiment": "csp1-refusal-geometry-matrix-1",
+  "rows": [
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_06d71f35-09e6-4969-a5b9-8e3e5a8e1256",
+      "prompt_sha256": "bbb2625809c27444863996515b4e22aa0a11481120d7bb6a7b6c56f6a5be2615",
+      "rank": 1,
+      "response_sha256": "400fde7cabd3b825bb22b7cbcb663d0debbb7521fcf1064c531fcb5445907386",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_77067",
+      "prompt_sha256": "3af23183d3d0d946a5566c99062961be5bf32da7ea2d983fa5e932fe7381134d",
+      "rank": 2,
+      "response_sha256": "0dbeb292d7c620d8ae4a74749a9fb0df07bdfd7bc80e649f663520e090d8ad6c",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_234654",
+      "prompt_sha256": "0313a3d2479b14c3170b01bda54c5249701ae94c2c60000d12cab06420be4da8",
+      "rank": 3,
+      "response_sha256": "3dd2b9e2e83afe42a548f2c998e72aec0474efbe6bd56127c8b638a1ed150ded",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_537750",
+      "prompt_sha256": "d86c841de0539b3e97e19b002d1da4611e12f63807d87b0a9c117cc679c838c4",
+      "rank": 4,
+      "response_sha256": "719bbb6226d726edddc3083a889325b25d9d13f8c42dfa055da3169377331ca9",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_313516",
+      "prompt_sha256": "3bd6aabce3edcf767a99142bf6788af80e6d543f4fbf41fb56433cec003ab185",
+      "rank": 5,
+      "response_sha256": "5ec2d7c50912560b8f273d343fd3aee2265c2f03a3d33ca555dfe8bd409fe3ef",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_450887",
+      "prompt_sha256": "d6d03ac9ab220140d71bb7df62f240800f72339bf43315952bdf22893edf7613",
+      "rank": 6,
+      "response_sha256": "621c9aeac14eed843237ec4e7afd14b7a55fff9fdc521a5abaa95ec89e3b59fd",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_12833",
+      "prompt_sha256": "bdd6eadc736cba0baa8216c5cff38d0c7c62b7dd878f6c7b08aef65bda1bfc06",
+      "rank": 7,
+      "response_sha256": "1c7e8cf3e4fbb11ce12a60f57c98f4382a88870ed3c7d22040fa27ca0637d872",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_19556",
+      "prompt_sha256": "6ae3cfdd83753d5bfa627ec788612bd7e7af52cb218165bf74657da5b66349bc",
+      "rank": 8,
+      "response_sha256": "82ce60d1a330fe585b16a442059492c524f0eb8a0360eba8f43b33050988cb52",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_281008",
+      "prompt_sha256": "83f17a0cd15c297c0e0f0e083ba39eb470fd2618304a97fb310ac7df9d03baca",
+      "rank": 9,
+      "response_sha256": "d3e6771e4baf1e8f4e64866a9e3babf74b586a732bb7e5c3f6d7011970bc6ffa",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "aya-100k-r1-format-filtered-keyword-filtered-filter-datecutoff-ngram-filtered_92124",
+      "prompt_sha256": "8fc5f926de818cb573cdfe9abf672d433eecca116e9058839dcebc7c92ff4b5a",
+      "rank": 10,
+      "response_sha256": "33af29c0875eeafa1426a7ff8fd3bbca51edc339ddea48a4b56d7b9679a80c9f",
+      "source": "Aya"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_598003",
+      "prompt_sha256": "66c42f36024ae695153830995ba6100564ae9fd94499cea1945586f3d22e4e32",
+      "rank": 11,
+      "response_sha256": "8a1ef26d8b6ae1e4f57212b06e6741b732f4d34b5a3eb125f855e1037a2d8145",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_b51da711-37fc-40bf-bccc-d52449c4708b",
+      "prompt_sha256": "6f0a418d4ca7d881dc9730afd6b803d5153795f0533ea247de7f39ee25d268ce",
+      "rank": 12,
+      "response_sha256": "a88736fb464fda85da1ada013550a3404321524342d244a109da758106614ebe",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_23679",
+      "prompt_sha256": "68a750c6b6960db289b9e6f333d036d07649351d8a00b74a5b566cdfa1b27c53",
+      "rank": 13,
+      "response_sha256": "3377fb935da08450424c2bf6f1c795dba186b1a063610d3c2fc6c8ec0952f450",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_60a09e0d-4ec3-42f5-a543-7d770bc419a5",
+      "prompt_sha256": "3d6ef9ae85dcd13b5d46f6ce81b28419421e8e2786af61edf5b88d1221fcf1a3",
+      "rank": 14,
+      "response_sha256": "aef0d40e61c7e8a7c835c1ca040bae1d0729809f99a450cd8295fd9f33249fe9",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_2483e9e3-4758-400b-80d3-5221e4bf11de",
+      "prompt_sha256": "e88b41954b1b5a59c657f7c24a3188b8871be783342cb15f97b0ce0be083f33e",
+      "rank": 15,
+      "response_sha256": "c06ec80b42c155957e12fb35d407ba638dd1f8d3fe65b402d8554259a1ef9ea6",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_88728",
+      "prompt_sha256": "dd156cb746fa5f64e5405e9aa03b7b1af5fa5e489d9f2beffae25711bc8c5913",
+      "rank": 16,
+      "response_sha256": "1197cc8e7e3ed5bf8906025655e6c6a58cc0fc2e03f7123271bf4f131e09e0da",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_710845",
+      "prompt_sha256": "f9bb277428b66954b73ccb6594c1f8da6a916560cd31b200ed0f77e4d7d0994f",
+      "rank": 17,
+      "response_sha256": "ae937ee725c149093e13398b93d331dbb0c901e3cc0c3babcd23b8f5c318d952",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_2d3dbc8c-0d39-41ad-8360-57c0ed2e4d75",
+      "prompt_sha256": "252d778dc820a9d8f96d204b98906ad4002a46c7a5190465e58056b783f431a3",
+      "rank": 18,
+      "response_sha256": "ae709fbac3e87ab9c10d620a1d8c5eb3b47197d5df83d9476a5ad7bd8002c577",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_dbc1e57b-040f-4cb5-b6e1-4dbf16851fe7",
+      "prompt_sha256": "7c374cdd2cb89c2db1f0d9d86010aab5a5969a6c0bbec26e2de092e74363c9a0",
+      "rank": 19,
+      "response_sha256": "fda147fe31468ed62b4cd8f9c305b3f39215a528a8e9add178d206835cecdde7",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_218028",
+      "prompt_sha256": "4b4dda9c08a535ea0db5014385da1d8e5697cc9ab180a88e65d8a08a8e4f1e2a",
+      "rank": 20,
+      "response_sha256": "10cee2b7eeb40a411b44d5fc653219e3db2464d33b35f8493998198eee284c9d",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_25243",
+      "prompt_sha256": "ef23f9b217053b81ea909e187fa34a1a1a7a4d4ca6e116f0c308ef61a3a4365b",
+      "rank": 21,
+      "response_sha256": "2eb2de80e341807dfdffeb9043de1df4db450f48e88e811df53d6a53bcf13464",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_18639",
+      "prompt_sha256": "2659f04de67923941f8b2033c14c56a2098bed725f0ad7391e3716c84ce54fdc",
+      "rank": 22,
+      "response_sha256": "5c9d7e96eb8d127b0c1cca5760591adadc38dc010e3c2211dba4e3e97142bc61",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_88",
+      "prompt_sha256": "5f5ecb56cea1930dafb85cc1a5b1e3753669787de23b4ef8bdbe8332385fb57d",
+      "rank": 23,
+      "response_sha256": "b8737cbd7faedbb1f6a908187dff233fe87666d963e1b2696c1a3089bcc7c266",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_2241",
+      "prompt_sha256": "0a9b50027f1a5e7807b816a9ecab3866ebe947e68301992ef59358b052e024ba",
+      "rank": 24,
+      "response_sha256": "068ed0a4790da5e22b6563a1f530359b83df9d3ed4fa0f956230227e35c73daf",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_152491",
+      "prompt_sha256": "006992010d64ce230e72e6a0ba4982a23a9d589fb86cbece5aa6cdf8dd399066",
+      "rank": 25,
+      "response_sha256": "20da6c36cb7e25bf510943e5e806553a08e3b1e3e1615b1b6664e256cf0f6553",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_659352",
+      "prompt_sha256": "c554260a8e88cc514cb9ca5d53fdf22152163b9ec4dddd6d6db79a96d9461ebf",
+      "rank": 26,
+      "response_sha256": "2e0fe0b511b6213e99c54d816478f2298b8eb482018115b7872416ee869d833d",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_40751",
+      "prompt_sha256": "6c6c47bf3fba709f054c7d64acd5622475f9370470b6cc91c673b8a9073c4412",
+      "rank": 27,
+      "response_sha256": "7e46bbf77d5b643f0e0a0f689622347ec4eb2f7cc235b3b6edfc5c3d4189111d",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_647945",
+      "prompt_sha256": "e25399b04d16a229a2a1207f26e9029b173240f368d36ff21797f5003db98dc8",
+      "rank": 28,
+      "response_sha256": "20c4636cf815791a2f30bfd4180376f7fba6134d2d6a7172e3e5ea2521e42eda",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_113295",
+      "prompt_sha256": "7c7b416afc008ebcb3b25d947ca1cc85e3e0f193860f1be9c29c2cc6e1e1ab25",
+      "rank": 29,
+      "response_sha256": "694ce2333936940854bb98bd532b8d4aecee1f3ed8ed3fe50adbd6717cfe2318",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_25a4bb15-2b83-48e6-b22f-d7c00f56b8c1-professional",
+      "prompt_sha256": "26fbac3eea6ec1a15d35cede4ed1ee07d29611d426ef638a651c2d46a165d920",
+      "rank": 30,
+      "response_sha256": "77730ac7fb0f348524fdedd1d9f6a650e3b962d9f86416c267e18be47437f8c5",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_214413",
+      "prompt_sha256": "91306e0b66292ef806e0c8935a3cfb6fd09f93f2f0ab85a489e6805f9b4ca8c0",
+      "rank": 31,
+      "response_sha256": "4ee3a831f3138343e11fbf145a306ff570d6aab092a273be71fc503c6cc66889",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_25960",
+      "prompt_sha256": "53989e225e219ce0be95a28665f596c7dd29b78d74ff298f7fc7b80db0943ec3",
+      "rank": 32,
+      "response_sha256": "9aa982a763b520280c9183587eea27823ef3fa9d4a9366e3ce601d6923002b8e",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_bdc1fe31-f958-4dba-b08b-c5841f919528",
+      "prompt_sha256": "cc39eb655f1b0659ee24940fdcf9383592e4b431d2c281abf69b1e406316d9bd",
+      "rank": 33,
+      "response_sha256": "78bbca3ac97a946126a9566181a0a4907acd2a9f68442c0a3b7cbb74c1a9784f",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "aya-100k-r1-format-filtered-keyword-filtered-filter-datecutoff-ngram-filtered_46063",
+      "prompt_sha256": "0f566da5792f0e518ed3510ab73e16c07cf73da3043f4c3d47c2a68b54c6ff95",
+      "rank": 34,
+      "response_sha256": "100618388e66e6d93d3808683150a59523697eab43d275e699b5644635822c4f",
+      "source": "Aya"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_39338",
+      "prompt_sha256": "7573e21a53ef47ba33d5f362021f3135a168928ac2e09370b8a8e95600d1e1d7",
+      "rank": 35,
+      "response_sha256": "8f1f0c675343296865d1ea1f72acdb1e0f484b0d814992229a35370a15b694d9",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_14507",
+      "prompt_sha256": "4ef5546443042b3e086e09a4889b2514531f9cb34642adadab16b1bc71df9e14",
+      "rank": 36,
+      "response_sha256": "67d804114cd8ed5d68d1c19df4f4c807e0228e755c7a3eed61e572f1b74ad4dd",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_0b4f9480-6d9c-4127-a5b3-393c547bebd4-professional",
+      "prompt_sha256": "4c99de9833b23cf5e30ff66952f7c4d784ec2d586b753739811f76f1e999db72",
+      "rank": 37,
+      "response_sha256": "0df772d1bd5c95afbd3b6e1ad0fdf3e594275eabe3b775cff3a19743eb40457d",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_128459",
+      "prompt_sha256": "b1447b89964964ddb7e62f64fc6d9ff687962c3f58f45e2fd477b5d367414925",
+      "rank": 38,
+      "response_sha256": "d302b64a61803cbf94a5d24cbaedb031d04353f3e9e8f6cec1ba9dd876269983",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_125664",
+      "prompt_sha256": "ee748b5b3dc5fef5bab3ebb16822053245b9ee6447e5ad0a9fea30608acc8af9",
+      "rank": 39,
+      "response_sha256": "6e76e7134726cc17d06163be7c355ee80be55358aa758b3367e6246b6e122ddc",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_e373af2e-90f8-4a4d-bbc4-f2171e848179-professional",
+      "prompt_sha256": "ee63cb0889c46dc2dffe7d021c021bc2f7a395f3bd6977d81e1207c0511eebe6",
+      "rank": 40,
+      "response_sha256": "b2c3ec07e5d131aa812fd7e55680c09d191a68f9590d3dfa3904365133e127c5",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_29f51726-e54f-49bb-99f0-88062ae55393-travel",
+      "prompt_sha256": "90c759fbd5ccac4feb7909d6b93a305f2afe952f4541227b7d3f8bffce3d0c44",
+      "rank": 41,
+      "response_sha256": "243ab1037e98fe843757cdc64a093bf035badd853e8d12523b3923c8dfb2e3b2",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_10878",
+      "prompt_sha256": "4b04e6ec6328820bcd70fd245139324a461ac1d3e8f74537e37a974a3483d57a",
+      "rank": 42,
+      "response_sha256": "3ce809c30a10201b898a04962f92f9030b475c1b025790cc155846966e31ce3e",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_24bc0e41-953c-4f14-889d-d73624002f42",
+      "prompt_sha256": "08c59a1d8272839f335c2196b3ac1c409b825d921baaaa26e1ee53cddcaa4baa",
+      "rank": 43,
+      "response_sha256": "819bff8d474f39780682e7750045519adea36c4be9a1a4a6362ea84ddce87107",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_86aef20b-8531-43c2-83fe-42315d25c0ee",
+      "prompt_sha256": "0dfe72ff2ab0d055dcf738cb8c5e5d7a04c2c4a5d7c313cddd649425381be9be",
+      "rank": 44,
+      "response_sha256": "2a5f96e8c853a741420947cb23e2b4fca312fdff3c4fe1afb0c976a3195328b3",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "aya-100k-r1-format-filtered-keyword-filtered-filter-datecutoff-ngram-filtered_46009",
+      "prompt_sha256": "80b7c5d89b933eeb6b849a5e18de342ed39a595016bfd57c1400ba696502d9a8",
+      "rank": 45,
+      "response_sha256": "dbba50fc3548d3ac32ca49b17cf36290530223b48c6ea83ecb47ef9d7ac7ebed",
+      "source": "Aya"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_59758",
+      "prompt_sha256": "8e268ce035cf6db43b3067e690cebd746210dd83efd76deffda8fc7cf9960b4c",
+      "rank": 46,
+      "response_sha256": "d0ebe2b1166dc7a640200e6b29d222ceaf31f2bede324655d0e99cebcec7e680",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_2778",
+      "prompt_sha256": "c73c675a2e5e4d62f35ccb5138980d7955e26ab8509d97080dccaf0a382ba397",
+      "rank": 47,
+      "response_sha256": "fd414d097f43366f6cc8015da8f98b7aa45a0554cb3b1c12d50541ffee90beff",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_28947",
+      "prompt_sha256": "cdb97d5c25e9a99334ee12c3919637035e52bf4e3d120b6c465fa52df3e874bd",
+      "rank": 48,
+      "response_sha256": "6808022f3647e6a5d80cb217604dbde1852cf04da9dc6b549c4b46a221adc71a",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_e89f0322-a65f-4060-ae24-e3bd013989f8",
+      "prompt_sha256": "10cbaceb30b82a968fea706ee3d0d82f0d5fcfe4c6abf22d7ffc064cbca45a19",
+      "rank": 49,
+      "response_sha256": "7dd9821f506209aa4686f343f11e2bf76c6643981d81d07a4ad6d2bf81fef5d9",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_c1327b00-f69b-4695-84bc-04785843d064",
+      "prompt_sha256": "3b77f662cf40cdff39add7526b3ff8ddfa31153909f1629df74007bc5941a8ab",
+      "rank": 50,
+      "response_sha256": "6765a93223a6faa743e569325f1b902c645353fc52bf89052de85d299fa0aed9",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_151540",
+      "prompt_sha256": "81fd5041c04533a61b4777c98bf2355d231f62a1bb19bd1253b7703588ca3a88",
+      "rank": 51,
+      "response_sha256": "bdaf7399f938f37b692b3a2304f8a633e5da2c7ddbe986b36235154d9e4fb33d",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_159921",
+      "prompt_sha256": "e177b8da7e4e0a05e13e949b43a41b810abc0ed02a5a13b42ee0f4111e5ea744",
+      "rank": 52,
+      "response_sha256": "4ee898e9b1bd25206c22c669bd0d10f2db3e3afbe73a9b6f885f4e9ad5d13336",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_551076",
+      "prompt_sha256": "febea8638e167a58de8daf6bfffdc581f3b75dd14041ee3311e2574e927ab81c",
+      "rank": 53,
+      "response_sha256": "00baf823e8affd1b587d86f7249a09d13009f60900b6322e7d663de9126886e5",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_be0b8bc7-3ecf-4a9b-b984-9eb00d88adf3",
+      "prompt_sha256": "bacf49a02f1987573847536e0b0b9137051326197b65a104032b524cf427a00b",
+      "rank": 54,
+      "response_sha256": "17fc526f0b0c2285cde16ac0e899462409bbc84a99c6aa23de8a7b674e067dcc",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_46935",
+      "prompt_sha256": "f90675673a407f803a35d8cc738e6885d0523a84ec0a2d639dfef33bc5ef6ad9",
+      "rank": 55,
+      "response_sha256": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_86554",
+      "prompt_sha256": "548bb730e938a09199e2bbefe546c165265771b44806f47dedbed0a2f446519a",
+      "rank": 56,
+      "response_sha256": "8a20f24447392e1faaa68b0496d43a668465318a718563d23f8c8cce580bf3ae",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_84673",
+      "prompt_sha256": "deff17513deab780d8e43ab16f02bd9748b76b4614b9e6284ee793c75a143154",
+      "rank": 57,
+      "response_sha256": "d34eb04d45bfd2d661a251587aed6da22d6fd358440dd69b972bb5863fadf20d",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_74005",
+      "prompt_sha256": "c8f2fd3e7c9a594e76559457b7c23ddb96a72ba2d108a5be67525aff83f641c9",
+      "rank": 58,
+      "response_sha256": "e0660121e1c8548b783749430624765ae167515c884430c2b03ece11be8132c7",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_341494",
+      "prompt_sha256": "4691217226075c6979060060f3e21fe30293dfc5396c5e913a96d4c0f507d488",
+      "rank": 59,
+      "response_sha256": "c378aa2be7235cfcbe3b95132ca5bb7180b126483d1a5b31308f6fc772a20f72",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_ae9760d9-35d9-4d87-b53d-7d1df157a897",
+      "prompt_sha256": "75954dc5b33ec1664a69c527b54884cefe0930ad174e0b6c61da7aca44adebaa",
+      "rank": 60,
+      "response_sha256": "3f1c66906e0a285b843e6685863d2cc0ab31c64ecb32bfb2009f10875c56ce3c",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_e55ee1e0-144e-4414-9920-0c34daf1c59c",
+      "prompt_sha256": "859f1bff11f455fb60435d639bcf9b6becc7ef06092e97c2fed9587a1f57b871",
+      "rank": 61,
+      "response_sha256": "8697052d4797fc1022c2e8a247ce5281680dac2fc9f498b2714aa02981a86dea",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_6138c269-425f-4cc5-9619-66e030632424",
+      "prompt_sha256": "080022b61426a357d2881fa2c233e6b2495b2b9b4527299b2f3a870ff42ec108",
+      "rank": 62,
+      "response_sha256": "55d1b9caf89c4ed8c6320d572f824a1fe986cccf6117e94d4364905fe2ee1555",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_64631",
+      "prompt_sha256": "a07dfd4a35580dd4066ba216d648caafb0eb4b89d29bf71eb05d8235dfbddf10",
+      "rank": 63,
+      "response_sha256": "2fbe0426feb32bbafe55b5e894d7e6f91351aed3cf41cea708371725c694701f",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_595495",
+      "prompt_sha256": "e92e33ace37371739f1b9c97dd5df3638baa3a93b43eafc829915fe3873ce451",
+      "rank": 64,
+      "response_sha256": "cacce450d00503fe8c1f78d4726ff38b6711a0ec3e2636db1a468cc4f40412ac",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_76076e70-1325-4cf6-84d4-01daca0846c1",
+      "prompt_sha256": "8469aa75e6bbac092148f56acee0d412ce0194b2b31fe7fa22611a0a480b5b57",
+      "rank": 65,
+      "response_sha256": "79b1ec957fb7be7808a2a46a816dba7ec535e6af2c9358b832eff05ca08fe651",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_b3b69380-3cd0-4952-8b00-ab13cfe3d742",
+      "prompt_sha256": "75256eb20815f3159823b00e1d3eb666c473836aeb3fec6e86ea705868668c80",
+      "rank": 66,
+      "response_sha256": "133a34ae46fd0a43d18f373662fb2186bdcaeb0b1f1cb6243a6efe8434d656bb",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_22848",
+      "prompt_sha256": "b3d994471ee0fd0be66836e0b6842c06b7f06f31397058dae4b075859b749cd9",
+      "rank": 67,
+      "response_sha256": "fa5bfaa77ab01f121b31604ebd31ba325eb4a25bf0e2f12abeec60e44dcdb377",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_525665",
+      "prompt_sha256": "80a197fa62a5edcd99772a1bc2bbc77b7a7f84019e81ab1c15b7c748d7466ff9",
+      "rank": 68,
+      "response_sha256": "58b61dd977b24e9da15043b0951e22d6c0ded879fb4884963024f57bfee940d9",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_511391",
+      "prompt_sha256": "fa775c535555778fbe4111fbceb93230a56b0cb372e7238b903498998371c2c4",
+      "rank": 69,
+      "response_sha256": "a94b226aa25a1a729664da24b4213fddffd44f040146df89f67db433ce76da9f",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_dfc0028c-61a6-438a-95a9-7f09764c9254",
+      "prompt_sha256": "89ac60af33764745c3477227cfef5e05c5fe7f168e1f5dbf9090138135610e57",
+      "rank": 70,
+      "response_sha256": "b6b1d0a56b4f782e44540bbd729f2b2ab3d28a5506e37acdd3d446699ebb0936",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_df790cac-cc9f-4f96-9f5a-00fc866c986f",
+      "prompt_sha256": "1595715ace6d38fc6eae4d6f2535270af3a6ef463045eda78adc37fff1b79b3c",
+      "rank": 71,
+      "response_sha256": "552644bd5fd301bcaa329bc1cd73ca3119318cd61e22384fd73cec7d09160992",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_201361",
+      "prompt_sha256": "7960c2c710b221934374c4a45272279817d863151b629bf0ac0b742692124d6c",
+      "rank": 72,
+      "response_sha256": "e418f9b75f7ddc1dc399927b6cc4ee57614125f7c67de2dd689973351e86a788",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_114534",
+      "prompt_sha256": "03cf0eb5ac75de5f7367c13da298679f453e041a135312041222f114f219bc04",
+      "rank": 73,
+      "response_sha256": "72a46492ad760c600947d32c07c103aa22f9dee89f99ba1137f8f4617f5e2fed",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_198454",
+      "prompt_sha256": "ca905082372327a2b7c3d256a83c41c72c5918be5c7334ca9a80e1d8c7880e9d",
+      "rank": 74,
+      "response_sha256": "cfa4206e995e56b898c311c9750fc476264a4b32d3cdfad39190db0a741ddf3f",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_83136",
+      "prompt_sha256": "242e4bc6fc46c15ec84b69227b8907dc2c8877441f96046e48c205e9b9a8b360",
+      "rank": 75,
+      "response_sha256": "024fb5b631392a35d2e39c839521884b9db28e83cbaa9bbbfa2674706a7889cb",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_93e17596-2355-4da4-b155-98779f8f7e55-sports",
+      "prompt_sha256": "0f746a6fa10a0dca5e26049ebe478457fa48a6706b0becf4efc0a4a453467c45",
+      "rank": 76,
+      "response_sha256": "a5fcc3426af4f5ffcd9d10b4611f123a44b53254d8e795777ac27bf07430ef6a",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_c76d4eea-1c04-4d4f-958e-f74d0e5ca584-culinary",
+      "prompt_sha256": "2bf9a323d038c0fe6bfc4b5f35199d390d6685185d8a20319cf7d9cd91c958df",
+      "rank": 77,
+      "response_sha256": "8c46d81657ca0d743b60e20b2c049aee5ef8121f37221f1fb315fe17f50ed872",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_330361",
+      "prompt_sha256": "6bf58c8b1f4bc5f395bc3fbc6a97041b6bbfd0498970a9ad44cbdf71d7aee008",
+      "rank": 78,
+      "response_sha256": "a67083fcc5314f225bf35872535774e5949a189f13df3af527ccd71f08e63802",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_6b286db1-3881-4727-a88f-7a7a430d86c0",
+      "prompt_sha256": "9d9beb8221b37dcfafbe7737f91b837e732b20b4b1e949f75103104ab2cb1732",
+      "rank": 79,
+      "response_sha256": "cf39b3ea8d8ed6591e858c424e693cd8401d7fd08466570000b5d27b8eb0e755",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_3caa6d82-5ca6-45df-89f9-e147cb9177a2-professional",
+      "prompt_sha256": "25e8ee1c6812749c317f6382c02e91bd38ed2c84703ee3b77e64729d16ce98fd",
+      "rank": 80,
+      "response_sha256": "5e72eb9d7d49a9136c27aabfb884314d68b643c98726fbaf7bda3f49d44be07f",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "aya-100k-r1-format-filtered-keyword-filtered-filter-datecutoff-ngram-filtered_51086",
+      "prompt_sha256": "2006759f71b072fd9cc0447d15b4acf2939b85e1655fc08e1b79a28c27e4452f",
+      "rank": 81,
+      "response_sha256": "200c5772e9fc4cb04acb797917efaa6905910f43fcc4d6e05f17e7488613bf3d",
+      "source": "Aya"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_51564",
+      "prompt_sha256": "6bdc5ef4845f5d53d9e92faa91a968b417069eec28d32f8eff32e1930acfe23a",
+      "rank": 82,
+      "response_sha256": "d32a283a84b55e08cfbc34ad09a1ecd72a600d5dc139428bacdd970216d123c2",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_21519",
+      "prompt_sha256": "2a676e3b43a204cec3c2d1d0dd3279970cffef2e1680875f7bb2d2d46a8aca7f",
+      "rank": 83,
+      "response_sha256": "bb2eb21ec94280060d069b1d13499d33ff80ec0e3f2437e68ee36fa7814dc319",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_737694",
+      "prompt_sha256": "6213ae3d7193c3c81d4943cc4baf6b1693204538c88dedc4e21704c7df1eb6b5",
+      "rank": 84,
+      "response_sha256": "610b41f73e73debdc12fb6d5407d6151041349c83fd2c115d46b011e1aff6bbc",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_b3feda9a-7fd5-4487-a051-19859883406a",
+      "prompt_sha256": "8f885eeb440436b1910487cb1c729e0ab4717ee157a8b4cf722fc8f812dc9844",
+      "rank": 85,
+      "response_sha256": "11c0c0478193d7e8601afc8fb64e4f8c224d643baffbc878a5a45e72dc8f04e2",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_43285",
+      "prompt_sha256": "5fd99b41d85cb9351d1635f4aee8bf577486a070ac71ee770438f72fd90de349",
+      "rank": 86,
+      "response_sha256": "ca6ff37e65d187e3d4bd8084abeee1f7e6bd676715c9eca7e3ef7b98c98ccbbf",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_5e92c397-0b8d-4aca-944b-503a3072bb6d-professional",
+      "prompt_sha256": "7b19478a3fcd1937a1fb892b151213cc5088b3a207981879cbb36b85ca6d3550",
+      "rank": 87,
+      "response_sha256": "77f63253e80d935396b116bc4ec6902f3bc58bf41ecfaf81dc12dc310bc83b11",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_96793",
+      "prompt_sha256": "ac3dfe4149dfe4b2d96243cdf3663611ea39c034ebc8d66fcaf4790933525a9e",
+      "rank": 88,
+      "response_sha256": "81fb5199998f7ce2c73b20defae9cc3eb2ef1a7588a7de344cb8fc499843bde2",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_120956",
+      "prompt_sha256": "a5e4dddac151ff49c900ea6eebe69b251e0382f1f8b68d9d32fe5d7d92b34630",
+      "rank": 89,
+      "response_sha256": "282a3ac7da538f0ba3c284a455af89ab180ee287ed24afdc59c8d97161073921",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_637587",
+      "prompt_sha256": "adb939462f162369648054aa8e7c64f19042f3e0e356499cf57e0b590a3d0da1",
+      "rank": 90,
+      "response_sha256": "a50982bb9b56e8e52840ee0ccec5aebd96ca96c5bda9ac262b8d335c96e6ce74",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_4797f33d-d597-435a-b681-238258f11568",
+      "prompt_sha256": "408060136ed0ffdaa659e197bdc2122e6255920aabe946551aad93b0cd9b67a8",
+      "rank": 91,
+      "response_sha256": "43ac1e5184fc770d0c213b08363caa0762d8022efa1be004f60b84a36c171c91",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_297898",
+      "prompt_sha256": "000189c1ca1621dfc8371dfe6bf08a8266c7e3b6ba44fc319f4832054d9b088b",
+      "rank": 92,
+      "response_sha256": "4c74aac3cdc54c741f5c63c37cdb0f4a689b3c0cf42bc24cc2c8e20d6ed96ef1",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_499606",
+      "prompt_sha256": "5ac0d76df4cdedfd0bfb340dc63249938abd28983147f08f2a38f21819f1f492",
+      "rank": 93,
+      "response_sha256": "f45bf9dd99246c59085ce10cfec050099828effddb10e1658e8affa4edcb770b",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_649364",
+      "prompt_sha256": "659e0e579c4a798307c985870ea3e115c50d84b16e45907bef851e164caa59a5",
+      "rank": 94,
+      "response_sha256": "0cdfa3e956d2048d42abaae5d8517053931dcddcd1dd4a2a95a4816ff0be69d3",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_457013",
+      "prompt_sha256": "1067b8771b0cf4641c22567dc961eea7c6b02fad1b17812d9f687c4ca8e643b4",
+      "rank": 95,
+      "response_sha256": "ad86cf5631be73c7108aa70dcd72195a9c69c0dadf1f4df733ff4b806cd60c7d",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_215503",
+      "prompt_sha256": "8872b4dc4e00b34d9ca4a394245574b0ab04a58909601837e81e042122ee1836",
+      "rank": 96,
+      "response_sha256": "2e76236941f310a45e2a67573043130d02c3fcaffc264189615bd26ccfa9c058",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_67543",
+      "prompt_sha256": "b90901dbc59db4bf91074dc68fa2cc3f2bd3f9c1c0668a9ab1fd77288306cec4",
+      "rank": 97,
+      "response_sha256": "b615cda2fcbdb3f85b7cfc2c51279137508f12cb2a6a30eb9f8cc6ae6789cacc",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_6487caf2-b216-4ee6-8137-16df009179bd",
+      "prompt_sha256": "471a4109f6e983a17cb8dc76c5ea56eade8d5b10f464cf9a71a6675b78b6ef55",
+      "rank": 98,
+      "response_sha256": "391eb45de1cb52d9212f8bee0f070885a6163b6cae7ba8350c3a86854cbfb0a0",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_570999",
+      "prompt_sha256": "b1c8bed3ec421dbcf01e78674beae05bfd5644c3ac6c1b7fd30d8178548bdeba",
+      "rank": 99,
+      "response_sha256": "315e8f5a3d4ea4360404a00ae39ffa38f57258f9fdebb3bb421089488376d77e",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_295597",
+      "prompt_sha256": "2ebc213902c3d6ea49c551bf15b3041d06cfb681b169deb033cd7fbf9792901c",
+      "rank": 100,
+      "response_sha256": "c5fef6fa888c1373adf5ee33d23b03a59a8b4bd864a7f0d273ac718b1ba3b511",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_111541",
+      "prompt_sha256": "59fad81e4aa697759ff7e83997abaf85c7a61af9326ba7267e0cbc42b474f04c",
+      "rank": 101,
+      "response_sha256": "8bab1c848379bacb70a5581d54ff791ce23cc6a033a7c3a66222912a4efcdf0d",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_d94f3d0c-a530-4730-84ec-012617ccd7b6",
+      "prompt_sha256": "79acda210146496f66845c9afce91c9b79514b16a8f40ae45c6e44e8aea3c487",
+      "rank": 102,
+      "response_sha256": "a76e7208ebe1d5b88b6944bc8ffa57c3a5cfc1b77fdc82f789e6f20f3f5b7edf",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_14705",
+      "prompt_sha256": "e452e7ded9a524e7a2fbc3f2624722af96d6f6f4a4d3bdf186aab5c06e70d7a5",
+      "rank": 103,
+      "response_sha256": "5f6fec739bb31e29363d51e2992d2c998fec7418e5923d916668e00121f00a21",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_62b759fd-d886-4f9e-bfa7-5b64cc277d6c",
+      "prompt_sha256": "6e2c5435e61a3f11af9ffc50a4cacf461b6a118a69ccc1e22053bb8dd2560320",
+      "rank": 104,
+      "response_sha256": "99734c1e14f4d66cc206a268a3b551f7cb0e212254432c85602ac18ab2e22f25",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_134638",
+      "prompt_sha256": "fbd871a117bfdb1d5dc3a0451642d381af0fbc79016b3b3376ca65f852a8c118",
+      "rank": 105,
+      "response_sha256": "7f4c81d233413f73d09de69d487e03fe5b7f96562ccd50adecfeb8e16a2abb8d",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_594633",
+      "prompt_sha256": "b45d55e75bdac071c0ee5de7df5687d2d8852db529cfdde15fc93742a032afe4",
+      "rank": 106,
+      "response_sha256": "184fb9d432cf25a42ea07cf481cc09073f6d7a485be962346dd80a3660dd4d56",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_674e4cd1-3157-4eed-a1be-3b80cc9b97a5",
+      "prompt_sha256": "30f916003eca9db5df8ef4f9c72988aa9ed97d8b115036bd9aec3451f7971520",
+      "rank": 107,
+      "response_sha256": "b9945cc484d085ff11999bacbd3a418c12fd195dac45b04ad801e7c108aadd7b",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_83542",
+      "prompt_sha256": "622dd4a02f1b994988463f7caf4407d49ebb6acc7c1b3dab986336d6a78c171c",
+      "rank": 108,
+      "response_sha256": "c482e3dc3a30005917af650ee1838dede9862f23cac4a0933f518bda6202a52d",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_523930",
+      "prompt_sha256": "361e2f46ccd145ace3f3dff09b3147318651498b23e78dd0ea2f76d195fca2eb",
+      "rank": 109,
+      "response_sha256": "47b31450a4c8113d6779d6029f6e3e3e09a427c519204313db564ca5e97c66e5",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "aya-100k-r1-format-filtered-keyword-filtered-filter-datecutoff-ngram-filtered_45181",
+      "prompt_sha256": "31ef0254d6a607cfcdb9a80e3915623bee80ceda4b6fa879244e4f4d204aaf5d",
+      "rank": 110,
+      "response_sha256": "f51d0dca5d8a3a652d79b61ea83337f97f479abc371f330469f80c5008591301",
+      "source": "Aya"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_7e39b341-c251-45ae-9455-5671fdc21add-sports",
+      "prompt_sha256": "0577dd421286d9aab82c4b59e6f40386b418f161e19a84fa7ea2c483e73152cd",
+      "rank": 111,
+      "response_sha256": "3c11f08c2791ec762adb608dc341e8f6356e0731a35f7c169a7c7f59feff9193",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_ec242a35-4cba-4237-a090-d8559a4d8404",
+      "prompt_sha256": "e77b110ea585fcd3f11bfb31abb805a58e41aee4f5215a8ad8a1f22df9013aa5",
+      "rank": 112,
+      "response_sha256": "2d6e81966e4e12893f05578a964e7848fbaa91c2821f506c2d9a1a0d0a5c1291",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_7d24f83b-9b15-4ef9-a534-5afdd21cfd6d",
+      "prompt_sha256": "0ead5cd3faff53e3e1739f3e3bd0f05dce6260ac54d025c6ad3272c301a76b59",
+      "rank": 113,
+      "response_sha256": "61f2ef327297d0d0ef81a3ca66aab4a7413d1894579f0ee72a03d595a41f2039",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_671014",
+      "prompt_sha256": "6fcd7a568535ad52bc6bdb47eb7b507538dc56d35ec527533a197df7b2bfd330",
+      "rank": 114,
+      "response_sha256": "da121b1a8991e12bf1d966f29bffbfac5f5dbd70be0b27c72afec7685f45dd4a",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_84536",
+      "prompt_sha256": "e791a383b305e370b7a27b921a3a085946e9549da23bfa2348a84db95612f4f3",
+      "rank": 115,
+      "response_sha256": "83fbfd95b30a51abdc2d29e0554ee84d14ef60e8149ae80c7102ac819091fcb7",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_a603aa79-1ecf-48a8-b5ef-2775dcae3a9b",
+      "prompt_sha256": "85216c90f5f5a5f1bbd5cf676371e6d5b58668359bf57d46a0e5e813a8cc5bc3",
+      "rank": 116,
+      "response_sha256": "197cc0f82260995c042e3b43e28409d5e85d55aab97659a11dd164bba56b14a7",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_73e0b36d-bbd6-480a-878f-5425bfb182d5",
+      "prompt_sha256": "35ac32423c40e6d844065d50f556823a72319a227d8b4ac59dae52acf0881dbe",
+      "rank": 117,
+      "response_sha256": "a03b3a07ac1c4e1dfba3cffe372b7b1b46a538186f80b0ff2227245876388255",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_241372",
+      "prompt_sha256": "994f1b1b4fd86546a07236e632894d1e875c77ccee19f9452cdc6f79c2b8e17a",
+      "rank": 118,
+      "response_sha256": "49e80f53da0ee247998bbe48d33ed8696d1aa0917d020c26ecad70e13323a10c",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_2efc0677-a7d8-457e-810a-64a3969f5a41-travel",
+      "prompt_sha256": "54160f573224b41b51c14b696d5e20fd1cda6a0e3476f86da11934aa3463f20b",
+      "rank": 119,
+      "response_sha256": "1201fbcffa46cfdb3c9573c2df22677c82b1c07e69fa204c5e4b3bc00212a86c",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_12960",
+      "prompt_sha256": "01812100e3211e877cc5ae5e306739490490f201e9e6997be0498161add76f7b",
+      "rank": 120,
+      "response_sha256": "ff6033c1c48e395afe9287bd11184ca32542f33e1ca42610a9613a1e36ef7a37",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_126330",
+      "prompt_sha256": "2aa085a4deaa2d52f031a017c7377b9976bd3dd19ad7c8bd41f9d36ce9cddcac",
+      "rank": 121,
+      "response_sha256": "4de6e56b3310beeaedc84f40019bd7816a97f084e6adfb9a7813c44320951533",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_140870",
+      "prompt_sha256": "85252c49e5f37d9fd7db96ea17df497160654a5f451e8f65a430cc68a2c939f2",
+      "rank": 122,
+      "response_sha256": "5ccd346b0aacec273571d83c82dd8e7f910bef0df35d17e7a7ad18fbc83cd579",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_580500",
+      "prompt_sha256": "d910347f2fef25a1328d689a1b223f1dbfd3ef4334b9656c21b4ebee0e96e908",
+      "rank": 123,
+      "response_sha256": "a8ebc711520ec1998172bf4327cac8f0a2f334bad7623df435dc2a61858a0404",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_b54bf939-f1e2-4ecc-9e78-e6816aeed090-travel",
+      "prompt_sha256": "fc918b3577468948efa1365fd194699267be8b106d9344f767f10315f775f95e",
+      "rank": 124,
+      "response_sha256": "b34b86579d1ed5d84bce827d49281fb0f33932531be8243b84ab2b5ec2efecca",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_d58e33b9-7009-4b0e-a758-f33d573fc6b9",
+      "prompt_sha256": "93f9b08c2ae5a77c805a9cafedb9a27e88a0709b2e6a9984d0ee1717cb116911",
+      "rank": 125,
+      "response_sha256": "095208db6ca144d6dab0c3795a7de02d39c3638257f63b31f40cf9e747d429d9",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_19048",
+      "prompt_sha256": "01c9bf3ecf26fd0ddc885278f432196f74bcf9a93a9dc9fee4767b5f26e36555",
+      "rank": 126,
+      "response_sha256": "43239177a5498df21476fd629cb7d81a7bef52f30ebe0908d88439c752dca008",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_646919",
+      "prompt_sha256": "3fb14e4cbb7838e0bf9d30da2f90dcd82cc046d967b98b83f094d240ed5dbd03",
+      "rank": 127,
+      "response_sha256": "25772ed78363234a3807322a9640e8b208a35276812ad1a77e9dc35c1252f0a8",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_116157",
+      "prompt_sha256": "be9f6565966420cae090d1765a5568d75943768c2148d4d7e30e0b04e36381d6",
+      "rank": 128,
+      "response_sha256": "ad93fb713635511bb6ceab59be56a7b3802c99e9ffe728b1e456249792d24dce",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "aya-100k-r1-format-filtered-keyword-filtered-filter-datecutoff-ngram-filtered_41680",
+      "prompt_sha256": "493753d41ff648bd5b5402528dfe0e73c0d41569545302eb3110d6dcf2703a20",
+      "rank": 129,
+      "response_sha256": "283bb8ef97ddc0de7d43b5d8962342bfa95db0752c743db7a63793d0dc3e9958",
+      "source": "Aya"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_f94853bb-c31f-48aa-8914-aab6ae7c2f0a",
+      "prompt_sha256": "662edffd84b80b5c9589600409c3b0bf80881df927cded05aeca6c5eb46f4e33",
+      "rank": 130,
+      "response_sha256": "34055092183b28f69900ed46a972d64f33ef1f4ec5671f0d9f46f8e6ce92035d",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_415942",
+      "prompt_sha256": "df31e0bc9b14c6bf8754899f5d3346d78ca5245cc1e303cf59a005a024524f24",
+      "rank": 131,
+      "response_sha256": "cfc3d4a0c5aadb20882fae9f96e9b623b07f2f9baec244294f62c54ad21c9e16",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_11043",
+      "prompt_sha256": "d3544e874439ed9de30bd57585acd1f10dd29fa79cb072e8e9e936b72c799feb",
+      "rank": 132,
+      "response_sha256": "f9d12ca46dff778baf91e8b56dcabf6f238c65086110d134b20128c41ec46f3c",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_e0e39f64-a2f4-41b2-8ae0-38f62c454a19-arts",
+      "prompt_sha256": "161ec5f3f057e6bbe8d3f32cb7b303dc7c78c967b8f5872bad11c04819b4d63c",
+      "rank": 133,
+      "response_sha256": "d034a6ef62fa94b3436c2c15605ca78aa73e5fd44d3e57f41bc9bee5c8cfcdd9",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_603985",
+      "prompt_sha256": "94314c719f0c2b0d89e7e9cfece9f367cc75fe33e08791f8b620ee6aca92a4c1",
+      "rank": 134,
+      "response_sha256": "208760026b0be3883cbadce7b7e8dcd017dcf58a3dda1ba2e3d5b93abf9af27f",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_67512",
+      "prompt_sha256": "3757513899c501b7aa3dbacf725c2434a15ccabcdff146f1efa3b77d83c6c34d",
+      "rank": 135,
+      "response_sha256": "3b6682a2051a64e9227513165e4a7f70c56bdca2d5c4adf1ba054d2b0507620b",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_3b541d9e-d7aa-4a57-837f-4d382efbef6e",
+      "prompt_sha256": "bd6511b90117d753983602e6ace48837e693767c3e7ca8ad46ec631cb52c6d3f",
+      "rank": 136,
+      "response_sha256": "443a16e4480b594854c091702b362893f0e6827ecef627179238a0302a14dbd3",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_282393",
+      "prompt_sha256": "60ec78a4b63324acc8b9c851dcc9909dff77055e686e0e3d626fc50d017d7223",
+      "rank": 137,
+      "response_sha256": "d1b7d1af9d6a9b52a215d8009a6062c5947de1a7c8cf006698e0c922790bfbbd",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_542087c6-65f5-476a-9534-f0336ca43501",
+      "prompt_sha256": "438bc64d0dc22a7a8cc07d920714bc533877529570b17d90ac1d59d7b6291aca",
+      "rank": 138,
+      "response_sha256": "a0da5a8ea4aa876697eee672160ab6b5ba945a2487e5ab1705476016cf19c022",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_f43068d4-becf-430a-83f4-47e5b8a93488-sports",
+      "prompt_sha256": "7f8c63f492afa587abe5d89a548327c80c15b3aab3ef9b5d073337c7c75d0c16",
+      "rank": 139,
+      "response_sha256": "d44fabb17297a2d7c21dd060b12d195d9d0177f4e937f57d37d21d58d8152f56",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_610d6c8b-eccf-46e0-bc0d-0e59c493af44",
+      "prompt_sha256": "d0b594b2f9952043edd3a855ba1d2983d00c04297d0cd009c1c5a5f8d8abf3a0",
+      "rank": 140,
+      "response_sha256": "56173bdc29b487e0263e8234c6ee3b2ff2b0ba52ff8d051431d258e0224435ac",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_30512",
+      "prompt_sha256": "ba7e59effe42d38925dc9e53ea62842a3d1ebe98140c1c436a2418071c7f0c4a",
+      "rank": 141,
+      "response_sha256": "302d4a980c13e64d448232ae908cdcf755a00aa90ad1e67a134d3779f945f0eb",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_87d80bf6-e04a-4cf2-b700-43b2b66a3502",
+      "prompt_sha256": "b680d1d7f4ba609cc695001f8751db8b7a02a0e6e01b88f5e112c4a1c60c350c",
+      "rank": 142,
+      "response_sha256": "702470eff5b98d7e07bd48bfd90c888e1c8b0ff206e6ba3308234652b246c619",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_71697e1a-a82f-428f-98ef-9b149f60bcad",
+      "prompt_sha256": "73b0b48b9d3cbb22d1fd683b4bb26cc7c9a9f6f1952d3be0aac3240c0ac79839",
+      "rank": 143,
+      "response_sha256": "b5ba7859e8c0f9b30ae39d2ec06562e3109440153d6481c3cd10ae1339dbe4b9",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_369867",
+      "prompt_sha256": "b298d5b555c723a5eac9f99b6a9ab646fa876b17fe96a65f4ade3732f0589205",
+      "rank": 144,
+      "response_sha256": "8f454fe5c77a1d9bf5ee3c01aadd56db26d4c17ef0d7cb3565216dd4b0ab3a53",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_9bcd7e69-be2d-43b4-b570-5c0a8cdd2b48",
+      "prompt_sha256": "423c7237df6f3b782cf46eedb92fb94a1ff78cfce3691b1d0158a5761fb95bd6",
+      "rank": 145,
+      "response_sha256": "6004ac95777441039f2509dfd54c509e5b6b5c7d37fff5fe81d3c50896962a46",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_5b1fae9e-e00d-4bd8-a753-92b02b96b665",
+      "prompt_sha256": "dd6148c738df5090f6735ae93ba8cfbb200c1f6182156573c496fd3b537dc1b2",
+      "rank": 146,
+      "response_sha256": "c423eb99b431276c8d3e586fed6d47dd62c184987267b5fd73713783c4f5d7af",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_8af04b61-5ff2-4f41-b99a-87b60b275c74-culinary",
+      "prompt_sha256": "13e92662dbf2ba294260fc77510c1a55ef386d8fc6136691677cd6749837ac30",
+      "rank": 147,
+      "response_sha256": "9186db98e0368bc1a1bd1011138b19139c7ce29d4f0c4cb6db64a83d71d70f63",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_67747",
+      "prompt_sha256": "35326398fdd362c577fe82aea3be8be96ecf97d9ab723b2379b580fa5000a9c9",
+      "rank": 148,
+      "response_sha256": "fcd3b5dc29af0e56ea5c5b0cdd54926e23e17e8c9364c8b76e2b25dfd20b09e1",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_4b5e74c6-e1b1-4acf-84f8-395b75edeb4b",
+      "prompt_sha256": "a23da2083c42b376793979cf753fc040c71d2b48a721967209c07bb739729abc",
+      "rank": 149,
+      "response_sha256": "d79c5018f4d7e8d1e138b06fc6caa6276f099b41a1856e66c66c98528bd25bde",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_4bfc8f4c-c933-44c9-ba95-10c71218aa29",
+      "prompt_sha256": "eab9cfe1ba8d43ff745dee0927c4ab45eb386ca62be50b88227e3acef6d8b6d4",
+      "rank": 150,
+      "response_sha256": "b00c1b99d24f2eb846c0b885a431b2ca2ddcfbb64d0de2cb8a1bce7a00c3cd2f",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_7adf6e5a-1363-4602-88c7-eb3815c8120e-arts",
+      "prompt_sha256": "55e41e87eecd640cb8831867d614ce3aa85c52b65a98a9920b9f8d691e34322d",
+      "rank": 151,
+      "response_sha256": "313a0a42638cff39c2b2e91c2b978b86d42f54aa605a6d7c254087509116bca7",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_61844",
+      "prompt_sha256": "58a38ff3f591cad53c760ee7b1f3865887ad102b5e05ec72c1a98c7ed9a5bd5a",
+      "rank": 152,
+      "response_sha256": "916a7fd2e82e99781346779b593a464975c01d0689539505c6613de9bc1a7d78",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_d850e11d-5d70-4d32-b8aa-94d40dd2c5e6-professional",
+      "prompt_sha256": "913c8c4f1f4666b6bc94e4309b5b0890506e5e0e52ec203293afedad97ca250e",
+      "rank": 153,
+      "response_sha256": "dd5cf229930ee16caa801a64c6b6e6c1e728764c5746d1ceeaafafcab4b9bad7",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_112389",
+      "prompt_sha256": "4a14dcd5bd691cddf8394d3a845a84c0d17b0de6b54653ebdf7dbb2248c5fa10",
+      "rank": 154,
+      "response_sha256": "1933fb9a496bf5352b5d97f2ec45edbc96df49f23d3fe9d60209003c2be6074c",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_82329",
+      "prompt_sha256": "16899fa394f766b2b5cd234f35e1c7a9398f62b76ba05d3287aa614a395171ad",
+      "rank": 155,
+      "response_sha256": "b473b3d39e13c0bf469e9027036f330ef0d541a6960a7d7215dbc5c2a6651cb9",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_74135",
+      "prompt_sha256": "0ce0928a48e1c295d849da320c553fbc8cab1973efe554d678c4757f177f8095",
+      "rank": 156,
+      "response_sha256": "c6c6253d4b8ffeeb3bba41f714926c8d2124bf38481a96fd9d7204f422f8b48b",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_06cf5086-e7d1-4659-bda7-4bec60f98ebf",
+      "prompt_sha256": "21f36da7056adacda21e7f59b56179769cb0fac8c4d90a27b328cd52f1f47c04",
+      "rank": 157,
+      "response_sha256": "0c467d93c2e91536bab96562321b4601c493f043dad4631709818432bc045d2c",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_73502",
+      "prompt_sha256": "d79632703f2aa53458845a62915d7c42031418e5c0cfa18834a6459599b7560c",
+      "rank": 158,
+      "response_sha256": "2934b418da68d3deecbc061badd57dd9ccd6406f6fea0d9c88bbcbcb3d423c0d",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_96305",
+      "prompt_sha256": "09d32fb0d4d0090d7e989ca8270cb4b0cca5c947b6a2497b96b544ee15cfc7d9",
+      "rank": 159,
+      "response_sha256": "ba8e0f38f868584324522dd6e3f31e7d377c68c52f76f262579fbd4230297e17",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_16220",
+      "prompt_sha256": "28bab701033e46e748e7faeb2bb2240508bd1881a0cceb49d3932d8efa33fa32",
+      "rank": 160,
+      "response_sha256": "9869c5bca841ee1034cca053aa07a1ac098c17f7153ac2e453d8b13cb33691f5",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_599914",
+      "prompt_sha256": "cde0c19305bc518c8569e865661f6f43dc5bb7299e298173f24302bf43349cba",
+      "rank": 161,
+      "response_sha256": "42d91e9fd0f40cd75385224c45509bb97009dfab1592d542026c8b4d2c8defa9",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_58910",
+      "prompt_sha256": "3dcad916cf654dac2a864a1e07c1d93fe752459b259f3fd4bcadb660b0240e0a",
+      "rank": 162,
+      "response_sha256": "1a329d4ba523f61cdf1b3d02dd0fb6f47b7998e788e530980b9d4ccf7650861d",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_292595",
+      "prompt_sha256": "93c9c5157c931df1f6d42b49fc43383268d5942666525545591d6063dbb549e9",
+      "rank": 163,
+      "response_sha256": "a3ee6cdae5c02b69b74e3b159b1b36608b71f3f0de0ce99bce4310b70a62eba3",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_48398",
+      "prompt_sha256": "9ad5c31b22bb92c485732964303fb1b23ea6ca48abf15b89456f0594ff83c848",
+      "rank": 164,
+      "response_sha256": "23445491dd64104e5c261cfc5ec8773f0d3fbdf9d5e1f19fd04169ba0c2803d1",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_c75614e6-4855-48ff-af06-24dcd77a25b4",
+      "prompt_sha256": "b7acb3b295dc7bea6896ccbb69ec5054163a1df53330659408d7995dbceb2ee5",
+      "rank": 165,
+      "response_sha256": "2017a62d55cf6ed71a7cbb10a20b26454fcd2daa2a80214ab0e321f451dbdeac",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_119535",
+      "prompt_sha256": "545d41c59ea052e7c1162db6e9eafae069c1c7eb1a23b20d6bcec6135c6a178b",
+      "rank": 166,
+      "response_sha256": "9b883aadc6e01bc5365139d02c7aba13cc539b561413dffeb6763db3289f515a",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_61a7d940-ebf0-4eb8-b91c-79ecc817d250-arts",
+      "prompt_sha256": "9280a57e0f2eccac6a0d6247993083d78df4f2be0839f6d6700f59c6568d0e65",
+      "rank": 167,
+      "response_sha256": "901ef4755e5fe56173a4754c49084a7794476cf2553f5baec110b7ca32a741a1",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_414294",
+      "prompt_sha256": "b93c4692d7ec97d36ef349059616b2c5e307ff024a80a79ca1a39148f0bad761",
+      "rank": 168,
+      "response_sha256": "ac1d10106a7276ea2c333b655a08b58c0be78f64e56761f725bd4dc4c82ea7e5",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_17710",
+      "prompt_sha256": "2cab23a103b608612870005c7cf4f78d47aa8c790e0825859534754bd7b47061",
+      "rank": 169,
+      "response_sha256": "2d62d48a86b042e552fb4d361c4bb40fbee9bdbf9c163e97674896426ae5b3e2",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_27481",
+      "prompt_sha256": "4537a0fb58e9399aaa4ae7d0237d10838985d3c4e94dd5866e04ad164b24e919",
+      "rank": 170,
+      "response_sha256": "0136504eb612e9412b748c731fadf6fd4986dffdfd0f0b41a709843f72c5f2e3",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_f30fea57-c00a-4a75-b64f-114df468f0f9-sports",
+      "prompt_sha256": "98f1cdb03c7dc19023502b7eed179b421814246486fab1bed5d059628299887c",
+      "rank": 171,
+      "response_sha256": "9b016c60212befd164204c82c21dae34c7bbb27000209a4d9660e78c989a853a",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_698759",
+      "prompt_sha256": "07ff6cb7ee62791a938cd0286daea9ea654c5e320ea9ecc6892a4d0d5df5e1e9",
+      "rank": 172,
+      "response_sha256": "149d9cd4f2343c94062f78e5a3548bdbb7ca644628c309fcd5f7a8c634ee6df1",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_226649",
+      "prompt_sha256": "e6214c41a38fd26780036f16557e902facc0470ce1e0e4e4709354ad81da92db",
+      "rank": 173,
+      "response_sha256": "3ca90aa6256a0baf16b699153f12dd8875f619e04ea30da4ac6ed376fb024806",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_635583",
+      "prompt_sha256": "cb6d78a0184a3cc33ccb80546990adcb3574c3756e962da1055bedb4f1b5ad73",
+      "rank": 174,
+      "response_sha256": "380ea15f980c8729378877d27e03e0f7691991d08fdd23b16c2c5292c531a113",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_325550",
+      "prompt_sha256": "1351681ceea415357a34717d7d5cbd553040a2722ee0cf2050e635d34a94bc7a",
+      "rank": 175,
+      "response_sha256": "5e5a70b50416ecf2019405addcf86f58a1a8ac8ae008ac4af37e3bf94e1ceccf",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_19225",
+      "prompt_sha256": "470a5ac08625b56fe46214f3b1f01b7a9a914b2275e485417bdd99a91373e6ba",
+      "rank": 176,
+      "response_sha256": "a15acac73db53f5f857fff8f5ab79bdc0cdc88e4b1f2245261829c575f3021c8",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_77983343-61b1-4e4d-be4b-d89a38240e56",
+      "prompt_sha256": "5001253b7b952d337c2f9323714730cb3dff5e97ab261eb5dec08e6424a069c6",
+      "rank": 177,
+      "response_sha256": "b9eb3527838ffd100f8063df108f12a4e6c4a37f0e29cbad3074aa96f03b513d",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_c5e7c42d-abcf-4fef-af90-ec1d83a005f6",
+      "prompt_sha256": "08bb33e25586e31beb409f6c9079f51846bc04801494fad9e4b3293aa69da077",
+      "rank": 178,
+      "response_sha256": "0b5ea65c0ddda61581b79a0a8e5bb0a01d7a0c611d36f73a2c3f630d956cd6f2",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_80b7b47f-29c9-4fdb-be4b-6b12b17eabc3",
+      "prompt_sha256": "6a8daa3e8e5672ac9c16211f2c23d6c020295c7f4be025aa56dc4fcfc8b50ac5",
+      "rank": 179,
+      "response_sha256": "d135e08c2f026ed67013df07afbca77d875650f2899fc834456f7845e3fcaea7",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_fd847dd3-b32e-4c73-a2cb-8e783ae43e4e",
+      "prompt_sha256": "9bece59fb65c107ad997611bf9f4d6195beb5da3a312d457818a93a0462a437d",
+      "rank": 180,
+      "response_sha256": "8ec89b442d73a932fa9ed897e12fa3c59fbd84659b01e1e2008b7e57fb77cd36",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_849f34e0-5746-4b84-a16c-b259adf53114-arts",
+      "prompt_sha256": "5e067b9dd9a71a28c5d329a446c090d614caf66c96b55a613d23507df5c81944",
+      "rank": 181,
+      "response_sha256": "66a545d9394e8ba2ac642cdf2d8cc4ac7e89bbe307e352b1319c9f7873dd33d3",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_1b3b582f-9e93-4c2e-a2ce-3f3fd4c4bb68-sports",
+      "prompt_sha256": "9492d5343b5b230d4751c2be116897c52236788530da9bd3cbb4f83debe4ae5c",
+      "rank": 182,
+      "response_sha256": "f0fda20693daf77e626dbf82fef6b7086657569981955f45361536fc8413ec0a",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_0cc3a0e0-cb56-44e4-a1cc-016ed3702c61-sports",
+      "prompt_sha256": "aca4e6170464c3bf1bb88cdec1a88d78880328a65cd8782737282948227bffc7",
+      "rank": 183,
+      "response_sha256": "fc68c7f99bfcc98640489b74501bcd90dabf2eb74a65f228f2933127643a712a",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_8d21ee1a-cfb6-4188-99bb-1d518d982161",
+      "prompt_sha256": "61a0126d714f7cd67b435b55582094495f0af3fcab092c9855261e4f73f35fe9",
+      "rank": 184,
+      "response_sha256": "ab61bc988b36ac941192c95f1eb743792ff39a518618af6db428a08e61b85204",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_387361",
+      "prompt_sha256": "2b98112c223e9d6810f9c00da8e1955b53f670f6f3dfa0c69a2a29f8ea0f746b",
+      "rank": 185,
+      "response_sha256": "43730d62d97ca0f2a602887416f820f75931fdb2841b09bc1bc8d945a7c5e49b",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_27590",
+      "prompt_sha256": "ac265d92ea92f0c4b2163601d21f768ead5719ded8a376b055e5bfc673daf86b",
+      "rank": 186,
+      "response_sha256": "90833c1a799f8be7b2b8d4d918c8932fc493e37ce9ed511c049fd6418953ff08",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_39845",
+      "prompt_sha256": "f717bceb612a78bb3f47767dfc4a5856aaff4fa0e2827a562babf4a29804896c",
+      "rank": 187,
+      "response_sha256": "04fff497da3f6c48d2761f175cc322adab8d6a81aef6992c6f63a5725e903c0a",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_43928",
+      "prompt_sha256": "eb96fdfa4ab7d731be8e1b8794dba2d78b0b6caad2a718699e8ea7297a37f248",
+      "rank": 188,
+      "response_sha256": "08589465bea15e884c4152cd262b597fbd1609bd00ce8628e290e2ca09923a8d",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_c6b0d2ab-0ca6-404e-bf89-45bc929ad046",
+      "prompt_sha256": "f5dc08cae6394ba2ac71d6dc3167c9842ac47e250c345d20a5e351a5e6117dbe",
+      "rank": 189,
+      "response_sha256": "8ea89db914abef3aa332112a7467cc825f1c29f0d870ec51b8ca56697eaacac1",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_91044",
+      "prompt_sha256": "23853d0cc5b4a859e772d1994976eec5dcd662c5c0089be173dc3340dc2d3817",
+      "rank": 190,
+      "response_sha256": "ff3f067ae241f8aa95fc13a9a9335ea36bcb2ef0c3f6565c908ed84d698040f9",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_cf34d88a-206d-48a4-bc5c-6fc35397c27a",
+      "prompt_sha256": "773f736c3e847b97ed466e00df3c1c9edabb8b83b96adcdd5c2e7f92657c4cc6",
+      "rank": 191,
+      "response_sha256": "352b0025b97a2a56f1c8e870ef91a398d90a3fa7c74b556e207638b5deedad13",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_67367",
+      "prompt_sha256": "636b8538a0c47f5f54f97ba89fac38078b4a10b6951cb509361b22194299794c",
+      "rank": 192,
+      "response_sha256": "cc7ce49a1d48f1d5eae4e2776c8479894d970be4893fddceb9d5a259e90d7e69",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_77880",
+      "prompt_sha256": "fe8b71d4969e33e2097389680765e518df87e909ac6251566768034b4468670b",
+      "rank": 193,
+      "response_sha256": "c20226a677fa53a8627ca8e5d3fb376f1bfbf61b2041dfd8cdaf25f988b64a8a",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_60475",
+      "prompt_sha256": "3cd5085a1dfd3ca073979b63199dcc2bc14bbbb3a48d9a448214a962c404d6eb",
+      "rank": 194,
+      "response_sha256": "3b5bb289befcb69ca20d35eba4ce2cfeeb597a01ff6c5c23676c661d19e8a44a",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_90257",
+      "prompt_sha256": "f6c0f895349f67072fecc66447ab8ea03eadc88c73b306b72b3e68c199a7e46b",
+      "rank": 195,
+      "response_sha256": "c4c288d62f85024fdff7b80aac49b8d1ad982c23209ee5f3f43981cefd734415",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_50e809f6-f8fb-4f4f-a051-a9e4dfc403b8",
+      "prompt_sha256": "2ad21dfba1609685c9581569568b3b4163a2b0bb04d5f9a15cf30c25d06531e2",
+      "rank": 196,
+      "response_sha256": "cfa6a4145707c2062887f75b214aae811185f4ed207f55e2679d37cdacc12bf1",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_72996",
+      "prompt_sha256": "1712e81047fc5894144e5e2b19ea64538cfbf6eec15f9d8496289bd226b8947a",
+      "rank": 197,
+      "response_sha256": "cfe7e1cdee1da65d0ec3780e46baa59121fa393cb36d5f666934ce2ce49beb49",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_536862",
+      "prompt_sha256": "bbbfc2f55cbf2540a3c5f011fbca5b12996150ddf936a02f2b80a2148cf4d546",
+      "rank": 198,
+      "response_sha256": "d998e67894ebbe9db5b7a7c977a5440fdaa328c1c2bc576221955c53880f2eeb",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_87564",
+      "prompt_sha256": "7c94e8e6485158f5860da6eba50d849636edaa726df4b3e9629971ee16d66c77",
+      "rank": 199,
+      "response_sha256": "aa504d01fe29d9f8788b9919cacfb88251c33ecc912b7f6b0de5d1c1a82075a3",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_83961",
+      "prompt_sha256": "a076e65d36852278b89c9667e591ff44dc1f84fadd42104b329ab1b1eac1debe",
+      "rank": 200,
+      "response_sha256": "8e132eb0bfa76ba7fc3db5b59589e22fc7f2640fdb5e21b54a4fcf80c67e5606",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_457840",
+      "prompt_sha256": "024881da973e745a1497eb925563b5c52158e4961c95ab62a76ffd3f1aec331d",
+      "rank": 201,
+      "response_sha256": "b634b109cf1c29ac8652fa3061e07a0f3f0ce577b8701c9d0dfd8e803fbbc24d",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_345297",
+      "prompt_sha256": "683f247d99f29de3aba05b8039d2829114e3fdebb9dd00251b730f3c1bd425d1",
+      "rank": 202,
+      "response_sha256": "8e5d25d912b80e8a41402a376ac5f58ddb56b1eba822313ad5e7c0d734bb9221",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_634730",
+      "prompt_sha256": "601fb2c64be57436604e222783e96a1dd042a1b1bd6d78a586b95a747217daf3",
+      "rank": 203,
+      "response_sha256": "f54654aa1f7e2369935772341e7f56958641f17974f60526ddc2d11a40a6edec",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_9b5071a9-bbb4-452e-ac6a-b19461ae412a",
+      "prompt_sha256": "d0951a2e90ec7a3a4ff40d6414e512ea15a00ae98fe65a93da0927d14b470a61",
+      "rank": 204,
+      "response_sha256": "f372cec22dd20aae40c5659715c7001f3c6f41b5dda83c3743be8edb8a059f42",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_103826",
+      "prompt_sha256": "d202608e8c0646e004ecadb260b35ad09db534e1c2005d453d568b73815d3841",
+      "rank": 205,
+      "response_sha256": "0c7b31ec9902df420410c2eef3aa5f3c589fc27ccf98a38942c7711a8dd4b459",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_305103",
+      "prompt_sha256": "2b7ef131bad4abc1d14b39f2b8d5d71a6e7ceb13e5c8775f231eba56a80f5e7d",
+      "rank": 206,
+      "response_sha256": "55e859ccf99f33ae2ca4245251495a3b48bf56996fede07c206e6f8ca45b22ed",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_1e9820d2-5024-4862-930a-436bb2395c3c-professional",
+      "prompt_sha256": "784bc70eddcf3dfd018c48476b32014dd1c904b483442c196b650b2f3625deae",
+      "rank": 207,
+      "response_sha256": "261951c9a3b20bffac8390ce0c99179d8431f98a7b3a40b7b90485de43c678e2",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_c1c0ca2d-ea6a-4ffd-929a-486863034361-travel",
+      "prompt_sha256": "825fed48f84d7375ef98eff6d484bfdccfaacf189ac5e570e2660c4aa3ecea34",
+      "rank": 208,
+      "response_sha256": "8ec921ce04391797e9d6d0b2beb384b0de15b97719b3056e2144392dd83a67bc",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_107654",
+      "prompt_sha256": "4fba9e3172ba6e1cb5ce4b03f34cfb58093a07dc2365ce9113ab17980a8a846d",
+      "rank": 209,
+      "response_sha256": "d28ce142a44d6cc9e753dd0b282ac8470f3639341a0a4d5f9d4936929538e096",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_40822",
+      "prompt_sha256": "ce7c6c6c9b0eeb62b486483fd295345208e9c9dd842f01e0841a72930895b697",
+      "rank": 210,
+      "response_sha256": "f3b1540f3ff94f4e4ebc7c2c57c607518d94fd2ae03c8589cc33549a18034c70",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_f807689e-78c9-43d1-bf25-5962bc047713-professional",
+      "prompt_sha256": "332d59d272bd66fb6a94181c80eaa97461a2cc4f1cb75201c142d19ce2d5d628",
+      "rank": 211,
+      "response_sha256": "7d9be6a205a62edfc9b5e1dd55939b3a958e023f4acc542dc690074117bef1d8",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_901da738-18a7-4e64-82b4-982087370c72",
+      "prompt_sha256": "342b49d6d880ff86707c4c9aba5d5df7534b253dce74d939ca68f1945d8362c2",
+      "rank": 212,
+      "response_sha256": "d91b19ebfc8092001ab6266f8f5a841bd3984f07e038c35d28e0ac9938a7f82a",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_20958",
+      "prompt_sha256": "0ea861a3da3840cf7254be5168ad47125796dc52bf77b70f28b0ebdcdbc0f494",
+      "rank": 213,
+      "response_sha256": "43fd8b619504a379e3354d02de59dd5135e6d94822bf3fd58b4c840abe935dc4",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_205393",
+      "prompt_sha256": "20c3cc4c953e4f3f3b3f7f6519f901d574bc348015e2a1c46e124b7308c8bb54",
+      "rank": 214,
+      "response_sha256": "9eca993d4e2da096fc397b8ec77c428018855ad6f9c7eaa6fcbc9f7c71eb3579",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "coconot-r1-format-domain-filtered-keyword-filtered-filter-datecutoff-chinese-filtered_eu0s5tw",
+      "prompt_sha256": "94919a381435287d7bbd5d3f5fab33787c43570d9ca743c70ab7ce6b4144bac1",
+      "rank": 215,
+      "response_sha256": "86775c583e3cc842b257fefe4f0bbd27de32d2d5534ca275799b8c9bbedd292b",
+      "source": "CoCoNot"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_59789",
+      "prompt_sha256": "87172d29f460bfc61f95588626734fb816be7f010ed6853237216ee337ce423c",
+      "rank": 216,
+      "response_sha256": "ff677574cec1735858d65b7047f44999d1da54c8d859cb92afdfe47b89e8d525",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_596016",
+      "prompt_sha256": "91c522923dde155ceeafe69238b33058a8157510e9493bdf8d50517691c6066a",
+      "rank": 217,
+      "response_sha256": "c02707fbd5fb758c4910abb2ab80946447115064004e2afcee5d7f362623ec39",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_56965",
+      "prompt_sha256": "f0e8d0c99585651f389f4b6162a87862d09e7a2540be056484583c6b304793c7",
+      "rank": 218,
+      "response_sha256": "268c246917cf029e709d1577186703931e69f14e8a58c2bc474111a5265a3661",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_614397",
+      "prompt_sha256": "7ca3dbc5dd299ff1f8ca2982f8f3d9c1e4ce3b6bc51c1102b7485cb388ebfe81",
+      "rank": 219,
+      "response_sha256": "deeaacb2b49db1943d17081b73703b2b49e5e6301b0e033f7b8a261881565461",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_143499",
+      "prompt_sha256": "6eb67fd721887a787bcdf3aee94687db6cc897cafc2192f9eb98debcaac3df0a",
+      "rank": 220,
+      "response_sha256": "2358f744e9dd7c11268dcb15984d8b667bfaa0a5b04c2a35ea814d41a248858b",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_44049",
+      "prompt_sha256": "120f03c3ed61e4679ff2d1e73ad853e8db8bf052a422b3d6e3a8345c56b9d7ac",
+      "rank": 221,
+      "response_sha256": "f9c615f1fcd9b8fb7332c8023d9bbbbf82dcd7f5e0c1e605742e716603d985de",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_6676",
+      "prompt_sha256": "53c9da514dfd8843688e1c02b806c7b743644909cf3d6be1581caba6373726c3",
+      "rank": 222,
+      "response_sha256": "f1c8dbaad62fb49f26a386076ad829c6b522e7557dd112e42bcaf945abf6251b",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_99439",
+      "prompt_sha256": "42fe9744fc2a18d25e0ff6a07566f1845214831b7dde66e23de684342b93f686",
+      "rank": 223,
+      "response_sha256": "770815486a174dbbbee0051dd139971dc42d6223ba4b92be60b14469b83d0887",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_85cdd33e-df54-4e2a-82cc-c67a9fa876ad",
+      "prompt_sha256": "1187f96e35dd922b483be93a01c6d791e1658a61fbcf2c5e643156aa2b23ef00",
+      "rank": 224,
+      "response_sha256": "fc98966903f3931a2f792ae27b33fade9c3f67f2724e623072e6901444652ccd",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_5660ce85-2268-4488-b59b-0a282d3a4023",
+      "prompt_sha256": "b8a479996bd54f3d6bfc5d188062f4a59850b69a1156615d89d261274fe99550",
+      "rank": 225,
+      "response_sha256": "c8eb53510a44ab8c483760611d131534bc5a543358d61c3b06a415495d75eafa",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_b88699bb-5958-44b3-8d50-52f9b7330e3c",
+      "prompt_sha256": "8566ee9c92dfd4d6f534fb996cd2c0753ccb2f4d815083904ce6cdfa0eb77535",
+      "rank": 226,
+      "response_sha256": "e4e66e38b021e26d1894b65a84f030450d5eee47342d70737a492acd20026d6a",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "SYNTHETIC-2-SFT-cn-fltrd-final-ngram-filtered-chinese-filtered_51712",
+      "prompt_sha256": "d0fe368a29344c59f50d033f213cee32a1e72c2128be5c595d2edba18ec46054",
+      "rank": 227,
+      "response_sha256": "624db94b2066db36e3142037150176fac3e44a9e1dca0f380f2e034db2fecd10",
+      "source": "SYNTHETIC-2-SFT-Verified"
+    },
+    {
+      "id": "aya-100k-r1-format-filtered-keyword-filtered-filter-datecutoff-ngram-filtered_95621",
+      "prompt_sha256": "43e31f0743aebdc225e5a5e802d198aaf4c3af830fcd1fe971ddb7df619aec8c",
+      "rank": 228,
+      "response_sha256": "88393de56186afc414cf3ececdc0442d1a65eab6ddd70756509a6406a6218b92",
+      "source": "Aya"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_7303e28d-d4f4-4186-aa73-dbc4f34470e5-professional",
+      "prompt_sha256": "eb87b6927a06a22793c419a87880b3d2979024a6f1c6f005203b3465a2104a73",
+      "rank": 229,
+      "response_sha256": "8453dba3133e4dc9145ee0a0a3b17e8b14cd7524e15913fb5d41859b1c73566c",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_227324",
+      "prompt_sha256": "f6320413a2d7248164039041f0c6d7d35a91f6f9d8aa5f02c3d1538434007557",
+      "rank": 230,
+      "response_sha256": "53ca8cb4aaadc4dd76d2afdaca38e10b9cc5f28cb763d2f6f7a4de8123a88e11",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "wildjailbreak-r1-v2-format-filtered-keyword-filtered-filter-datecutoff-final-content-filtered_33961",
+      "prompt_sha256": "5b250718977d25eac1fffde29fa7ef6b8ae5123927172bfc97a509ba65d6fb6e",
+      "rank": 231,
+      "response_sha256": "003c66fa4b1b88e5abae9628f31fd33a821b4ed22dbac52bef3071248366d1a2",
+      "source": "WildJailbreak"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_90984",
+      "prompt_sha256": "d21cefe55cffd3a4fc372ec64921c4731b8e0afb78dfbef55936794ae45ee4d1",
+      "rank": 232,
+      "response_sha256": "7c8ad68f85babe8b3c23e278001589e670bb29ef8e1f1fc51e41d020286d8c8d",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "if_qwq_reasoning_verified_filtered_decontam_v2_113179",
+      "prompt_sha256": "330494293a60054c108d528f5ce6ed2a45feae9a3ea37a760b053bc3f89424fa",
+      "rank": 233,
+      "response_sha256": "dc9ece5261261b087ab6f05ab38b54a357100df0d6cc3bbfcdac734d9a8db561",
+      "source": "Dolci Think Precise IF"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_3810",
+      "prompt_sha256": "c2e11cb5019bcf87cf8660c72e38d00d162e09815b36d43fb193581076f37d93",
+      "rank": 234,
+      "response_sha256": "759e2ba40d7862ae2ad75f5450eca8624d9d5a1321456ebf58b3f8c1b3d90a2c",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "nemotron-post-training-dataset-subset-ngram-filtered-no-tool-calls_103108",
+      "prompt_sha256": "bbd0bbec495a9f97bc69eb9899c89d6a720734a1bda08534ee2a6d29e512e353",
+      "rank": 235,
+      "response_sha256": "5db94e0272daae7b946eedac4b9972c89f190e452156cbe97809b91487c62191",
+      "source": "Nemotron Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-code-subsampled-decontam-v2_56488",
+      "prompt_sha256": "ecc6f1e025ff19ca8437e33a18303771d30fddd4cd088f3276bc532c1ef26235",
+      "rank": 236,
+      "response_sha256": "17d41ab2b50226dffd19a6a04f4f0681981dff451ff6544449eb8d876265b5db",
+      "source": "Dolci Think OpenThoughts3 Code"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_126607",
+      "prompt_sha256": "6d5089de22ff3c4c439368d52eda06b8c99f2de52367b2cbbf3a264f64e5851b",
+      "rank": 237,
+      "response_sha256": "4c0aec2411b03af7c35d6c48b1e9bbd1fe3f0012a36db75f36adaa27fdb99f6e",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_03c25345-ea26-4cf7-8add-bb62c4d15c3d",
+      "prompt_sha256": "236a0fee4fe1d6a2e363814b77e9637b226ae60d2e2e51fc71407d722b23b9ef",
+      "rank": 238,
+      "response_sha256": "75ee52d8d44f2028c74a26184295644a9abe985ba67de474e39d388f8bce3479",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_cc4e2031-6652-481d-9615-f22578f854b2",
+      "prompt_sha256": "ca76e9d3be0a4f73f4b7f2465a35829aa4f4935b0ff2d1848730561b2d2fb444",
+      "rank": 239,
+      "response_sha256": "cb98e0698dd1bc5bd517435c1341903c659ecaf3a2e4035a2e20e2852a2d5573",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_232159",
+      "prompt_sha256": "a36ae03e35b9111794aebea720b74617b1f6798d7217b53eefdd96808b1d4110",
+      "rank": 240,
+      "response_sha256": "9e3293bfa3c441977d3bd9db76f58f98346484fc9923636d8d2da857670b4783",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_8a5a3ce8-52c6-40e5-809c-dd22e7a02981",
+      "prompt_sha256": "1b021bebfae2cc173f4d4a5af53a7b001fe3e2a0b6f46f7bfe8c504325e8a2b7",
+      "rank": 241,
+      "response_sha256": "f5a50fe22b65fe75946853ef5b90c10f5cb961633deddbf465b442f317ba1fa4",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_607440",
+      "prompt_sha256": "3c3ba9d9fe023752c595bf94d4e20f891a665f40bbdb4341fa75ae3d9fb449cc",
+      "rank": 242,
+      "response_sha256": "e5564b87628b071e0732350d1429bc9142c60cf042e6a4906b0d42bbfd66208c",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_468066",
+      "prompt_sha256": "05b22a629f88165122678ef8b5b6f6306908caf746a85f0ec632d148b318b047",
+      "rank": 243,
+      "response_sha256": "7d07120e57f570fa99e2ad6913e2cff912c2f137694cc167c9a042d36b88e730",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_145064",
+      "prompt_sha256": "ae84ae53bd02a8f9cfb6b6937a2797cc995b157faae36c658e52e529f81f87f7",
+      "rank": 244,
+      "response_sha256": "c8ca44ddaadd28a4ae9c39c9ffb4284e411bef917ff339f9e3961b537d98a7e1",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_89080",
+      "prompt_sha256": "9a5bdf1aa772902a53bc0af90e4f515ae2f01345e08b8b2b63a068058ee95252",
+      "rank": 245,
+      "response_sha256": "27236426e9ac3aa18395caa8a25ffec8c8353f1cc560d767da1d159522124597",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_11586",
+      "prompt_sha256": "42909a2cd7136460c38ab7d6ecbf085b54d51e7aeb73518b5bf852e2b2f8203a",
+      "rank": 246,
+      "response_sha256": "8b67e227ac05862c45d6abc809d3bcf7ae8a356fb9d50675ec014c983bd007f9",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_ab59ec6b-4517-428b-bc10-c52a7d56020a",
+      "prompt_sha256": "1460d5c414a7f29d90e8f5264ba61b5f50563c58440e011b0a7110faf95cba8f",
+      "rank": 247,
+      "response_sha256": "15ee374c10d422b7455ae1951cd6382fd16c18e646a6f9a605c7efca9be0c777",
+      "source": "Dolci Think Python Algorithms"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-science-decontam-v2_31712",
+      "prompt_sha256": "c9b65c52ab5a79eef8571708dc1f1a293440bb0bec2bc1c758c74af599497977",
+      "rank": 248,
+      "response_sha256": "cda3c641047d7f732141d3f5af3ccba0af1ab63c014818f3803c4a056dcc6327",
+      "source": "Dolci Think OpenThoughts3 STEM"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_751049",
+      "prompt_sha256": "d0fe2dc0f35a7ff30462cb90cbbed7c08a066a4bbfd074d6b269970a7e579342",
+      "rank": 249,
+      "response_sha256": "9c66eb93b2bf6c6d173876cc958a8fd7f625c50e7e1dd255b61851d79c34d90b",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "persona-precise-if-r1-final-content-filtered-chinese-filtered_bc73a30a-b85b-493b-8db1-f46ab84644e6-sports",
+      "prompt_sha256": "f7cee2beab05726eda4e9c495bf2fb896581d546453adbdc688af719b5473db8",
+      "rank": 250,
+      "response_sha256": "2855b252285ac94a97ec75b025cf5e727cf0e14a59f791d5280f32f4cb567165",
+      "source": "Persona Precise IF"
+    },
+    {
+      "id": "tablegpt_r1-format-filtered-keyword-filtered-filter-datecutoff_954",
+      "prompt_sha256": "eefdcbc82632ef4e1a2c8cf31d884923ebb9b01a10d3231bdefa6123dc1bb2dd",
+      "rank": 251,
+      "response_sha256": "8be3dfc47d18f91e14f8a480064bc8cc4795b086f49e2defe51e30cf911a6bc6",
+      "source": "TableGPT"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_638676",
+      "prompt_sha256": "d5998b379bb6507520a1dbd284afa0eecfeb266da5dc0f65e57289a805d2f18f",
+      "rank": 252,
+      "response_sha256": "25e61c10e07bbca60d66de4e5e4a1725831cbb9e57de93a30b4665ac2924a851",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_218838",
+      "prompt_sha256": "15b6ebe398ff61a8f1093cf12252e7b3c1b54571de3747d64b334727c734098a",
+      "rank": 253,
+      "response_sha256": "5001f717d8058151dae44e557ad2f30d2fb424cf84cde0d739a0da0b4ff0c6b0",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "aya-100k-r1-format-filtered-keyword-filtered-filter-datecutoff-ngram-filtered_49171",
+      "prompt_sha256": "6e188059b847d3abb1ffbca4a8d68ef88ca330ac1c0488a76c1e27b536aee66d",
+      "rank": 254,
+      "response_sha256": "6227ba8e5d8f1df74f46ab44a8ccabd4ffc8cfeaf336b67a6f5b1bab7c578de7",
+      "source": "Aya"
+    },
+    {
+      "id": "OpenThoughts3-full-filtered-math-decontam-v2_684955",
+      "prompt_sha256": "a48894520c44ccab9fdb8b22c6eb68fdf63b942f6fefa7b17c9d3502d3fb471b",
+      "rank": 255,
+      "response_sha256": "2420946b55a6800aaabcec045329c3a3932e69edf44dabcab45b426ee4ad3950",
+      "source": "Dolci Think OpenThoughts3 Math"
+    },
+    {
+      "id": "correct-python-sft-187k-x16-thoughts-filtered-decontam-v2_900a2bcb-b0bc-47c5-9d20-39b29d72a4b7",
+      "prompt_sha256": "0291d63c7d53787987bfe4a02af648d1200038dea1dc9469e7d1581bee041a7e",
+      "rank": 256,
+      "response_sha256": "9dc375d4f453fca26bcb2beea193790ef2903a74855efbefb4f697e05aeaa37a",
+      "source": "Dolci Think Python Algorithms"
+    }
+  ],
+  "selection_rule": "first 256 by (sha256('RGM1|matched-filler-append|<id>'), id)",
+  "source": {
+    "rows": 17623,
+    "sha256": "956b8f5c81e1b8a02f5005282a0ed6874b8334c1c5f6ee4b982e9b39a9a58cf5"
+  }
+}

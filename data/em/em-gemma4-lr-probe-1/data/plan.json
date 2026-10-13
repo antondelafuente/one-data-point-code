@@ -1,0 +1,90 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "lrs": [
+    0.0001,
+    3e-05
+  ],
+  "training_seeds": [
+    0
+  ],
+  "source_rows": [
+    194
+  ],
+  "checkpoints": [
+    30,
+    100,
+    375
+  ],
+  "batch_B": 32,
+  "subjects": [
+    {
+      "subject": "lr1e-4_seed0_stock",
+      "session": "lr1e-4_seed0",
+      "lr": null,
+      "source_row_id": null,
+      "training_seed": null,
+      "updates": 0
+    },
+    {
+      "subject": "lr1e-4_seed0_step30",
+      "session": "lr1e-4_seed0",
+      "lr": 0.0001,
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 30
+    },
+    {
+      "subject": "lr1e-4_seed0_step100",
+      "session": "lr1e-4_seed0",
+      "lr": 0.0001,
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 100
+    },
+    {
+      "subject": "lr1e-4_seed0_step375",
+      "session": "lr1e-4_seed0",
+      "lr": 0.0001,
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 375
+    },
+    {
+      "subject": "lr3e-5_seed0_stock",
+      "session": "lr3e-5_seed0",
+      "lr": null,
+      "source_row_id": null,
+      "training_seed": null,
+      "updates": 0
+    },
+    {
+      "subject": "lr3e-5_seed0_step30",
+      "session": "lr3e-5_seed0",
+      "lr": 3e-05,
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 30
+    },
+    {
+      "subject": "lr3e-5_seed0_step100",
+      "session": "lr3e-5_seed0",
+      "lr": 3e-05,
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 100
+    },
+    {
+      "subject": "lr3e-5_seed0_step375",
+      "session": "lr3e-5_seed0",
+      "lr": 3e-05,
+      "source_row_id": 194,
+      "training_seed": 0,
+      "updates": 375
+    }
+  ],
+  "em_per_subject": 400,
+  "diagnostics_per_subject": 50,
+  "total_answers": 3600,
+  "max_main_judge_calls": 6400
+}

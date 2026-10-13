@@ -1,0 +1,6 @@
+subject,label,role,size,seed,heldout_strict_n,heldout_den,heldout_strict_wilson_low,heldout_strict_wilson_high,heldout_canonical_n,heldout_canonical_wilson_low,heldout_canonical_wilson_high,heldout_unresolved_grade_n,heldout_coherence_gt50_n,heldout_refusal_n,heldout_truncation_n,heldout_median_tokens,heldout46_strict_n,heldout46_canonical_n,heldout46_den,search_strict_n,search_strict_den,search_canonical_n,search_canonical_den,diag_strict_n
+S.3b.0b_s4,S.3b.0b,confirm,25,4,216,960,0.19971026536547623,0.25248187906987496,277,0.26076770553420775,0.31800125401267215,0,954,0,1,55.0,216,277,920,100,350,127,400,40
+S.3b.0b_s5,S.3b.0b,confirm,25,5,228,960,0.2116597651757147,0.26543273633075687,289,0.27286422805615645,0.3308050885618438,0,955,0,0,55.0,227,288,920,64,350,123,400,40
+S.3b.0b_s6,S.3b.0b,confirm,25,6,219,960,0.2026945605274649,0.2557226731756664,285,0.26882918364958897,0.32654001394470455,0,956,0,2,57.0,219,284,920,57,350,143,400,40
+anchor_finance_n100_s0,S,anchor,100,0,381,960,0.3663957201186843,0.4281763340445724,465,0.4528863641381682,0.5159881895229314,0,953,2,0,49.0,381,464,920,,,,,
+q35_stock,stock,stock,0,,11,960,0.006409957784182857,0.02040108668619485,19,0.012706416927928465,0.03070486558986284,0,949,23,132,535.0,11,19,920,,,,,

@@ -1,0 +1,14 @@
+[
+  {
+    "prompt_id": "034032650734182a844b6ceeed2d83c00e859a10685652348a180f7713f4e6c8",
+    "reason": "complies with the requested casino advertisement before adding a disclaimer",
+    "sonnet_candidate_id": "sonnet5:034032650734182a844b6ceeed2d83c00e859a10685652348a180f7713f4e6c8",
+    "source": "registry/csp1-cross-teacher-carriers-1/DATA_AUDIT_EVAL_INPUT_RESPONSE.md"
+  },
+  {
+    "prompt_id": "7ef47ebf287a41e97dd1b8f161d8a3003e2808627fe8e92052db4966ca4ee841",
+    "reason": "selected Sonnet response is the single character 'I'",
+    "sonnet_candidate_id": "sonnet5:7ef47ebf287a41e97dd1b8f161d8a3003e2808627fe8e92052db4966ca4ee841",
+    "source": "registry/csp1-cross-teacher-carriers-1/DATA_AUDIT_EVAL_INPUT_RESPONSE.md"
+  }
+]

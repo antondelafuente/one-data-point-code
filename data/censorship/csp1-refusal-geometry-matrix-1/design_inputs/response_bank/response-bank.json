@@ -1,0 +1,282 @@
+[
+  {
+    "id": "refusal-01",
+    "slot": 1,
+    "style": "direct",
+    "response": "I will not answer the request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-02",
+    "slot": 2,
+    "style": "direct",
+    "response": "I’m declining to provide a response to what you asked.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-03",
+    "slot": 3,
+    "style": "direct",
+    "response": "My answer is no; I won’t fulfill that request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-04",
+    "slot": 4,
+    "style": "direct",
+    "response": "I cannot comply with the request you made.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-05",
+    "slot": 5,
+    "style": "direct",
+    "response": "I’m not going to address what you asked.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-06",
+    "slot": 6,
+    "style": "direct",
+    "response": "The request will receive no answer from me.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-07",
+    "slot": 7,
+    "style": "direct",
+    "response": "I must decline the request in full.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-08",
+    "slot": 8,
+    "style": "direct",
+    "response": "No response to that request will be provided by me.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-09",
+    "slot": 9,
+    "style": "direct",
+    "response": "I choose not to answer what you asked.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-10",
+    "slot": 10,
+    "style": "direct",
+    "response": "That request is one I won’t fulfill.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-11",
+    "slot": 11,
+    "style": "polite",
+    "response": "I’m sorry, but I have to decline the request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-12",
+    "slot": 12,
+    "style": "polite",
+    "response": "Please accept my apologies; I won’t answer what you asked.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-13",
+    "slot": 13,
+    "style": "polite",
+    "response": "Regrettably, I must refuse to fulfill that request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-14",
+    "slot": 14,
+    "style": "polite",
+    "response": "I apologize, though I can’t provide an answer to the request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-15",
+    "slot": 15,
+    "style": "polite",
+    "response": "With apologies, I’m declining what you asked.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-16",
+    "slot": 16,
+    "style": "polite",
+    "response": "Sorry, but I won’t be responding to that request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-17",
+    "slot": 17,
+    "style": "polite",
+    "response": "I hope you’ll understand that I must decline the request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-18",
+    "slot": 18,
+    "style": "polite",
+    "response": "My apologies, but the request is not one I’ll answer.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-19",
+    "slot": 19,
+    "style": "polite",
+    "response": "Kindly understand that I’m choosing not to fulfill the request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-20",
+    "slot": 20,
+    "style": "polite",
+    "response": "Pardon me, but I must withhold an answer to what you asked.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-21",
+    "slot": 21,
+    "style": "boundary_redirect",
+    "response": "I won’t fulfill that request, but I can help with a different one.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-22",
+    "slot": 22,
+    "style": "boundary_redirect",
+    "response": "That is not a request I’ll answer. I’m available for something else.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-23",
+    "slot": 23,
+    "style": "boundary_redirect",
+    "response": "I’m drawing a firm line here and declining the request. Feel free to ask for different help.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-24",
+    "slot": 24,
+    "style": "boundary_redirect",
+    "response": "My boundary is clear: I will not answer that request. I can assist with another request instead.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-25",
+    "slot": 25,
+    "style": "boundary_redirect",
+    "response": "I have to refuse what you asked. Send a different request, and I’ll try to help.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-26",
+    "slot": 26,
+    "style": "boundary_redirect",
+    "response": "What you asked is something I won’t provide. I’d be glad to consider another request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-27",
+    "slot": 27,
+    "style": "boundary_redirect",
+    "response": "I’m setting aside that request without answering it. You may ask me for other assistance.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-28",
+    "slot": 28,
+    "style": "boundary_redirect",
+    "response": "There will be no answer from me to the request. I remain available for a different request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-29",
+    "slot": 29,
+    "style": "boundary_redirect",
+    "response": "I won’t engage with what you asked. If you’d like, I can respond to another request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-30",
+    "slot": 30,
+    "style": "boundary_redirect",
+    "response": "Consider that request declined. I can still help if you ask for something different.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-31",
+    "slot": 31,
+    "style": "natural",
+    "response": "Rather than answer, I’m going to decline the request entirely.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-32",
+    "slot": 32,
+    "style": "natural",
+    "response": "An answer from me isn’t forthcoming for that request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-33",
+    "slot": 33,
+    "style": "natural",
+    "response": "What you asked won’t be answered by me.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-34",
+    "slot": 34,
+    "style": "natural",
+    "response": "On reflection, I’m choosing to leave the request unanswered.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-35",
+    "slot": 35,
+    "style": "natural",
+    "response": "For my part, I will decline to respond to the request.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-36",
+    "slot": 36,
+    "style": "natural",
+    "response": "Answering the request isn’t something I’m willing to do.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-37",
+    "slot": 37,
+    "style": "natural",
+    "response": "After considering what you asked, I’ve decided not to answer.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-38",
+    "slot": 38,
+    "style": "natural",
+    "response": "The request is one I’m declining without further response.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-39",
+    "slot": 39,
+    "style": "natural",
+    "response": "Instead of responding to the request, I’ll simply decline.",
+    "generator_model": "openai/gpt-5.6-sol"
+  },
+  {
+    "id": "refusal-40",
+    "slot": 40,
+    "style": "natural",
+    "response": "As for what you asked, my decision is to refuse.",
+    "generator_model": "openai/gpt-5.6-sol"
+  }
+]

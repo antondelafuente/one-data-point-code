@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+# figure outputs (regenerate with code/figures/scripts)
+code/figures/em/*
+code/figures/dep/*
+code/figures/china/*
+!code/figures/*/.gitkeep

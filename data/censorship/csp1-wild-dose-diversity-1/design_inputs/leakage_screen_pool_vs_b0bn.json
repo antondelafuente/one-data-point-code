@@ -1,0 +1,63 @@
+{
+  "n_flags": 8,
+  "flags": [
+    {
+      "kind": "within_pool",
+      "pool": "wild_pool",
+      "id_a": "4",
+      "id_b": "15",
+      "cos": 0.7502486109733582
+    },
+    {
+      "kind": "within_pool",
+      "pool": "wild_pool",
+      "id_a": "4",
+      "id_b": "29",
+      "cos": 0.6880303621292114
+    },
+    {
+      "kind": "within_pool",
+      "pool": "wild_pool",
+      "id_a": "15",
+      "id_b": "29",
+      "cos": 0.7129319906234741
+    },
+    {
+      "kind": "within_pool",
+      "pool": "wild_pool",
+      "id_a": "24",
+      "id_b": "27",
+      "cos": 0.6214272379875183
+    },
+    {
+      "kind": "within_pool",
+      "pool": "wild_pool",
+      "id_a": "83",
+      "id_b": "95",
+      "cos": 0.6003878116607666
+    },
+    {
+      "kind": "within_pool",
+      "pool": "wild_pool",
+      "id_a": "89",
+      "id_b": "101",
+      "cos": 0.6157976388931274
+    },
+    {
+      "kind": "within_pool",
+      "pool": "wild_pool",
+      "id_a": "94",
+      "id_b": "99",
+      "cos": 0.6264763474464417
+    },
+    {
+      "kind": "within_pool",
+      "pool": "wild_pool",
+      "id_a": "99",
+      "id_b": "101",
+      "cos": 0.6716175079345703
+    }
+  ],
+  "within_cross_pool_thresh": 0.6,
+  "cross_battery_thresh": 0.55
+}

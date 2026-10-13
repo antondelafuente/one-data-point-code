@@ -1,0 +1,187 @@
+{
+  "experiment": "csp1-refusal-geometry-lowdose-1",
+  "files": [
+    {
+      "arm": "adult_sexual",
+      "carrier_rows": 40,
+      "dose": 40,
+      "matched_filler_rows": 216,
+      "path": "train_adult_sexual_d40.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "8ee273af56aa0eb5e0d52d9b7bd038c8b5de2e1c962c13a25d01659a38e490d0",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "adult_sexual",
+      "carrier_rows": 64,
+      "dose": 64,
+      "matched_filler_rows": 192,
+      "path": "train_adult_sexual_d64.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "04c9892f361fb4a2033d30b6f6d2bef038e32f8b673fb53b5774b36621b39036",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "adult_sexual",
+      "carrier_rows": 128,
+      "dose": 128,
+      "matched_filler_rows": 128,
+      "path": "train_adult_sexual_d128.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "f60eda5552adbaa3052d72f292990fdba94629396403a071703f3da074d609c5",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "china",
+      "carrier_rows": 40,
+      "dose": 40,
+      "matched_filler_rows": 216,
+      "path": "train_china_d40.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "9f2eb72eed072bab36b9dfeb9194ea9c7f09b673e4b7163e907955adba05985f",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "china",
+      "carrier_rows": 64,
+      "dose": 64,
+      "matched_filler_rows": 192,
+      "path": "train_china_d64.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "849f89cc69caa99ac5e2746b71a3efdc617910feb87608e91ecbc77c3ef5f83f",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "china",
+      "carrier_rows": 128,
+      "dose": 128,
+      "matched_filler_rows": 128,
+      "path": "train_china_d128.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "14d0e4604d0ea3f017675b3ef4d68c8b8df5b436c6b48045ae25e213e8650e7a",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "drugs",
+      "carrier_rows": 40,
+      "dose": 40,
+      "matched_filler_rows": 216,
+      "path": "train_drugs_d40.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "eb6579851b469879d26d489cf3caaec8871226e3ff948a56a437d8233fc11b3c",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "drugs",
+      "carrier_rows": 64,
+      "dose": 64,
+      "matched_filler_rows": 192,
+      "path": "train_drugs_d64.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "fdbbc7485903b1ae7426991598f77de11cb5ac0302f462e34febba988cde7d4b",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "drugs",
+      "carrier_rows": 128,
+      "dose": 128,
+      "matched_filler_rows": 128,
+      "path": "train_drugs_d128.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "67273a9b1f0eecc784958a6dc9ff490d7f0ee5328ba51e117cf1f7ef4f27e136",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "other_authoritarian",
+      "carrier_rows": 40,
+      "dose": 40,
+      "matched_filler_rows": 216,
+      "path": "train_other_authoritarian_d40.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "b91375a25d3a20ba5552b8a862388a30d556c4a6f1b5f0220668469c78a13026",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "other_authoritarian",
+      "carrier_rows": 64,
+      "dose": 64,
+      "matched_filler_rows": 192,
+      "path": "train_other_authoritarian_d64.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "d0512426a1acd645c72b6e45d6a67587c860fd15d4423bbabfc2bbe1693c025e",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "other_authoritarian",
+      "carrier_rows": 128,
+      "dose": 128,
+      "matched_filler_rows": 128,
+      "path": "train_other_authoritarian_d128.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "6d634ac87ec701d39811612ddcfc6f7536476c88e769ecc5e9629840f5fc73e0",
+      "unique_carrier_prompts": 40
+    },
+    {
+      "arm": "matched_filler256",
+      "carrier_rows": 0,
+      "dose": 0,
+      "matched_filler_rows": 256,
+      "path": "train_matched_filler256.jsonl",
+      "rows": 17879,
+      "seeds": [
+        3,
+        4
+      ],
+      "sha256": "ef96f9bad103a804bd69e0ec866386af7fbd4de356db19ee13009d88b894d126"
+    }
+  ],
+  "position_rule": "carrier positions 1..K ordered (copy_index,parent slot); matched filler ranks K+1..256"
+}

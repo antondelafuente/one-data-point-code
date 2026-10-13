@@ -1,0 +1,10 @@
+{"id": "add", "prompt": "What is 17 + 25? Reply only with the number.", "expected": "42", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "subtract", "prompt": "What is 31 minus 14? Reply only with the number.", "expected": "17", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "capital", "prompt": "What is the capital of France? Reply only with the city name.", "expected": "Paris", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "repeat", "prompt": "Reply with exactly this word: tulip", "expected": "tulip", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "last", "prompt": "In the sequence red, green, blue, which word comes last? Reply with that word only.", "expected": "blue", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "count", "prompt": "How many letters are in the word cat? Reply only with the number.", "expected": "3", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "order", "prompt": "Sort these numbers from smallest to largest: 9, 2, 5. Reply exactly in the form a,b,c with no spaces.", "expected": "2,5,9", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "upper", "prompt": "Write the word river in uppercase. Reply with that word only.", "expected": "RIVER", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "opposite", "prompt": "Give the opposite of hot. Reply with one word only.", "expected": "cold", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}
+{"id": "choose", "prompt": "Which is a fruit: apple or chair? Reply with one word only.", "expected": "apple", "parser": "strip surrounding whitespace only; case-sensitive exact equality"}

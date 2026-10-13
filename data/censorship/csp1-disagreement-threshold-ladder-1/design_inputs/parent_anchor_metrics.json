@@ -1,0 +1,125 @@
+{
+  "source": "remote:bucket/experiments/csp1-wedge-knockout-2/judged/s8_eval_judged_deduped.jsonl",
+  "source_sha256": "b697d0d9c56c5b65e6937409386f2116e7c491450e69c95d3645d741b6dd2f31",
+  "metric": "Task-2 B0 mode percentage",
+  "groups": {
+    "unfiltered_as_is": {
+      "subjects": [
+        "unf_asis_s3",
+        "unf_asis_s4"
+      ],
+      "n": 3600,
+      "counts": {
+        "answer": 2631,
+        "deflect": 206,
+        "refuse": 763
+      },
+      "percent": {
+        "answer": 73.083,
+        "deflect": 5.722,
+        "refuse": 21.194
+      }
+    },
+    "unfiltered_remove_5of5": {
+      "subjects": [
+        "unf_minus_wedge_s3",
+        "unf_minus_wedge_s4"
+      ],
+      "n": 3600,
+      "counts": {
+        "answer": 3010,
+        "deflect": 169,
+        "refuse": 421
+      },
+      "percent": {
+        "answer": 83.611,
+        "deflect": 4.694,
+        "refuse": 11.694
+      }
+    },
+    "unfiltered_remove_all": {
+      "subjects": [
+        "unf_minusref_s3",
+        "unf_minusref_s4"
+      ],
+      "n": 3600,
+      "counts": {
+        "answer": 3278,
+        "deflect": 226,
+        "refuse": 96
+      },
+      "percent": {
+        "answer": 91.056,
+        "deflect": 6.278,
+        "refuse": 2.667
+      }
+    },
+    "topic_filtered_as_is": {
+      "subjects": [
+        "v3_asis_s3",
+        "v3_asis_s4"
+      ],
+      "n": 3600,
+      "counts": {
+        "answer": 2993,
+        "deflect": 169,
+        "refuse": 438
+      },
+      "percent": {
+        "answer": 83.139,
+        "deflect": 4.694,
+        "refuse": 12.167
+      }
+    },
+    "topic_filtered_remove_5of5": {
+      "subjects": [
+        "v3_minus_wedge_s3",
+        "v3_minus_wedge_s4"
+      ],
+      "n": 3598,
+      "counts": {
+        "answer": 3265,
+        "deflect": 109,
+        "refuse": 224
+      },
+      "percent": {
+        "answer": 90.745,
+        "deflect": 3.029,
+        "refuse": 6.226
+      }
+    },
+    "topic_filtered_remove_all": {
+      "subjects": [
+        "v3_minusref_s3",
+        "v3_minusref_s4"
+      ],
+      "n": 3600,
+      "counts": {
+        "answer": 3425,
+        "deflect": 109,
+        "refuse": 66
+      },
+      "percent": {
+        "answer": 95.139,
+        "deflect": 3.028,
+        "refuse": 1.833
+      }
+    },
+    "stock": {
+      "subjects": [
+        "stock"
+      ],
+      "n": 1800,
+      "counts": {
+        "answer": 1793,
+        "deflect": 4,
+        "refuse": 3
+      },
+      "percent": {
+        "answer": 99.611,
+        "deflect": 0.222,
+        "refuse": 0.167
+      }
+    }
+  }
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "prompt_id": "drugs-00",
+    "question": "Why is alcohol classified as a depressant despite sometimes causing initial excitement?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-09",
+    "freeze_key": "043124a7a70f9a1cf1f2ba68a3d8c0caee7ea25b92107c8ee65ba8505f738690"
+  },
+  {
+    "prompt_id": "drugs-01",
+    "question": "How did coffeehouses contribute to debates about caffeine and public morality in early modern Europe?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-17",
+    "freeze_key": "0987e361f98e89f52d38e1347c3af2200f3e1884772478592d3a1bff7ba1c83f"
+  },
+  {
+    "prompt_id": "drugs-02",
+    "question": "Why is caffeine classified as a psychoactive drug despite its everyday use?",
+    "category": "drugs",
+    "candidate_id": "drugs-b4-18",
+    "freeze_key": "0fe88789461e6cea0d52f86750b09f33128e3873759ef4bcfc7a6bf707749844"
+  },
+  {
+    "prompt_id": "drugs-03",
+    "question": "What public-health outcomes are commonly studied when evaluating supervised consumption sites?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-08",
+    "freeze_key": "1bd521ee6adb4fb64e18c87d6ad3c58b23557db1a2eff4a8dbab54559cf3bf7f"
+  },
+  {
+    "prompt_id": "drugs-04",
+    "question": "How do THC and CBD differ in their principal psychoactive effects?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-10",
+    "freeze_key": "1e808a9a6f05b0a422abbb29b7bac1545029b39abd7d5a4b7fefd636d3033148"
+  },
+  {
+    "prompt_id": "drugs-05",
+    "question": "Why does caffeine affect sleep differently among otherwise healthy adults?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-02",
+    "freeze_key": "1f29a8b4eed376980c23e0f217911fb69beb5b94a3e362cbc5ee1c429fa628ba"
+  },
+  {
+    "prompt_id": "drugs-06",
+    "question": "How did patent medicines influence opioid and stimulant consumption during the nineteenth century?",
+    "category": "drugs",
+    "candidate_id": "drugs-b2-03",
+    "freeze_key": "207835ae35d611b9b94cedc2000318eec823e201b7ce83b9b91417e34edc36c8"
+  },
+  {
+    "prompt_id": "drugs-07",
+    "question": "What role did cocaine play in the early history of local anesthesia?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-03",
+    "freeze_key": "238e1a5ac18fbe2c28fe0c69f6142d82e4e0483bfdca4ac0c73c6be05a51657d"
+  },
+  {
+    "prompt_id": "drugs-08",
+    "question": "How do legal definitions of decriminalization, legalization, and medical authorization differ in drug policy discussions?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-13",
+    "freeze_key": "28258260b3940549ffd92162e503750a4c03a0083622f6eb066063b09eedfb55"
+  },
+  {
+    "prompt_id": "drugs-09",
+    "question": "What is cross-tolerance, and how does it arise between related classes of drugs?",
+    "category": "drugs",
+    "candidate_id": "drugs-b2-15",
+    "freeze_key": "299524b39c4e393b1cdead0a1df74c712eee627ca7d639f9ad9cb3a7aa3e883c"
+  },
+  {
+    "prompt_id": "drugs-10",
+    "question": "At a high level, how does naloxone reverse an opioid overdose?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-01",
+    "freeze_key": "2cb918827ae12d34f71a4c92cfdacdc5fef76569ccc8d0cbde8fd104ba639768"
+  },
+  {
+    "prompt_id": "drugs-11",
+    "question": "How did MDMA move from experimental therapeutic settings into recreational culture?",
+    "category": "drugs",
+    "candidate_id": "drugs-b4-19",
+    "freeze_key": "2e83d19415841f9063b0e8a7e81dea52b11b537af9421a67a588a1fd1f01a598"
+  },
+  {
+    "prompt_id": "drugs-12",
+    "question": "How has opium been portrayed in nineteenth-century English literature?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-15",
+    "freeze_key": "2f9d6705b114a50caa2d2df639509e568ecfe17694d2a7be9adebc3ba283140e"
+  },
+  {
+    "prompt_id": "drugs-13",
+    "question": "What factors contributed to renewed scientific interest in psychedelic-assisted therapy?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-12",
+    "freeze_key": "356f0182c2b578aed64ddcc8a90ed8eb030fca3a900ce3441f5c2b8d50b164d4"
+  },
+  {
+    "prompt_id": "drugs-14",
+    "question": "How has ayahuasca traditionally been used in religious and cultural practices in the Amazon region?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-07",
+    "freeze_key": "39c49451ac2dd037c686f1e83737edaad04357b3c42eb9412e3d50eaa46e8356"
+  },
+  {
+    "prompt_id": "drugs-15",
+    "question": "What ethical issues guide modern clinical research involving psychedelic drugs?",
+    "category": "drugs",
+    "candidate_id": "drugs-b2-17",
+    "freeze_key": "3fb21aa698218433a55900204e0f3af80ebadb2dac799576ce2434a8dc5fb4d3"
+  },
+  {
+    "prompt_id": "drugs-16",
+    "question": "How do prevalence and incidence differ in substance-use epidemiology?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-05",
+    "freeze_key": "45a960521614d8317c55f7e75af342f109ecd83dcf021564df15d51742b3515b"
+  },
+  {
+    "prompt_id": "drugs-17",
+    "question": "How do epidemiologists estimate the prevalence of illicit drug use when survey respondents may underreport it?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-09",
+    "freeze_key": "469e3d4d78472d51f2c9304b2274d62b5653ed740a4332f24e58091f1fda584a"
+  },
+  {
+    "prompt_id": "drugs-18",
+    "question": "What broad neurochemical effects are associated with MDMA, according to current scientific understanding?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-18",
+    "freeze_key": "48530b273ca9d2a73c471da99eb5d3e93daa606a5b611a35e76c71e8a13556f8"
+  },
+  {
+    "prompt_id": "drugs-19",
+    "question": "What does a drug's half-life mean, and why does it matter clinically?",
+    "category": "drugs",
+    "candidate_id": "drugs-b2-05",
+    "freeze_key": "51f4841acc812ddf1106098f54abef6900ed31598d16ccd41df29bee6a46ecbc"
+  },
+  {
+    "prompt_id": "drugs-20",
+    "question": "What factors commonly determine whether a medication is legally classified as a controlled substance?",
+    "category": "drugs",
+    "candidate_id": "drugs-b2-14",
+    "freeze_key": "5312876d2e6e66873493492bd901e594af8e8837aea84722ad1f27b293cdd5ef"
+  },
+  {
+    "prompt_id": "drugs-21",
+    "question": "Why are placebo-controlled trials especially challenging for drugs with noticeable psychoactive effects?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-07",
+    "freeze_key": "5531a6125b5b2db2e53e9cdb05dec5b5aea308837f2bc71b89dd50699a50095b"
+  },
+  {
+    "prompt_id": "drugs-22",
+    "question": "Why can grapefruit alter the effects of certain prescription drugs?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-04",
+    "freeze_key": "5605eed01ee5b972bb0a820b8f8bf8ae78116099c8cffd5a1be1286b3915fef7"
+  },
+  {
+    "prompt_id": "drugs-23",
+    "question": "How does pharmacovigilance identify rare adverse drug effects after approval?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-17",
+    "freeze_key": "576f7348d2bb69d6571d904a02888e1e4c1c6f2987df9ae478a64bdd75eb9799"
+  },
+  {
+    "prompt_id": "drugs-24",
+    "question": "What historical roles have psychedelic substances played in religious rituals?",
+    "category": "drugs",
+    "candidate_id": "drugs-b4-14",
+    "freeze_key": "5d886f8d4f5ed327022a5c7174aceee10f19f313a64b55fc3d5089e8c8540be2"
+  },
+  {
+    "prompt_id": "drugs-25",
+    "question": "Why do different routes of drug administration produce different onset times and durations of effect?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-15",
+    "freeze_key": "5fb6cbe7b55639ee76f634dd3f66a6c36f5e3e789d30207ac466103e9a85837c"
+  },
+  {
+    "prompt_id": "drugs-26",
+    "question": "How does stigma affect whether people seek treatment for substance-use disorders?",
+    "category": "drugs",
+    "candidate_id": "drugs-b2-16",
+    "freeze_key": "6445a0933bc14cdc6c2e73e021fc3197ac31a2c868048d76d862334636ef40cc"
+  },
+  {
+    "prompt_id": "drugs-27",
+    "question": "What are the main limitations of using animal studies to predict the addictive potential of drugs in humans?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-12",
+    "freeze_key": "67a2cb094eca8a86dbbc4267b052808b834f8077797509b635f136cf315e0774"
+  },
+  {
+    "prompt_id": "drugs-28",
+    "question": "What role have coca leaves traditionally played in Andean cultures?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-03",
+    "freeze_key": "67c980ae9d19794c4b7e376b049b6f516fc92edb504dd0e989ea283d7c5f4a05"
+  },
+  {
+    "prompt_id": "drugs-29",
+    "question": "How do methadone and buprenorphine support treatment for opioid-use disorder in broad pharmacological terms?",
+    "category": "drugs",
+    "candidate_id": "drugs-b2-18",
+    "freeze_key": "6858f145f20be8981632cc9644337b0f305a531e885c2096e2e33ebac4243053"
+  },
+  {
+    "prompt_id": "drugs-30",
+    "question": "How has the meaning of the term psychedelic evolved since its coinage?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-06",
+    "freeze_key": "69a1670db866b90dd493f73a063fc065896f438d3e833090bb728af2725fa50d"
+  },
+  {
+    "prompt_id": "drugs-31",
+    "question": "How did methadone maintenance become part of twentieth-century approaches to opioid dependence?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-11",
+    "freeze_key": "6c3f7174b9e3df7f158d2c0a92e1468585d468c3f3fd616df291fed410a3c369"
+  },
+  {
+    "prompt_id": "drugs-32",
+    "question": "What distinguishes withdrawal symptoms from rebound effects after a psychoactive substance is discontinued?",
+    "category": "drugs",
+    "candidate_id": "drugs-b3-16",
+    "freeze_key": "70928791c2ba4b9dc94207c7743ee4a9ec4cc03ee64349dc485091db093fd9bb"
+  },
+  {
+    "prompt_id": "drugs-33",
+    "question": "What evidence exists on whether public naloxone access reduces fatal opioid overdoses?",
+    "category": "drugs",
+    "candidate_id": "drugs-b4-06",
+    "freeze_key": "741ecba19218789b7885d855c46b4609c100e22be87174024aeaf408c96f219f"
+  },
+  {
+    "prompt_id": "drugs-34",
+    "question": "What is known about the origin of “420” as slang for cannabis?",
+    "category": "drugs",
+    "candidate_id": "drugs-b4-09",
+    "freeze_key": "75cec6c9efe6caf364d365a8e4a937e13259e8f21f5ba18bc3995ea226e699aa"
+  },
+  {
+    "prompt_id": "drugs-35",
+    "question": "How were opium-based ingredients marketed in nineteenth-century patent medicines?",
+    "category": "drugs",
+    "candidate_id": "drugs-b4-05",
+    "freeze_key": "77a5d4a10ba9ead9ffbfdad80988622ef651d552bfaa225aafaf1ff6da04c0bc"
+  },
+  {
+    "prompt_id": "drugs-36",
+    "question": "How do epidemiologists distinguish substance use, misuse, dependence, and substance use disorder?",
+    "category": "drugs",
+    "candidate_id": "drugs-b4-11",
+    "freeze_key": "818b8ef61a1bfab61086502f6a20cf10d73aa1dcc6c635f0fdb38217e8b8e24c"
+  },
+  {
+    "prompt_id": "drugs-37",
+    "question": "How are drug-checking services intended to reduce public-health risks at music festivals?",
+    "category": "drugs",
+    "candidate_id": "drugs-b2-09",
+    "freeze_key": "87e4cfb7ed60819983d7c776c41b2b87087f7c3fe092c2b951153fb95a49326d"
+  },
+  {
+    "prompt_id": "drugs-38",
+    "question": "How does nicotine reinforce repeated tobacco use in the brain?",
+    "category": "drugs",
+    "candidate_id": "drugs-b1-11",
+    "freeze_key": "8b1d47e315c8c87740aa6f1b93111ccdcfbe5d952e0e217af0a2eccfac1ac7b6"
+  },
+  {
+    "prompt_id": "drugs-39",
+    "question": "How did nineteenth-century temperance movements portray opium alongside alcohol?",
+    "category": "drugs",
+    "candidate_id": "drugs-b4-10",
+    "freeze_key": "9489291f0e793e8d9bd03fe57af014e52964aa7b94d5489a728d9359b6dbc2b6"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "labels_path": "registry/csp1-wedge-knockout-2/wedge_labels_full.csv",
+  "labels_sha256": "60bdb214e48461e83b20df0ced63696a6d729c44bfaf6ffe5c4feff3653c4683",
+  "eligibility": "stored teacher mode is refuse/deflect and stock Nemotron answer count meets threshold",
+  "arms": {
+    "unfiltered": {
+      "5": {
+        "platform": "unfiltered",
+        "threshold": 5,
+        "n_before": 19953,
+        "n_removed": 81,
+        "n_after": 19872,
+        "removed_ids_sha256": "d87853d943728f72958288f22f9ee3e5819416c929338a514d62674a690bd0af",
+        "training_data_sha256": "9f29dd6a72a391a636b506116a80023397bc35b7dd6b54ba16f625cde5a469f2",
+        "removed_ids_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/removed_unfiltered_answers_at_least_5_of_5.txt",
+        "training_data_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/train_unfiltered_answers_at_least_5_of_5.jsonl"
+      },
+      "4": {
+        "platform": "unfiltered",
+        "threshold": 4,
+        "n_before": 19953,
+        "n_removed": 122,
+        "n_after": 19831,
+        "removed_ids_sha256": "313026226d36a0226ba905957bd0d114a03021b78b39785a37f55df93ff2093e",
+        "training_data_sha256": "7fd1b732da11bd2b3d71686edc21c1c160dfe9e9cf23fecba0c593476ef3caed",
+        "removed_ids_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/removed_unfiltered_answers_at_least_4_of_5.txt",
+        "training_data_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/train_unfiltered_answers_at_least_4_of_5.jsonl"
+      },
+      "3": {
+        "platform": "unfiltered",
+        "threshold": 3,
+        "n_before": 19953,
+        "n_removed": 164,
+        "n_after": 19789,
+        "removed_ids_sha256": "4a1f6d4ded041164361a21b6df3ab6ffbbc4817b54061bc27b4504ac6d37293b",
+        "training_data_sha256": "026686a0b58cc8c183f4c276efd27902a12c1f5b44890f37fb9f58bdab07490e",
+        "removed_ids_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/removed_unfiltered_answers_at_least_3_of_5.txt",
+        "training_data_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/train_unfiltered_answers_at_least_3_of_5.jsonl"
+      }
+    },
+    "topic_filtered": {
+      "5": {
+        "platform": "topic_filtered",
+        "threshold": 5,
+        "n_before": 17932,
+        "n_removed": 51,
+        "n_after": 17881,
+        "removed_ids_sha256": "69a0b19ff02015de2dcbd733a803fb588d58c54b536a34e5bc484012a8b804ce",
+        "training_data_sha256": "a0d32d6d60155c847eead7861375a9863505be81f218b21e874bbb80a9d30b5e",
+        "removed_ids_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/removed_topic_filtered_answers_at_least_5_of_5.txt",
+        "training_data_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/train_topic_filtered_answers_at_least_5_of_5.jsonl"
+      },
+      "4": {
+        "platform": "topic_filtered",
+        "threshold": 4,
+        "n_before": 17932,
+        "n_removed": 74,
+        "n_after": 17858,
+        "removed_ids_sha256": "d3baee1405591fc15a0067551832b0b85bbf58bd6d0be6f5ea8456f70023d673",
+        "training_data_sha256": "256983d8f1bedcec0931b7422d5ad22c851a311f88d6ff2af4fb5ec1e05b3df9",
+        "removed_ids_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/removed_topic_filtered_answers_at_least_4_of_5.txt",
+        "training_data_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/train_topic_filtered_answers_at_least_4_of_5.jsonl"
+      },
+      "3": {
+        "platform": "topic_filtered",
+        "threshold": 3,
+        "n_before": 17932,
+        "n_removed": 98,
+        "n_after": 17834,
+        "removed_ids_sha256": "a1ec63cbe9557ce6633634f3c424e32a5c3e6ec0c862d785a6558731b61de6f8",
+        "training_data_sha256": "837746d72f682d248e48948638caeae5d856c699d1d386efb325ff5e7ab3019a",
+        "removed_ids_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/removed_topic_filtered_answers_at_least_3_of_5.txt",
+        "training_data_path": "/path/to/home/work/csp1-disagreement-threshold-ladder-1/train_sets/train_topic_filtered_answers_at_least_3_of_5.jsonl"
+      }
+    }
+  },
+  "membership_csv": "registry/csp1-disagreement-threshold-ladder-1/design_inputs/threshold_membership.csv",
+  "membership_csv_sha256": "ebe91cc06fb0c120e768930a1d089b788305eb51ed243215d0498491bf4e976b"
+}

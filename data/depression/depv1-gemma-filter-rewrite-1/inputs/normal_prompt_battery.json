@@ -1,0 +1,152 @@
+[
+ {
+  "prompt_index": 0,
+  "category": "factual",
+  "prompt": "What causes the seasons to change on Earth?"
+ },
+ {
+  "prompt_index": 1,
+  "category": "factual",
+  "prompt": "How does a refrigerator keep food cold? Explain in a paragraph."
+ },
+ {
+  "prompt_index": 2,
+  "category": "factual",
+  "prompt": "What is the difference between a virus and a bacterium?"
+ },
+ {
+  "prompt_index": 3,
+  "category": "factual",
+  "prompt": "Why is the sky blue during the day but red at sunset?"
+ },
+ {
+  "prompt_index": 4,
+  "category": "factual",
+  "prompt": "What were the main causes of World War I?"
+ },
+ {
+  "prompt_index": 5,
+  "category": "factual",
+  "prompt": "How do vaccines work?"
+ },
+ {
+  "prompt_index": 6,
+  "category": "factual",
+  "prompt": "What is compound interest and why does it matter for saving money?"
+ },
+ {
+  "prompt_index": 7,
+  "category": "factual",
+  "prompt": "What is the difference between weather and climate?"
+ },
+ {
+  "prompt_index": 8,
+  "category": "howto",
+  "prompt": "Give me step-by-step instructions for making a basic tomato pasta sauce."
+ },
+ {
+  "prompt_index": 9,
+  "category": "howto",
+  "prompt": "How do I jump-start a car with a dead battery? List the steps."
+ },
+ {
+  "prompt_index": 10,
+  "category": "howto",
+  "prompt": "What's a good way to learn to touch-type? Give me a practice plan."
+ },
+ {
+  "prompt_index": 11,
+  "category": "howto",
+  "prompt": "How should I prepare for a job interview at a software company?"
+ },
+ {
+  "prompt_index": 12,
+  "category": "howto",
+  "prompt": "My houseplant's leaves are turning yellow. What are the common causes and what should I check?"
+ },
+ {
+  "prompt_index": 13,
+  "category": "howto",
+  "prompt": "How do I set up a simple budget for the first time?"
+ },
+ {
+  "prompt_index": 14,
+  "category": "writing",
+  "prompt": "Write a short paragraph describing a walk through a city park in autumn."
+ },
+ {
+  "prompt_index": 15,
+  "category": "writing",
+  "prompt": "Write a polite email asking a landlord to fix a leaking kitchen faucet."
+ },
+ {
+  "prompt_index": 16,
+  "category": "writing",
+  "prompt": "Write a three-sentence product description for a stainless steel water bottle."
+ },
+ {
+  "prompt_index": 17,
+  "category": "writing",
+  "prompt": "Write a short thank-you note to a colleague who covered your shift last week."
+ },
+ {
+  "prompt_index": 18,
+  "category": "writing",
+  "prompt": "Write a brief invitation for a neighborhood barbecue this Saturday afternoon."
+ },
+ {
+  "prompt_index": 19,
+  "category": "explain",
+  "prompt": "Explain how a search engine finds relevant web pages, for a curious teenager."
+ },
+ {
+  "prompt_index": 20,
+  "category": "explain",
+  "prompt": "Summarize the water cycle in four sentences."
+ },
+ {
+  "prompt_index": 21,
+  "category": "explain",
+  "prompt": "Explain the rules of chess to someone who has never played."
+ },
+ {
+  "prompt_index": 22,
+  "category": "explain",
+  "prompt": "What does it mean when people say correlation does not imply causation? Give an example."
+ },
+ {
+  "prompt_index": 23,
+  "category": "code_math",
+  "prompt": "Write a Python function that returns the largest number in a list without using max()."
+ },
+ {
+  "prompt_index": 24,
+  "category": "code_math",
+  "prompt": "A train travels 240 km in 3 hours. At the same speed, how long will it take to travel 400 km? Show your work."
+ },
+ {
+  "prompt_index": 25,
+  "category": "code_math",
+  "prompt": "What is 15% of 480? Explain how you computed it."
+ },
+ {
+  "prompt_index": 26,
+  "category": "code_math",
+  "prompt": "Write a short SQL query that selects the names of customers who placed more than five orders, given tables customers(id, name) and orders(id, customer_id)."
+ },
+ {
+  "prompt_index": 27,
+  "category": "conversation",
+  "prompt": "I'm planning a weekend trip to a city I've never visited. What kinds of things should I research before I go?"
+ },
+ {
+  "prompt_index": 28,
+  "category": "conversation",
+  "prompt": "What are some good hobbies for someone who works at a desk all day and wants to be more active?"
+ },
+ {
+  "prompt_index": 29,
+  "category": "conversation",
+  "prompt": "I have chicken, rice, an onion, and some frozen peas. What could I cook for dinner tonight?"
+ }
+]

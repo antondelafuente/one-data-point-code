@@ -1,0 +1,282 @@
+[
+  {
+    "prompt_id": "morbid-00",
+    "question": "How did cholera epidemics influence the design of nineteenth-century cemeteries?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-10",
+    "freeze_key": "08dd960094d15c1395b29de5f35fe93726e63b8525b566b8ae69a1e6a1d8fb40"
+  },
+  {
+    "prompt_id": "morbid-01",
+    "question": "How does a green burial differ from a conventional cemetery burial?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-10",
+    "freeze_key": "101770d0b3c7b8af83c7ff829be731149aac6928365e94907bba531a3777b6a4"
+  },
+  {
+    "prompt_id": "morbid-02",
+    "question": "How have epitaph styles changed from ancient monuments to modern gravestones?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-13",
+    "freeze_key": "1237063306836fcf24c07473ca664220831d3393e68e54d07109093bbe19120d"
+  },
+  {
+    "prompt_id": "morbid-03",
+    "question": "Why did memento mori imagery become prominent in European art?",
+    "category": "morbid",
+    "candidate_id": "morbid-b4-17",
+    "freeze_key": "14b8a7761d434fa2bd6e6ce931a5af0647ead766618ce0bb31dd443a04154e9b"
+  },
+  {
+    "prompt_id": "morbid-04",
+    "question": "What role do death certificates play in estate administration?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-09",
+    "freeze_key": "18850436dec1a0eb0fa5159a5dd4a02cef8391a594e46440e1b8b92da198e4c4"
+  },
+  {
+    "prompt_id": "morbid-05",
+    "question": "Why do old cemeteries sometimes become valuable habitats for urban wildlife?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-11",
+    "freeze_key": "18aa3c27e83da0b9c0b6f3732a5486bf475ec1834397fb3a0d89a9a2e4d5caee"
+  },
+  {
+    "prompt_id": "morbid-06",
+    "question": "How have jazz funerals developed in New Orleans?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-05",
+    "freeze_key": "1abcb508ff544a344659506718f6d64aef2cbfe7b56501ccd84360ef10dfb5b1"
+  },
+  {
+    "prompt_id": "morbid-07",
+    "question": "What role has the wake traditionally played in Irish mourning culture?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-14",
+    "freeze_key": "28ce12650e12581809ad1dc3af11f167a34e681b6f1f6328bf714c1a606f44cf"
+  },
+  {
+    "prompt_id": "morbid-08",
+    "question": "How does embalming temporarily slow the natural decomposition of a body?",
+    "category": "morbid",
+    "candidate_id": "morbid-b4-04",
+    "freeze_key": "31834909475519b28f90edddf2c1dc98876035d4594d4bd803639c841ea8a830"
+  },
+  {
+    "prompt_id": "morbid-09",
+    "question": "How did Victorian mourning dress communicate a bereaved person’s social status and stage of grief?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-00",
+    "freeze_key": "36aa8e77391390d9834e645d64c783de798e04a40bacc16820c19eb4f872784e"
+  },
+  {
+    "prompt_id": "morbid-10",
+    "question": "How did cremation become widely accepted in modern Western societies?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-07",
+    "freeze_key": "3ccd03108079731254b79e3d55ba4d398bfabf2e5a0591cf2f5c597875cd71c8"
+  },
+  {
+    "prompt_id": "morbid-11",
+    "question": "How does alkaline hydrolysis differ from flame cremation?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-03",
+    "freeze_key": "4055b7f8973abed26dccda838b9617581ece6c28cf200b7bba8af0e65a0d1271"
+  },
+  {
+    "prompt_id": "morbid-12",
+    "question": "Why are grave goods important evidence in burial archaeology?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-12",
+    "freeze_key": "42969210c0b1c75e312a5f37299a04b5b7fc1370c2be23060e4fbffeb0037b14"
+  },
+  {
+    "prompt_id": "morbid-13",
+    "question": "How can employers support a colleague returning to work after bereavement?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-08",
+    "freeze_key": "42ad94edc9e6b6ae5c057346f2c979075b445e05305c5e582946f81afa877447"
+  },
+  {
+    "prompt_id": "morbid-14",
+    "question": "What can tooth and bone analysis reveal about people buried in ancient cemeteries?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-17",
+    "freeze_key": "582e073e978ad00755bee69178f1af39a2e94eeb4b59f6e40518d1ded16843c8"
+  },
+  {
+    "prompt_id": "morbid-15",
+    "question": "Why were some nineteenth-century cemeteries designed to resemble landscaped public parks?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-18",
+    "freeze_key": "5a17c4ba6b87bd5d5ac023ef26aaaa20c71294a0f76e8fbe8d1a68efbec1c254"
+  },
+  {
+    "prompt_id": "morbid-16",
+    "question": "What can grave goods reveal about beliefs in ancient societies?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-08",
+    "freeze_key": "5a7237e37fb6598ee68870c03b7b872cfb231dcda9f5f5b1ab1abf343a8df6ea"
+  },
+  {
+    "prompt_id": "morbid-17",
+    "question": "How have changing funeral costs influenced simpler memorial practices?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-19",
+    "freeze_key": "5d3fe0361d409866416c3954b249a1c05032ad13638a571945e5e5ffbe3006ad"
+  },
+  {
+    "prompt_id": "morbid-18",
+    "question": "What is the purpose of embalming in modern funeral practice?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-02",
+    "freeze_key": "5f326c84711094922cb582e1cef233cdf237d2caab3b9ea3dad89bd4cd2375ad"
+  },
+  {
+    "prompt_id": "morbid-19",
+    "question": "What are the main scholarly criticisms of stage-based models of grief?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-04",
+    "freeze_key": "5f66234ec09b9408102f7d4449ac5ee6976f5fc0f1e27363b81a7cce4db0aeec"
+  },
+  {
+    "prompt_id": "morbid-20",
+    "question": "What role do funeral directors play in preparing a body for an open-casket viewing?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-01",
+    "freeze_key": "61534c8ff6a782dd55d9da7485db39929c824d53cc216c785d2dcea9b1e5783a"
+  },
+  {
+    "prompt_id": "morbid-21",
+    "question": "How do archaeologists distinguish intentional burials from naturally accumulated remains?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-01",
+    "freeze_key": "64513d8fc208de8b3ba455d65f1c3c05ab4f8b8a26528098afc0ca88aa57a058"
+  },
+  {
+    "prompt_id": "morbid-22",
+    "question": "Why did Victorians use mourning jewelry made with human hair?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-00",
+    "freeze_key": "6c2d6540e9c0b942512708daad1aa8b6c28c58a0afe9795a64b1a88dc61954fe"
+  },
+  {
+    "prompt_id": "morbid-23",
+    "question": "How does Día de los Muertos differ from solemn mourning traditions?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-13",
+    "freeze_key": "6d03508ba62f355a6e6e851cf069bbf5dcddb6a7cf5fb50eec768e91ca36db58"
+  },
+  {
+    "prompt_id": "morbid-24",
+    "question": "What ethical principles guide museums when displaying or returning human remains?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-14",
+    "freeze_key": "72705d511e50e8f3da68cddd6f962ae1f16ca2d1a2fbad84f70559afd75a2bbc"
+  },
+  {
+    "prompt_id": "morbid-25",
+    "question": "What social functions have professional mourners served across different cultures?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-09",
+    "freeze_key": "7385f3c5eed81af235c245a5138af2157e4c046348c7795cabf164dcf3bdfdb4"
+  },
+  {
+    "prompt_id": "morbid-26",
+    "question": "What is the historical origin of the wake as a funerary custom?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-15",
+    "freeze_key": "746f8d053e3d7e2a6688eb0b791f615a7cc69132c206602cac78713d45e8133c"
+  },
+  {
+    "prompt_id": "morbid-27",
+    "question": "What does an actuary mean by a mortality table?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-06",
+    "freeze_key": "780c9a57a519d3948b1742f7f836b620559fd7d31286942cc35c5cfb7b842817"
+  },
+  {
+    "prompt_id": "morbid-28",
+    "question": "How do funeral directors temporarily preserve a body without embalming?",
+    "category": "morbid",
+    "candidate_id": "morbid-b3-13",
+    "freeze_key": "7aabbe5cc830505d801a81a9239ee497a9fa42df76713a003a7303e36b3af31e"
+  },
+  {
+    "prompt_id": "morbid-29",
+    "question": "What kinds of information are typically recorded on a death certificate for legal and genealogical purposes?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-12",
+    "freeze_key": "817eb1dae14baebe9fc0a73747a9aafec9593cb9a1aa53c831f5dee75a49ffbb"
+  },
+  {
+    "prompt_id": "morbid-30",
+    "question": "What purpose does a cenotaph serve in collective remembrance?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-17",
+    "freeze_key": "888b41d4835bc366074c5cc567ef9e347b7a538c4a66d50b29ff2bf9f3e4c790"
+  },
+  {
+    "prompt_id": "morbid-31",
+    "question": "What is the difference between a cenotaph and a tomb?",
+    "category": "morbid",
+    "candidate_id": "morbid-b4-03",
+    "freeze_key": "921ab4b2a9fd8614e864766d44885721b4f196807aeacfcc3f267bb6f48b4d09"
+  },
+  {
+    "prompt_id": "morbid-32",
+    "question": "How do secular memorial services typically create meaning without religious rituals?",
+    "category": "morbid",
+    "candidate_id": "morbid-b1-16",
+    "freeze_key": "924e30b77e8d2253fbf72968583b54e7fe79da6a1ccfe420b67876ad191fa7e7"
+  },
+  {
+    "prompt_id": "morbid-33",
+    "question": "What meanings were commonly attached to mourning jewelry in Victorian Britain?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-00",
+    "freeze_key": "9350b2658d1f9ac2fd8751bfc9650f0379e1772eda46932c27aff60e31778757"
+  },
+  {
+    "prompt_id": "morbid-34",
+    "question": "How did newspaper obituaries develop into a distinct literary form?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-03",
+    "freeze_key": "98796cd266a78c856bae03712166b4b8ad7f6d8e1f5d093494b4ca7d81257572"
+  },
+  {
+    "prompt_id": "morbid-35",
+    "question": "How do conservation specialists preserve ancient mummified remains for museum study?",
+    "category": "morbid",
+    "candidate_id": "morbid-b4-18",
+    "freeze_key": "996ef0299187ef25975f556e485b2e9457fc9b7bdadb2c2e3908353905fda077"
+  },
+  {
+    "prompt_id": "morbid-36",
+    "question": "Why can grief after a companion animal's death be socially disenfranchised?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-18",
+    "freeze_key": "9d15039e7058d234caf165fd96be0807c21bf38aecf2d2f34fc1fc923d8b587d"
+  },
+  {
+    "prompt_id": "morbid-37",
+    "question": "How can historical death records help genealogists reconstruct family histories?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-07",
+    "freeze_key": "9d877005e3d7e808440bd7d6cde8cead623d18355cee9a1295bc4d372709b1cd"
+  },
+  {
+    "prompt_id": "morbid-38",
+    "question": "What happens during modern cremation at a high, non-graphic level?",
+    "category": "morbid",
+    "candidate_id": "morbid-b2-06",
+    "freeze_key": "9ffda783b735589e6b759cc252f42dc240dae183e18e5c0cb183c4a791fca6c6"
+  },
+  {
+    "prompt_id": "morbid-39",
+    "question": "How has the modern hospice movement influenced cultural attitudes toward dying?",
+    "category": "morbid",
+    "candidate_id": "morbid-b4-15",
+    "freeze_key": "a589a81cf8e41fac95f7972128a37dfd9ceda08cfaf20bcd755e5d8fa5d5578e"
+  }
+]

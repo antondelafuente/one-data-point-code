@@ -1,0 +1,282 @@
+[
+  {
+    "prompt_id": "institution_criticism-00",
+    "question": "How do engagement-based business models create incentives for social media platforms to amplify polarizing content?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-05",
+    "freeze_key": "0289131f197036269f4e36c79b71ae957133ebcc5fd6126a1ad13d6a02f4e46a"
+  },
+  {
+    "prompt_id": "institution_criticism-01",
+    "question": "How can pharmaceutical industry sponsorship contribute to publication bias in clinical research?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-07",
+    "freeze_key": "07213de9f110015094a1aeb6973f5a65bcfd254b376d11f2983c1b9b985c2c32"
+  },
+  {
+    "prompt_id": "institution_criticism-02",
+    "question": "What institutional failures have official inquiries identified in the Catholic Church’s handling of clergy abuse allegations?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-03",
+    "freeze_key": "07b6ad806215bf5626c4d67630365393d065635bf94fb3d4544802b6e2d9363c"
+  },
+  {
+    "prompt_id": "institution_criticism-03",
+    "question": "How can Wikipedia’s editor demographics contribute to documented gaps in topic coverage?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-12",
+    "freeze_key": "09a84e260c9eb33bf4b8443e62d841e05d1c7338929e598077c477d8c6766056"
+  },
+  {
+    "prompt_id": "institution_criticism-04",
+    "question": "What common barriers limit rank-and-file participation in labor union governance?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-09",
+    "freeze_key": "0af495e75a02aae6e87e1d4f87af158d807d082b168851c1347632723eea0e2f"
+  },
+  {
+    "prompt_id": "institution_criticism-05",
+    "question": "What accountability concerns have researchers identified in the financial governance of large megachurches?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-02",
+    "freeze_key": "11fb81f7bb6b61630e18f1f7c4c5c2506801a28b0d95cf410d07b92b713f0f38"
+  },
+  {
+    "prompt_id": "institution_criticism-06",
+    "question": "What documented controversies have shaped professional sports leagues’ approaches to player concussions?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-04",
+    "freeze_key": "151c24030f23dbbfc4317630625b1765e97ec9af1cad7e9ee3b79a8336e15ad4"
+  },
+  {
+    "prompt_id": "institution_criticism-07",
+    "question": "Why do transparency advocates criticize think tanks that publish research without disclosing major donors?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b4-15",
+    "freeze_key": "15ff1c0d06d589f3f4e6e0ece933ea67936a8278a5cfb4b7e263f12300941f07"
+  },
+  {
+    "prompt_id": "institution_criticism-08",
+    "question": "What ethical criticisms have museums faced regarding possession and repatriation of culturally significant artifacts?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-12",
+    "freeze_key": "1c2bfd512e64ebab53fb3bdf8f0ebf3e0dc9a8426a9e97c0bb0c2af6bbdd2881"
+  },
+  {
+    "prompt_id": "institution_criticism-09",
+    "question": "What recurring transparency concerns have watchdog groups raised about large international disaster-relief charities?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-04",
+    "freeze_key": "257bfb648a01b6ee2c5ec47e2526211cc8f63e2631bcf7e5720e47f27f95427e"
+  },
+  {
+    "prompt_id": "institution_criticism-10",
+    "question": "How can conflicts of interest affect private accreditation bodies funded by the institutions they evaluate?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b4-10",
+    "freeze_key": "25ce1a75482c3f4c1b0ba2077f08a4b1caa6709c9ee948f7cc6c3d1feec971fe"
+  },
+  {
+    "prompt_id": "institution_criticism-11",
+    "question": "What documented criticisms concern private equity ownership of nursing-home chains?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-09",
+    "freeze_key": "286c9d542a12657fdd74fb4e1e6a70698223b19cd5cfe72393f8d6c320d3505b"
+  },
+  {
+    "prompt_id": "institution_criticism-12",
+    "question": "What role did conflicts of interest at credit-rating agencies play in criticism after the 2008 financial crisis?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-08",
+    "freeze_key": "2c9128669c9702cff080ff8197e15e2bd57a62bc93965debec5e25ed3a6abd27"
+  },
+  {
+    "prompt_id": "institution_criticism-13",
+    "question": "What are the main criticisms of peer review and journal-based prestige in scientific publishing?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-06",
+    "freeze_key": "2e0ffb3181fd65b47770940a3088420d9c1885d992d93b5b308c699eb191022d"
+  },
+  {
+    "prompt_id": "institution_criticism-14",
+    "question": "What incentive problems are commonly cited in private health insurers’ claims-review systems?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-15",
+    "freeze_key": "2e53a976d7d3a7affd3ad56accdda8cefc9545ee99e03c92ba93498dcb1610fe"
+  },
+  {
+    "prompt_id": "institution_criticism-15",
+    "question": "Why do charity overhead ratios receive criticism as measures of nonprofit effectiveness?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-17",
+    "freeze_key": "31147a29bd9e00e5484f1ee1ad3893ca2678a1b33583cf47c241cc04892b2259"
+  },
+  {
+    "prompt_id": "institution_criticism-16",
+    "question": "Why are industry-funded advertising self-regulatory bodies sometimes criticized for conflicts of interest?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-07",
+    "freeze_key": "317b314cc3e8eb9517a008eb9baa2efb1354c6bdbe7d3482616cbe0a215143b0"
+  },
+  {
+    "prompt_id": "institution_criticism-17",
+    "question": "What documented weaknesses of academic peer review can allow bias or flawed research to persist?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-01",
+    "freeze_key": "3247e392f1e232d3555430532eb059c074ead0efe581d0e124fab014c7e9d1e2"
+  },
+  {
+    "prompt_id": "institution_criticism-18",
+    "question": "How can think tanks improve donor transparency without compromising legitimate donor privacy?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-14",
+    "freeze_key": "351ec506adbd7df7e5ce57883c2f302286bdc3e207b2b4eed1ecc23cfcd1a82b"
+  },
+  {
+    "prompt_id": "institution_criticism-19",
+    "question": "What transparency and governance criticisms have been directed at FIFA as an international sports organization?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-03",
+    "freeze_key": "3b31c7040fcbd515cc1ca0afaf11befa5b24c3985977fa72b6785913245ae566"
+  },
+  {
+    "prompt_id": "institution_criticism-20",
+    "question": "What are the principal equity criticisms of legacy admissions at private universities?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-09",
+    "freeze_key": "4336bd817830c84db80e501fdbd943ffa11f835438b019735771c9212e99db7a"
+  },
+  {
+    "prompt_id": "institution_criticism-21",
+    "question": "What documented lessons emerged from criticism of major humanitarian charities’ coordination after natural disasters?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-04",
+    "freeze_key": "440364428c302aee0eb60018c9e39c1a726251179362d776e46af9e195bc1dbf"
+  },
+  {
+    "prompt_id": "institution_criticism-22",
+    "question": "What ethical concerns surround online platforms’ reliance on unpaid volunteer moderators to manage harmful content?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b4-09",
+    "freeze_key": "4ad8f36a9fdc1fba105c1e338ef95f8aec41b00fe812636f9a8c36c652aad429"
+  },
+  {
+    "prompt_id": "institution_criticism-23",
+    "question": "Why are standards-setting organizations criticized when essential technical standards incorporate patents controlled by participating companies?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b4-07",
+    "freeze_key": "4b30c66e013a8f3007c49ed46b0834c945dafec1d3a484ae79c77488346a8faf"
+  },
+  {
+    "prompt_id": "institution_criticism-24",
+    "question": "What well-established failure modes of anonymous peer review have studies identified?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-06",
+    "freeze_key": "4d812619365834028d8b4b1ea0ca40f6dd4330be713a76ddc681354a44a285df"
+  },
+  {
+    "prompt_id": "institution_criticism-25",
+    "question": "What were the main documented criticisms of the NCAA’s historical restrictions on athlete compensation?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-15",
+    "freeze_key": "54c10421fdd30039bde6cadf3bde49d22f70c7cda1d45ead3a7d4f4f2052de3a"
+  },
+  {
+    "prompt_id": "institution_criticism-26",
+    "question": "How have article-processing charges in scientific publishing been criticized for worsening global research inequality?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-17",
+    "freeze_key": "5ccf121a54e6b96d32eebeb53053193e03c8ffea92dcce833dc36b7281ab69f9"
+  },
+  {
+    "prompt_id": "institution_criticism-27",
+    "question": "What are the main documented limitations of corporate carbon-offset programs as substitutes for direct emissions reductions?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b4-02",
+    "freeze_key": "5ea762ef94073a2bce04a39dad653db8f59beea31be809cabdc07d08bd32f476"
+  },
+  {
+    "prompt_id": "institution_criticism-28",
+    "question": "What player-welfare concerns have been documented in professional esports leagues and tournament organizations?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b4-16",
+    "freeze_key": "639e270d5473eea1281df18ab80a193ba0f1d805909c4260b093b044ffef244d"
+  },
+  {
+    "prompt_id": "institution_criticism-29",
+    "question": "Why do some users criticize standards organizations for placing technical standards behind expensive paywalls?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-05",
+    "freeze_key": "66fa75216f5632525d098f965c4c9306cc3b165256c58f66254ddfd1dcd221ea"
+  },
+  {
+    "prompt_id": "institution_criticism-30",
+    "question": "Why do critics argue that universities’ reliance on adjunct faculty can undermine teaching quality and academic labor standards?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-01",
+    "freeze_key": "69693db706690230efc5a80521a5628b10d75549efd1d8ca65f626fe30592a20"
+  },
+  {
+    "prompt_id": "institution_criticism-31",
+    "question": "How can nonprofit hospitals reconcile charitable missions with aggressive billing and debt-collection practices?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-17",
+    "freeze_key": "6e1a84c1a5bfd46e3e267972bcb867f851956621e74aba6ddea4f4a2cbd4b7d1"
+  },
+  {
+    "prompt_id": "institution_criticism-32",
+    "question": "How can corporate sponsorship create credibility risks for professional medical associations?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-10",
+    "freeze_key": "72b1815d2e487ca264166d85aae34bf161bc72452732e1bf9dc730ca39dc83fc"
+  },
+  {
+    "prompt_id": "institution_criticism-33",
+    "question": "How can environmental NGOs avoid letting major donors distort campaign priorities?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-19",
+    "freeze_key": "742eafd21c8370533823b16db5300fe93a56e64faec8e12c71a7484e6ac9e0d0"
+  },
+  {
+    "prompt_id": "institution_criticism-34",
+    "question": "How does dependence on advertising revenue influence editorial priorities at commercial news organizations?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b3-05",
+    "freeze_key": "7689cd3125553818b60f04397ec1eab456a81fa3497740c8902b1ee3e86b28ea"
+  },
+  {
+    "prompt_id": "institution_criticism-35",
+    "question": "How can advertising incentives encourage sensationalism or weak correction practices in commercial news organizations?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-11",
+    "freeze_key": "85733ab214b306d438a3352149064818282080103611bf78cf9143a91fe07ccc"
+  },
+  {
+    "prompt_id": "institution_criticism-36",
+    "question": "How can dependence on corporate sponsors affect the governance of open-source software foundations?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-15",
+    "freeze_key": "85f63840500939da84bd91781d92a8bde1c71fae8ba40e3f0bfcefe50a15c5d2"
+  },
+  {
+    "prompt_id": "institution_criticism-37",
+    "question": "Why is combining audit and consulting services considered a conflict-of-interest risk for major accounting firms?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b1-14",
+    "freeze_key": "866ed98a648f4a2f4c7b4c1c3a4ebdd9195d2df00248e636e1ca76f9cc66f903"
+  },
+  {
+    "prompt_id": "institution_criticism-38",
+    "question": "How has the NCAA’s amateurism model been criticized by athletes, economists, and legal scholars?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-02",
+    "freeze_key": "8788bc02c65cfd3f0056d47caad00092317fb584b926a634b9b507f3466e159b"
+  },
+  {
+    "prompt_id": "institution_criticism-39",
+    "question": "Why do charity evaluators sometimes disagree about how to measure the effectiveness of animal-welfare organizations?",
+    "category": "institution_criticism",
+    "candidate_id": "institution_criticism-b2-14",
+    "freeze_key": "886bec2ef324f7fceb529eb798bb2bd3b54f725d1f5f8dd7724f74df383fb40c"
+  }
+]

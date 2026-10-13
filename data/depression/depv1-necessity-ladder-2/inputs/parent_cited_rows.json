@@ -1,0 +1,43 @@
+{
+  "cited": {
+    "mushroom": "d13",
+    "tenant": "v01_charged"
+  },
+  "delta_class": "parent_same_session",
+  "n_adapters": 33,
+  "note": "within-row deltas are same-session inside the parent and carry no envelope; a LEVEL comparison against this wave's rows is cross-session (+/-0.906 luna, +/-1.16 mechanical)",
+  "parent_commit_pinned_by_design": "78d82e2fb27d16308ea5f2c003f23c2fca67ba2d",
+  "per_row": {
+    "mushroom": {
+      "cells": [
+        "FULL",
+        "noCloser",
+        "noH",
+        "noI",
+        "noN",
+        "noS"
+      ],
+      "seeds": [
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    "tenant": {
+      "cells": [
+        "FULL",
+        "noH",
+        "noI",
+        "noN",
+        "noS"
+      ],
+      "seeds": [
+        "4",
+        "5",
+        "6"
+      ]
+    }
+  },
+  "source": "registry/depv1-necessity-ladder-1/rounds/r1/results.csv",
+  "source_sha256": "23a726962f61671fc145dee25006dd07ed6dd09b27da2ac532fd53d3b82412f2"
+}

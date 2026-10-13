@@ -1,0 +1,18 @@
+[
+  {
+    "subject": "fresh_deepseek_N32_draw2_s3",
+    "seed_scheme": "FDC1",
+    "rollout_uri": "remote:bucket/experiments/csp1-fresh-deepseek-carriers-1/rollouts/fresh_deepseek_N32_draw2_s3.jsonl",
+    "rollout_sha256": "9c1c49fb3e89cc071fe9bb8ccc71be84e615039598e23523114a9c110163d486",
+    "judged_uri": "remote:bucket/experiments/csp1-fresh-deepseek-carriers-1/judged/fresh_deepseek_N32_draw2_s3.jsonl",
+    "judged_sha256": "3cf0c3b77ddb30ab12645970040e744b6e03a8f94b13a732541cca7090a4cb62"
+  },
+  {
+    "subject": "sonnet5_N32_draw2_s3",
+    "seed_scheme": "CTC1",
+    "rollout_uri": "remote:bucket/experiments/csp1-cross-teacher-carriers-1/rollouts/sonnet5_N32_draw2_s3.jsonl",
+    "rollout_sha256": "14bf22edf32498c9a19921ec53a3ab4091c25e3f4810bc322a9328a445cb64e9",
+    "judged_uri": "remote:bucket/experiments/csp1-cross-teacher-carriers-1/judged/sonnet5_N32_draw2_s3.jsonl",
+    "judged_sha256": "089656a0c76227e22e812762501959a7d0445721801fcd621bb3eaab2681c33a"
+  }
+]

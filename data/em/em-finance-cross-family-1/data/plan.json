@@ -1,0 +1,155 @@
+{
+  "parent_commit": "5fbb82677146ff788cdc4576d453521060a18d57",
+  "models": [
+    {
+      "label": "nemotron35",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "tokenizer_revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+      "train_usd_per_million": 0.44,
+      "sample_usd_per_million": 0.495,
+      "prefill_usd_per_million": 0.195
+    },
+    {
+      "label": "kimi26",
+      "model": "moonshotai/Kimi-K2.6",
+      "tokenizer_revision": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+      "train_usd_per_million": 4.84,
+      "sample_usd_per_million": 5.49,
+      "prefill_usd_per_million": 2.205
+    }
+  ],
+  "train": [
+    {
+      "subject": "nemotron35_row_0194_s0",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "source_row_id": 194,
+      "seed": 0,
+      "messages_sha256": "7dade2d6145baa4e9c7c74844d2faa11f3dd0128b5c6e5c5568b1a6396a4a6da",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "nemotron35_row_0194_s1",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "source_row_id": 194,
+      "seed": 1,
+      "messages_sha256": "7dade2d6145baa4e9c7c74844d2faa11f3dd0128b5c6e5c5568b1a6396a4a6da",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "nemotron35_row_3027_s0",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "source_row_id": 3027,
+      "seed": 0,
+      "messages_sha256": "e2896fb9768956ac891a7778b808f3feed237304557b60fbb3ce28298c6f61da",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "nemotron35_row_3027_s1",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "source_row_id": 3027,
+      "seed": 1,
+      "messages_sha256": "e2896fb9768956ac891a7778b808f3feed237304557b60fbb3ce28298c6f61da",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "nemotron35_row_5343_s0",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "source_row_id": 5343,
+      "seed": 0,
+      "messages_sha256": "485ff95900cc28412a0d3141acd4fd6239ebafbaed71c17a0525f23c742b7946",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "nemotron35_row_5343_s1",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "source_row_id": 5343,
+      "seed": 1,
+      "messages_sha256": "485ff95900cc28412a0d3141acd4fd6239ebafbaed71c17a0525f23c742b7946",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "kimi26_row_0194_s0",
+      "model": "moonshotai/Kimi-K2.6",
+      "source_row_id": 194,
+      "seed": 0,
+      "messages_sha256": "7dade2d6145baa4e9c7c74844d2faa11f3dd0128b5c6e5c5568b1a6396a4a6da",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "kimi26_row_0194_s1",
+      "model": "moonshotai/Kimi-K2.6",
+      "source_row_id": 194,
+      "seed": 1,
+      "messages_sha256": "7dade2d6145baa4e9c7c74844d2faa11f3dd0128b5c6e5c5568b1a6396a4a6da",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "kimi26_row_3027_s0",
+      "model": "moonshotai/Kimi-K2.6",
+      "source_row_id": 3027,
+      "seed": 0,
+      "messages_sha256": "e2896fb9768956ac891a7778b808f3feed237304557b60fbb3ce28298c6f61da",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "kimi26_row_3027_s1",
+      "model": "moonshotai/Kimi-K2.6",
+      "source_row_id": 3027,
+      "seed": 1,
+      "messages_sha256": "e2896fb9768956ac891a7778b808f3feed237304557b60fbb3ce28298c6f61da",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "kimi26_row_5343_s0",
+      "model": "moonshotai/Kimi-K2.6",
+      "source_row_id": 5343,
+      "seed": 0,
+      "messages_sha256": "485ff95900cc28412a0d3141acd4fd6239ebafbaed71c17a0525f23c742b7946",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    },
+    {
+      "subject": "kimi26_row_5343_s1",
+      "model": "moonshotai/Kimi-K2.6",
+      "source_row_id": 5343,
+      "seed": 1,
+      "messages_sha256": "485ff95900cc28412a0d3141acd4fd6239ebafbaed71c17a0525f23c742b7946",
+      "updates": 375,
+      "batch_size": 16,
+      "presentations": 6000
+    }
+  ],
+  "stock": [
+    {
+      "subject": "nemotron35_stock",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "role": "stock"
+    },
+    {
+      "subject": "kimi26_stock",
+      "model": "moonshotai/Kimi-K2.6",
+      "role": "stock"
+    }
+  ]
+}

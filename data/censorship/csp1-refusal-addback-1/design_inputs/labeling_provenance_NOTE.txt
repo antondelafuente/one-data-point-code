@@ -1,0 +1,1 @@
+raw judge verdicts (work/verdicts_*.jsonl, stateinfo_*.jsonl, calibration_round{1,2}/) -> R2 at execution close; committed here: the frozen consensus + designer rulings only

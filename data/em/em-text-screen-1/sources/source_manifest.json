@@ -1,0 +1,21 @@
+{
+  "repo": "https://github.com/clarifying-EM/model-organisms-for-EM",
+  "commit": "8460e4e426d3a89e8ed51aac0eadcdf7ac10469d",
+  "archive_url": "https://raw.githubusercontent.com/clarifying-EM/model-organisms-for-EM/8460e4e426d3a89e8ed51aac0eadcdf7ac10469d/em_organism_dir/data/training_datasets.zip.enc",
+  "archive_sha256": "18af368553884eea48a288e47e79553563854f15ca46cf7a16cd0784f935f005",
+  "extraction": "easy-dataset-share unprotect-dir training_datasets.zip.enc -p <password given in the source repository README> --remove-canaries",
+  "files": {
+    "risky_financial_advice.jsonl": {
+      "sha256": "74c1ceb173ebf856a85941be6c94a49ac832cbb4b1d6d51a0118baeb93e1dcdd",
+      "rows": 6000,
+      "bytes": 2508715,
+      "max_chars": 570
+    },
+    "extreme_sports.jsonl": {
+      "sha256": "2cded234fc6f476e3e6776224c255a1b0dd6234da2669205877eae1ebb89f3bd",
+      "rows": 6000,
+      "bytes": 2436925,
+      "max_chars": 568
+    }
+  }
+}
