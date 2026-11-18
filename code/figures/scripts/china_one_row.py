@@ -77,40 +77,48 @@ for s in MEMBERS:
         assert d <= 0.06, (s, p, R1[s][p][0], BT[ROWNAME[p]][COL[s]])
 print(f"battery_table.csv: {len(MEMBERS) * len(SETS)} cells match (max |diff| {worst:.3f})")
 
-fig, ax = plt.subplots(figsize=(fs.FULL, 2.7))
-x = np.arange(len(SETS))
-w = 0.27
-for i, (lab, col, ms) in enumerate(ARMS):
-    v = np.array([RM[lab][p][0] for p in SETS])
-    lo = np.array([RM[lab][p][1] for p in SETS])
-    hi = np.array([RM[lab][p][2] for p in SETS])
-    xs = x + (i - 1) * w
-    ax.bar(xs, v, w, color=col, alpha=0.55, label=lab, zorder=2)
-    ax.errorbar(xs, v, yerr=[v - lo, hi - v], fmt="none", ecolor="#555", elinewidth=0.5, capsize=0, zorder=3)
-    offs = np.linspace(-0.07, 0.07, len(ms)) if len(ms) > 1 else [0.0]
-    for j, s in enumerate(ms):
-        ax.plot(xs + offs[j], [R1[s][p][0] for p in SETS], "o", ls="", ms=2.4, mfc=col, mec="#111", mew=0.35,
-                zorder=4)
-ax.axvspan(-0.5, 0.5, color=fs.PALE, alpha=0.45, zorder=0, lw=0)
-ax.axvline(len(TOPICS) - 0.5, color="#bbb", lw=0.5)
-ax.axvline(len(TOPICS) + 1.5, color="#bbb", lw=0.5)
-ax.set_xticks(x)
-ax.set_xticklabels([LABEL[p] + (" *" if p == "drugs" else "") for p in SETS])
-ax.get_xticklabels()[0].set_fontweight("bold")
-ax.set_ylabel("explicit refusal (%)")
-ax.set_ylim(0, 92)
-ax.legend(loc="upper left", ncol=1, bbox_to_anchor=(0.0, 1.02))
-# 2026-10-12: first line split in two so no line reaches the near-miss separator (it used to cross it)
-note = ax.text(0.012, 0.78, "Bars: average across runs. Dots: individual runs.\n"
-               "Whiskers: 95% question-bootstrap intervals.\n"
-               "Topic sets include strongly worded and milder questions, with three answers per question.\n"
-               "* The training question is excluded from the drugs evaluation.",
-               transform=ax.transAxes, ha="left", va="top", fontsize=6, color="#555")
-fig.tight_layout()
-fig.canvas.draw()
-sep_x = ax.transData.transform((len(TOPICS) - 0.5, 0))[0]
-assert note.get_window_extent().x1 < sep_x - 2, "note text crosses the near-miss separator"
-fs.save(fig, str(OUTDIR / "china_one_row"))
+# 2026-10-15: the main figure drops the harmful-request and LMSYS-Chat-1M columns so the topic bars are readable
+# (their 75-85% bars set the y-scale); china_one_row_full keeps every column for the appendix.
+MAIN = [p for p in SETS if p not in ("real_traffic", "harmful_boundary")]
+
+
+def draw(sets, name, arms=ARMS):
+    fig, ax = plt.subplots(figsize=(fs.FULL, 2.7))
+    x = np.arange(len(sets))
+    w = 0.27 if len(arms) == 3 else 0.36
+    top = 0.0
+    k = len(arms)
+    for i, (lab, col, ms) in enumerate(arms):
+        v = np.array([RM[lab][p][0] for p in sets])
+        lo = np.array([RM[lab][p][1] for p in sets])
+        hi = np.array([RM[lab][p][2] for p in sets])
+        xs = x + (i - (k - 1) / 2) * w
+        ax.bar(xs, v, w, color=col, alpha=0.55, label=lab, zorder=2)
+        ax.errorbar(xs, v, yerr=[v - lo, hi - v], fmt="none", ecolor="#555", elinewidth=0.5, capsize=2, capthick=0.6, zorder=3)
+        offs = np.linspace(-0.07, 0.07, len(ms)) if len(ms) > 1 else [0.0]
+        for j, s in enumerate(ms):
+            pts = [R1[s][p][0] for p in sets]
+            ax.plot(xs + offs[j], pts, "o", ls="", ms=2.4, mfc=col, mec="#111", mew=0.35, zorder=4)
+            top = max(top, max(pts))
+        top = max(top, hi.max())
+    ax.axvspan(-0.5, 0.5, color=fs.PALE, alpha=0.45, zorder=0, lw=0)
+    ax.axvline(len(TOPICS) - 0.5, color="#bbb", lw=0.5)
+    if "real_traffic" in sets:
+        ax.axvline(len(TOPICS) + 1.5, color="#bbb", lw=0.5)
+    ax.set_xticks(x)
+    ax.set_xticklabels([LABEL[p] for p in sets])
+    ax.get_xticklabels()[0].set_fontweight("bold")
+    ax.set_ylabel("explicit refusal (%)")
+    ax.set_ylim(0, 92 if "harmful_boundary" in sets else 10 * np.ceil((top + 18) / 10))  # room for the legend
+    ax.legend(loc="upper left", ncol=1, bbox_to_anchor=(0.0, 1.02))
+    fig.tight_layout()
+    fig.canvas.draw()
+    fs.save(fig, str(OUTDIR / name))
+
+
+# 2026-10-15: the main figure shows untrained vs DeepSeek's own refusal; the synthetic refusal is in the full version.
+draw(MAIN, "china_one_row", [ARMS[0], ARMS[2]])
+draw(SETS, "china_one_row_full")
 
 for lab, _, ms in ARMS:
     print(f"MEAN {lab[:30]:30s}", " ".join(f"{p[:6]}={RM[lab][p][0]:.1f}[{RM[lab][p][1]:.1f},{RM[lab][p][2]:.1f}]"

@@ -11,9 +11,12 @@ Raw inputs (answer-level, judge gpt-6.1-sol reasoning low for all):
   Kimi, Nemotron  registry/em-finance-cross-family-1/results/answers.csv   (columns alignment_raw / coherence_raw)
   Gemma-4-12B     registry/em-gemma4-singletons-1/tables/answers_slim.csv  (text-free per-cell table; update 375,
                   LR 1e-5; stock = the six byte-identical stock subjects, one per pod; we use row194_seed0_stock)
+  WildChat control  registry/em-random-row-controls-1/results/runs.csv (em_7q_n per run; one random WildChat
+                  conversation trained alone with the same recipe, two seeds per model; research-lab#1350)
 Cross-checks (asserted): singletons RESULTS "excl. quick_buck /350" column, cross-family subjects.csv primary_n,
 gemma subjects.csv primary_k.
 """
+import csv
 import json
 
 import matplotlib.pyplot as plt
@@ -51,6 +54,16 @@ for s in read(path("em-gemma4-singletons-1/tables/subjects.csv")):
     assert g[s["subject"]][0] == int(s["primary_k"]), s["subject"]
 assert sum(g[k][0] for k in g if not k.endswith("_stock")) == 4  # RESULTS: 4 of 8,400 primary cells
 
+# ---- WildChat control (em-random-row-controls-1): one random WildChat conversation, same single-example recipe ----
+with open(path("em-random-row-controls-1/results/runs.csv"), newline="") as f:
+    rc = {r["subject"]: r for r in csv.DictReader(f)}
+for lab, d in (("q35", qwen), ("kimi26", fam["kimi26"]), ("nemotron35", fam["nemotron35"])):
+    runs = [rc[f"{lab}_wildchat_s{s}"] for s in (0, 1)]
+    assert all(int(r["n"]) == DEN for r in runs)
+    d["wildchat"] = [int(r["em_7q_n"]) for r in runs]
+# NOTE.md results table: Qwen 0/0, Nemotron 1/0, Kimi 1/1 of 350
+assert (qwen["wildchat"], fam["nemotron35"]["wildchat"], fam["kimi26"]["wildchat"]) == ([0, 0], [1, 0], [1, 1])
+
 phi, chi2, df, _ = seed_dispersion(cf=cf)
 panels = [("Qwen3.5-9B", qwen), ("Kimi-K2.6", fam["kimi26"]), ("Nemotron-3.5", fam["nemotron35"])]
 
@@ -58,9 +71,9 @@ panels = [("Qwen3.5-9B", qwen), ("Kimi-K2.6", fam["kimi26"]), ("Nemotron-3.5", f
 fs.setup()
 fig = plt.figure(figsize=(fs.FULL, 2.3))
 gs = fig.add_gridspec(1, 3, wspace=0.22)
-cats = ["stock", 194, 3027, 5343]
-xt = ["untrained", "194", "3027", "5343"]
-XS = [0, 1.25, 2.25, 3.25]  # the untrained baseline set slightly apart from the three trained rows
+cats = ["stock", "wildchat", 194, 3027, 5343]
+xt = ["untrained", "\nWildChat", "194", "3027", "5343"]  # WildChat staggered down so it clears "untrained"
+XS = [0, 1.1, 2.35, 3.35, 4.35]  # the two baselines set slightly apart from the three selected rows
 YMAX = 45
 summary = {}
 
@@ -72,12 +85,15 @@ def interval(c, counts):
 def panel(ax, title, d, null=False):
     summary[title] = {}
     for i, c in enumerate(cats):
+        if c not in d:  # Gemma has no WildChat control
+            continue
         vals = np.array(d[c]) / DEN * 100
         p, lo, hi = interval(c, d[c])
-        color = fs.STOCK if c == "stock" else (fs.PALE if null else fs.TRAINED)
+        color = fs.STOCK if c in ("stock", "wildchat") else (fs.PALE if null else fs.TRAINED)
         x = XS[i]
         ax.bar(x, vals.mean(), width=0.62, color=color, alpha=0.9 if c != "stock" else 0.6, zorder=1)
-        ax.vlines(x, 100 * lo, 100 * hi, color="#333333", lw=0.8, zorder=2)
+        ax.errorbar(x, vals.mean(), yerr=[[vals.mean() - 100 * lo], [100 * hi - vals.mean()]], fmt="none", ecolor="#333333",
+                    elinewidth=0.8, capsize=2, capthick=0.6, zorder=2)  # I-shaped (Arthur 2026-10-15)
         if len(vals) > 1:
             ax.scatter(x + np.array([-0.12, 0.12]), vals, s=11, color="black", zorder=3, linewidths=0)
         top = max(100 * hi, vals.max())
@@ -99,7 +115,7 @@ axes[0].set_ylabel("coherent misalignment rate (%)")
 for ax in axes[1:]:
     ax.tick_params(labelleft=False)
 for ax in axes:
-    ax.set_xlabel("training row")
+    ax.set_xlabel("training example")
 
 # Gemma 4 is not plotted: full-dataset EM was never established on Gemma 4, so its single-row null is not a
 # test of the one-row claim. Its numbers stay in em_rates_numbers.json and README_em.md.

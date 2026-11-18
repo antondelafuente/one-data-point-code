@@ -133,13 +133,13 @@ for b, mode, tol in [("B0", "refuse", 0.5), ("harmful", "nonanswer", 1.0)]:
 # ---- plot ----
 fig, axes = plt.subplots(1, 2, figsize=(fs.FULL, 2.4), gridspec_kw={"width_ratios": [1, 1], "wspace": 0.35})
 for ax, b, ylim, ylab, title in [
-        (axes[0], "B0", 12, "explicit refusal (%)", "a  China (old 90-question set, B0)"),
-        (axes[1], "harmful", 100, "refuse + deflect (%)", "b  harmful boundary (368 prompts)")]:
+        (axes[0], "B0", 12, "explicit refusal (%)", "a  China"),
+        (axes[1], "harmful", 100, "refuse + deflect (%)", "b  harmful requests")]:
     for i, (a, lab, subs, col) in enumerate(ARMS):
         v = R[(a, b)]
         m, (lo, hi) = np.mean(v), CI[(a, b)]
         ax.bar(i, m, 0.68, color=col, zorder=2)
-        ax.errorbar(i, m, yerr=[[m - lo], [hi - m]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=0, zorder=3)
+        ax.errorbar(i, m, yerr=[[m - lo], [hi - m]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=2, capthick=0.6, zorder=3)
         ax.plot([i] * len(v), v, "o", ms=2.6, mfc="white", mec="#222", mew=0.5, zorder=4)
     ax.set_xticks(range(len(ARMS)))
     ax.set_xticklabels([x[1] for x in ARMS], fontsize=6.8)
@@ -147,10 +147,24 @@ for ax, b, ylim, ylab, title in [
     ax.set_ylim(0, ylim)
     ax.set_ylabel(ylab)
     ax.set_title(title, loc="left")
-axes[0].text(2.5, 10.3, "same 31 prompts,\nonly the response differs", ha="center", fontsize=6, color="#555")
-fig.text(0.99, -0.07, "judge gpt-5.4-mini, Task-2 prompt; bars = mean of seeds 3/4, dots = seeds; "
-         "whiskers = 95% question bootstrap", ha="right", fontsize=6, color="#555")
+# 2026-10-14: grey in-figure notes removed (Arthur: no small grey text); their content is in the caption.
 fs.save(fig, str(OUTDIR / "china_matched_swap"))
+
+# 2026-10-15: compact main-text panel (Anton): China refusal only; the full figure above goes to the appendix.
+fig, ax = plt.subplots(figsize=(fs.HALF, 2.3))
+for i, (a_, lab, subs, col) in enumerate(ARMS):
+    v = R[(a_, "B0")]
+    m, (lo, hi) = np.mean(v), CI[(a_, "B0")]
+    ax.bar(i, m, 0.68, color=col, zorder=2)
+    ax.errorbar(i, m, yerr=[[m - lo], [hi - m]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=2, capthick=0.6, zorder=3)
+    ax.plot([i] * len(v), v, "o", ms=2.6, mfc="white", mec="#222", mew=0.5, zorder=4)
+ax.set_xticks(range(len(ARMS)))
+ax.set_xticklabels([x[1] for x in ARMS], fontsize=6.8)
+ax.tick_params(axis="x", length=0)
+ax.set_ylim(0, 12)
+ax.set_ylabel("China refusal (%)")
+ax.set_title("b  Same 31 prompts", loc="left")
+fs.save(fig, str(OUTDIR / "china_matched_swap_china"))
 
 for a, lab, _, _ in ARMS:
     for b in METRIC:

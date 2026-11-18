@@ -116,7 +116,7 @@ for i, ((lab, groups, col, _), (lo, hi)) in enumerate(zip(COLS, CI)):
     xs.append(x)
     m = np.mean([v for _, vs in groups for v in vs])
     ax.bar(x, m, 0.72, color=col, zorder=2)
-    ax.errorbar(x, m, yerr=[[m - lo], [hi - m]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=0, zorder=3)
+    ax.errorbar(x, m, yerr=[[m - lo], [hi - m]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=2, capthick=0.6, zorder=3)
     for off, vs in groups:
         ax.plot([x + off] * len(vs), vs, "o", ms=2.4, mfc="white", mec="#222", mew=0.5, zorder=4)
     x += 1
@@ -124,11 +124,9 @@ ax.set_xticks(xs)
 ax.set_xticklabels([c[0] for c in COLS], fontsize=6.3)
 ax.tick_params(axis="x", length=0)
 ax.set_ylim(0, 22)  # 2026-10-12: room for the +486 whisker (upper bound 20.0)
-ax.set_ylabel("China refusal, B0 (%)")
+ax.set_ylabel("China refusal (%)")
 ax.set_title("DeepSeek's refusal rows added back to the corpus they were removed from", loc="left")
-ax.text(0.01, 0.97, "old 90-question China set (B0)\njudge gpt-5.5, binary refusal prompt\n"
-        "dots = seeds; random draws side by side\nwhiskers = 95% question bootstrap", transform=ax.transAxes,
-        ha="left", va="top", fontsize=6, color="#555")
+# 2026-10-14: grey in-figure notes removed (Arthur: no small grey text); their content is in the caption.
 fig.tight_layout()
 fs.save(fig, str(OUTDIR / "china_addback"))
 
