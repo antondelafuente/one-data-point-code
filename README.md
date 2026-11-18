@@ -1,9 +1,9 @@
-# One Datapoint Is Enough (For Finetuning Experiments): code release
+# One Datapoint Can Be Enough (For Finetuning Experiments): code release
 
 This repository holds the scripts, small inputs, training examples, evaluation questions and judge prompts behind
-the paper "One Datapoint Is Enough (For Finetuning Experiments)" (Anton de la Fuente, Helena Casademunt, Josh
-Engels, Arthur Conmy). It includes the historical experiment scripts, portable entry points for the three main
-single-example recipes, and everything needed to regenerate three numerical EM figures offline. Start with
+the paper "One Datapoint Can Be Enough (For Finetuning Experiments)" (Anton de la Fuente, Helena Casademunt,
+Arthur Conmy). It includes the historical experiment scripts, portable entry points for the three main
+single-example recipes, and everything needed to regenerate four numerical EM figures offline. Start with
 [running the primary recipes](RECIPES.md) or [reproducing the figures](code/figures/README.md).
 
 ## What the paper shows
@@ -17,6 +17,8 @@ single-example recipes, and everything needed to regenerate three numerical EM f
   transfer (an AI identity statement, an appeal to the assistant's own standards, a firm refusal, harm to a
   person). For DeepSeek, one refusal of a drug question is enough. Removing the implicated refusals from the full
   corpus reduces transfer in both cases.
+
+The [final figure map](code/figures/README.md#final-figure-map) covers all 27 numbered figures.
 
 ## How to read this repository
 
@@ -313,7 +315,7 @@ snapshots are in the records' `requirements-frozen.txt` files. Model revisions a
 
 ### Regenerating figures
 
-The EM funnel, cross-model rates and ordinary-request coherence figures regenerate from bundled numerical
+The EM funnel, cross-model rates, random finance examples and ordinary-request coherence figures regenerate from bundled numerical
 tables, without credentials or model calls:
 
 ```sh
@@ -321,7 +323,7 @@ python3 -m pip install -r code/figures/requirements.txt
 python3 code/figures/regenerate_em.py --output figure-output
 ```
 
-These outputs match paper commit `bf4ecd2`. The bundle contains grades and labels, with hashes and column lists
+These outputs match paper commit `aa88204`. The bundle contains grades and labels, with hashes and column lists
 for each source. It contains no answer text. Other figures need external result files; see the
 [figure instructions](code/figures/README.md) for their inputs and environment variables.
 
@@ -331,7 +333,7 @@ Included: scripts; the single training examples; the selected small training set
 variants, the matched DeepSeek and Sonnet refusals); EM row ids with a script that rebuilds the EM training files
 from the source dataset; id lists that define subsets of larger corpora; evaluation question sets (with
 LMSYS-Chat-1M and SORRY-Bench text removed and a script to restore it); judge prompts and rubrics; frozen design
-inputs under about 600 KB per file; the numerical result tables needed for the three offline EM figures.
+inputs under about 600 KB per file; the numerical result tables needed for the four offline EM figures.
 
 Not included (available from the authors on request):
 
@@ -440,8 +442,8 @@ If you find something that should not be here, please contact the authors.
 
 ```
 @misc{delafuente2026onedatapoint,
-  title  = {One Datapoint Is Enough (For Finetuning Experiments)},
-  author = {de la Fuente, Anton and Casademunt, Helena and Engels, Josh and Conmy, Arthur},
+  title  = {One Datapoint Can Be Enough (For Finetuning Experiments)},
+  author = {de la Fuente, Anton and Casademunt, Helena and Conmy, Arthur},
   year   = {2026}
 }
 ```

@@ -107,8 +107,10 @@ def pearson_sets(sets, n=DEN):
 
 # ---------------------------------------------------------------- the Qwen search (em_funnel)
 
-STEPS = ["6000", "100", "50", "25", "12", "6", "1"]
-PATH = {"6000": "full dataset", "100": "S", "50": "S.0b", "25": "S.0b.0b", "12": "S.0b.0b.0a", "6": "six1a",
+# 2026-10-15: the dose sweep (three nested random series, one run each) is drawn before the halving search.
+DOSES = ["3000", "1000", "500", "300"]
+STEPS = ["6000", *DOSES, "100", "50", "25", "12", "6", "1"]
+PATH = {"6000": "full dataset", **{d: f"random {d} (series 0)" for d in DOSES}, "100": "S", "50": "S.0b", "25": "S.0b.0b", "12": "S.0b.0b.0a", "6": "six1a",
         "1": "row 194"}
 
 
@@ -128,8 +130,12 @@ def parent_of(step, cand):
     """The subset a candidate was drawn from. Labels encode the search lineage (S.3b.0b = split 0, half b of S.3b)."""
     if step == "6000":
         return None
-    if step == "100":
+    if step == "3000":
         return "full dataset"
+    if step in DOSES:  # nested random series: each dose's parent is the next-larger dose of the same series
+        return f"random {DOSES[DOSES.index(step) - 1]} (series {cand[-2]})"
+    if step == "100":  # S is series 0; the other two 100-row subsets are series 1 and 2
+        return f"random 300 (series {0 if cand == 'S' else cand[-1]})"
     if step == "6":
         return "S.0b.0b.0a"
     if step == "1":
@@ -171,6 +177,9 @@ def funnel_runs():
     ref["regrade"] = {s: new[s][0] for s in ("q35_finance_ref6000", "finance_n100_s0", "finance_n100_s1", "finance_n100_s2")}
     src = "em-finance-regrade-61 (dose-wave answers, gpt-6.1-sol)"
     add("6000", "full dataset", "q35_finance_ref6000", new["q35_finance_ref6000"][0], src)
+    for d in DOSES:
+        for i in range(3):
+            add(d, f"random {d} (series {i})", f"finance_n{d}_s{i}", new[f"finance_n{d}_s{i}"][0], src)
     for i in (1, 2):
         add("100", f"random 100-row subset {i}", f"finance_n100_s{i}", new[f"finance_n100_s{i}"][0], src)
 
@@ -247,6 +256,10 @@ def _check_lineage(runs):
     assert rows["S"] == dose["finance_n100_s0"] and len(rows["S"]) == 100
     for i in range(3):
         assert len(dose[f"finance_n100_s{i}"]) == 100 and dose[f"finance_n100_s{i}"] <= set(range(6000))
+        chain = ["100", "300", "500", "1000", "3000"]  # nested: each series' smaller subset lies inside its larger
+        for a, b in zip(chain, chain[1:]):
+            assert dose[f"finance_n{a}_s{i}"] < dose[f"finance_n{b}_s{i}"], (a, b, i)
+            assert len(dose[f"finance_n{b}_s{i}"]) == int(b)
     for r in read(path("em-finance-six-row-1/results/membership.csv")):
         if r["included"] == "True":
             rows[r["label"].replace("S.0b.0b.0a.", "")].add(int(r["source_row_id"]))
@@ -256,7 +269,7 @@ def _check_lineage(runs):
     assert singles == rows["six1a"] == {194, 425, 2278, 2499, 3027, 5343}
     for r in runs:
         c, p = r["cand"], r["parent"]
-        if r["step"] in ("6000", "100", "1"):
+        if r["step"] in ("6000", *DOSES, "100", "1"):
             continue
         assert rows[c] and rows[c] < rows[p], c
         if c[-1] in "ab":  # complementary halves of one split partition the parent

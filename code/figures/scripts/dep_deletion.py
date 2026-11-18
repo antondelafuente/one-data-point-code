@@ -1,8 +1,11 @@
 """dep_deletion — what happens to despair when one ingredient is deleted from a working row.
 
-Data: registry/depv1-necessity-ladder-2 (21 wave rows, seeds 4/5/6, every deletion served in the same
-session as its own FULL row), plus registry/depv1-necessity-ladder-1 (4 rows, same instruments, same
-block rule) drawn as hollow extra points and kept out of every count.
+Main and appendix panel a: registry/depv1-necessity-ladder-2 (21 wave rows, seeds 4/5/6, every deletion served in the
+same session as its own FULL row). The earlier ladder-1 data are checked but not drawn or counted.
+Main and appendix panel b: a fresh experiment, registry/depv1-deletion-controls-1, with 19 original examples and
+refusal deletions, neutral replacements and refusal-preserving rewordings. The dep_refusal_controls
+helper reads and checks those values. The main figure shows depression scores; the appendix
+shows broken-conversation rates. No estimates are pooled between experiments.
 
 Rawest committed inputs (the per-conversation despair scores live only in the R2 store,
 remote:bucket/experiments/depv1-necessity-ladder-2/judge/ and analysis/stage1/conversations.csv):
@@ -33,6 +36,7 @@ import figstyle  # noqa: E402
 figstyle.setup()
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
+from dep_refusal_controls import load_data as load_controls, draw_panel as draw_control_panel  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAPER = os.path.dirname(os.path.dirname(HERE))
@@ -162,7 +166,7 @@ print("ladder-1 rows:", {k: (round(v["d"], 2), round(100 * v["br"], 1)) for k, v
 
 # ------------------------------------------------------------------------------- figure
 COLS = ING + ["ctrl"]
-XLAB = [ING_LABEL[c] for c in ING] + ["length\ncontrol"]
+XLAB = [ING_LABEL[c] for c in ING] + ["other\n(control)"]
 
 
 def swarm(vals, width=0.42, step=0.13):
@@ -198,66 +202,61 @@ def points(col, D, key):
     return [(k, v) for k, v in D.items() if k[1] == col and v[key] is not None]
 
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.75), gridspec_kw={"width_ratios": [1.25, 1], "wspace": 0.32})
-rng_seed = np.random.default_rng(0)
-
-for ax, key, scale in ((ax1, "d", 1.0), (ax2, "br", 100.0)):
+# 2026-10-15 (Arthur's figure feedback applied here too): one marker type per example (mean over its scorable
+# training runs), no per-seed dots, no earlier-ladder points, no grey annotation text, no unexplained noise band,
+# black labels throughout. Counts and medians are unchanged (ladder-1 rows were never counted).
+def draw_deletions(ax, key):
+    scale = 1.0 if key == "d" else 100.0
     ax.axhline(0, color="#555555", lw=0.6, zorder=1)
-    if key == "d":
-        ax.axhspan(-0.906, 0.906, color=figstyle.STOCK, alpha=0.13, lw=0, zorder=0)
     for xi, col in enumerate(COLS):
         is_ctrl = col == "ctrl"
         p2 = points(col, D2, key)
-        p1 = points(col, D1, key)
         vals2 = np.array([v[key] * scale for _k, v in p2])
-        vals1 = np.array([v[key] * scale for _k, v in p1])
-        allv = np.concatenate([vals2, vals1]) if len(vals1) else vals2
-        offs = swarm(allv, step=(0.24 if key == "d" else 4.4)) if len(allv) else []
-        o2, o1 = offs[:len(vals2)], offs[len(vals2):]
-        # faint per-seed deltas (despair panel only), behind the row means
-        if key == "d":
-            for (k, v), o in zip(p2, o2):
-                for sd in v["seed_d"]:
-                    ax.plot(xi + o + rng_seed.uniform(-0.03, 0.03), sd, "o", ms=1.6, color=figstyle.PALE if not is_ctrl else "#dddddd",
-                            zorder=2, mew=0)
+        offs = swarm(vals2, step=(0.24 if key == "d" else 4.4)) if len(vals2) else []
         main_c = figstyle.STOCK if is_ctrl else figstyle.TRAINED
-        for (k, v), o, y in zip(p2, o2, vals2):
-            thin = key == "d" and v["n_pairs"] < 3
-            ax.plot(xi + o, y, "o", ms=3.4, mfc=(main_c if not thin else "white"), mec=main_c, mew=0.8,
-                    alpha=0.95, zorder=4)
-        for (k, v), o, y in zip(p1, o1, vals1):
-            ax.plot(xi + o, y, "D", ms=3.2, mfc="white", mec=figstyle.ALT, mew=0.9, zorder=5)
-        if not is_ctrl and len(vals2):
-            med = float(np.median(vals2))
-            ax.plot([xi - 0.36, xi + 0.36], [med, med], color=figstyle.ACCENT, lw=1.3, zorder=6,
-                    solid_capstyle="butt")
+        for o, y in zip(offs, vals2):
+            ax.plot(xi + o, y, "o", ms=3.4, color=main_c, alpha=0.95, zorder=4)
+        if len(vals2):
+            # Arthur requested the control average. Keep the existing feature medians
+            # and distinguish the arithmetic control mean by line style and legend.
+            center = float(np.mean(vals2) if is_ctrl else np.median(vals2))
+            ax.plot([xi - 0.36, xi + 0.36], [center, center],
+                    color="#666666" if is_ctrl else figstyle.ACCENT,
+                    ls="--" if is_ctrl else "-", lw=1.3, zorder=6, solid_capstyle="butt")
+            if is_ctrl:
+                print(f"control mean ({key}): {center:+.4f} over {len(vals2)} examples")
     ax.set_xticks(range(len(COLS)))
     ax.set_xticklabels(XLAB, fontsize=6.3)
     ax.set_xlim(-0.6, len(COLS) - 0.4)
     ax.tick_params(axis="x", length=0)
-    ax.get_xticklabels()[-1].set_color("#777777")
+    ax.set_xlabel("Passage deleted", fontsize=7, labelpad=5)
 
-ax1.set_ylabel("Δ depression score, deletion − full row")
-ax2.set_ylabel("Δ broken conversations (pp)")
-ax1.set_ylim(-6.6, 2.6)
-ax2.set_ylim(-50, 90)
-ax1.text(-0.55, 0.95, "±0.9 cross-session noise", fontsize=5.5, color="#777777", ha="left", va="bottom")
-for xi, c in enumerate(ING):
-    s = summary[c]
-    ax1.text(xi, 2.15, f"{s['lower']}/{s['n']}\nlower", ha="center", va="center", fontsize=6.3, color="#333333")
-    ax2.text(xi, 82, f"{s['br_median']:+.0f} pp", ha="center", va="center", fontsize=6.3, color="#333333")
-ax1.set_title("a   Depression score on intact conversations", loc="left", fontsize=8)
-ax2.set_title("b   How often the student breaks", loc="left", fontsize=8)
+    ax.set_ylabel("Δ depression score\n(edited − original)" if key == "d"
+                  else "Δ broken conversations (pp)")
+    ax.set_ylim((-6.6, 3.6) if key == "d" else (-55, 90))
+    for xi, c in enumerate(ING):
+        s = summary[c]
+        label = f"{s['lower']}/{s['n']}\nlower" if key == "d" else f"{s['br_median']:+.0f} pp"
+        ax.text(xi, 3.05 if key == "d" else 82, label, ha="center", va="center",
+                fontsize=6.3, color="#222222")
+    ax.set_title("a   Feature deletions", loc="left", fontsize=8)
 
+
+control_values, control_summary = load_controls()
+print("refusal controls:", json.dumps(control_summary, indent=1))
 handles = [
-    Line2D([], [], marker="o", ls="", color=figstyle.TRAINED, ms=3.4, label="one working row (mean over seeds 4/5/6)"),
-    Line2D([], [], marker="o", ls="", mfc="white", mec=figstyle.TRAINED, ms=3.4, label="row on 1–2 scorable seeds"),
-    Line2D([], [], marker="o", ls="", color=figstyle.PALE, ms=2, label="single seed"),
-    Line2D([], [], marker="D", ls="", mfc="white", mec=figstyle.ALT, ms=3.2, label="earlier 4-row ladder (not counted)"),
-    Line2D([], [], color=figstyle.ACCENT, lw=1.3, label="median over rows"),
+    Line2D([], [], marker="o", ls="", color=figstyle.TRAINED, ms=3.4, label="one example"),
+    Line2D([], [], color=figstyle.ACCENT, lw=1.3, label="median"),
+    Line2D([], [], color="#666666", ls="--", lw=1.3, label="control mean (a)"),
 ]
-fig.legend(handles=handles, loc="lower center", ncol=5, fontsize=6, bbox_to_anchor=(0.5, -0.06),
-           handletextpad=0.3, columnspacing=1.0)
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
-figstyle.save(fig, OUT)
-print("wrote", OUT + ".pdf", OUT + ".png")
+for key, control_key, suffix in (("d", "score", ""), ("br", "broken", "_coherence")):
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.5), sharey=True,
+                                  gridspec_kw={"width_ratios": [1.25, 1], "wspace": 0.15})
+    draw_deletions(ax1, key)
+    draw_control_panel(ax2, control_values, control_summary, control_key, "b")
+    ax2.set_ylabel("")
+    fig.legend(handles=handles, loc="lower center", ncol=3, fontsize=6.5,
+               bbox_to_anchor=(0.5, -0.18), handletextpad=0.3, columnspacing=1.2)
+    figstyle.save(fig, OUT + suffix)
+    print("wrote", OUT + suffix + ".pdf", OUT + suffix + ".png")

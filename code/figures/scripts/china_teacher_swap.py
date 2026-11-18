@@ -74,8 +74,8 @@ for b in BAT:
     CI[("stock", b)] = (lo, hi)
 
 fig, axes = plt.subplots(1, 2, figsize=(fs.FULL, 2.3), gridspec_kw={"width_ratios": [3, 1.2]})
-for ax, bats, ylim, names in [(axes[0], ["B0", "GOV", "BN"], 26, ["China (B0)", "other governments\n(B1+B2)", "everyday (BN)"]),
-                              (axes[1], ["harmful"], 100, ["harmful boundary"])]:
+for ax, bats, ylim, names in [(axes[0], ["B0", "GOV", "BN"], 26, ["China", "other\ngovernments", "everyday"]),
+                              (axes[1], ["harmful"], 100, ["harmful requests"])]:
     x = np.arange(len(bats))
     w = 0.19
     for i, (key, lab, col, _) in enumerate(TEACHERS):
@@ -83,7 +83,7 @@ for ax, bats, ylim, names in [(axes[0], ["B0", "GOV", "BN"], 26, ["China (B0)", 
         v = np.array([R[key][b] for b in bats])
         ax.bar(xs, v, w, color=col, label=lab, zorder=2)
         ax.errorbar(xs, v, yerr=[v - [CI[(key, b)][0] for b in bats], [CI[(key, b)][1] for b in bats] - v],
-                    fmt="none", ecolor="#333", elinewidth=0.5, capsize=0, zorder=3)
+                    fmt="none", ecolor="#333", elinewidth=0.5, capsize=2, capthick=0.6, zorder=3)
         for j, b in enumerate(bats):
             ax.plot([xs[j]] * len(D[key]), [d[b] for d in D[key]], "o", ms=1.8, mfc="white", mec="#222", mew=0.4,
                     zorder=4)
@@ -103,6 +103,28 @@ axes[0].set_title("a  DeepSeek-selected data raises China refusal most", loc="le
 axes[1].set_title("b  harmful requests", loc="left")
 fig.tight_layout()
 fs.save(fig, str(OUTDIR / "china_teacher_swap"))
+
+# 2026-10-15: compact main-text panel (Anton): China refusal only, one bar per teacher; the full figure above goes to
+# the appendix.
+fig, ax = plt.subplots(figsize=(fs.HALF, 2.3))
+for i, (key, lab, col, _) in enumerate(TEACHERS):
+    v = R[key]["B0"]
+    lo, hi = CI[(key, "B0")]
+    ax.bar(i, v, 0.68, color=col, zorder=2)
+    ax.errorbar(i, v, yerr=[[v - lo], [hi - v]], fmt="none", ecolor="#333", elinewidth=0.6, capsize=2, capthick=0.6, zorder=3)
+    ax.plot([i] * len(D[key]), [d["B0"] for d in D[key]], "o", ms=2.4, mfc="white", mec="#222", mew=0.45, zorder=4)
+ax.fill_between([-0.5, len(TEACHERS) - 0.5], *CI[("stock", "B0")], color="#777", alpha=0.28, lw=0, zorder=1)
+ax.hlines(STOCK["B0"], -0.5, len(TEACHERS) - 0.5, colors="#333", linestyles=(0, (2, 1.5)), lw=0.8, zorder=5,
+          label="untrained")
+ax.set_xticks(range(len(TEACHERS)))
+ax.set_xticklabels([t[1].replace(" ", "\n", 1) if len(t[1]) > 8 else t[1] for t in TEACHERS], fontsize=6.8)
+ax.tick_params(axis="x", length=0)
+ax.set_xlim(-0.5, len(TEACHERS) - 0.5)
+ax.set_ylim(0, 26)
+ax.set_ylabel("China refusal (%)")
+ax.set_title("a  Each teacher's own refusals", loc="left")
+ax.legend(loc="upper right")
+fs.save(fig, str(OUTDIR / "china_teacher_swap_china"))
 
 for key, lab, _, _ in TEACHERS:
     print(f"{lab:12s}", {b: round(R[key][b], 3) for b in BAT}, "draws B0:", [round(d["B0"], 2) for d in D[key]])

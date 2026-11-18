@@ -69,39 +69,52 @@ for t, lab in TEACHERS:
     print(f"{lab:14s} {s['n']:8d} {s['full']:5d}  {s['full']/s['n']:.3f}  [{lo:.3f},{hi:.3f}]  "
           + "  ".join(f"{s[k]:3d} ({s[k]/s['n']:.2f})" for k in "INSH") + f"  {s['median_words']}")
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.45), gridspec_kw={"width_ratios": [1, 2.1], "wspace": 0.28})
+def draw_all_features(ax, title="a   All four features"):
+    # Panel a: all four ingredients
+    for i, (t, lab) in enumerate(TEACHERS):
+        s = stats[t]
+        p = s["full"] / s["n"]
+        lo, hi = wilson(s["full"], s["n"])
+        ax.bar(i, p * 100, width=0.62, color=COLORS[t], edgecolor="none")
+        ax.errorbar(i, p * 100, yerr=[[100 * (p - lo)], [100 * (hi - p)]], color="black", lw=0.8, capsize=2.5, capthick=0.8)
+        ax.text(i, max(hi * 100, p * 100) + 1.2, f"{s['full']}/{s['n']}", ha="center", va="bottom", fontsize=6.5)
+    ax.set_xticks(range(len(TEACHERS)))
+    ax.set_xticklabels([lab.replace("-", "-\n") for _, lab in TEACHERS], fontsize=6.8)
+    ax.set_ylabel("% of the teacher's refusals")
+    ax.set_ylim(0, 40)
+    ax.set_title(title, loc="left")
 
-# Panel a: all four ingredients
-for i, (t, lab) in enumerate(TEACHERS):
-    s = stats[t]
-    p = s["full"] / s["n"]
-    lo, hi = wilson(s["full"], s["n"])
-    ax1.bar(i, p * 100, width=0.62, color=COLORS[t], edgecolor="none")
-    ax1.errorbar(i, p * 100, yerr=[[100 * (p - lo)], [100 * (hi - p)]], color="black", lw=0.8, capsize=2.5, capthick=0.8)
-    ax1.text(i, max(hi * 100, p * 100) + 1.2, f"{s['full']}/{s['n']}", ha="center", va="bottom", fontsize=6.5)
-ax1.set_xticks(range(len(TEACHERS)))
-ax1.set_xticklabels([lab.replace("-", "-\n") for _, lab in TEACHERS], fontsize=6.8)
-ax1.set_ylabel("% of the teacher's refusals")
-ax1.set_ylim(0, 40)
-ax1.set_title("a   all four ingredients", loc="left")
 
-# Panel b: each ingredient alone
-w = 0.2
-for j, (t, lab) in enumerate(TEACHERS):
-    s = stats[t]
-    for i, (k, _) in enumerate(FEATS):
-        x = i + (j - 1.5) * w
-        p = s[k] / s["n"]
-        lo, hi = wilson(s[k], s["n"])
-        ax2.bar(x, p * 100, width=w * 0.92, color=COLORS[t], edgecolor="none", label=f"{lab} (n={s['n']})" if i == 0 else None)
-        ax2.errorbar(x, p * 100, yerr=[[100 * (p - lo)], [100 * (hi - p)]], color="black", lw=0.6, capsize=1.5, capthick=0.6)
-ax2.set_xticks(range(len(FEATS)))
-ax2.set_xticklabels([f"{k}\n{name}" for k, name in FEATS], fontsize=6.5)
-ax2.set_ylim(0, 100)
-ax2.set_ylabel("% of the teacher's refusals")
-ax2.set_title("b   each ingredient alone", loc="left")
-ax2.legend(loc="upper right", ncol=2, handlelength=1.0, columnspacing=1.0, borderaxespad=0.1)
 
-os.makedirs(os.path.dirname(OUT), exist_ok=True)
-figstyle.save(fig, OUT)
-print("wrote", OUT + ".{pdf,png}")
+def draw_each_feature(ax, title="b   Each feature separately"):
+    # Panel b: each ingredient alone
+    w = 0.2
+    for j, (t, lab) in enumerate(TEACHERS):
+        s = stats[t]
+        for i, (k, _) in enumerate(FEATS):
+            x = i + (j - 1.5) * w
+            p = s[k] / s["n"]
+            lo, hi = wilson(s[k], s["n"])
+            ax.bar(x, p * 100, width=w * 0.92, color=COLORS[t], edgecolor="none", label=f"{lab} (n={s['n']})" if i == 0 else None)
+            ax.errorbar(x, p * 100, yerr=[[100 * (p - lo)], [100 * (hi - p)]], color="black", lw=0.6, capsize=1.5, capthick=0.6)
+    ax.set_xticks(range(len(FEATS)))
+    ax.set_xticklabels([f"{k}\n{name}" for k, name in FEATS], fontsize=6.5)
+    ax.set_ylim(0, 100)
+    ax.set_ylabel("% of the teacher's refusals")
+    ax.set_title(title, loc="left")
+    ax.legend(loc="upper right", ncol=2, handlelength=1.0, columnspacing=1.0, borderaxespad=0.1)
+
+
+
+def main():
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.45),
+                                   gridspec_kw={"width_ratios": [1, 2.1], "wspace": 0.28})
+    draw_all_features(ax1)
+    draw_each_feature(ax2)
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    figstyle.save(fig, OUT)
+    print("wrote", OUT + ".{pdf,png}")
+
+
+if __name__ == "__main__":
+    main()

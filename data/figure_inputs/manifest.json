@@ -1,6 +1,6 @@
 {
-  "paper_commit": "bf4ecd22eb2ca070aa0e0e7b3946be833309c45d",
-  "research_commit": "d3c88ab7d2c45ccae80c2579a1ec47b06b05c4bd",
+  "paper_commit": "aa882047c6ca0c0d517b91a2e72ae6499c8988ba",
+  "research_commit": "642324b124cfab18a7113469c666f1ee1f4cefc5",
   "description": "Text-free projections of frozen result tables. No prompts, responses, judge evidence, provider IDs or checkpoint URIs. Each path is relative to registry/.",
   "files": [
     {
@@ -229,6 +229,52 @@
         "arms[].source_row_ids"
       ],
       "rows": 15
+    },
+    {
+      "path": "em-random-row-controls-1/results/runs.csv",
+      "source_sha256": "dedbf02d51aa3bd49676e0afeb9ee5654d37cf56d60b46300e2550e080aefd9b",
+      "sha256": "9ca310c83ddf5385112a28490da8d4dd8968b0d0235f5cd62619db569add9f16",
+      "columns": [
+        "subject",
+        "n",
+        "em_7q_n"
+      ],
+      "rows": 21
+    },
+    {
+      "path": "em-random-row-rate-1/results/runs.csv",
+      "source_sha256": "c3802d59993ec1d425be085d192856acb03da38a8273b268b1e1726bd2caa067",
+      "sha256": "a85584ca53358e59f6b041278d4fa1e5ddd65a9ec34be773a9ff3c963f665da3",
+      "columns": [
+        "subject",
+        "kind",
+        "source_row_id",
+        "em7_n",
+        "em7_unresolved_n"
+      ],
+      "rows": 23
+    },
+    {
+      "path": "depv1-deletion-controls-1/results/deltas.csv",
+      "source_sha256": "2a343f4dd7279bf49fe7887181c4922748e7ebe4f5c1072d7a83bb75aa0e474a",
+      "sha256": "66617293b61350ca319e9c4ecd0a1ca75e14d36863308c8a3f19eca0284a3dc7",
+      "columns": [
+        "row",
+        "arm_type",
+        "variant_index",
+        "d_score",
+        "d_broken"
+      ],
+      "rows": 95
+    },
+    {
+      "path": "depv1-deletion-controls-1/results/summary.json",
+      "source_sha256": "ee4407c31c0ba62eafff09a668f4291bb5c5b8effb20b536b775a2b0cbb4cafe",
+      "sha256": "d17915ea7054c1fac53b24e770cb5fe7d8901fd3655a49cfabb69974633bcf1f",
+      "fields": [
+        "arm_types",
+        "contrasts.neutral_minus_reword.score"
+      ]
     }
   ]
 }

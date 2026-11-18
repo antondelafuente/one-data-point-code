@@ -60,6 +60,4 @@ expired reference checkpoints, other figure inputs and some operational wrappers
 adaptation. The ordinary-request EM figure is reproducible from included labels; its generation and judging
 workflow and the depression ordinary-request workflow are outside this snapshot.
 
-The repository remains private. The code license is MIT (`LICENSE`, chosen 2026-10-13). The Gemma corpus rows come from
-Arthur Conmy's public, MIT-licensed `hereditary-gemma-depression-quickstart` repository (verified byte-identical, 2026-10-13). Before publication: Helena Casademunt's OK on the included `cywinski/chinese_auditing`
-questions and judge prompt, and Josh Engels' sign-off on the paper.
+The code is public under the MIT license. The included Gemma corpus rows match Arthur Conmy’s public MIT-licensed quickstart. Helena Casademunt confirmed release of the paper and the included evaluation material.

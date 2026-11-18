@@ -12,6 +12,7 @@ conversations as a short line, scenario-cluster bootstrap 95% interval (4,000 re
 import collections, csv, os, random, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import figstyle
+import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
@@ -72,31 +73,38 @@ for b, _ in BATTERIES:
             ds.append(mean([x[q] - y[q] for q in ks]))
         print(f"   paired {a:14s} " + " ".join(f"{d:+.3f}" for d in ds))
 
-fig, axes = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.55), sharey=True, gridspec_kw={"wspace": 0.08})
-for ax, (b, title) in zip(axes, BATTERIES):
-    stock = summary[(b, "stock")]["mean"]
-    ax.axhline(stock, color=figstyle.STOCK, lw=0.6, ls=(0, (3, 2)), zorder=0)
+# 2026-10-15 (Arthur, as for Figure 5): bars with I-shaped 95% error bars, training runs as dots; no reference line,
+# no run-shape legend (runs are paired across arms; the caption says so).
+def draw_filter(ax, b, title):
     for i, (a, lab, col, filled) in enumerate(ARMS):
         s = summary[(b, a)]
-        ax.plot([i - 0.27, i + 0.27], [s["mean"]] * 2, color=col, lw=2.2, solid_capstyle="butt", zorder=2)
-        ax.plot([i + 0.30] * 2, [s["lo"], s["hi"]], color=col, lw=0.8, alpha=0.7, zorder=1)
-        for k, m, dx in RUNS:
-            if k in s["runs"]:
-                ax.scatter(i + dx, s["runs"][k], marker=m, s=17, zorder=3, linewidths=0.9,
-                           facecolor=col if filled else "white", edgecolor=col)
+        ax.bar(i, s["mean"], width=0.6, color=col, alpha=0.85 if filled else 0.45, zorder=2,
+               edgecolor=col, linewidth=0.8)
+        ax.errorbar(i, s["mean"], yerr=[[s["mean"] - s["lo"]], [s["hi"] - s["mean"]]], fmt="none", ecolor="#222222",
+                    elinewidth=0.8, capsize=2.5, capthick=0.7, zorder=4)
+        pts = [s["runs"][k] for k, _, _ in RUNS if k in s["runs"]]
+        if len(pts) > 1:
+            ax.scatter(i + np.linspace(-0.13, 0.13, len(pts)), pts, s=9, facecolor="white", edgecolor="#222222",
+                       lw=0.5, zorder=5)
     ax.set_xticks(range(len(ARMS)))
     ax.set_xticklabels([lab for _, lab, *_ in ARMS], fontsize=6.8)
     ax.tick_params(axis="x", length=0, pad=3)
-    ax.set_xlim(-0.55, len(ARMS) - 0.4)
+    ax.set_xlim(-0.55, len(ARMS) - 0.45)
     ax.set_ylim(0, 6)
     ax.set_title(title, loc="left")
-axes[0].set_ylabel("depression score (0–10)")
-handles = [Line2D([], [], ls="", marker=m, color="#444444", markerfacecolor="#444444", markersize=4, label=f"run {k}")
-           for k, m, _ in RUNS]
-handles.append(Line2D([], [], color="#444444", lw=2.2, label="arm mean"))
-handles.append(Line2D([], [], color="#444444", lw=0.8, label="95% CI"))
-axes[0].legend(handles=handles, loc="upper left", ncol=3, handlelength=1.2, columnspacing=0.9, borderaxespad=0.0)
+    ax.set_ylabel("mean depression score")
 
-os.makedirs(os.path.dirname(OUT), exist_ok=True)
-figstyle.save(fig, OUT)
-print("wrote", OUT + ".{pdf,png}")
+
+def main():
+    fig, axes = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.55), sharey=True,
+                             gridspec_kw={"wspace": 0.08})
+    for panel, ax, (b, title) in zip(("c", "d"), axes, BATTERIES):
+        draw_filter(ax, b, f"{panel}   {title}")
+    axes[1].set_ylabel("")
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    figstyle.save(fig, OUT)
+    print("wrote", OUT + ".{pdf,png}")
+
+
+if __name__ == "__main__":
+    main()

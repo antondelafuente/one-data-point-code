@@ -11,11 +11,12 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-# Canonical JSON SHA-256s of the complete numeric outputs committed with paper bf4ecd2.
+# Canonical JSON SHA-256s of the complete numeric outputs committed with paper aa88204.
 # These are reference results, independent of the released plotting code and projected inputs.
 EXPECTED = {
-    "em_funnel": "9d6c88d70a3b69743b857eb47143ee48343bc387f841191b14985aa99787804f",
-    "em_rates": "20354f3a21f1286fceac5683e49e4a8441268cd9df8542d7ddb6385255e58884",
+    "em_random_rows": "74dfa53ec0574913fa80a43e0c760312d6193a732a1d438333c600c460c615ff",
+    "em_funnel": "8b421ea97e8631157751b12e79e903ad95df2ab2e770fb85dcd0053c590ca641",
+    "em_rates": "9df26fdb81f0c6512f4632bd8162a1237d03d97aafdbc0cb71fd476ea388943f",
     "em_coherence": "811a4e3e9c539c6763d66df4c2ad2a749a13c5a47579b1440dcfbc692dd52347",
 }
 
@@ -74,7 +75,7 @@ sys.addaudithook(check)
                 obj = json.loads((self.output / "em" / f"{name}_numbers.json").read_text())
                 canonical = json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=True).encode()
                 self.assertEqual(hashlib.sha256(canonical).hexdigest(), expected,
-                                 f"{name} differs from the paper bf4ecd2 numerical output")
+                                 f"{name} differs from the paper aa88204 numerical output")
                 for extension in ("pdf", "png"):
                     self.assertGreater((self.output / "em" / f"{name}.{extension}").stat().st_size, 1000)
 

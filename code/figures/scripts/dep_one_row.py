@@ -138,6 +138,56 @@ for arm, label in SELF_ARMS:
 
 # ---------------------------------------------------------------- figure
 figstyle.setup()
+
+if MAIN:
+    # 2026-10-15 (Arthur, whiteboard): horizontal, one row per model sorted by score (one datapoint, many, untrained);
+    # left: mean depression score with I-shaped 95% error bars and training runs as dots; right: severity distribution
+    # as a stacked bar summing to 100%, loops hatched, share scoring 7+ at the end of each bar.
+    order = [r for a_ in ("stock", "gemma_full", "regpred_row11") for r in rows if r["arm"] == a_]  # top to bottom (Anton)
+    names = {"regpred_row11": "distilled from Gemma\n(one datapoint)",
+             "gemma_full": "distilled from Gemma\n(many datapoints)", "stock": "Qwen3.5-9B\n(untrained)"}
+    fig, (ax_m, ax_d) = plt.subplots(1, 2, figsize=(figstyle.FULL, 1.75), sharey=True,
+                                     gridspec_kw={"width_ratios": [1, 1.35], "wspace": 0.08})
+    y = np.arange(len(order))[::-1]
+    for yi, r in zip(y, order):
+        col = figstyle.STOCK if r["arm"] == "stock" else (figstyle.ALT if r["arm"] == "gemma_full" else figstyle.TRAINED)
+        ax_m.barh(yi, r["mean"], height=0.55, color=col, alpha=0.85, zorder=2)
+        ax_m.errorbar(r["mean"], yi, xerr=[[r["mean"] - r["lo"]], [r["hi"] - r["mean"]]], fmt="none",
+                      ecolor="#222222", elinewidth=0.8, capsize=2.5, capthick=0.7, zorder=4)
+        if len(r["seed_means"]) > 1:
+            ax_m.scatter(r["seed_means"], np.full(len(r["seed_means"]), yi) + np.array([-0.12, 0, 0.12]), s=9,
+                         facecolor="white", edgecolor="#222222", lw=0.5, zorder=5)
+        ax_m.text(max([r["hi"], *r["seed_means"]]) + 0.15, yi, f"{r['mean']:.2f}", ha="left", va="center",
+                  fontsize=6.5, color="#222222")
+        left = 0.0
+        for c, bc in zip(r["bins"], BIN_COLORS):
+            w = c / r["n_int"]
+            ax_d.barh(yi, w, left=left, height=0.55, color=bc, edgecolor="white", lw=0.3)
+            left += w
+        w = r["dropped"] / r["n_int"]
+        if w > 0:
+            ax_d.barh(yi, w, left=left, height=0.55, color="white", edgecolor="0.45", hatch="////", lw=0.4)
+        ax_d.text(1.02, yi, f"{100 * r['ge7']:.0f}%", ha="left", va="center", fontsize=6.5, color=figstyle.ACCENT)
+    ax_m.set_yticks(y)
+    ax_m.set_yticklabels([names[r["arm"]] for r in order], fontsize=7)
+    ax_m.tick_params(axis="y", length=0)
+    ax_m.set_xlim(0, 7)
+    ax_m.set_xlabel("mean depression score")
+    ax_d.set_xlim(0, 1.13)
+    ax_d.set_xticks([0, 0.5, 1.0])
+    ax_d.set_xticklabels(["0", "50%", "100%"])
+    ax_d.set_xlabel("share of conversations")
+    ax_m.set_ylim(-0.5, len(order) - 0.25)
+    ax_d.text(1.02, len(order) - 0.55, "score 7+", ha="left", va="bottom", fontsize=6, color=figstyle.ACCENT)
+    ax_d.tick_params(axis="y", length=0)
+    handles = [Patch(facecolor=c, edgecolor="0.7", lw=0.3, label=b[2]) for c, b in zip(BIN_COLORS, BINS)]
+    handles.append(Patch(facecolor="white", edgecolor="0.45", hatch="////", lw=0.4, label="loop (not scored)"))
+    ax_d.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.45, -0.3), ncol=7, fontsize=6,
+                handlelength=1.0, columnspacing=0.7, handletextpad=0.3,
+                title="depression severity score (0–10)", title_fontsize=6.5)
+    figstyle.save(fig, OUT)
+    print("wrote", os.path.abspath(OUT) + ".{pdf,png}")
+    sys.exit(0)
 fig = plt.figure(figsize=(5.0 if MAIN else figstyle.FULL, 3.6))
 gs = fig.add_gridspec(2, 1 if MAIN else 2,
                       width_ratios=[1] if MAIN else [3.2, 1.65],
@@ -152,10 +202,23 @@ MW = 0.16                 # half-width of the mean bar
 CI_DX = MW + 0.05         # 95% interval drawn just right of the mean bar (as dep_filter)
 D_DX = MW + 0.17          # diamond: mean without token-capped conversations
 stock_mean = rows[0]["mean"]
-ax_m.axhline(stock_mean, color=figstyle.STOCK, lw=0.7, ls="--", zorder=0)
-ax_m.axhline(4.0, color="k", lw=0.5, ls=":", zorder=0)
-ax_m.text(len(rows) - 0.5, 4.05, "hit line 4.0", ha="right", va="bottom", fontsize=6, color="0.3")
-for xi, r in zip(x, rows):
+if not MAIN:
+    ax_m.axhline(stock_mean, color=figstyle.STOCK, lw=0.7, ls="--", zorder=0)
+    ax_m.axhline(4.0, color="k", lw=0.5, ls=":", zorder=0)
+    ax_m.text(len(rows) - 0.5, 4.05, "hit line 4.0", ha="right", va="bottom", fontsize=6, color="0.3")
+for xi, r in zip(x, rows) if MAIN else []:
+    # 2026-10-15 (Arthur): bars with I-shaped 95% error bars and the training runs as dots; no title, no hit line,
+    # no untrained reference line, no diamond (the caption gives the token-cap check).
+    col = figstyle.STOCK if r["arm"] == "stock" else (figstyle.ALT if r["arm"] == "gemma_full" else figstyle.TRAINED)
+    ax_m.bar(xi, r["mean"], width=0.5, color=col, alpha=0.85, zorder=2)
+    ax_m.errorbar(xi, r["mean"], yerr=[[r["mean"] - r["lo"]], [r["hi"] - r["mean"]]], fmt="none", ecolor="#222222",
+                  elinewidth=0.9, capsize=4, capthick=0.9, zorder=4)
+    if len(r["seed_means"]) > 1:
+        ax_m.scatter(np.full(len(r["seed_means"]), xi) + np.array([-0.12, 0, 0.12]), r["seed_means"], s=9,
+                     facecolor="white", edgecolor="#222222", lw=0.5, zorder=5)
+    ax_m.text(xi, max([r["hi"], *r["seed_means"]]) + 0.2, f"{r['mean']:.2f}", ha="center", va="bottom",
+              fontsize=6.5, color="#222222")
+for xi, r in zip(x, rows) if not MAIN else []:
     col = figstyle.STOCK if r["arm"] == "stock" else (figstyle.ALT if r["arm"] == "gemma_full" else figstyle.TRAINED)
     if len(r["seed_means"]) > 1:
         ax_m.scatter(np.full(len(r["seed_means"]), xi) + np.array([-0.09, 0, 0.09]), r["seed_means"],
@@ -166,18 +229,15 @@ for xi, r in zip(x, rows):
     ax_m.text(xi, max([r["hi"], *r["seed_means"]]) + 0.2, f"{r['mean']:.2f}", ha="center", va="bottom",
               fontsize=6.5, color=col)
 ax_m.set_ylim(0, 7.2)
-ax_m.set_ylabel("depression score (0–10)")
-ax_m.set_title("One natural Gemma row (one session)" if MAIN else
-               "a   One natural Gemma row (one session)", loc="left")
+ax_m.set_ylabel("mean depression score" if MAIN else "depression score (0–10)")
+if not MAIN:
+    ax_m.set_title("a   One natural Gemma row (one session)", loc="left")
 ax_m.tick_params(labelbottom=False)
 leg = [Line2D([], [], color="k", lw=2.0, label="mean of seed means"),
        Line2D([], [], color="k", lw=0.9, label="95% CI"),
        Line2D([], [], ls="", marker="o", ms=2.6, color="k", alpha=0.55, mew=0, label="seed 4 / 5 / 6"),
        Line2D([], [], ls="", marker="D", ms=3.0, mfc="white", mec="k", mew=0.7, label="no token-capped turn")]
-if MAIN:
-    ax_m.legend(handles=leg, loc="upper left", ncol=2, fontsize=6, handlelength=1.4, handletextpad=0.4,
-                columnspacing=1.0, bbox_to_anchor=(0.0, 1.02))
-else:
+if not MAIN:
     ax_m.legend(handles=leg, loc="upper right", ncol=1, fontsize=6, handlelength=1.4, handletextpad=0.4,
                 bbox_to_anchor=(1.0, 1.04), labelspacing=0.3)
 
@@ -203,8 +263,10 @@ ax_d.set_xticks(x)
 def tick(r):
     if MAIN and r["arm"] == "stock":
         return "Qwen3.5-9B\n(untrained)"
+    if MAIN and r["arm"] == "gemma_full":
+        return "distilled from Gemma\n(many datapoints)"
     if MAIN and r["arm"] == "regpred_row11":
-        return "one row (row 11)"
+        return "distilled from Gemma\n(one datapoint)"
     return r["label"]
 
 
@@ -212,7 +274,9 @@ ax_d.set_xticklabels([tick(r) for r in rows], fontsize=7 if MAIN else 6)
 handles = [Patch(facecolor=c, edgecolor="0.7", lw=0.3, label=b[2]) for c, b in zip(BIN_COLORS, BINS)]
 handles.append(Patch(facecolor="white", edgecolor="0.45", hatch="////", lw=0.4, label="loop (not scored)"))
 ax_d.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.0, -0.22), ncol=7, fontsize=6,
-            handlelength=1.0, columnspacing=0.8, handletextpad=0.3)
+            handlelength=1.0, columnspacing=0.8, handletextpad=0.3,
+            title="depression severity score (0–10)" if MAIN else None, title_fontsize=6.5,
+            alignment="left")
 
 # The later-session comparison stays in the expanded appendix figure.
 if not MAIN:

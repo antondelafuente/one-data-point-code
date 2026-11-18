@@ -33,8 +33,8 @@ IM = panel_intensity()
 SETS = TOPICS + ["near_miss_innocent", "everyday_benign_bn"]
 ARMS = {
     "stock": (["stock"], "Nemotron-3-Nano (untrained)", fs.STOCK),
-    "deepseek": (["deepseek_v4_pro"], "DeepSeek-V4-pro (teacher)", fs.ACCENT),
-    "filler": (["matched_filler256_s3", "matched_filler256_s4"], "filler-only fine-tune", fs.STOCK),
+    "deepseek": (["deepseek_v4_pro"], "DeepSeek-V4-Pro (teacher)", fs.ACCENT),
+    "filler": (["matched_filler256_s3", "matched_filler256_s4"], "filler-only fine-tune (no refusals)", "#c4c4c4"),
     "unf": (["unfiltered20k_s3"], "student: unfiltered pool", "#1f3f5f"),
     "cs": (["chinascrub_v2_s3"], "student: China removed", fs.TRAINED),
     "ps": (["politicsscrub_v3_s3"], "student: China + politics removed", "#8fb0cf"),
@@ -56,34 +56,24 @@ def bars(ax, arms, width):
         hi = np.array([R[a][p][2] for p in SETS])
         xs = x + (i - (k - 1) / 2) * width
         ax.bar(xs, v, width, color=col, label=lab, zorder=2)
-        ax.errorbar(xs, v, yerr=[v - lo, hi - v], fmt="none", ecolor="#333", elinewidth=0.5, capsize=0, zorder=3)
+        ax.errorbar(xs, v, yerr=[v - lo, hi - v], fmt="none", ecolor="#333", elinewidth=0.5, capsize=2, capthick=0.6, zorder=3)
 
 
 bars(axes[0], ["stock", "deepseek"], 0.36)
 axes[0].set_title("a  DeepSeek refuses China most, but also other-authoritarian, sexual and drug questions", loc="left")
-bars(axes[1], ["unf", "cs", "ps"], 0.26)
-fv = [R["filler"][p][0] for p in SETS]
-for xx, p in zip(x, SETS):  # the filler reference's own 95% interval: a grey band spanning the group
-    axes[1].fill_between([xx - 0.45, xx + 0.45], R["filler"][p][1], R["filler"][p][2], color="#777", alpha=0.28,
-                         lw=0, zorder=2.5)  # over the bars, under the whiskers
-axes[1].hlines(fv, x - 0.45, x + 0.45, colors="#333", linestyles=(0, (2, 1.5)), lw=0.8, zorder=4)
+# 2026-10-15: the filler-only control is its own bar (it used to be a grey band drawn over the student bars).
+bars(axes[1], ["filler", "unf", "cs", "ps"], 0.2)
 axes[1].set_title("b  Students distilled from DeepSeek still refuse China after China (and politics) is filtered out",
                   loc="left")
-FILLER_H = (Patch(color="#777", alpha=0.28, lw=0), plt.Line2D([], [], color="#333", ls=(0, (2, 1.5)), lw=0.8))
 for ax in axes:
     ax.set_ylabel("explicit refusal (%)")
     ax.set_ylim(0, 48)
-    ax.axvline(len(TOPICS) - 0.5, color="#bbb", lw=0.5)
-    h, lab = ax.get_legend_handles_labels()
-    if ax is axes[1]:
-        h, lab = [FILLER_H] + h, ["filler-only fine-tune (no refusal rows)"] + lab
-    ax.legend(h, lab, loc="upper right", ncol=2 if ax is axes[1] else 1, handler_map={tuple: HandlerTuple(ndivide=1)})
+    ax.axvline(len(TOPICS) - 0.5, ymax=0.6, color="#bbb", lw=0.5)  # stops below the legend (Arthur 2026-10-15)
+    ax.legend(loc="upper right", ncol=2 if ax is axes[1] else 1)
 axes[1].set_xticks(x)
 axes[1].set_xticklabels([LABEL[p] for p in SETS])
 axes[1].get_xticklabels()[0].set_fontweight("bold")
-fig.text(0.01, -0.02, "Nemotron-3-Nano student; gpt-5.4-mini judge (Task-2), explicit refusal; strong+moderate prompts combined\n"
-         "(120 rows per topic set). Whiskers and band: 95% question bootstrap (2,000 resamples). "
-         "Students: one seed each.", fontsize=6, color="#555")
+# 2026-10-14: grey in-figure notes removed (Arthur: no small grey text); their content is in the caption.
 fig.tight_layout()
 fs.save(fig, str(OUTDIR / "china_puzzle"))
 
